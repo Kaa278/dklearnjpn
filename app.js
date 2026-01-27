@@ -207,6 +207,9 @@ const elements = {
     searchInput: document.getElementById('searchInput'),
     categoryFilter: document.getElementById('categoryFilter'),
     totalWordsBadge: document.getElementById('totalWordsBadge'),
+    // Mobile Menu
+    menuToggle: document.getElementById('menuToggle'),
+    navMenu: document.getElementById('navMenu'),
     // Modal Elements
     detailModal: document.getElementById('detailModal'),
     modalContent: document.getElementById('modalContent'),
