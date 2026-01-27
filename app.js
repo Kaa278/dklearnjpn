@@ -698,57 +698,78 @@ function playPronunciation() {
         elements.speakerBtn.classList.add('animate-pulse');
     }
 
-    // WORKAROUND for Chromium synthesis-failed bug:
-    // Call resume() before speak() to reset the speech synthesis state
-    window.speechSynthesis.resume();
+    // Function to actually speak
+    const speak = () => {
+        // WORKAROUND for Chromium synthesis-failed bug:
+        // Call resume() before speak() to reset the speech synthesis state
+        window.speechSynthesis.resume();
 
-    const utterance = new SpeechSynthesisUtterance(currentPronunciation);
-    utterance.lang = 'ja-JP'; // Japanese language
-    utterance.rate = 0.9;
-    utterance.pitch = 1.0;
-    utterance.volume = 1.0;
+        const utterance = new SpeechSynthesisUtterance(currentPronunciation);
+        utterance.lang = 'ja-JP'; // Japanese language
+        utterance.rate = 0.9;
+        utterance.pitch = 1.0;
+        utterance.volume = 1.0;
 
-    console.log('Creating utterance for:', currentPronunciation);
+        console.log('Creating utterance for:', currentPronunciation);
 
-    utterance.onstart = () => {
-        console.log('Speech started');
-    };
+        utterance.onstart = () => {
+            console.log('Speech started');
+        };
 
-    utterance.onend = () => {
-        console.log('Speech ended');
-        if (elements.speakerBtn) {
-            elements.speakerBtn.classList.remove('animate-pulse');
-        }
-    };
+        utterance.onend = () => {
+            console.log('Speech ended');
+            if (elements.speakerBtn) {
+                elements.speakerBtn.classList.remove('animate-pulse');
+            }
+        };
 
-    utterance.onerror = (event) => {
-        console.error('Speech synthesis error:', event.error);
-        if (elements.speakerBtn) {
-            elements.speakerBtn.classList.remove('animate-pulse');
-        }
+        utterance.onerror = (event) => {
+            console.error('Speech synthesis error:', event.error);
+            if (elements.speakerBtn) {
+                elements.speakerBtn.classList.remove('animate-pulse');
+            }
 
-        // More helpful error messages
-        if (event.error === 'synthesis-failed') {
-            alert('Gagal memutar audio. Coba refresh halaman dan klik lagi.');
-        } else if (event.error === 'network') {
-            alert('Error jaringan. Pastikan koneksi internet aktif.');
+            // More helpful error messages
+            if (event.error === 'synthesis-failed') {
+                alert('Gagal memutar audio. Coba refresh halaman dan klik lagi.');
+            } else if (event.error === 'network') {
+                alert('Error jaringan. Pastikan koneksi internet aktif.');
+            } else {
+                alert('Error: ' + event.error);
+            }
+        };
+
+        // Try to get Japanese voice
+        const voices = window.speechSynthesis.getVoices();
+        console.log('Available voices:', voices.length);
+        const japaneseVoice = voices.find(voice => voice.lang.startsWith('ja'));
+        if (japaneseVoice) {
+            utterance.voice = japaneseVoice;
+            console.log('Using Japanese voice:', japaneseVoice.name);
         } else {
-            alert('Error: ' + event.error);
+            console.warn('No Japanese voice found, using default');
         }
+
+        // Speak
+        window.speechSynthesis.speak(utterance);
     };
 
-    // Try to get Japanese voice
+    // Check if voices are loaded
     const voices = window.speechSynthesis.getVoices();
-    const japaneseVoice = voices.find(voice => voice.lang.startsWith('ja'));
-    if (japaneseVoice) {
-        utterance.voice = japaneseVoice;
-        console.log('Using Japanese voice:', japaneseVoice.name);
-    } else {
-        console.warn('No Japanese voice found, using default');
-    }
 
-    // Speak
-    window.speechSynthesis.speak(utterance);
+    if (voices.length > 0) {
+        // Voices already loaded, speak immediately
+        speak();
+    } else {
+        // Voices not loaded yet, wait for them
+        console.log('Waiting for voices to load...');
+        window.speechSynthesis.onvoiceschanged = () => {
+            console.log('Voices loaded!');
+            speak();
+            // Remove the handler after first use
+            window.speechSynthesis.onvoiceschanged = null;
+        };
+    }
 }
 
 // --- Helper: Check if char is Kana (Hiragana/Katakana) ---
