@@ -129,6 +129,11 @@
                             data-section="kanji">
                             Kanji
                         </button>
+                        <!-- Mobile Menu Install Item (Hidden by default) -->
+                        <button id="mobileInstallBtn"
+                            class="hidden nav-tab-horizontal px-4 py-1.5 rounded-lg text-sm font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 transition-all flex items-center gap-2">
+                            <i class="fa-solid fa-download"></i> Install
+                        </button>
                     </nav>
                 </div>
             </div>
@@ -329,19 +334,30 @@
 
     <!-- Floating Install Button (Bottom Right) -->
     <!-- Floating Install Button (Bottom Right) -->
-    <button id="installAppBtn"
-        class="hidden fixed bottom-6 right-6 z-50 group bg-[#151516] text-white pl-5 pr-1.5 py-1.5 rounded-full shadow-2xl hover:scale-105 transition-all duration-300 border border-gray-800 flex items-center gap-3 animate-bounce-slight">
-        <div class="flex flex-col items-start justify-center pr-1">
-            <span
-                class="text-[9px] text-gray-400 font-semibold uppercase tracking-widest mb-0.5 group-hover:text-blue-400 transition-colors">Download
-                App</span>
-            <span class="text-sm font-bold leading-none tracking-tight">Install DKotoba</span>
-        </div>
-        <div
-            class="bg-blue-600 text-white w-9 h-9 rounded-full flex items-center justify-center shadow-lg group-hover:bg-blue-500 transition-colors">
-            <i class="fa-solid fa-download text-xs"></i>
-        </div>
-    </button>
+    <!-- Floating Install Button (Bottom Right) -->
+    <div id="installAppWrapper" class="hidden fixed bottom-6 right-6 z-50 flex items-start gap-2 animate-bounce-slight">
+        <!-- Close Button -->
+        <button id="closeInstallBtn"
+            class="bg-white/90 text-gray-500 hover:text-red-500 rounded-full w-6 h-6 flex items-center justify-center shadow-sm border border-gray-200 text-xs transition-colors"
+            title="Tutup">
+            <i class="fa-solid fa-times"></i>
+        </button>
+
+        <!-- Main Install Button -->
+        <button id="installAppBtn"
+            class="group bg-[#151516] text-white pl-5 pr-1.5 py-1.5 rounded-full shadow-2xl hover:scale-105 transition-all duration-300 border border-gray-800 flex items-center gap-3">
+            <div class="flex flex-col items-start justify-center pr-1">
+                <span
+                    class="text-[9px] text-gray-400 font-semibold uppercase tracking-widest mb-0.5 group-hover:text-blue-400 transition-colors">Download
+                    App</span>
+                <span class="text-sm font-bold leading-none tracking-tight">Install DKotoba</span>
+            </div>
+            <div
+                class="bg-blue-600 text-white w-9 h-9 rounded-full flex items-center justify-center shadow-lg group-hover:bg-blue-500 transition-colors">
+                <i class="fa-solid fa-download text-xs"></i>
+            </div>
+        </button>
+    </div>
 
     <!-- App Script -->
     <script src="app.js"></script>

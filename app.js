@@ -235,6 +235,9 @@ const elements = {
 
     // PWA Elements
     installAppBtn: document.getElementById('installAppBtn'),
+    installAppWrapper: document.getElementById('installAppWrapper'),
+    closeInstallBtn: document.getElementById('closeInstallBtn'),
+    mobileInstallBtn: document.getElementById('mobileInstallBtn'),
 
     totalWordsBadge: document.getElementById('totalWordsBadge'),
     pageTitle: document.getElementById('pageTitle'),
@@ -1053,34 +1056,68 @@ function initPWA() {
         e.preventDefault();
         // Stash the event so it can be triggered later.
         deferredPrompt = e;
-        // Update UI to notify the user they can add to home screen
-        if (elements.installAppBtn) {
-            elements.installAppBtn.classList.remove('hidden');
 
-            elements.installAppBtn.addEventListener('click', (e) => {
-                // Hide the app provided install promotion
-                elements.installAppBtn.classList.add('hidden');
-                // Show the prompt
-                deferredPrompt.prompt();
-                // Wait for the user to respond to the prompt
-                deferredPrompt.userChoice.then((choiceResult) => {
-                    if (choiceResult.outcome === 'accepted') {
-                        console.log('User accepted the A2HS prompt');
-                    } else {
-                        console.log('User dismissed the A2HS prompt');
-                    }
-                    deferredPrompt = null;
-                });
-            });
+        // Show Floating Button
+        if (elements.installAppWrapper) {
+            elements.installAppWrapper.classList.remove('hidden');
+        }
+
+        // Show Mobile Menu Item
+        if (elements.mobileInstallBtn) {
+            elements.mobileInstallBtn.classList.remove('hidden');
         }
     });
+
+    // Helper to show prompt
+    const showInstallPrompt = () => {
+        if (!deferredPrompt) return;
+
+        // Hide UI immediately
+        if (elements.installAppWrapper) elements.installAppWrapper.classList.add('hidden');
+        if (elements.mobileInstallBtn) elements.mobileInstallBtn.classList.add('hidden');
+
+        // Show prompt
+        deferredPrompt.prompt();
+
+        // Wait for choice
+        deferredPrompt.userChoice.then((choiceResult) => {
+            if (choiceResult.outcome === 'accepted') {
+                console.log('User accepted the A2HS prompt');
+            } else {
+                console.log('User dismissed the A2HS prompt');
+                // Optional: Show UI again if dismissed? 
+                // For now, let's keep it hidden until next reload or user action if we want.
+                // But typically if dismissed, we might want to let them bring it back via menu.
+                if (elements.mobileInstallBtn) elements.mobileInstallBtn.classList.remove('hidden');
+            }
+            deferredPrompt = null;
+        });
+    };
+
+    // Event Listeners for Install Actions
+    if (elements.installAppBtn) {
+        elements.installAppBtn.addEventListener('click', showInstallPrompt);
+    }
+
+    if (elements.mobileInstallBtn) {
+        elements.mobileInstallBtn.addEventListener('click', showInstallPrompt);
+    }
+
+    // Close Button Logic (Dismiss Floating CTA)
+    if (elements.closeInstallBtn) {
+        elements.closeInstallBtn.addEventListener('click', (e) => {
+            e.stopPropagation(); // Avoid triggering parent click if nested
+            if (elements.installAppWrapper) {
+                elements.installAppWrapper.classList.add('hidden');
+            }
+        });
+    }
 
     // 3. App Installed Event
     window.addEventListener('appinstalled', (evt) => {
         console.log('a2hs installed');
-        if (elements.installAppBtn) {
-            elements.installAppBtn.classList.add('hidden');
-        }
+        if (elements.installAppWrapper) elements.installAppWrapper.classList.add('hidden');
+        if (elements.mobileInstallBtn) elements.mobileInstallBtn.classList.add('hidden');
     });
 }
 
