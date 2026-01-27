@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Hanzi Writer -->
+    <script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -129,6 +131,54 @@
             </div>
         </main>
 
+    </div>
+
+    <!-- Modal Overlay -->
+    <div id="detailModal"
+        class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+        <!-- Modal Content -->
+        <div class="bg-white rounded-[32px] w-full max-w-lg shadow-2xl transform scale-95 transition-transform duration-300 flex flex-col overflow-hidden relative"
+            id="modalContent">
+
+            <!-- Close Button -->
+            <button id="closeModal"
+                class="absolute top-4 right-4 z-10 w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center text-gray-500 transition-colors">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <!-- Top Section: Character Animation -->
+            <div class="bg-page flex flex-col items-center justify-center py-10 relative">
+                <div id="characterTarget" class="min-h-[200px]"></div>
+
+                <!-- Replay Button - Below character box -->
+                <button id="animateBtn"
+                    class="mt-6 px-5 py-2 bg-primary text-white rounded-full text-sm font-bold shadow-sm hover:bg-gray-800 flex items-center gap-2 transition-transform active:scale-95">
+                    <i class="fa-solid fa-rotate-right"></i>
+                    <span>Ulangi Animasi</span>
+                </button>
+            </div>
+
+            <!-- Bottom Section: Details -->
+            <div class="p-8">
+                <div class="flex items-center gap-3 mb-2">
+                    <span id="modalCategory"
+                        class="px-3 py-1 bg-gray-100 text-gray-500 rounded-lg text-xs font-bold uppercase tracking-wide">Category</span>
+                    <div id="modalCategoryDot" class="w-2 h-2 rounded-full bg-gray-400"></div>
+                </div>
+
+                <div class="flex items-baseline gap-4 mb-6">
+                    <h2 id="modalTitle" class="text-4xl font-black text-gray-800 font-jp">Word</h2>
+                    <p id="modalReading" class="text-xl font-bold text-blue-500 font-sans">Reading</p>
+                </div>
+
+                <div class="space-y-4">
+                    <div>
+                        <p class="text-xs text-secondary font-bold uppercase tracking-wider mb-1">Arti</p>
+                        <p id="modalMeaning" class="text-lg text-primary font-medium">Meaning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="app.js"></script>

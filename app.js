@@ -115,32 +115,68 @@ const defaultKotoba = [
     { id: '308', word: 'ごちそうさま', reading: 'Gochisousama', meaning: 'Terima kasih (setelah makan)', category: 'Ungkapan' }
 ];
 
-// Hiragana data
+// --- Data ---
 const hiraganaData = [
-    { char: 'あ', romaji: 'a' }, { char: 'い', romaji: 'i' }, { char: 'う', romaji: 'u' }, { char: 'え', romaji: 'e' }, { char: 'お', romaji: 'o' },
-    { char: 'か', romaji: 'ka' }, { char: 'き', romaji: 'ki' }, { char: 'く', romaji: 'ku' }, { char: 'け', romaji: 'ke' }, { char: 'こ', romaji: 'ko' },
-    { char: 'さ', romaji: 'sa' }, { char: 'し', romaji: 'shi' }, { char: 'す', romaji: 'su' }, { char: 'せ', romaji: 'se' }, { char: 'そ', romaji: 'so' },
-    { char: 'た', romaji: 'ta' }, { char: 'ち', romaji: 'chi' }, { char: 'つ', romaji: 'tsu' }, { char: 'て', romaji: 'te' }, { char: 'と', romaji: 'to' },
-    { char: 'な', romaji: 'na' }, { char: 'に', romaji: 'ni' }, { char: 'ぬ', romaji: 'nu' }, { char: 'ね', romaji: 'ne' }, { char: 'の', romaji: 'no' },
-    { char: 'は', romaji: 'ha' }, { char: 'ひ', romaji: 'hi' }, { char: 'ふ', romaji: 'fu' }, { char: 'へ', romaji: 'he' }, { char: 'ほ', romaji: 'ho' },
-    { char: 'ま', romaji: 'ma' }, { char: 'み', romaji: 'mi' }, { char: 'む', romaji: 'mu' }, { char: 'め', romaji: 'me' }, { char: 'も', romaji: 'mo' },
-    { char: 'や', romaji: 'ya' }, { char: 'ゆ', romaji: 'yu' }, { char: 'よ', romaji: 'yo' },
-    { char: 'ら', romaji: 'ra' }, { char: 'り', romaji: 'ri' }, { char: 'る', romaji: 'ru' }, { char: 'れ', romaji: 're' }, { char: 'ろ', romaji: 'ro' },
-    { char: 'わ', romaji: 'wa' }, { char: 'を', romaji: 'wo' }, { char: 'ん', romaji: 'n' }
+    { char: 'あ', romaji: 'a', meaning: 'a' },
+    { char: 'い', romaji: 'i', meaning: 'i' },
+    { char: 'う', romaji: 'u', meaning: 'u' },
+    { char: 'え', romaji: 'e', meaning: 'e' },
+    { char: 'お', romaji: 'o', meaning: 'o' },
+    { char: 'か', romaji: 'ka', meaning: 'ka' },
+    { char: 'き', romaji: 'ki', meaning: 'ki' },
+    { char: 'く', romaji: 'ku', meaning: 'ku' },
+    { char: 'け', romaji: 'ke', meaning: 'ke' },
+    { char: 'こ', romaji: 'ko', meaning: 'ko' },
+    { char: 'さ', romaji: 'sa', meaning: 'sa' },
+    { char: 'し', romaji: 'shi', meaning: 'shi' },
+    { char: 'す', romaji: 'su', meaning: 'su' },
+    { char: 'せ', romaji: 'se', meaning: 'se' },
+    { char: 'そ', romaji: 'so', meaning: 'so' },
+    { char: 'た', romaji: 'ta', meaning: 'ta' },
+    { char: 'ち', romaji: 'chi', meaning: 'chi' },
+    { char: 'つ', romaji: 'tsu', meaning: 'tsu' },
+    { char: 'て', romaji: 'te', meaning: 'te' },
+    { char: 'と', romaji: 'to', meaning: 'to' },
+    { char: 'な', romaji: 'na', meaning: 'na' },
+    { char: 'に', romaji: 'ni', meaning: 'ni' },
+    { char: 'ぬ', romaji: 'nu', meaning: 'nu' },
+    { char: 'ね', romaji: 'ne', meaning: 'ne' },
+    { char: 'の', romaji: 'no', meaning: 'no' },
+    { char: 'は', romaji: 'ha', meaning: 'ha' },
+    { char: 'ひ', romaji: 'hi', meaning: 'hi' },
+    { char: 'ふ', romaji: 'fu', meaning: 'fu' },
+    { char: 'へ', romaji: 'he', meaning: 'he' },
+    { char: 'ほ', romaji: 'ho', meaning: 'ho' },
+    { char: 'ま', romaji: 'ma', meaning: 'ma' },
+    { char: 'み', romaji: 'mi', meaning: 'mi' },
+    { char: 'む', romaji: 'mu', meaning: 'mu' },
+    { char: 'め', romaji: 'me', meaning: 'me' },
+    { char: 'も', romaji: 'mo', meaning: 'mo' },
+    { char: 'や', romaji: 'ya', meaning: 'ya' },
+    { char: 'ゆ', romaji: 'yu', meaning: 'yu' },
+    { char: 'よ', romaji: 'yo', meaning: 'yo' },
+    { char: 'ら', romaji: 'ra', meaning: 'ra' },
+    { char: 'り', romaji: 'ri', meaning: 'ri' },
+    { char: 'る', romaji: 'ru', meaning: 'ru' },
+    { char: 'れ', romaji: 're', meaning: 're' },
+    { char: 'ろ', romaji: 'ro', meaning: 'ro' },
+    { char: 'わ', romaji: 'wa', meaning: 'wa' },
+    { char: 'を', romaji: 'wo', meaning: 'wo' },
+    { char: 'ん', romaji: 'n', meaning: 'n' }
 ];
 
 // Katakana data
 const katakanaData = [
-    { char: 'ア', romaji: 'a' }, { char: 'イ', romaji: 'i' }, { char: 'ウ', romaji: 'u' }, { char: 'エ', romaji: 'e' }, { char: 'オ', romaji: 'o' },
-    { char: 'カ', romaji: 'ka' }, { char: 'キ', romaji: 'ki' }, { char: 'ク', romaji: 'ku' }, { char: 'ケ', romaji: 'ke' }, { char: 'コ', romaji: 'ko' },
-    { char: 'サ', romaji: 'sa' }, { char: 'シ', romaji: 'shi' }, { char: 'ス', romaji: 'su' }, { char: 'セ', romaji: 'se' }, { char: 'ソ', romaji: 'so' },
-    { char: 'タ', romaji: 'ta' }, { char: 'チ', romaji: 'chi' }, { char: 'ツ', romaji: 'tsu' }, { char: 'テ', romaji: 'te' }, { char: 'ト', romaji: 'to' },
-    { char: 'ナ', romaji: 'na' }, { char: 'ニ', romaji: 'ni' }, { char: 'ヌ', romaji: 'nu' }, { char: 'ネ', romaji: 'ne' }, { char: 'ノ', romaji: 'no' },
-    { char: 'ハ', romaji: 'ha' }, { char: 'ヒ', romaji: 'hi' }, { char: 'フ', romaji: 'fu' }, { char: 'ヘ', romaji: 'he' }, { char: 'ホ', romaji: 'ho' },
-    { char: 'マ', romaji: 'ma' }, { char: 'ミ', romaji: 'mi' }, { char: 'ム', romaji: 'mu' }, { char: 'メ', romaji: 'me' }, { char: 'モ', romaji: 'mo' },
-    { char: 'ヤ', romaji: 'ya' }, { char: 'ユ', romaji: 'yu' }, { char: 'ヨ', romaji: 'yo' },
-    { char: 'ラ', romaji: 'ra' }, { char: 'リ', romaji: 'ri' }, { char: 'ル', romaji: 'ru' }, { char: 'レ', romaji: 're' }, { char: 'ロ', romaji: 'ro' },
-    { char: 'ワ', romaji: 'wa' }, { char: 'ヲ', romaji: 'wo' }, { char: 'ン', romaji: 'n' }
+    { char: 'ア', romaji: 'a', meaning: 'a' }, { char: 'イ', romaji: 'i', meaning: 'i' }, { char: 'ウ', romaji: 'u', meaning: 'u' }, { char: 'エ', romaji: 'e', meaning: 'e' }, { char: 'オ', romaji: 'o', meaning: 'o' },
+    { char: 'カ', romaji: 'ka', meaning: 'ka' }, { char: 'キ', romaji: 'ki', meaning: 'ki' }, { char: 'ク', romaji: 'ku', meaning: 'ku' }, { char: 'ケ', romaji: 'ke', meaning: 'ke' }, { char: 'コ', romaji: 'ko', meaning: 'ko' },
+    { char: 'サ', romaji: 'sa', meaning: 'sa' }, { char: 'シ', romaji: 'shi', meaning: 'shi' }, { char: 'ス', romaji: 'su', meaning: 'su' }, { char: 'セ', romaji: 'se', meaning: 'se' }, { char: 'ソ', romaji: 'so', meaning: 'so' },
+    { char: 'タ', romaji: 'ta', meaning: 'ta' }, { char: 'チ', romaji: 'chi', meaning: 'chi' }, { char: 'ツ', romaji: 'tsu', meaning: 'tsu' }, { char: 'テ', romaji: 'te', meaning: 'te' }, { char: 'ト', romaji: 'to', meaning: 'to' },
+    { char: 'ナ', romaji: 'na', meaning: 'na' }, { char: 'ニ', romaji: 'ni', meaning: 'ni' }, { char: 'ヌ', romaji: 'nu', meaning: 'nu' }, { char: 'ネ', romaji: 'ne', meaning: 'ne' }, { char: 'ノ', romaji: 'no', meaning: 'no' },
+    { char: 'ハ', romaji: 'ha', meaning: 'ha' }, { char: 'ヒ', romaji: 'hi', meaning: 'hi' }, { char: 'フ', romaji: 'fu', meaning: 'fu' }, { char: 'ヘ', romaji: 'he', meaning: 'he' }, { char: 'ホ', romaji: 'ho', meaning: 'ho' },
+    { char: 'マ', romaji: 'ma', meaning: 'ma' }, { char: 'ミ', romaji: 'mi', meaning: 'mi' }, { char: 'ム', romaji: 'mu', meaning: 'mu' }, { char: 'メ', romaji: 'me', meaning: 'me' }, { char: 'モ', romaji: 'mo', meaning: 'mo' },
+    { char: 'ヤ', romaji: 'ya', meaning: 'ya' }, { char: 'ユ', romaji: 'yu', meaning: 'yu' }, { char: 'ヨ', romaji: 'yo', meaning: 'yo' },
+    { char: 'ラ', romaji: 'ra', meaning: 'ra' }, { char: 'リ', romaji: 'ri', meaning: 'ri' }, { char: 'ル', romaji: 'ru', meaning: 'ru' }, { char: 'レ', romaji: 're', meaning: 're' }, { char: 'ロ', romaji: 'ro', meaning: 'ro' },
+    { char: 'ワ', romaji: 'wa', meaning: 'wa' }, { char: 'ヲ', romaji: 'wo', meaning: 'wo' }, { char: 'ン', romaji: 'n', meaning: 'n' }
 ];
 
 // Kanji data (basic examples)
@@ -171,9 +207,21 @@ const elements = {
     searchInput: document.getElementById('searchInput'),
     categoryFilter: document.getElementById('categoryFilter'),
     totalWordsBadge: document.getElementById('totalWordsBadge'),
-    menuToggle: document.getElementById('menuToggle'),
-    navMenu: document.getElementById('navMenu'),
+    // Modal Elements
+    detailModal: document.getElementById('detailModal'),
+    modalContent: document.getElementById('modalContent'),
+    closeModal: document.getElementById('closeModal'),
+    animateBtn: document.getElementById('animateBtn'),
+    characterTarget: document.getElementById('characterTarget'),
+    // Modal Text Elements
+    modalTitle: document.getElementById('modalTitle'),
+    modalReading: document.getElementById('modalReading'),
+    modalMeaning: document.getElementById('modalMeaning'),
+    modalCategory: document.getElementById('modalCategory'),
+    modalCategoryDot: document.getElementById('modalCategoryDot'),
 };
+
+let writer = null;
 
 // --- Initialization ---
 function init() {
@@ -248,7 +296,7 @@ function renderKotobaSection(searchLower) {
     } else {
         hideEmptyState();
         elements.vocabGrid.innerHTML = filtered.map(item => `
-            <div class="bento-card p-5 group h-full justify-between">
+            <div class="bento-card p-5 group h-full justify-between" onclick="openModal('${item.id}', 'kotoba')">
                 <div>
                     <div class="flex justify-between items-start mb-3">
                         <span class="inline-block px-3 py-1 bg-gray-100 text-gray-500 rounded-lg text-xs font-bold uppercase tracking-wide">${item.category}</span>
@@ -279,7 +327,7 @@ function renderHiraganaSection(searchLower) {
     } else {
         hideEmptyState();
         elements.vocabGrid.innerHTML = filtered.map(item => `
-            <div class="bento-card p-8 group flex flex-col items-center justify-center text-center hover:bg-blue-50 transition-colors">
+            <div class="bento-card p-8 group flex flex-col items-center justify-center text-center hover:bg-blue-50 transition-colors" onclick="openModal('${item.char}', 'hiragana')">
                 <h2 class="text-6xl font-black text-gray-800 font-jp mb-3">${item.char}</h2>
                 <p class="text-lg font-bold text-blue-500 uppercase tracking-wider">${item.romaji}</p>
             </div>
@@ -299,7 +347,7 @@ function renderKatakanaSection(searchLower) {
     } else {
         hideEmptyState();
         elements.vocabGrid.innerHTML = filtered.map(item => `
-            <div class="bento-card p-8 group flex flex-col items-center justify-center text-center hover:bg-purple-50 transition-colors">
+            <div class="bento-card p-8 group flex flex-col items-center justify-center text-center hover:bg-purple-50 transition-colors" onclick="openModal('${item.char}', 'katakana')">
                 <h2 class="text-6xl font-black text-gray-800 font-jp mb-3">${item.char}</h2>
                 <p class="text-lg font-bold text-purple-500 uppercase tracking-wider">${item.romaji}</p>
             </div>
@@ -320,7 +368,7 @@ function renderKanjiSection(searchLower) {
     } else {
         hideEmptyState();
         elements.vocabGrid.innerHTML = filtered.map(item => `
-            <div class="bento-card p-5 group h-full justify-between">
+            <div class="bento-card p-5 group h-full justify-between" onclick="openModal('${item.char}', 'kanji')">
                 <div class="text-center mb-4">
                     <h2 class="text-7xl font-black text-gray-800 font-jp mb-3">${item.char}</h2>
                 </div>
@@ -389,6 +437,214 @@ function switchSection(section) {
     renderApp();
 }
 
+// --- Modal & Animation Logic ---
+window.openModal = function (id, type) {
+    let item;
+    let charsToAnimate = [];
+    let category = '';
+    let reading = '';
+    let meaning = '';
+
+    if (type === 'kotoba') {
+        item = STATE.kotoba.find(i => i.id === id);
+        if (!item) return;
+        charsToAnimate = item.word.split(''); // Animate full word
+        category = item.category;
+        reading = item.reading;
+        meaning = item.meaning;
+        elements.modalTitle.textContent = item.word;
+    } else if (type === 'hiragana') {
+        item = hiraganaData.find(i => i.char === id);
+        if (!item) return;
+        charsToAnimate = [item.char];
+        category = 'Hiragana';
+        reading = item.romaji;
+        meaning = item.meaning;
+        elements.modalTitle.textContent = item.char;
+    } else if (type === 'katakana') {
+        item = katakanaData.find(i => i.char === id);
+        if (!item) return;
+        charsToAnimate = [item.char];
+        category = 'Katakana';
+        reading = item.romaji;
+        meaning = item.meaning;
+        elements.modalTitle.textContent = item.char;
+    } else if (type === 'kanji') {
+        item = kanjiData.find(i => i.char === id);
+        if (!item) return;
+        charsToAnimate = [item.char];
+        category = 'Kanji';
+        reading = item.readings;
+        meaning = item.meaning;
+        elements.modalTitle.textContent = item.char;
+    }
+
+    // Populate Modal
+    elements.modalCategory.textContent = category;
+    elements.modalReading.textContent = reading;
+    elements.modalMeaning.textContent = meaning;
+
+    // Set colors based on category if it's kotoba
+    const dotColor = getCategoryColor(category);
+    elements.modalCategoryDot.className = `w-2 h-2 rounded-full ${dotColor}`;
+
+    // Show Modal
+    elements.detailModal.classList.remove('hidden');
+    // Trigger reflow
+    void elements.detailModal.offsetWidth;
+    elements.detailModal.classList.add('modal-open');
+    elements.modalContent.classList.add('modal-content-open');
+
+    // Init Animation (with delay for transition)
+    setTimeout(() => {
+        if (charsToAnimate.length > 0) {
+            initAnimation(charsToAnimate);
+        }
+    }, 300);
+}
+
+function closeModal() {
+    elements.detailModal.classList.remove('modal-open');
+    elements.modalContent.classList.remove('modal-content-open');
+
+    setTimeout(() => {
+        elements.detailModal.classList.add('hidden');
+        elements.characterTarget.innerHTML = ''; // Clear writer
+        stateWriters = []; // Clear writers array
+    }, 300);
+}
+
+// Global array to store writers/state for replay
+let stateWriters = [];
+let currentChars = [];
+
+function initAnimation(chars) {
+    elements.characterTarget.innerHTML = ''; // Clear previous
+    // Add wrapper box styling with unified character display inside
+    elements.characterTarget.className = 'bg-white rounded-3xl shadow-sm border border-gray-100 flex flex-nowrap items-center justify-center gap-1 p-6';
+
+    stateWriters = []; // Reset state
+    currentChars = chars;
+
+    // Create containers for each char
+    chars.forEach((char, index) => {
+        const div = document.createElement('div');
+        div.id = `char-target-${index}`;
+        // Remove borders and backgrounds for unified look
+        div.className = 'w-[100px] h-[100px] flex items-center justify-center relative overflow-hidden';
+        if (chars.length === 1) {
+            div.className = 'w-[180px] h-[180px] flex items-center justify-center relative overflow-hidden';
+        }
+        elements.characterTarget.appendChild(div);
+
+        // Check type and init accordingly
+        if (isKana(char)) {
+            renderKanaAnimationInDiv(char, div);
+            stateWriters.push({ type: 'kana', target: div, char: char });
+        } else {
+            // Kanji/Unknown -> Hanzi Writer
+            const size = chars.length === 1 ? 180 : 100;
+            const writer = HanziWriter.create(div.id, char, {
+                width: size,
+                height: size,
+                padding: 5,
+                strokeAnimationSpeed: 1,
+                delayBetweenStrokes: 200,
+                strokeColor: '#1c1c1e',
+                drawingWidth: 20,
+                showOutline: true,
+                outlineColor: '#ddd',
+                charDataLoader: function (char, onComplete) {
+                    fetch("https://cdn.jsdelivr.net/npm/hanzi-writer-data-jp@0.3/" + char + ".json")
+                        .then(res => { if (!res.ok) throw new Error(); return res.json(); })
+                        .then(onComplete)
+                        .catch(() => {
+                            fetch("https://cdn.jsdelivr.net/npm/hanzi-writer-data@2.0/" + char + ".json")
+                                .then(res => { if (!res.ok) throw new Error(); return res.json(); })
+                                .then(onComplete)
+                                .catch(() => onComplete(null));
+                        });
+                },
+                onLoadCharDataError: function (err) {
+                    div.innerHTML = `<span class="text-4xl text-gray-400">?</span>`;
+                }
+            });
+            stateWriters.push({ type: 'kanji', instance: writer });
+            writer.animateCharacter();
+        }
+    });
+}
+
+function renderKanaAnimationInDiv(char, container) {
+    const hex = '0' + char.charCodeAt(0).toString(16);
+    const url = `https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/${hex}.svg`;
+
+    container.classList.add('kanjivg-target');
+
+    fetch(url)
+        .then(res => {
+            if (!res.ok) throw new Error('SVG not found');
+            return res.text();
+        })
+        .then(svg => {
+            // Remove XML declaration and DOCTYPE (including multi-line with square brackets)
+            const cleanSvg = svg
+                .replace(/<\?xml[^?]*\?>/g, '')
+                .replace(/<!--[\s\S]*?-->/g, '')  // Remove comments
+                .replace(/<!DOCTYPE[\s\S]*?]>/g, '')  // Remove DOCTYPE including content in square brackets
+                .trim();
+            container.innerHTML = cleanSvg;
+            animateSvgStrokesInContainer(container);
+        })
+        .catch(err => {
+            container.innerHTML = `<span class="text-4xl font-jp text-gray-800">${char}</span>`;
+        });
+}
+
+function animateSvgStrokesInContainer(container) {
+    const paths = container.querySelectorAll('path');
+    let delay = 0;
+    paths.forEach((path) => {
+        const length = path.getTotalLength();
+        path.style.strokeDasharray = length;
+        path.style.strokeDashoffset = length;
+        path.style.animation = 'none'; // Reset
+        path.offsetHeight; // Trigger reflow
+        path.style.animation = `drawStroke 0.5s linear forwards ${delay}s`;
+        delay += 0.6;
+    });
+}
+
+function replayAnimation() {
+    console.log('Replay clicked, stateWriters:', stateWriters);
+
+    // Replay logic for mixed content
+    stateWriters.forEach((item, index) => {
+        console.log(`Replaying item ${index}:`, item);
+
+        if (item.type === 'kanji' && item.instance) {
+            item.instance.animateCharacter();
+        } else if (item.type === 'kana' && item.target) {
+            // Reset SVG animation by re-triggering
+            const svgElement = item.target.querySelector('svg');
+            if (svgElement) {
+                // Clone and replace to reset animation
+                const clone = svgElement.cloneNode(true);
+                item.target.innerHTML = '';
+                item.target.appendChild(clone);
+                animateSvgStrokesInContainer(item.target);
+            }
+        }
+    });
+}
+
+// --- Helper: Check if char is Kana (Hiragana/Katakana) ---
+function isKana(char) {
+    const code = char.charCodeAt(0);
+    return (code >= 0x3040 && code <= 0x309F) || // Hiragana
+        (code >= 0x30A0 && code <= 0x30FF);   // Katakana
+}
+
 // --- Event Listeners ---
 function setupEventListeners() {
     elements.searchInput.addEventListener('input', (e) => {
@@ -423,6 +679,32 @@ function setupEventListeners() {
                 }
             }
         });
+    });
+
+    // Modal listeners
+    if (elements.closeModal) {
+        elements.closeModal.addEventListener('click', closeModal);
+    }
+
+    if (elements.detailModal) {
+        elements.detailModal.addEventListener('click', (e) => {
+            if (e.target === elements.detailModal) {
+                closeModal();
+            }
+        });
+    }
+
+    if (elements.animateBtn) {
+        elements.animateBtn.addEventListener('click', () => {
+            replayAnimation();
+        });
+    }
+
+    // Escape key to close
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !elements.detailModal.classList.contains('hidden')) {
+            closeModal();
+        }
     });
 }
 
