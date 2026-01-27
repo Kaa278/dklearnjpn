@@ -217,6 +217,7 @@ const elements = {
     modalContent: document.getElementById('modalContent'),
     closeModal: document.getElementById('closeModal'),
     animateBtn: document.getElementById('animateBtn'),
+    speakerBtn: document.getElementById('speakerBtn'),
     characterTarget: document.getElementById('characterTarget'),
     // Modal Text Elements
     modalTitle: document.getElementById('modalTitle'),
@@ -227,6 +228,7 @@ const elements = {
 };
 
 let writer = null;
+let currentPronunciation = ''; // Store current text for pronunciation
 
 // --- Initialization ---
 function init() {
@@ -481,6 +483,8 @@ window.openModal = function (id, type) {
         reading = item.reading;
         meaning = item.meaning;
         elements.modalTitle.textContent = item.word;
+        // Store pronunciation (use Japanese characters for better TTS)
+        currentPronunciation = item.reading; // Use reading for pronunciation
     } else if (type === 'hiragana') {
         item = hiraganaData.find(i => i.char === id);
         if (!item) return;
@@ -489,6 +493,8 @@ window.openModal = function (id, type) {
         reading = item.romaji;
         meaning = item.meaning;
         elements.modalTitle.textContent = item.char;
+        // Store pronunciation
+        currentPronunciation = item.char;
     } else if (type === 'katakana') {
         item = katakanaData.find(i => i.char === id);
         if (!item) return;
@@ -497,14 +503,18 @@ window.openModal = function (id, type) {
         reading = item.romaji;
         meaning = item.meaning;
         elements.modalTitle.textContent = item.char;
+        // Store pronunciation
+        currentPronunciation = item.char;
     } else if (type === 'kanji') {
         item = kanjiData.find(i => i.char === id);
         if (!item) return;
         charsToAnimate = [item.char];
         category = 'Kanji';
-        reading = item.readings;
+        reading = item.reading;
         meaning = item.meaning;
         elements.modalTitle.textContent = item.char;
+        // Store pronunciation
+        currentPronunciation = item.char;
     }
 
     // Populate Modal
@@ -666,6 +676,57 @@ function replayAnimation() {
     });
 }
 
+// --- Audio Pronunciation ---
+function playPronunciation() {
+    console.log('playPronunciation called, currentPronunciation:', currentPronunciation);
+
+    if (!currentPronunciation) {
+        console.warn('No pronunciation text available');
+        alert('Tidak ada teks untuk diucapkan');
+        return;
+    }
+
+    // Visual feedback
+    if (elements.speakerBtn) {
+        elements.speakerBtn.classList.add('animate-pulse');
+    }
+
+    // Use Google Translate TTS API (more reliable than Web Speech API)
+    const text = encodeURIComponent(currentPronunciation);
+    const audioUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=ja&client=tw-ob&q=${text}`;
+
+    console.log('Playing audio from URL:', audioUrl);
+
+    const audio = new Audio(audioUrl);
+
+    audio.onplay = () => {
+        console.log('Audio started playing');
+    };
+
+    audio.onended = () => {
+        console.log('Audio ended');
+        if (elements.speakerBtn) {
+            elements.speakerBtn.classList.remove('animate-pulse');
+        }
+    };
+
+    audio.onerror = (event) => {
+        console.error('Audio error:', event);
+        if (elements.speakerBtn) {
+            elements.speakerBtn.classList.remove('animate-pulse');
+        }
+        alert('Error saat memutar audio. Pastikan koneksi internet aktif.');
+    };
+
+    audio.play().catch(error => {
+        console.error('Play error:', error);
+        if (elements.speakerBtn) {
+            elements.speakerBtn.classList.remove('animate-pulse');
+        }
+        alert('Error saat memutar audio: ' + error.message);
+    });
+}
+
 // --- Helper: Check if char is Kana (Hiragana/Katakana) ---
 function isKana(char) {
     const code = char.charCodeAt(0);
@@ -725,6 +786,12 @@ function setupEventListeners() {
     if (elements.animateBtn) {
         elements.animateBtn.addEventListener('click', () => {
             replayAnimation();
+        });
+    }
+
+    if (elements.speakerBtn) {
+        elements.speakerBtn.addEventListener('click', () => {
+            playPronunciation();
         });
     }
 
