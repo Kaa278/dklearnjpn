@@ -207,6 +207,8 @@ const elements = {
     searchInput: document.getElementById('searchInput'),
     categoryFilter: document.getElementById('categoryFilter'),
     totalWordsBadge: document.getElementById('totalWordsBadge'),
+    pageTitle: document.getElementById('pageTitle'),
+    pageSubtitle: document.getElementById('pageSubtitle'),
     // Mobile Menu
     menuToggle: document.getElementById('menuToggle'),
     navMenu: document.getElementById('navMenu'),
@@ -427,6 +429,29 @@ function switchSection(section) {
     // Reset filter dropdown
     if (elements.categoryFilter) {
         elements.categoryFilter.value = 'Semua';
+    }
+
+    // Update page title based on section
+    const titleMap = {
+        'kotoba': 'Kotoba.',
+        'hiragana': 'Hiragana.',
+        'katakana': 'Katakana.',
+        'kanji': 'Kanji.'
+    };
+
+    const subtitleMap = {
+        'kotoba': 'Koleksi kosakatamu.',
+        'hiragana': 'Huruf dasar Jepang.',
+        'katakana': 'Huruf untuk kata asing.',
+        'kanji': 'Karakter Tionghoa.'
+    };
+
+    if (elements.pageTitle && titleMap[section]) {
+        elements.pageTitle.textContent = titleMap[section];
+    }
+
+    if (elements.pageSubtitle && subtitleMap[section]) {
+        elements.pageSubtitle.textContent = subtitleMap[section];
     }
 
     // Update active tab
