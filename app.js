@@ -1,119 +1,137 @@
-// State Management - Kotoba (No Kanji, only hiragana/katakana)
-const defaultKotoba = [
-    // --- Orang (10) ---
-    { id: '1', word: 'わたし', reading: 'Watashi', meaning: 'Saya', category: 'Orang' },
-    { id: '2', word: 'あなた', reading: 'Anata', meaning: 'Kamu', category: 'Orang' },
-    { id: '3', word: 'あのひと', reading: 'Ano hito', meaning: 'Orang itu', category: 'Orang' },
-    { id: '4', word: 'ともだち', reading: 'Tomodachi', meaning: 'Teman', category: 'Orang' },
-    { id: '5', word: 'せんせい', reading: 'Sensei', meaning: 'Guru', category: 'Orang' },
-    { id: '6', word: 'がくせい', reading: 'Gakusei', meaning: 'Murid', category: 'Orang' },
-    { id: '7', word: 'だいがくせい', reading: 'Daigakusei', meaning: 'Mahasiswa', category: 'Orang' },
-    { id: '8', word: 'かいしゃいん', reading: 'Kaishain', meaning: 'Karyawan', category: 'Orang' },
-    { id: '9', word: 'いしゃ', reading: 'Isha', meaning: 'Dokter', category: 'Orang' },
-    { id: '10', word: 'かぞく', reading: 'Kazoku', meaning: 'Keluarga', category: 'Orang' },
+// State Management - Kotoba will be loaded from JSON
+let defaultKotoba = [];
 
-    // --- Tempat (10) ---
-    { id: '11', word: 'いえ', reading: 'Ie', meaning: 'Rumah', category: 'Tempat' },
-    { id: '12', word: 'がっこう', reading: 'Gakkou', meaning: 'Sekolah', category: 'Tempat' },
-    { id: '13', word: 'だいがく', reading: 'Daigaku', meaning: 'Universitas', category: 'Tempat' },
-    { id: '14', word: 'かいしゃ', reading: 'Kaisha', meaning: 'Perusahaan', category: 'Tempat' },
-    { id: '15', word: 'みせ', reading: 'Mise', meaning: 'Toko', category: 'Tempat' },
-    { id: '16', word: 'レストラン', reading: 'Resutoran', meaning: 'Restoran', category: 'Tempat' },
-    { id: '17', word: 'コンビニ', reading: 'Konbini', meaning: 'Minimarket', category: 'Tempat' },
-    { id: '18', word: 'えき', reading: 'Eki', meaning: 'Stasiun', category: 'Tempat' },
-    { id: '19', word: 'トイレ', reading: 'Toire', meaning: 'Toilet', category: 'Tempat' },
-    { id: '20', word: 'にほん', reading: 'Nihon', meaning: 'Jepang', category: 'Tempat' },
+// Load vocabulary from JSON file
+async function loadVocabulary() {
+    try {
+        const response = await fetch('./data/vocabulary.json');
+        if (!response.ok) {
+            throw new Error('Failed to load vocabulary');
+        }
+        const data = await response.json();
+        defaultKotoba = data.kotoba;
+        return defaultKotoba;
+    } catch (error) {
+        console.error('Error loading vocabulary:', error);
+        // Fallback to minimal data if JSON fails
+        defaultKotoba = [
+            // --- Orang (10) ---
+            { id: '1', word: 'わたし', reading: 'Watashi', meaning: 'Saya', category: 'Orang' },
+            { id: '2', word: 'あなた', reading: 'Anata', meaning: 'Kamu', category: 'Orang' },
+            { id: '3', word: 'あのひと', reading: 'Ano hito', meaning: 'Orang itu', category: 'Orang' },
+            { id: '4', word: 'ともだち', reading: 'Tomodachi', meaning: 'Teman', category: 'Orang' },
+            { id: '5', word: 'せんせい', reading: 'Sensei', meaning: 'Guru', category: 'Orang' },
+            { id: '6', word: 'がくせい', reading: 'Gakusei', meaning: 'Murid', category: 'Orang' },
+            { id: '7', word: 'だいがくせい', reading: 'Daigakusei', meaning: 'Mahasiswa', category: 'Orang' },
+            { id: '8', word: 'かいしゃいん', reading: 'Kaishain', meaning: 'Karyawan', category: 'Orang' },
+            { id: '9', word: 'いしゃ', reading: 'Isha', meaning: 'Dokter', category: 'Orang' },
+            { id: '10', word: 'かぞく', reading: 'Kazoku', meaning: 'Keluarga', category: 'Orang' },
 
-    // --- Benda (10) ---
-    { id: '21', word: 'ほん', reading: 'Hon', meaning: 'Buku', category: 'Benda' },
-    { id: '22', word: 'ノート', reading: 'Nooto', meaning: 'Buku catatan', category: 'Benda' },
-    { id: '23', word: 'かばん', reading: 'Kaban', meaning: 'Tas', category: 'Benda' },
-    { id: '24', word: 'ペン', reading: 'Pen', meaning: 'Pulpen', category: 'Benda' },
-    { id: '25', word: 'えんぴつ', reading: 'Enpitsu', meaning: 'Pensil', category: 'Benda' },
-    { id: '26', word: 'いす', reading: 'Isu', meaning: 'Kursi', category: 'Benda' },
-    { id: '27', word: 'つくえ', reading: 'Tsukue', meaning: 'Meja', category: 'Benda' },
-    { id: '28', word: 'でんわ', reading: 'Denwa', meaning: 'Telepon', category: 'Benda' },
-    { id: '29', word: 'テレビ', reading: 'Terebi', meaning: 'TV', category: 'Benda' },
-    { id: '30', word: 'くるま', reading: 'Kuruma', meaning: 'Mobil', category: 'Benda' },
+            // --- Tempat (10) ---
+            { id: '11', word: 'いえ', reading: 'Ie', meaning: 'Rumah', category: 'Tempat' },
+            { id: '12', word: 'がっこう', reading: 'Gakkou', meaning: 'Sekolah', category: 'Tempat' },
+            { id: '13', word: 'だいがく', reading: 'Daigaku', meaning: 'Universitas', category: 'Tempat' },
+            { id: '14', word: 'かいしゃ', reading: 'Kaisha', meaning: 'Perusahaan', category: 'Tempat' },
+            { id: '15', word: 'みせ', reading: 'Mise', meaning: 'Toko', category: 'Tempat' },
+            { id: '16', word: 'レストラン', reading: 'Resutoran', meaning: 'Restoran', category: 'Tempat' },
+            { id: '17', word: 'コンビニ', reading: 'Konbini', meaning: 'Minimarket', category: 'Tempat' },
+            { id: '18', word: 'えき', reading: 'Eki', meaning: 'Stasiun', category: 'Tempat' },
+            { id: '19', word: 'トイレ', reading: 'Toire', meaning: 'Toilet', category: 'Tempat' },
+            { id: '20', word: 'にほん', reading: 'Nihon', meaning: 'Jepang', category: 'Tempat' },
 
-    // --- Makanan & Minuman (10) ---
-    { id: '31', word: 'ごはん', reading: 'Gohan', meaning: 'Nasi', category: 'Makanan / Minuman' },
-    { id: '32', word: 'パン', reading: 'Pan', meaning: 'Roti', category: 'Makanan / Minuman' },
-    { id: '33', word: 'みず', reading: 'Mizu', meaning: 'Air', category: 'Makanan / Minuman' },
-    { id: '34', word: 'おちゃ', reading: 'Ocha', meaning: 'Teh', category: 'Makanan / Minuman' },
-    { id: '35', word: 'コーヒー', reading: 'Koohii', meaning: 'Kopi', category: 'Makanan / Minuman' },
-    { id: '36', word: 'にく', reading: 'Niku', meaning: 'Daging', category: 'Makanan / Minuman' },
-    { id: '37', word: 'さかな', reading: 'Sakana', meaning: 'Ikan', category: 'Makanan / Minuman' },
-    { id: '38', word: 'やさい', reading: 'Yasai', meaning: 'Sayur', category: 'Makanan / Minuman' },
-    { id: '39', word: 'りんご', reading: 'Ringo', meaning: 'Apel', category: 'Makanan / Minuman' },
-    { id: '40', word: 'バナナ', reading: 'Banana', meaning: 'Pisang', category: 'Makanan / Minuman' },
+            // --- Benda (10) ---
+            { id: '21', word: 'ほん', reading: 'Hon', meaning: 'Buku', category: 'Benda' },
+            { id: '22', word: 'ノート', reading: 'Nooto', meaning: 'Buku catatan', category: 'Benda' },
+            { id: '23', word: 'かばん', reading: 'Kaban', meaning: 'Tas', category: 'Benda' },
+            { id: '24', word: 'ペン', reading: 'Pen', meaning: 'Pulpen', category: 'Benda' },
+            { id: '25', word: 'えんぴつ', reading: 'Enpitsu', meaning: 'Pensil', category: 'Benda' },
+            { id: '26', word: 'いす', reading: 'Isu', meaning: 'Kursi', category: 'Benda' },
+            { id: '27', word: 'つくえ', reading: 'Tsukue', meaning: 'Meja', category: 'Benda' },
+            { id: '28', word: 'でんわ', reading: 'Denwa', meaning: 'Telepon', category: 'Benda' },
+            { id: '29', word: 'テレビ', reading: 'Terebi', meaning: 'TV', category: 'Benda' },
+            { id: '30', word: 'くるま', reading: 'Kuruma', meaning: 'Mobil', category: 'Benda' },
 
-    // --- Kata Kerja (15) ---
-    { id: '41', word: 'いきます', reading: 'Ikimasu', meaning: 'Pergi', category: 'Kata Kerja' },
-    { id: '42', word: 'きます', reading: 'Kimasu', meaning: 'Datang', category: 'Kata Kerja' },
-    { id: '43', word: 'かえります', reading: 'Kaerimasu', meaning: 'Pulang', category: 'Kata Kerja' },
-    { id: '44', word: 'たべます', reading: 'Tabemasu', meaning: 'Makan', category: 'Kata Kerja' },
-    { id: '45', word: 'のみます', reading: 'Nomimasu', meaning: 'Minum', category: 'Kata Kerja' },
-    { id: '46', word: 'みます', reading: 'Mimasu', meaning: 'Melihat', category: 'Kata Kerja' },
-    { id: '47', word: 'ききます', reading: 'Kikimasu', meaning: 'Mendengar', category: 'Kata Kerja' },
-    { id: '48', word: 'はなします', reading: 'Hanashimasu', meaning: 'Berbicara', category: 'Kata Kerja' },
-    { id: '49', word: 'よみます', reading: 'Yomimasu', meaning: 'Membaca', category: 'Kata Kerja' },
-    { id: '50', word: 'かきます', reading: 'Kakimasu', meaning: 'Menulis', category: 'Kata Kerja' },
-    { id: '51', word: 'かいます', reading: 'Kaimasu', meaning: 'Membeli', category: 'Kata Kerja' },
-    { id: '52', word: 'します', reading: 'Shimasu', meaning: 'Melakukan', category: 'Kata Kerja' },
-    { id: '53', word: 'べんきょうします', reading: 'Benkyou shimasu', meaning: 'Belajar', category: 'Kata Kerja' },
-    { id: '54', word: 'ねます', reading: 'Nemasu', meaning: 'Tidur', category: 'Kata Kerja' },
-    { id: '55', word: 'おきます', reading: 'Okimasu', meaning: 'Bangun', category: 'Kata Kerja' },
+            // --- Makanan & Minuman (10) ---
+            { id: '31', word: 'ごはん', reading: 'Gohan', meaning: 'Nasi', category: 'Makanan / Minuman' },
+            { id: '32', word: 'パン', reading: 'Pan', meaning: 'Roti', category: 'Makanan / Minuman' },
+            { id: '33', word: 'みず', reading: 'Mizu', meaning: 'Air', category: 'Makanan / Minuman' },
+            { id: '34', word: 'おちゃ', reading: 'Ocha', meaning: 'Teh', category: 'Makanan / Minuman' },
+            { id: '35', word: 'コーヒー', reading: 'Koohii', meaning: 'Kopi', category: 'Makanan / Minuman' },
+            { id: '36', word: 'にく', reading: 'Niku', meaning: 'Daging', category: 'Makanan / Minuman' },
+            { id: '37', word: 'さかな', reading: 'Sakana', meaning: 'Ikan', category: 'Makanan / Minuman' },
+            { id: '38', word: 'やさい', reading: 'Yasai', meaning: 'Sayur', category: 'Makanan / Minuman' },
+            { id: '39', word: 'りんご', reading: 'Ringo', meaning: 'Apel', category: 'Makanan / Minuman' },
+            { id: '40', word: 'バナナ', reading: 'Banana', meaning: 'Pisang', category: 'Makanan / Minuman' },
 
-    // --- Kata Sifat (10) ---
-    { id: '56', word: 'いい', reading: 'Ii', meaning: 'Baik / Bagus', category: 'Kata Sifat' },
-    { id: '57', word: 'わるい', reading: 'Warui', meaning: 'Buruk', category: 'Kata Sifat' },
-    { id: '58', word: 'おおきい', reading: 'Ookii', meaning: 'Besar', category: 'Kata Sifat' },
-    { id: '59', word: 'ちいさい', reading: 'Chiisai', meaning: 'Kecil', category: 'Kata Sifat' },
-    { id: '60', word: 'あつい', reading: 'Atsui', meaning: 'Panas', category: 'Kata Sifat' },
-    { id: '61', word: 'さむい', reading: 'Samui', meaning: 'Dingin', category: 'Kata Sifat' },
-    { id: '62', word: 'たかい', reading: 'Takai', meaning: 'Mahal / Tinggi', category: 'Kata Sifat' },
-    { id: '63', word: 'やすい', reading: 'Yasui', meaning: 'Murah', category: 'Kata Sifat' },
-    { id: '64', word: 'おもしろい', reading: 'Omoshiroi', meaning: 'Menarik', category: 'Kata Sifat' },
-    { id: '65', word: 'つまらない', reading: 'Tsumaranai', meaning: 'Membosankan', category: 'Kata Sifat' },
+            // --- Kata Kerja (15) ---
+            { id: '41', word: 'いきます', reading: 'Ikimasu', meaning: 'Pergi', category: 'Kata Kerja' },
+            { id: '42', word: 'きます', reading: 'Kimasu', meaning: 'Datang', category: 'Kata Kerja' },
+            { id: '43', word: 'かえります', reading: 'Kaerimasu', meaning: 'Pulang', category: 'Kata Kerja' },
+            { id: '44', word: 'たべます', reading: 'Tabemasu', meaning: 'Makan', category: 'Kata Kerja' },
+            { id: '45', word: 'のみます', reading: 'Nomimasu', meaning: 'Minum', category: 'Kata Kerja' },
+            { id: '46', word: 'みます', reading: 'Mimasu', meaning: 'Melihat', category: 'Kata Kerja' },
+            { id: '47', word: 'ききます', reading: 'Kikimasu', meaning: 'Mendengar', category: 'Kata Kerja' },
+            { id: '48', word: 'はなします', reading: 'Hanashimasu', meaning: 'Berbicara', category: 'Kata Kerja' },
+            { id: '49', word: 'よみます', reading: 'Yomimasu', meaning: 'Membaca', category: 'Kata Kerja' },
+            { id: '50', word: 'かきます', reading: 'Kakimasu', meaning: 'Menulis', category: 'Kata Kerja' },
+            { id: '51', word: 'かいます', reading: 'Kaimasu', meaning: 'Membeli', category: 'Kata Kerja' },
+            { id: '52', word: 'します', reading: 'Shimasu', meaning: 'Melakukan', category: 'Kata Kerja' },
+            { id: '53', word: 'べんきょうします', reading: 'Benkyou shimasu', meaning: 'Belajar', category: 'Kata Kerja' },
+            { id: '54', word: 'ねます', reading: 'Nemasu', meaning: 'Tidur', category: 'Kata Kerja' },
+            { id: '55', word: 'おきます', reading: 'Okimasu', meaning: 'Bangun', category: 'Kata Kerja' },
 
-    // --- Kata Tanya (7) ---
-    { id: '66', word: 'だれ', reading: 'Dare', meaning: 'Siapa', category: 'Kata Tanya' },
-    { id: '67', word: 'どれ', reading: 'Dore', meaning: 'Yang mana', category: 'Kata Tanya' },
-    { id: '68', word: 'どこ', reading: 'Doko', meaning: 'Di mana', category: 'Kata Tanya' },
-    { id: '69', word: 'いつ', reading: 'Itsu', meaning: 'Kapan', category: 'Kata Tanya' },
-    { id: '70', word: 'なに', reading: 'Nani', meaning: 'Apa', category: 'Kata Tanya' },
-    { id: '71', word: 'いくつ', reading: 'Ikutsu', meaning: 'Berapa (jumlah)', category: 'Kata Tanya' },
-    { id: '72', word: 'どう', reading: 'Dou', meaning: 'Bagaimana', category: 'Kata Tanya' },
+            // --- Kata Sifat (10) ---
+            { id: '56', word: 'いい', reading: 'Ii', meaning: 'Baik / Bagus', category: 'Kata Sifat' },
+            { id: '57', word: 'わるい', reading: 'Warui', meaning: 'Buruk', category: 'Kata Sifat' },
+            { id: '58', word: 'おおきい', reading: 'Ookii', meaning: 'Besar', category: 'Kata Sifat' },
+            { id: '59', word: 'ちいさい', reading: 'Chiisai', meaning: 'Kecil', category: 'Kata Sifat' },
+            { id: '60', word: 'あつい', reading: 'Atsui', meaning: 'Panas', category: 'Kata Sifat' },
+            { id: '61', word: 'さむい', reading: 'Samui', meaning: 'Dingin', category: 'Kata Sifat' },
+            { id: '62', word: 'たかい', reading: 'Takai', meaning: 'Mahal / Tinggi', category: 'Kata Sifat' },
+            { id: '63', word: 'やすい', reading: 'Yasui', meaning: 'Murah', category: 'Kata Sifat' },
+            { id: '64', word: 'おもしろい', reading: 'Omoshiroi', meaning: 'Menarik', category: 'Kata Sifat' },
+            { id: '65', word: 'つまらない', reading: 'Tsumaranai', meaning: 'Membosankan', category: 'Kata Sifat' },
 
-    // --- Kata Tunjuk (6) ---
-    { id: '73', word: 'これ', reading: 'Kore', meaning: 'Ini', category: 'Kata Tunjuk' },
-    { id: '74', word: 'それ', reading: 'Sore', meaning: 'Itu', category: 'Kata Tunjuk' },
-    { id: '75', word: 'あれ', reading: 'Are', meaning: 'Itu (jauh)', category: 'Kata Tunjuk' },
-    { id: '76', word: 'ここ', reading: 'Koko', meaning: 'Di sini', category: 'Kata Tunjuk' },
-    { id: '77', word: 'そこ', reading: 'Soko', meaning: 'Di situ', category: 'Kata Tunjuk' },
-    { id: '78', word: 'あそこ', reading: 'Asoko', meaning: 'Di sana', category: 'Kata Tunjuk' },
+            // --- Kata Tanya (7) ---
+            { id: '66', word: 'だれ', reading: 'Dare', meaning: 'Siapa', category: 'Kata Tanya' },
+            { id: '67', word: 'どれ', reading: 'Dore', meaning: 'Yang mana', category: 'Kata Tanya' },
+            { id: '68', word: 'どこ', reading: 'Doko', meaning: 'Di mana', category: 'Kata Tanya' },
+            { id: '69', word: 'いつ', reading: 'Itsu', meaning: 'Kapan', category: 'Kata Tanya' },
+            { id: '70', word: 'なに', reading: 'Nani', meaning: 'Apa', category: 'Kata Tanya' },
+            { id: '71', word: 'いくつ', reading: 'Ikutsu', meaning: 'Berapa (jumlah)', category: 'Kata Tanya' },
+            { id: '72', word: 'どう', reading: 'Dou', meaning: 'Bagaimana', category: 'Kata Tanya' },
 
-    // --- Waktu (Remaining from previous list) ---
-    { id: '101', word: 'きょう', reading: 'Kyou', meaning: 'Hari ini', category: 'Waktu' },
-    { id: '102', word: 'あした', reading: 'Ashita', meaning: 'Besok', category: 'Waktu' },
-    { id: '103', word: 'きのう', reading: 'Kinou', meaning: 'Kemarin', category: 'Waktu' },
-    { id: '104', word: 'いま', reading: 'Ima', meaning: 'Sekarang', category: 'Waktu' },
-    { id: '105', word: 'あさ', reading: 'Asa', meaning: 'Pagi', category: 'Waktu' },
-    { id: '106', word: 'ひる', reading: 'Hiru', meaning: 'Siang', category: 'Waktu' },
-    { id: '107', word: 'よる', reading: 'Yoru', meaning: 'Malam', category: 'Waktu' },
-    { id: '108', word: 'まいにち', reading: 'Mainichi', meaning: 'Setiap hari', category: 'Waktu' },
+            // --- Kata Tunjuk (6) ---
+            { id: '73', word: 'これ', reading: 'Kore', meaning: 'Ini', category: 'Kata Tunjuk' },
+            { id: '74', word: 'それ', reading: 'Sore', meaning: 'Itu', category: 'Kata Tunjuk' },
+            { id: '75', word: 'あれ', reading: 'Are', meaning: 'Itu (jauh)', category: 'Kata Tunjuk' },
+            { id: '76', word: 'ここ', reading: 'Koko', meaning: 'Di sini', category: 'Kata Tunjuk' },
+            { id: '77', word: 'そこ', reading: 'Soko', meaning: 'Di situ', category: 'Kata Tunjuk' },
+            { id: '78', word: 'あそこ', reading: 'Asoko', meaning: 'Di sana', category: 'Kata Tunjuk' },
 
-    // --- Ungkapan (Remaining from previous list) ---
-    { id: '301', word: 'ありがとう', reading: 'Arigatou', meaning: 'Terima kasih', category: 'Ungkapan' },
-    { id: '302', word: 'すみません', reading: 'Sumimasen', meaning: 'Maaf / Permisi', category: 'Ungkapan' },
-    { id: '303', word: 'おはよう', reading: 'Ohayou', meaning: 'Selamat Pagi', category: 'Ungkapan' },
-    { id: '304', word: 'こんにちは', reading: 'Konnichiwa', meaning: 'Selamat Siang', category: 'Ungkapan' },
-    { id: '305', word: 'こんばんは', reading: 'Konbanwa', meaning: 'Selamat Malam', category: 'Ungkapan' },
-    { id: '306', word: 'さようなら', reading: 'Sayounara', meaning: 'Selamat tinggal', category: 'Ungkapan' },
-    { id: '307', word: 'いただきます', reading: 'Itadakimasu', meaning: 'Selamat makan', category: 'Ungkapan' },
-    { id: '308', word: 'ごちそうさま', reading: 'Gochisousama', meaning: 'Terima kasih (setelah makan)', category: 'Ungkapan' }
-];
+            // --- Waktu (Remaining from previous list) ---
+            { id: '101', word: 'きょう', reading: 'Kyou', meaning: 'Hari ini', category: 'Waktu' },
+            { id: '102', word: 'あした', reading: 'Ashita', meaning: 'Besok', category: 'Waktu' },
+            { id: '103', word: 'きのう', reading: 'Kinou', meaning: 'Kemarin', category: 'Waktu' },
+            { id: '104', word: 'いま', reading: 'Ima', meaning: 'Sekarang', category: 'Waktu' },
+            { id: '105', word: 'あさ', reading: 'Asa', meaning: 'Pagi', category: 'Waktu' },
+            { id: '106', word: 'ひる', reading: 'Hiru', meaning: 'Siang', category: 'Waktu' },
+            { id: '107', word: 'よる', reading: 'Yoru', meaning: 'Malam', category: 'Waktu' },
+            { id: '108', word: 'まいにち', reading: 'Mainichi', meaning: 'Setiap hari', category: 'Waktu' },
+
+            // --- Ungkapan (Remaining from previous list) ---
+            { id: '301', word: 'ありがとう', reading: 'Arigatou', meaning: 'Terima kasih', category: 'Ungkapan' },
+            { id: '302', word: 'すみません', reading: 'Sumimasen', meaning: 'Maaf / Permisi', category: 'Ungkapan' },
+            { id: '303', word: 'おはよう', reading: 'Ohayou', meaning: 'Selamat Pagi', category: 'Ungkapan' },
+            { id: '304', word: 'こんにちは', reading: 'Konnichiwa', meaning: 'Selamat Siang', category: 'Ungkapan' },
+            { id: '305', word: 'こんばんは', reading: 'Konbanwa', meaning: 'Selamat Malam', category: 'Ungkapan' },
+            { id: '306', word: 'さようなら', reading: 'Sayounara', meaning: 'Selamat tinggal', category: 'Ungkapan' },
+            { id: '307', word: 'いただきます', reading: 'Itadakimasu', meaning: 'Selamat makan', category: 'Ungkapan' },
+            { id: '308', word: 'ごちそうさま', reading: 'Gochisousama', meaning: 'Terima kasih (setelah makan)', category: 'Ungkapan' }
+        ];
+        return defaultKotoba;
+    }
+}
 
 // --- Data ---
 const hiraganaData = [
@@ -231,8 +249,16 @@ let writer = null;
 let currentPronunciation = ''; // Store current text for pronunciation
 
 // --- Initialization ---
-function init() {
-    renderApp();
+async function init() {
+    // Load vocabulary data from JSON
+    await loadVocabulary();
+
+    // Initialize STATE with loaded data if not already present in localStorage
+    if (!localStorage.getItem('kotoba_words')) {
+        STATE.kotoba = defaultKotoba;
+    }
+
+    renderApp(); // Render the app after data is loaded and state is initialized
     setupEventListeners();
 }
 
