@@ -719,19 +719,39 @@ function initAnimation(chars) {
     stateWriters = []; // Reset state
     currentChars = chars;
 
-    // Dynamic sizing based on character count
+    // Check if mobile (screen width < 768px)
+    const isMobile = window.innerWidth < 768;
+
+    // Dynamic sizing based on character count and screen size
     let charSize;
-    if (chars.length === 1) {
-        charSize = 180;
-    } else if (chars.length === 2) {
-        charSize = 120;
-    } else if (chars.length === 3) {
-        charSize = 90;
-    } else if (chars.length === 4) {
-        charSize = 75;
+    if (isMobile) {
+        // Mobile sizing - much smaller for longer words
+        if (chars.length === 1) {
+            charSize = 140;
+        } else if (chars.length === 2) {
+            charSize = 90;
+        } else if (chars.length === 3) {
+            charSize = 65;
+        } else if (chars.length === 4) {
+            charSize = 50;
+        } else {
+            // 5+ characters
+            charSize = 42;
+        }
     } else {
-        // 5+ characters
-        charSize = 60;
+        // Desktop sizing
+        if (chars.length === 1) {
+            charSize = 180;
+        } else if (chars.length === 2) {
+            charSize = 120;
+        } else if (chars.length === 3) {
+            charSize = 90;
+        } else if (chars.length === 4) {
+            charSize = 75;
+        } else {
+            // 5+ characters
+            charSize = 60;
+        }
     }
 
     // Create containers for each char
