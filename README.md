@@ -1,4 +1,4 @@
-# 📚 Kotoba - Japanese Vocabulary Learning App
+# 📚 Kotoba - Japanese Learning App
 
 <div align="center">
 
@@ -6,10 +6,11 @@
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Tailwind](https://img.shields.io/badge/Tailwind-38B2AC?logo=tailwind-css&logoColor=white)
 
-**A beautiful, interactive web application for learning Japanese vocabulary**
+**A beautiful, interactive web application for learning Japanese vocabulary, hiragana, katakana, and kanji**
 
-[Live Demo](#) | [Features](#-features) | [Getting Started](#-getting-started)
+[🌐 Live Demo](https://dklearnjpn.vercel.app/) | [✨ Features](#-features) | [🚀 Getting Started](#-getting-started)
 
 </div>
 
@@ -17,35 +18,52 @@
 
 ## ✨ Features
 
-### 📖 Multiple Learning Sections
-- **Kotoba** - Essential Japanese vocabulary with meanings
-- **Hiragana** - Basic Japanese syllabary
-- **Katakana** - Japanese syllabary for foreign words
-- **Kanji** - Chinese characters with readings
+### 📖 Comprehensive Learning Content
+- **776 Vocabulary Words** - N5-N3 level Japanese vocabulary
+- **130 Kanji Characters** - Essential N5-N4 kanji with multiple readings
+- **Hiragana** - Complete 46-character syllabary with stroke animations
+- **Katakana** - Complete 46-character syllabary with stroke animations
 
-### 🎯 Smart Filtering
-- 🔍 Real-time search across all vocabulary
-- 🏷️ Category-based filtering (Orang, Tempat, Benda, Kata Kerja, Kata Tanya)
-- 📊 Live word count display
+### 🎯 Smart Features
+- 🔍 **Real-time Search** - Instant filtering across all content
+- 🏷️ **Category Filtering** - 15+ categories including:
+  - Kata Kerja (Verbs)
+  - Kata Sifat (Adjectives)
+  - Kata Tanya (Question Words)
+  - Kata Tunjuk (Demonstratives)
+  - Partikel (Particles)
+  - Bunbougu (Stationery)
+  - Makanan (Food)
+  - Orang (People)
+  - Tempat (Places)
+  - And more!
+- 📊 **Live Word Count** - See filtered results in real-time
+- 🎨 **Stroke Order Animation** - Interactive character writing animations
+- 🔊 **Audio Pronunciation** - Text-to-speech for Japanese words
 
-### 📱 Responsive Design
-- 💻 Desktop-optimized grid layout (up to 5 columns)
-- 📲 Mobile-friendly with hamburger menu
-- 🎨 Smooth animations and transitions
-- ✨ Staggered card animations on load
+### 📱 Fully Responsive Design
+- 💻 **Desktop**: Beautiful 5-column bento grid layout
+- 📲 **Mobile**: Optimized 2-column layout with adaptive character sizing
+- 🎯 **Smart Scaling**: Characters automatically resize based on word length
+  - Mobile: 4 chars = 50px, 5+ chars = 42px
+  - Desktop: 4 chars = 75px, 5+ chars = 60px
+- ✨ **Smooth Animations**: Staggered card entrance, hover effects, modal transitions
 
 ### 🎨 Modern UI/UX
 - Clean, minimalist bento grid design
-- Soft shadows and smooth hover effects
-- Color-coded category indicators
+- Soft shadows and glassmorphism effects
+- Color-coded category indicators with dots
+- Beautiful modal detail views
 - Inter font for English, Noto Sans JP for Japanese
+- Dark mode friendly colors
 
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-No installation required! Just a modern web browser.
+- Modern web browser (Chrome, Firefox, Safari, Edge)
+- Internet connection (for CDN resources)
 
 ### Running Locally
 
@@ -55,12 +73,20 @@ git clone https://github.com/Kaa278/dklearnjpn.git
 cd dklearnjpn
 ```
 
-2. **Open in browser**
+2. **Start a local server**
 ```bash
-# Simply open index.html in your browser
-# Or use a local server:
+# Using Python 3
 python -m http.server 8000
-# Then visit http://localhost:8000
+
+# Using Node.js
+npx serve
+
+# Or simply open index.html in your browser
+```
+
+3. **Open in browser**
+```
+http://localhost:8000
 ```
 
 ---
@@ -68,91 +94,133 @@ python -m http.server 8000
 ## 📂 Project Structure
 
 ```
-kotoba1/
-├── index.html          # Main HTML structure
-├── style.css           # Styling and animations
-├── app.js             # Application logic & vocabulary data
-└── README.md          # This file
+kotoba/
+├── index.html              # Main HTML structure
+├── style.css               # Styling and animations
+├── app.js                  # Application logic
+├── data/
+│   └── vocabulary.json     # 776 vocabulary words
+└── README.md              # This file
 ```
 
 ---
 
-## 🎯 Vocabulary Categories
+## 📊 Content Statistics
 
-| Category | Icon | Count | Description |
-|----------|------|-------|-------------|
-| 👥 Orang | Purple | 10 | People & Professions |
-| 🏫 Tempat | Green | 6 | Places & Institutions |
-| 🍞 Benda | Cyan | 6 | Objects & Items |
-| 🏃 Kata Kerja | Red | 6 | Verbs & Actions |
-| ❓ Kata Tanya | Orange | 4 | Question Words |
+### Vocabulary (776 words)
+| Category | Count | Examples |
+|----------|-------|----------|
+| 🏃 Kata Kerja | 150+ | たべます, のみます, いきます |
+| 📝 Kata Sifat | 50+ | おおきい, ちいさい, あたらしい |
+| ❓ Kata Tanya | 11 | だれ, どこ, なに, いつ |
+| 👉 Kata Tunjuk | 12 | これ, それ, あれ, ここ |
+| 🔤 Partikel | 16 | は, が, を, に, で |
+| ✏️ Bunbougu | 17 | えんぴつ, ノート, はさみ |
+| 🍱 Makanan | 30+ | さかな, にく, ごはん |
+| 👥 Orang | 25+ | せんせい, がくせい, ともだち |
+| 🏫 Tempat | 20+ | がっこう, えき, みせ |
+| 🗣️ Ungkapan | 15+ | おはよう, ありがとう, すみません |
+| 🔢 Angka | 13 | いち, に, さん, ひゃく, せん |
+| ⏰ Waktu | 30+ | きょう, あした, げつようび |
 
-**Total: 32+ vocabulary items**
+### Kanji (130 characters)
+- **Numbers**: 一二三四五六七八九十百千万
+- **Time**: 日月火水木金土年時分半今毎
+- **People**: 人父母子男女友先生学校
+- **Places**: 国外中上下前後左右東西南北山川海駅店家室
+- **Actions**: 行来見聞食飲読書話言買売作出入立休会待思知住働
+- **Things**: 本車電話語文字名手足目耳口頭体
+- **Adjectives**: 大小高安新古長短多少早白黒赤青
+- **Common**: 何天気雨雪花犬猫魚肉物者方円
 
 ---
 
 ## 🎨 Design Features
 
-- **Color Palette**: Clean blue (#007aff) accent on light gray background
-- **Typography**: 
-  - Inter for UI elements
-  - Noto Sans JP for Japanese characters
-- **Grid Layout**: Responsive 5-4-3-2-1 column system
-- **Animations**: 
-  - Smooth slide-down on card load
-  - Staggered entry animation
-  - Hamburger menu rotation
-  - Dropdown slide animation
+### Color Palette
+- **Primary**: Blue (#007aff)
+- **Background**: Light gray (#f5f5f7)
+- **Cards**: White with soft shadows
+- **Text**: Dark gray (#1c1c1e)
+
+### Typography
+- **UI Elements**: Inter (Google Fonts)
+- **Japanese**: Noto Sans JP (Google Fonts)
+- **Fallback**: System fonts
+
+### Animations
+- ✨ Staggered card entrance (0.05s delay per card)
+- 🎯 Stroke order animation using HanziWriter & KanjiVG
+- 🔄 Smooth modal transitions
+- 📱 Hamburger menu slide-down
+- 🎨 Hover effects and active states
 
 ---
 
 ## 🖥️ Browser Support
 
-- ✅ Chrome/Edge (Recommended)
-- ✅ Firefox
-- ✅ Safari
-- ✅ Mobile browsers (iOS Safari, Chrome Mobile)
-
----
-
-## 📱 Mobile Features
-
-- **Hamburger Menu**: Clean slide-down navigation
-- **Touch-Optimized**: Large tap targets
-- **Responsive Grid**: Adapts to screen size
-- **Fast Performance**: Lightweight vanilla JavaScript
+| Browser | Support |
+|---------|---------|
+| Chrome/Edge | ✅ Fully Supported |
+| Firefox | ✅ Fully Supported |
+| Safari | ✅ Fully Supported |
+| Mobile Safari | ✅ Optimized |
+| Chrome Mobile | ✅ Optimized |
 
 ---
 
 ## 🔧 Technologies Used
 
 - **HTML5** - Semantic markup
-- **CSS3** - Modern styling with custom properties
-- **Vanilla JavaScript** - No frameworks needed
-- **Tailwind CSS** (CDN) - Utility classes
-- **Font Awesome** - Icons
-- **Google Fonts** - Typography
+- **CSS3** - Modern styling with flexbox/grid
+- **Vanilla JavaScript** - No frameworks, pure performance
+- **Tailwind CSS** (CDN) - Utility-first styling
+- **Font Awesome** - Beautiful icons
+- **Google Fonts** - Inter & Noto Sans JP
+- **HanziWriter** - Kanji stroke animations
+- **KanjiVG** - Kana stroke data
+- **Web Speech API** - Audio pronunciation
 
 ---
 
-## 📝 Data Storage
+## 📝 Data Management
 
-- Vocabulary data stored in `localStorage`
-- Automatic fallback to default dataset
-- No backend required
-- Client-side only
+- **External JSON**: Vocabulary stored in `data/vocabulary.json`
+- **Async Loading**: Non-blocking data fetch
+- **Fallback System**: Minimal dataset if JSON fails
+- **No Backend**: 100% client-side application
+- **LocalStorage**: Optional caching (future feature)
+
+---
+
+## 🎯 Learning Levels
+
+This app covers:
+- **JLPT N5**: Basic vocabulary and kanji
+- **JLPT N4**: Intermediate vocabulary and kanji
+- **JLPT N3**: Some advanced vocabulary
+
+Perfect for beginners to intermediate learners! 🎓
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to:
+Contributions are welcome! Here's how:
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+2. Create feature branch (`git checkout -b feature/NewFeature`)
+3. Commit changes (`git commit -m 'Add NewFeature'`)
+4. Push to branch (`git push origin feature/NewFeature`)
 5. Open a Pull Request
+
+### Ideas for Contribution
+- Add more vocabulary (N3, N2 levels)
+- Add example sentences
+- Add JLPT level tags
+- Improve mobile UX
+- Add quiz/practice mode
+- Add dark mode toggle
 
 ---
 
@@ -168,21 +236,26 @@ This project is open source and available for educational purposes.
 
 - GitHub: [@Kaa278](https://github.com/Kaa278)
 - Repository: [dklearnjpn](https://github.com/Kaa278/dklearnjpn)
+- Live Demo: [dklearnjpn.vercel.app](https://dklearnjpn.vercel.app/)
 
 ---
 
 ## 🙏 Acknowledgments
 
-- Japanese language resources
-- Modern web design inspiration
-- Open source community
+- [HanziWriter](https://hanziwriter.org/) - Kanji stroke animations
+- [KanjiVG](https://kanjivg.tagaini.net/) - Kana stroke data
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS
+- [Font Awesome](https://fontawesome.com/) - Icon library
+- Japanese language learning community
 
 ---
 
 <div align="center">
 
-**Made with ❤️ for Japanese learners**
+**Made with ❤️ for Japanese learners worldwide**
 
 ⭐ Star this repo if you find it helpful!
+
+[🌐 Try it now!](https://dklearnjpn.vercel.app/)
 
 </div>
