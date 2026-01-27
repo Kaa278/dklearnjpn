@@ -4906,6 +4906,412 @@
       "reading": "Yaku ni tachimasu",
       "meaning": "Bermanfaat",
       "category": "Kata Kerja"
+    },
+    {
+      "id": "702",
+      "word": "だれ",
+      "reading": "Dare",
+      "meaning": "Siapa",
+      "category": "Kata Tanya"
+    },
+    {
+      "id": "703",
+      "word": "どれ",
+      "reading": "Dore",
+      "meaning": "Yang mana",
+      "category": "Kata Tanya"
+    },
+    {
+      "id": "704",
+      "word": "どこ",
+      "reading": "Doko",
+      "meaning": "Di mana",
+      "category": "Kata Tanya"
+    },
+    {
+      "id": "705",
+      "word": "いつ",
+      "reading": "Itsu",
+      "meaning": "Kapan",
+      "category": "Kata Tanya"
+    },
+    {
+      "id": "706",
+      "word": "なぜ",
+      "reading": "Naze",
+      "meaning": "Mengapa",
+      "category": "Kata Tanya"
+    },
+    {
+      "id": "707",
+      "word": "どう",
+      "reading": "Dou",
+      "meaning": "Bagaimana",
+      "category": "Kata Tanya"
+    },
+    {
+      "id": "708",
+      "word": "どうして",
+      "reading": "Doushite",
+      "meaning": "Kenapa",
+      "category": "Kata Tanya"
+    },
+    {
+      "id": "709",
+      "word": "いくら",
+      "reading": "Ikura",
+      "meaning": "Berapa (harga)",
+      "category": "Kata Tanya"
+    },
+    {
+      "id": "710",
+      "word": "いくつ",
+      "reading": "Ikutsu",
+      "meaning": "Berapa (jumlah)",
+      "category": "Kata Tanya"
+    },
+    {
+      "id": "711",
+      "word": "どんな",
+      "reading": "Donna",
+      "meaning": "Seperti apa",
+      "category": "Kata Tanya"
+    },
+    {
+      "id": "712",
+      "word": "どちら",
+      "reading": "Dochira",
+      "meaning": "Yang mana (sopan)",
+      "category": "Kata Tanya"
+    },
+    {
+      "id": "713",
+      "word": "これ",
+      "reading": "Kore",
+      "meaning": "Ini",
+      "category": "Kata Tunjuk"
+    },
+    {
+      "id": "714",
+      "word": "それ",
+      "reading": "Sore",
+      "meaning": "Itu",
+      "category": "Kata Tunjuk"
+    },
+    {
+      "id": "715",
+      "word": "あれ",
+      "reading": "Are",
+      "meaning": "Itu (jauh)",
+      "category": "Kata Tunjuk"
+    },
+    {
+      "id": "716",
+      "word": "ここ",
+      "reading": "Koko",
+      "meaning": "Di sini",
+      "category": "Kata Tunjuk"
+    },
+    {
+      "id": "717",
+      "word": "そこ",
+      "reading": "Soko",
+      "meaning": "Di situ",
+      "category": "Kata Tunjuk"
+    },
+    {
+      "id": "718",
+      "word": "あそこ",
+      "reading": "Asoko",
+      "meaning": "Di sana",
+      "category": "Kata Tunjuk"
+    },
+    {
+      "id": "719",
+      "word": "この",
+      "reading": "Kono",
+      "meaning": "Ini (kata sifat)",
+      "category": "Kata Tunjuk"
+    },
+    {
+      "id": "720",
+      "word": "その",
+      "reading": "Sono",
+      "meaning": "Itu (kata sifat)",
+      "category": "Kata Tunjuk"
+    },
+    {
+      "id": "721",
+      "word": "あの",
+      "reading": "Ano",
+      "meaning": "Itu (jauh, kata sifat)",
+      "category": "Kata Tunjuk"
+    },
+    {
+      "id": "722",
+      "word": "こちら",
+      "reading": "Kochira",
+      "meaning": "Sini (sopan)",
+      "category": "Kata Tunjuk"
+    },
+    {
+      "id": "723",
+      "word": "そちら",
+      "reading": "Sochira",
+      "meaning": "Situ (sopan)",
+      "category": "Kata Tunjuk"
+    },
+    {
+      "id": "724",
+      "word": "あちら",
+      "reading": "Achira",
+      "meaning": "Sana (sopan)",
+      "category": "Kata Tunjuk"
+    },
+    {
+      "id": "725",
+      "word": "が",
+      "reading": "Ga",
+      "meaning": "Partikel subjek",
+      "category": "Partikel"
+    },
+    {
+      "id": "726",
+      "word": "を",
+      "reading": "Wo/O",
+      "meaning": "Partikel objek",
+      "category": "Partikel"
+    },
+    {
+      "id": "727",
+      "word": "で",
+      "reading": "De",
+      "meaning": "Partikel (di/dengan)",
+      "category": "Partikel"
+    },
+    {
+      "id": "728",
+      "word": "と",
+      "reading": "To",
+      "meaning": "Partikel (dan/dengan)",
+      "category": "Partikel"
+    },
+    {
+      "id": "729",
+      "word": "や",
+      "reading": "Ya",
+      "meaning": "Partikel (dan, dll)",
+      "category": "Partikel"
+    },
+    {
+      "id": "730",
+      "word": "の",
+      "reading": "No",
+      "meaning": "Partikel kepemilikan",
+      "category": "Partikel"
+    },
+    {
+      "id": "731",
+      "word": "へ",
+      "reading": "E",
+      "meaning": "Partikel arah",
+      "category": "Partikel"
+    },
+    {
+      "id": "732",
+      "word": "から",
+      "reading": "Kara",
+      "meaning": "Dari",
+      "category": "Partikel"
+    },
+    {
+      "id": "733",
+      "word": "まで",
+      "reading": "Made",
+      "meaning": "Sampai",
+      "category": "Partikel"
+    },
+    {
+      "id": "734",
+      "word": "より",
+      "reading": "Yori",
+      "meaning": "Daripada",
+      "category": "Partikel"
+    },
+    {
+      "id": "735",
+      "word": "ね",
+      "reading": "Ne",
+      "meaning": "Partikel penegas",
+      "category": "Partikel"
+    },
+    {
+      "id": "736",
+      "word": "よ",
+      "reading": "Yo",
+      "meaning": "Partikel penegas",
+      "category": "Partikel"
+    },
+    {
+      "id": "737",
+      "word": "か",
+      "reading": "Ka",
+      "meaning": "Partikel tanya",
+      "category": "Partikel"
+    },
+    {
+      "id": "738",
+      "word": "も",
+      "reading": "Mo",
+      "meaning": "Juga",
+      "category": "Partikel"
+    },
+    {
+      "id": "739",
+      "word": "それで",
+      "reading": "Sorede",
+      "meaning": "Jadi",
+      "category": "Kata Sambung"
+    },
+    {
+      "id": "740",
+      "word": "それに",
+      "reading": "Soreni",
+      "meaning": "Selain itu",
+      "category": "Kata Sambung"
+    },
+    {
+      "id": "741",
+      "word": "じゃあ",
+      "reading": "Jaa",
+      "meaning": "Kalau begitu",
+      "category": "Kata Sambung"
+    },
+    {
+      "id": "742",
+      "word": "では",
+      "reading": "Dewa",
+      "meaning": "Kalau begitu (formal)",
+      "category": "Kata Sambung"
+    },
+    {
+      "id": "743",
+      "word": "おやすみなさい",
+      "reading": "Oyasuminasai",
+      "meaning": "Selamat tidur",
+      "category": "Ungkapan"
+    },
+    {
+      "id": "744",
+      "word": "いってきます",
+      "reading": "Ittekimasu",
+      "meaning": "Saya pergi",
+      "category": "Ungkapan"
+    },
+    {
+      "id": "745",
+      "word": "いってらっしゃい",
+      "reading": "Itterasshai",
+      "meaning": "Hati-hati",
+      "category": "Ungkapan"
+    },
+    {
+      "id": "746",
+      "word": "ただいま",
+      "reading": "Tadaima",
+      "meaning": "Saya pulang",
+      "category": "Ungkapan"
+    },
+    {
+      "id": "747",
+      "word": "おかえりなさい",
+      "reading": "Okaerinasai",
+      "meaning": "Selamat datang kembali",
+      "category": "Ungkapan"
+    },
+    {
+      "id": "748",
+      "word": "おめでとう",
+      "reading": "Omedetou",
+      "meaning": "Selamat",
+      "category": "Ungkapan"
+    },
+    {
+      "id": "749",
+      "word": "がんばって",
+      "reading": "Ganbatte",
+      "meaning": "Semangat",
+      "category": "Ungkapan"
+    },
+    {
+      "id": "750",
+      "word": "どうぞ",
+      "reading": "Douzo",
+      "meaning": "Silakan",
+      "category": "Ungkapan"
+    },
+    {
+      "id": "751",
+      "word": "どういたしまして",
+      "reading": "Douitashimashite",
+      "meaning": "Sama-sama",
+      "category": "Ungkapan"
+    },
+    {
+      "id": "752",
+      "word": "しつれいします",
+      "reading": "Shitsurei shimasu",
+      "meaning": "Permisi (formal)",
+      "category": "Ungkapan"
+    },
+    {
+      "id": "753",
+      "word": "はじめまして",
+      "reading": "Hajimemashite",
+      "meaning": "Senang berkenalan",
+      "category": "Ungkapan"
+    },
+    {
+      "id": "754",
+      "word": "よろしくおねがいします",
+      "reading": "Yoroshiku onegaishimasu",
+      "meaning": "Mohon bantuannya",
+      "category": "Ungkapan"
+    },
+    {
+      "id": "755",
+      "word": "おつかれさまでした",
+      "reading": "Otsukaresama deshita",
+      "meaning": "Terima kasih atas kerja kerasnya",
+      "category": "Ungkapan"
+    },
+    {
+      "id": "756",
+      "word": "します",
+      "reading": "Shimasu",
+      "meaning": "Melakukan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "757",
+      "word": "べんきょうします",
+      "reading": "Benkyou shimasu",
+      "meaning": "Belajar",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "758",
+      "word": "ほしい",
+      "reading": "Hoshii",
+      "meaning": "Ingin",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "759",
+      "word": "ほしがる",
+      "reading": "Hoshigaru",
+      "meaning": "Menginginkan",
+      "category": "Kata Kerja"
     }
   ]
 }
