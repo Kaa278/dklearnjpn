@@ -358,6 +358,9 @@ const elements = {
     selectedCategoryLabel: document.getElementById('selectedCategoryLabel'),
     dropdownArrow: document.getElementById('dropdownArrow'),
 
+    // Banner Elements
+    hiraganaQuizBanner: document.getElementById('hiraganaQuizBanner'),
+
     totalWordsBadge: document.getElementById('totalWordsBadge'),
     pageTitle: document.getElementById('pageTitle'),
     pageSubtitle: document.getElementById('pageSubtitle'),
@@ -398,6 +401,7 @@ async function init() {
 }
 
 // --- Rendering ---
+// --- Rendering ---
 function renderApp() {
     renderStats();
     renderVocabGrid();
@@ -408,6 +412,15 @@ function renderApp() {
             elements.customDropdownWrapper.classList.remove('hidden');
         } else {
             elements.customDropdownWrapper.classList.add('hidden');
+        }
+    }
+
+    // Toggle Quiz Banner visibility: only show in Hiragana section
+    if (elements.hiraganaQuizBanner) {
+        if (STATE.currentSection === 'hiragana') {
+            elements.hiraganaQuizBanner.classList.remove('hidden');
+        } else {
+            elements.hiraganaQuizBanner.classList.add('hidden');
         }
     }
 }
@@ -508,6 +521,17 @@ function renderStats() {
 function renderVocabGrid() {
     const searchLower = STATE.search.toLowerCase();
 
+    // Reset to default grid classes first
+    // Default: grid-cols-2 on mobile
+    let gridClass = 'grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6 pb-20';
+
+    // For Hiragana & Katakana: Use 5 columns consistently (matches standard Gojuon chart)
+    if (STATE.currentSection === 'hiragana' || STATE.currentSection === 'katakana') {
+        gridClass = 'grid grid-cols-5 gap-3 md:gap-6 pb-20';
+    }
+
+    elements.vocabGrid.className = gridClass;
+
     if (STATE.currentSection === 'kotoba') {
         renderKotobaSection(searchLower);
     } else if (STATE.currentSection === 'hiragana') {
@@ -573,9 +597,9 @@ function renderHiraganaSection(searchLower) {
     } else {
         hideEmptyState();
         elements.vocabGrid.innerHTML = filtered.map(item => `
-            <div class="bento-card p-8 group flex flex-col items-center justify-center text-center hover:bg-blue-50 transition-colors" onclick="openModal('${item.char}', 'hiragana')">
-                <h2 class="text-6xl font-black text-gray-800 font-jp mb-3">${item.char}</h2>
-                <p class="text-lg font-bold text-blue-500 uppercase tracking-wider">${item.romaji}</p>
+            <div class="bento-card py-6 md:py-10 px-2 group flex flex-col items-center justify-center text-center hover:bg-blue-50 transition-colors cursor-pointer" onclick="openModal('${item.char}', 'hiragana')">
+                <h2 class="text-4xl md:text-6xl font-black text-gray-800 font-jp mb-2 md:mb-3 leading-none">${item.char}</h2>
+                <p class="text-xs md:text-sm font-bold text-blue-500 uppercase tracking-widest">${item.romaji}</p>
             </div>
         `).join('');
     }
@@ -593,9 +617,9 @@ function renderKatakanaSection(searchLower) {
     } else {
         hideEmptyState();
         elements.vocabGrid.innerHTML = filtered.map(item => `
-            <div class="bento-card p-8 group flex flex-col items-center justify-center text-center hover:bg-purple-50 transition-colors" onclick="openModal('${item.char}', 'katakana')">
-                <h2 class="text-6xl font-black text-gray-800 font-jp mb-3">${item.char}</h2>
-                <p class="text-lg font-bold text-purple-500 uppercase tracking-wider">${item.romaji}</p>
+            <div class="bento-card py-6 md:py-10 px-2 group flex flex-col items-center justify-center text-center hover:bg-blue-50 transition-colors cursor-pointer" onclick="openModal('${item.char}', 'katakana')">
+                <h2 class="text-4xl md:text-6xl font-black text-gray-800 font-jp mb-2 md:mb-3 leading-none">${item.char}</h2>
+                <p class="text-xs md:text-sm font-bold text-blue-500 uppercase tracking-widest">${item.romaji}</p>
             </div>
         `).join('');
     }
