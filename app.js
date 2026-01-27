@@ -682,39 +682,25 @@ function playPronunciation() {
 
     if (!currentPronunciation) {
         console.warn('No pronunciation text available');
-        alert('Tidak ada teks untuk diucapkan');
         return;
     }
 
     // Check if Web Speech API is supported
     if (!('speechSynthesis' in window)) {
-        console.error('Speech synthesis not supported in this browser');
+        console.error('Speech synthesis not supported');
         alert('Audio pronunciation tidak didukung di browser ini.');
         return;
     }
 
-    // Visual feedback
-    if (elements.speakerBtn) {
-        elements.speakerBtn.classList.add('animate-pulse');
-    }
+    try {
+        // Visual feedback
+        if (elements.speakerBtn) {
+            elements.speakerBtn.classList.add('animate-pulse');
+        }
 
-    // Function to actually speak
-    const speak = () => {
-        // WORKAROUND for Chromium synthesis-failed bug:
-        // Call resume() before speak() to reset the speech synthesis state
-        window.speechSynthesis.resume();
-
+        // Create utterance with minimal settings
         const utterance = new SpeechSynthesisUtterance(currentPronunciation);
-        utterance.lang = 'ja-JP'; // Japanese language
-        utterance.rate = 0.9;
-        utterance.pitch = 1.0;
-        utterance.volume = 1.0;
-
-        console.log('Creating utterance for:', currentPronunciation);
-
-        utterance.onstart = () => {
-            console.log('Speech started');
-        };
+        utterance.lang = 'ja-JP';
 
         utterance.onend = () => {
             console.log('Speech ended');
@@ -724,51 +710,22 @@ function playPronunciation() {
         };
 
         utterance.onerror = (event) => {
-            console.error('Speech synthesis error:', event.error);
+            console.error('Speech error:', event);
             if (elements.speakerBtn) {
                 elements.speakerBtn.classList.remove('animate-pulse');
             }
-
-            // More helpful error messages
-            if (event.error === 'synthesis-failed') {
-                alert('Gagal memutar audio. Coba refresh halaman dan klik lagi.');
-            } else if (event.error === 'network') {
-                alert('Error jaringan. Pastikan koneksi internet aktif.');
-            } else {
-                alert('Error: ' + event.error);
-            }
         };
 
-        // Try to get Japanese voice
-        const voices = window.speechSynthesis.getVoices();
-        console.log('Available voices:', voices.length);
-        const japaneseVoice = voices.find(voice => voice.lang.startsWith('ja'));
-        if (japaneseVoice) {
-            utterance.voice = japaneseVoice;
-            console.log('Using Japanese voice:', japaneseVoice.name);
-        } else {
-            console.warn('No Japanese voice found, using default');
-        }
-
-        // Speak
+        // Just speak - no fancy workarounds
+        console.log('Speaking:', currentPronunciation);
         window.speechSynthesis.speak(utterance);
-    };
 
-    // Check if voices are loaded
-    const voices = window.speechSynthesis.getVoices();
-
-    if (voices.length > 0) {
-        // Voices already loaded, speak immediately
-        speak();
-    } else {
-        // Voices not loaded yet, wait for them
-        console.log('Waiting for voices to load...');
-        window.speechSynthesis.onvoiceschanged = () => {
-            console.log('Voices loaded!');
-            speak();
-            // Remove the handler after first use
-            window.speechSynthesis.onvoiceschanged = null;
-        };
+    } catch (error) {
+        console.error('Exception:', error);
+        if (elements.speakerBtn) {
+            elements.speakerBtn.classList.remove('animate-pulse');
+        }
+        alert('Error: ' + error.message);
     }
 }
 
