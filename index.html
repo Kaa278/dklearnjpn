@@ -89,18 +89,21 @@
                     </div>
 
                     <!-- Category Filter -->
-                    <select id="categoryFilter"
-                        class="px-2 md:px-3 py-2 md:py-2.5 bento-input font-bold text-xs bg-white cursor-pointer min-w-[120px] md:min-w-[140px]">
-                        <option value="Semua">Semua Kategori</option>
-                        <option value="Orang">🧍 Orang</option>
-                        <option value="Tempat">📍 Tempat</option>
-                        <option value="Kata Kerja">⚡ Kata Kerja</option>
-                        <option value="Kata Sifat">🎨 Kata Sifat</option>
-                        <option value="Kata Tanya">❓ Kata Tanya</option>
-                        <option value="Kata Tunjuk">👉 Kata Tunjuk</option>
-                        <option value="Waktu">⏰ Waktu</option>
-                        <option value="Ungkapan">💬 Ungkapan</option>
-                    </select>
+                    <!-- Custom Category Filter -->
+                    <div class="relative z-30" id="customDropdownWrapper">
+                        <button id="dropdownCategoryBtn"
+                            class="px-3 md:px-4 py-2 md:py-2.5 bg-white rounded-xl shadow-sm border border-gray-100 flex items-center justify-between gap-2 md:gap-3 cursor-pointer hover:bg-gray-50 transition-all min-w-[140px] md:min-w-[160px] text-xs md:text-sm font-bold text-gray-700">
+                            <span id="selectedCategoryLabel" class="truncate">Semua Kategori</span>
+                            <i id="dropdownArrow"
+                                class="fa-solid fa-chevron-down text-xs text-gray-400 transition-transform duration-200"></i>
+                        </button>
+
+                        <!-- Dropdown Menu -->
+                        <div id="dropdownCategoryMenu"
+                            class="hidden absolute top-full right-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden transform origin-top-right transition-all duration-200 max-h-80 overflow-y-auto custom-scrollbar">
+                            <!-- Options will be populated by JS -->
+                        </div>
+                    </div>
                 </div>
             </div>
 

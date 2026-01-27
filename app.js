@@ -347,12 +347,17 @@ const STATE = {
     filterCategory: 'Semua' // New filter state
 };
 
-// DOM Elements
 const elements = {
     vocabGrid: document.getElementById('vocabGrid'),
     emptyState: document.getElementById('emptyState'),
     searchInput: document.getElementById('searchInput'),
-    categoryFilter: document.getElementById('categoryFilter'),
+    // Custom Dropdown Elements
+    customDropdownWrapper: document.getElementById('customDropdownWrapper'),
+    dropdownCategoryBtn: document.getElementById('dropdownCategoryBtn'),
+    dropdownCategoryMenu: document.getElementById('dropdownCategoryMenu'),
+    selectedCategoryLabel: document.getElementById('selectedCategoryLabel'),
+    dropdownArrow: document.getElementById('dropdownArrow'),
+
     totalWordsBadge: document.getElementById('totalWordsBadge'),
     pageTitle: document.getElementById('pageTitle'),
     pageSubtitle: document.getElementById('pageSubtitle'),
@@ -387,6 +392,7 @@ async function init() {
         STATE.kotoba = defaultKotoba;
     }
 
+    initCategoryDropdown(); // Initialize category dropdown options
     renderApp(); // Render the app after data is loaded and state is initialized
     setupEventListeners();
 }
@@ -397,14 +403,92 @@ function renderApp() {
     renderVocabGrid();
 
     // Toggle filter visibility: only show in Kotoba section
-    if (elements.categoryFilter) {
+    if (elements.customDropdownWrapper) {
         if (STATE.currentSection === 'kotoba') {
-            elements.categoryFilter.classList.remove('hidden');
+            elements.customDropdownWrapper.classList.remove('hidden');
         } else {
-            elements.categoryFilter.classList.add('hidden');
+            elements.customDropdownWrapper.classList.add('hidden');
         }
     }
 }
+
+// Custom Dropdown Logic
+function initCategoryDropdown() {
+    if (!elements.dropdownCategoryMenu) return;
+
+    // Get unique categories + predefined ones to ensure order/existence
+    const uniqueCategories = Array.from(new Set(STATE.kotoba.map(item => item.category))).filter(Boolean).sort();
+
+    // Always start with 'Semua Kategori'
+    let optionsHtml = `
+        <div class="px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 cursor-pointer font-medium transition-colors border-b border-gray-100 last:border-0 dropdown-option" data-value="Semua">
+            <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-gray-400"></span>
+                <span>Semua Kategori</span>
+            </div>
+        </div>
+    `;
+
+    uniqueCategories.forEach(cat => {
+        // Map icon based on category (simple logic)
+        let colorClass = getCategoryColor(cat).replace('bg-', 'text-'); // Use text color for icon if needed, or stick to dot
+        let dotColor = getCategoryColor(cat);
+
+        optionsHtml += `
+            <div class="px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 cursor-pointer font-medium transition-colors border-b border-gray-100 last:border-0 dropdown-option" data-value="${cat}">
+                <div class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full ${dotColor}"></span>
+                    <span>${cat}</span>
+                </div>
+            </div>
+        `;
+    });
+
+    elements.dropdownCategoryMenu.innerHTML = optionsHtml;
+
+    // Add click listeners to options
+    document.querySelectorAll('.dropdown-option').forEach(option => {
+        option.addEventListener('click', (e) => {
+            const value = option.dataset.value;
+            selectCategory(value);
+        });
+    });
+}
+
+function selectCategory(category) {
+    STATE.filterCategory = category;
+
+    // Update Label
+    if (elements.selectedCategoryLabel) {
+        elements.selectedCategoryLabel.textContent = category === 'Semua' ? 'Semua Kategori' : category;
+    }
+
+    // Close Dropdown
+    if (elements.dropdownCategoryMenu) {
+        elements.dropdownCategoryMenu.classList.add('hidden');
+    }
+    if (elements.dropdownArrow) {
+        elements.dropdownArrow.classList.remove('rotate-180');
+    }
+
+    renderApp();
+}
+
+function toggleDropdown() {
+    if (elements.dropdownCategoryMenu) {
+        elements.dropdownCategoryMenu.classList.toggle('hidden');
+        const isHidden = elements.dropdownCategoryMenu.classList.contains('hidden');
+
+        if (elements.dropdownArrow) {
+            if (isHidden) {
+                elements.dropdownArrow.classList.remove('rotate-180');
+            } else {
+                elements.dropdownArrow.classList.add('rotate-180');
+            }
+        }
+    }
+}
+
 
 function renderStats() {
     let count = 0;
@@ -584,8 +668,8 @@ function switchSection(section) {
     elements.searchInput.value = '';
 
     // Reset filter dropdown
-    if (elements.categoryFilter) {
-        elements.categoryFilter.value = 'Semua';
+    if (elements.selectedCategoryLabel) {
+        elements.selectedCategoryLabel.textContent = 'Semua Kategori';
     }
 
     // Update page title based on section
@@ -942,12 +1026,25 @@ function setupEventListeners() {
         renderApp(); // Rerender app to update stats as well
     });
 
-    if (elements.categoryFilter) {
-        elements.categoryFilter.addEventListener('change', (e) => {
-            STATE.filterCategory = e.target.value;
-            renderApp();
+    // Custom Dropdown Toggle
+    if (elements.dropdownCategoryBtn) {
+        elements.dropdownCategoryBtn.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent document click from closing immediately
+            toggleDropdown();
         });
     }
+
+    // Close Dropdown on outside click
+    document.addEventListener('click', (e) => {
+        if (elements.dropdownCategoryMenu && !elements.dropdownCategoryMenu.classList.contains('hidden')) {
+            if (elements.customDropdownWrapper && !elements.customDropdownWrapper.contains(e.target)) {
+                elements.dropdownCategoryMenu.classList.add('hidden');
+                if (elements.dropdownArrow) {
+                    elements.dropdownArrow.classList.remove('rotate-180');
+                }
+            }
+        }
+    });
 
     // Mobile menu toggle
     if (elements.menuToggle && elements.navMenu) {
