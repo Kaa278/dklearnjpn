@@ -233,6 +233,9 @@ const elements = {
     vocabularyQuizBanner: document.getElementById('vocabularyQuizBanner'),
     kanjiQuizBanner: document.getElementById('kanjiQuizBanner'),
 
+    // PWA Elements
+    installAppBtn: document.getElementById('installAppBtn'),
+
     totalWordsBadge: document.getElementById('totalWordsBadge'),
     pageTitle: document.getElementById('pageTitle'),
     pageSubtitle: document.getElementById('pageSubtitle'),
@@ -270,6 +273,7 @@ async function init() {
     }
 
     initCategoryDropdown(); // Initialize category dropdown options
+    initPWA(); // Initialize PWA features
     renderApp(); // Render the app after data is loaded and state is initialized
     setupEventListeners();
 }
@@ -1022,6 +1026,60 @@ function setupEventListeners() {
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && !elements.detailModal.classList.contains('hidden')) {
             closeModal();
+        }
+    });
+}
+
+// --- PWA Logic ---
+let deferredPrompt;
+
+function initPWA() {
+    // 1. Register Service Worker
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('./sw.js')
+                .then(registration => {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                })
+                .catch(err => {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+        });
+    }
+
+    // 2. Handle Install Prompt
+    window.addEventListener('beforeinstallprompt', (e) => {
+        // Prevent Chrome 67 and earlier from automatically showing the prompt
+        e.preventDefault();
+        // Stash the event so it can be triggered later.
+        deferredPrompt = e;
+        // Update UI to notify the user they can add to home screen
+        if (elements.installAppBtn) {
+            elements.installAppBtn.classList.remove('hidden');
+
+            elements.installAppBtn.addEventListener('click', (e) => {
+                // Hide the app provided install promotion
+                elements.installAppBtn.classList.add('hidden');
+                // Show the prompt
+                deferredPrompt.prompt();
+                // Wait for the user to respond to the prompt
+                deferredPrompt.userChoice.then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        console.log('User accepted the A2HS prompt');
+                    } else {
+                        console.log('User dismissed the A2HS prompt');
+                    }
+                    deferredPrompt = null;
+                });
+            });
+        }
+    });
+
+    // 3. App Installed Event
+    window.addEventListener('appinstalled', (evt) => {
+        console.log('a2hs installed');
+        if (elements.installAppBtn) {
+            elements.installAppBtn.classList.add('hidden');
         }
     });
 }

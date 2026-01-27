@@ -18,6 +18,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#f0f1f5">
+    <link rel="apple-touch-icon" href="assets/icon-192.png">
+
     <!-- Hanzi Writer -->
     <script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"></script>
 
@@ -104,6 +109,13 @@
                             <!-- Options will be populated by JS -->
                         </div>
                     </div>
+
+                    <!-- PWA Install Button -->
+                    <button id="installAppBtn"
+                        class="hidden px-3 md:px-4 py-2 md:py-2.5 bg-blue-500 hover:bg-blue-600 text-white rounded-xl shadow-sm transition-all font-bold text-xs md:text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-download"></i>
+                        <span class="hidden md:inline">Install</span>
+                    </button>
                 </div>
             </div>
 
