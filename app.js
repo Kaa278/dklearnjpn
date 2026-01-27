@@ -719,32 +719,46 @@ function initAnimation(chars) {
     stateWriters = []; // Reset state
     currentChars = chars;
 
+    // Dynamic sizing based on character count
+    let charSize;
+    if (chars.length === 1) {
+        charSize = 180;
+    } else if (chars.length === 2) {
+        charSize = 120;
+    } else if (chars.length === 3) {
+        charSize = 90;
+    } else if (chars.length === 4) {
+        charSize = 75;
+    } else {
+        // 5+ characters
+        charSize = 60;
+    }
+
     // Create containers for each char
     chars.forEach((char, index) => {
         const div = document.createElement('div');
         div.id = `char-target-${index}`;
-        // Remove borders and backgrounds for unified look
-        div.className = 'w-[100px] h-[100px] flex items-center justify-center relative overflow-hidden';
-        if (chars.length === 1) {
-            div.className = 'w-[180px] h-[180px] flex items-center justify-center relative overflow-hidden';
-        }
+        // Dynamic size based on character count
+        div.className = `flex items-center justify-center relative overflow-hidden`;
+        div.style.width = `${charSize}px`;
+        div.style.height = `${charSize}px`;
+
         elements.characterTarget.appendChild(div);
 
         // Check type and init accordingly
         if (isKana(char)) {
-            renderKanaAnimationInDiv(char, div);
+            renderKanaAnimationInDiv(char, div, charSize);
             stateWriters.push({ type: 'kana', target: div, char: char });
         } else {
             // Kanji/Unknown -> Hanzi Writer
-            const size = chars.length === 1 ? 180 : 100;
             const writer = HanziWriter.create(div.id, char, {
-                width: size,
-                height: size,
+                width: charSize,
+                height: charSize,
                 padding: 5,
                 strokeAnimationSpeed: 1,
                 delayBetweenStrokes: 200,
                 strokeColor: '#1c1c1e',
-                drawingWidth: 20,
+                drawingWidth: charSize > 100 ? 20 : 15,
                 showOutline: true,
                 outlineColor: '#ddd',
                 charDataLoader: function (char, onComplete) {
@@ -768,7 +782,7 @@ function initAnimation(chars) {
     });
 }
 
-function renderKanaAnimationInDiv(char, container) {
+function renderKanaAnimationInDiv(char, container, charSize) {
     const hex = '0' + char.charCodeAt(0).toString(16);
     const url = `https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/${hex}.svg`;
 
@@ -787,10 +801,20 @@ function renderKanaAnimationInDiv(char, container) {
                 .replace(/<!DOCTYPE[\s\S]*?]>/g, '')  // Remove DOCTYPE including content in square brackets
                 .trim();
             container.innerHTML = cleanSvg;
+
+            // Scale SVG to match charSize
+            const svgElement = container.querySelector('svg');
+            if (svgElement) {
+                svgElement.setAttribute('width', charSize);
+                svgElement.setAttribute('height', charSize);
+            }
+
             animateSvgStrokesInContainer(container);
         })
         .catch(err => {
-            container.innerHTML = `<span class="text-4xl font-jp text-gray-800">${char}</span>`;
+            // Fallback: show character with dynamic font size
+            const fontSize = charSize > 100 ? '4xl' : charSize > 70 ? '3xl' : '2xl';
+            container.innerHTML = `<span class="text-${fontSize} font-jp text-gray-800">${char}</span>`;
         });
 }
 
