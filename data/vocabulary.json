@@ -1,302 +1,4911 @@
 {
   "kotoba": [
-    {"id":"1","word":"わたし","reading":"Watashi","meaning":"Saya","category":"Orang"},
-    {"id":"2","word":"あなた","reading":"Anata","meaning":"Kamu","category":"Orang"},
-    {"id":"3","word":"ぼく","reading":"Boku","meaning":"Aku (cowok)","category":"Orang"},
-    {"id":"4","word":"かれ","reading":"Kare","meaning":"Dia laki-laki","category":"Orang"},
-    {"id":"5","word":"かのじょ","reading":"Kanojo","meaning":"Dia perempuan","category":"Orang"},
-    {"id":"6","word":"みんな","reading":"Minna","meaning":"Semua orang","category":"Orang"},
-    {"id":"7","word":"かぞく","reading":"Kazoku","meaning":"Keluarga","category":"Orang"},
-    {"id":"8","word":"ちち","reading":"Chichi","meaning":"Ayah (sendiri)","category":"Orang"},
-    {"id":"9","word":"はは","reading":"Haha","meaning":"Ibu (sendiri)","category":"Orang"},
-    {"id":"10","word":"あに","reading":"Ani","meaning":"Kakak laki (sendiri)","category":"Orang"},
-    {"id":"11","word":"あね","reading":"Ane","meaning":"Kakak perempuan (sendiri)","category":"Orang"},
-    {"id":"12","word":"おとうと","reading":"Otouto","meaning":"Adik laki (sendiri)","category":"Orang"},
-    {"id":"13","word":"いもうと","reading":"Imouto","meaning":"Adik perempuan (sendiri)","category":"Orang"},
-    {"id":"14","word":"こども","reading":"Kodomo","meaning":"Anak","category":"Orang"},
-    {"id":"15","word":"ともだち","reading":"Tomodachi","meaning":"Teman","category":"Orang"},
-    {"id":"16","word":"せんせい","reading":"Sensei","meaning":"Guru","category":"Orang"},
-    {"id":"17","word":"がくせい","reading":"Gakusei","meaning":"Murid","category":"Orang"},
-    {"id":"18","word":"いしゃ","reading":"Isha","meaning":"Dokter","category":"Orang"},
-    {"id":"19","word":"かいしゃいん","reading":"Kaishain","meaning":"Karyawan","category":"Orang"},
-    {"id":"20","word":"いえ","reading":"Ie","meaning":"Rumah","category":"Tempat"},
-    {"id":"21","word":"へや","reading":"Heya","meaning":"Kamar","category":"Tempat"},
-    {"id":"22","word":"だいどころ","reading":"Daidokoro","meaning":"Dapur","category":"Tempat"},
-    {"id":"23","word":"トイレ","reading":"Toire","meaning":"Toilet","category":"Tempat"},
-    {"id":"24","word":"にわ","reading":"Niwa","meaning":"Halaman","category":"Tempat"},
-    {"id":"25","word":"がっこう","reading":"Gakkou","meaning":"Sekolah","category":"Tempat"},
-    {"id":"26","word":"かいしゃ","reading":"Kaisha","meaning":"Perusahaan","category":"Tempat"},
-    {"id":"27","word":"びょういん","reading":"Byouin","meaning":"Rumah sakit","category":"Tempat"},
-    {"id":"28","word":"ぎんこう","reading":"Ginkou","meaning":"Bank","category":"Tempat"},
-    {"id":"29","word":"えき","reading":"Eki","meaning":"Stasiun","category":"Tempat"},
-    {"id":"30","word":"くうこう","reading":"Kuukou","meaning":"Bandara","category":"Tempat"},
-    {"id":"31","word":"こうえん","reading":"Kouen","meaning":"Taman","category":"Tempat"},
-    {"id":"32","word":"レストラン","reading":"Resutoran","meaning":"Restoran","category":"Tempat"},
-    {"id":"33","word":"ホテル","reading":"Hoteru","meaning":"Hotel","category":"Tempat"},
-    {"id":"34","word":"つくえ","reading":"Tsukue","meaning":"Meja","category":"Benda"},
-    {"id":"35","word":"いす","reading":"Isu","meaning":"Kursi","category":"Benda"},
-    {"id":"36","word":"かぎ","reading":"Kagi","meaning":"Kunci","category":"Benda"},
-    {"id":"37","word":"かばん","reading":"Kaban","meaning":"Tas","category":"Benda"},
-    {"id":"38","word":"さいふ","reading":"Saifu","meaning":"Dompet","category":"Benda"},
-    {"id":"39","word":"かさ","reading":"Kasa","meaning":"Payung","category":"Benda"},
-    {"id":"40","word":"くつ","reading":"Kutsu","meaning":"Sepatu","category":"Benda"},
-    {"id":"41","word":"ぼうし","reading":"Boushi","meaning":"Topi","category":"Benda"},
-    {"id":"42","word":"めがね","reading":"Megane","meaning":"Kacamata","category":"Benda"},
-    {"id":"43","word":"ふく","reading":"Fuku","meaning":"Baju","category":"Benda"},
-    {"id":"44","word":"ケータイ","reading":"Keetai","meaning":"HP","category":"Benda"},
-    {"id":"45","word":"パソコン","reading":"Pasokon","meaning":"Laptop","category":"Benda"},
-    {"id":"46","word":"テレビ","reading":"Terebi","meaning":"TV","category":"Benda"},
-    {"id":"47","word":"れいぞうこ","reading":"Reizouko","meaning":"Kulkas","category":"Benda"},
-    {"id":"48","word":"くるま","reading":"Kuruma","meaning":"Mobil","category":"Benda"},
-    {"id":"49","word":"じてんしゃ","reading":"Jitensha","meaning":"Sepeda","category":"Benda"},
-    {"id":"50","word":"でんしゃ","reading":"Densha","meaning":"Kereta","category":"Benda"},
-    {"id":"51","word":"バス","reading":"Basu","meaning":"Bus","category":"Benda"},
-    {"id":"52","word":"ひこうき","reading":"Hikouki","meaning":"Pesawat","category":"Benda"},
-    {"id":"53","word":"ほん","reading":"Hon","meaning":"Buku","category":"Benda"},
-    {"id":"54","word":"しゃしん","reading":"Shashin","meaning":"Foto","category":"Benda"},
-    {"id":"55","word":"てがみ","reading":"Tegami","meaning":"Surat","category":"Benda"},
-    {"id":"56","word":"おかね","reading":"Okane","meaning":"Uang","category":"Benda"},
-    {"id":"57","word":"ごはん","reading":"Gohan","meaning":"Nasi","category":"Makanan"},
-    {"id":"58","word":"パン","reading":"Pan","meaning":"Roti","category":"Makanan"},
-    {"id":"59","word":"にく","reading":"Niku","meaning":"Daging","category":"Makanan"},
-    {"id":"60","word":"さかな","reading":"Sakana","meaning":"Ikan","category":"Makanan"},
-    {"id":"61","word":"たまご","reading":"Tamago","meaning":"Telur","category":"Makanan"},
-    {"id":"62","word":"やさい","reading":"Yasai","meaning":"Sayuran","category":"Makanan"},
-    {"id":"63","word":"くだもの","reading":"Kudamono","meaning":"Buah-buahan","category":"Makanan"},
-    {"id":"64","word":"みず","reading":"Mizu","meaning":"Air","category":"Makanan"},
-    {"id":"65","word":"おちゃ","reading":"Ocha","meaning":"Teh","category":"Makanan"},
-    {"id":"66","word":"コーヒー","reading":"Koohii","meaning":"Kopi","category":"Makanan"},
-    {"id":"67","word":"ぎゅうにゅう","reading":"Gyuunyuu","meaning":"Susu","category":"Makanan"},
-    {"id":"68","word":"さとう","reading":"Satou","meaning":"Gula","category":"Makanan"},
-    {"id":"69","word":"しお","reading":"Shio","meaning":"Garam","category":"Makanan"},
-    {"id":"70","word":"しょうゆ","reading":"Shouyu","meaning":"Kecap asin","category":"Makanan"},
-    {"id":"71","word":"いきます","reading":"Ikimasu","meaning":"Pergi","category":"Kata Kerja"},
-    {"id":"72","word":"きます","reading":"Kimasu","meaning":"Datang","category":"Kata Kerja"},
-    {"id":"73","word":"かえります","reading":"Kaerimasu","meaning":"Pulang","category":"Kata Kerja"},
-    {"id":"74","word":"たべます","reading":"Tabemasu","meaning":"Makan","category":"Kata Kerja"},
-    {"id":"75","word":"のみます","reading":"Nomimasu","meaning":"Minum","category":"Kata Kerja"},
-    {"id":"76","word":"みます","reading":"Mimasu","meaning":"Melihat","category":"Kata Kerja"},
-    {"id":"77","word":"ききます","reading":"Kikimasu","meaning":"Mendengar","category":"Kata Kerja"},
-    {"id":"78","word":"はなします","reading":"Hanashimasu","meaning":"Berbicara","category":"Kata Kerja"},
-    {"id":"79","word":"よみます","reading":"Yomimasu","meaning":"Membaca","category":"Kata Kerja"},
-    {"id":"80","word":"かきます","reading":"Kakimasu","meaning":"Menulis","category":"Kata Kerja"},
-    {"id":"81","word":"かいます","reading":"Kaimasu","meaning":"Membeli","category":"Kata Kerja"},
-    {"id":"82","word":"うります","reading":"Urimasu","meaning":"Menjual","category":"Kata Kerja"},
-    {"id":"83","word":"まちます","reading":"Machimasu","meaning":"Menunggu","category":"Kata Kerja"},
-    {"id":"84","word":"あいます","reading":"Aimasu","meaning":"Bertemu","category":"Kata Kerja"},
-    {"id":"85","word":"おきます","reading":"Okimasu","meaning":"Bangun","category":"Kata Kerja"},
-    {"id":"86","word":"ねます","reading":"Nemasu","meaning":"Tidur","category":"Kata Kerja"},
-    {"id":"87","word":"あそびます","reading":"Asobimasu","meaning":"Bermain","category":"Kata Kerja"},
-    {"id":"88","word":"およぎます","reading":"Oyogimasu","meaning":"Berenang","category":"Kata Kerja"},
-    {"id":"89","word":"はたらきます","reading":"Hatarakimasu","meaning":"Bekerja","category":"Kata Kerja"},
-    {"id":"90","word":"やすみます","reading":"Yasumimasu","meaning":"Istirahat","category":"Kata Kerja"},
-    {"id":"91","word":"わかります","reading":"Wakarimasu","meaning":"Mengerti","category":"Kata Kerja"},
-    {"id":"92","word":"しります","reading":"Shirimasu","meaning":"Tahu","category":"Kata Kerja"},
-    {"id":"93","word":"できます","reading":"Dekimasu","meaning":"Bisa","category":"Kata Kerja"},
-    {"id":"94","word":"あります","reading":"Arimasu","meaning":"Ada (benda)","category":"Kata Kerja"},
-    {"id":"95","word":"います","reading":"Imasu","meaning":"Ada (makhluk hidup)","category":"Kata Kerja"},
-    {"id":"96","word":"あげます","reading":"Agemasu","meaning":"Memberi","category":"Kata Kerja"},
-    {"id":"97","word":"もらいます","reading":"Moraimasu","meaning":"Menerima","category":"Kata Kerja"},
-    {"id":"98","word":"つかいます","reading":"Tsukaimasu","meaning":"Menggunakan","category":"Kata Kerja"},
-    {"id":"99","word":"つくります","reading":"Tsukurimasu","meaning":"Membuat","category":"Kata Kerja"},
-    {"id":"100","word":"おしえます","reading":"Oshiemasu","meaning":"Mengajar","category":"Kata Kerja"},
-    {"id":"101","word":"なります","reading":"Narimasu","meaning":"Menjadi","category":"Kata Kerja"},
-    {"id":"102","word":"とります","reading":"Torimasu","meaning":"Mengambil","category":"Kata Kerja"},
-    {"id":"103","word":"のります","reading":"Norimasu","meaning":"Naik (kendaraan)","category":"Kata Kerja"},
-    {"id":"104","word":"おります","reading":"Orimasu","meaning":"Turun","category":"Kata Kerja"},
-    {"id":"105","word":"はいります","reading":"Hairimasu","meaning":"Masuk","category":"Kata Kerja"},
-    {"id":"106","word":"でます","reading":"Demasu","meaning":"Keluar","category":"Kata Kerja"},
-    {"id":"107","word":"あけます","reading":"Akemasu","meaning":"Membuka","category":"Kata Kerja"},
-    {"id":"108","word":"しめます","reading":"Shimemasu","meaning":"Menutup","category":"Kata Kerja"},
-    {"id":"109","word":"つけます","reading":"Tsukemasu","meaning":"Menyalakan","category":"Kata Kerja"},
-    {"id":"110","word":"けします","reading":"Keshimasu","meaning":"Mematikan","category":"Kata Kerja"},
-    {"id":"111","word":"あらいます","reading":"Araimasu","meaning":"Mencuci","category":"Kata Kerja"},
-    {"id":"112","word":"かんがえます","reading":"Kangaemasu","meaning":"Berpikir","category":"Kata Kerja"},
-    {"id":"113","word":"おぼえます","reading":"Oboemasu","meaning":"Mengingat","category":"Kata Kerja"},
-    {"id":"114","word":"わすれます","reading":"Wasuremasu","meaning":"Lupa","category":"Kata Kerja"},
-    {"id":"115","word":"いそぎます","reading":"Isogimasu","meaning":"Bergegas","category":"Kata Kerja"},
-    {"id":"116","word":"よびます","reading":"Yobimasu","meaning":"Memanggil","category":"Kata Kerja"},
-    {"id":"117","word":"しらべます","reading":"Shirabemasu","meaning":"Memeriksa","category":"Kata Kerja"},
-    {"id":"118","word":"あつめます","reading":"Atsumemasu","meaning":"Mengumpulkan","category":"Kata Kerja"},
-    {"id":"119","word":"すてます","reading":"Sutemasu","meaning":"Membuang","category":"Kata Kerja"},
-    {"id":"120","word":"きめます","reading":"Kimemasu","meaning":"Memutuskan","category":"Kata Kerja"},
-    {"id":"121","word":"かります","reading":"Karimasu","meaning":"Meminjam","category":"Kata Kerja"},
-    {"id":"122","word":"かします","reading":"Kashimasu","meaning":"Meminjamkan","category":"Kata Kerja"},
-    {"id":"123","word":"かえします","reading":"Kaeshimasu","meaning":"Mengembalikan","category":"Kata Kerja"},
-    {"id":"124","word":"おくります","reading":"Okurimasu","meaning":"Mengirim","category":"Kata Kerja"},
-    {"id":"125","word":"おこります","reading":"Okorimasu","meaning":"Marah","category":"Kata Kerja"},
-    {"id":"126","word":"こわします","reading":"Kowashimasu","meaning":"Merusak","category":"Kata Kerja"},
-    {"id":"127","word":"なおします","reading":"Naoshimasu","meaning":"Memperbaiki","category":"Kata Kerja"},
-    {"id":"128","word":"おちます","reading":"Ochimasu","meaning":"Jatuh","category":"Kata Kerja"},
-    {"id":"129","word":"とまります","reading":"Tomarimasu","meaning":"Berhenti","category":"Kata Kerja"},
-    {"id":"130","word":"かちます","reading":"Kachimasu","meaning":"Menang","category":"Kata Kerja"},
-    {"id":"131","word":"まけます","reading":"Makemasu","meaning":"Kalah","category":"Kata Kerja"},
-    {"id":"132","word":"つづきます","reading":"Tsuzukimasu","meaning":"Berlanjut","category":"Kata Kerja"},
-    {"id":"133","word":"つかれます","reading":"Tsukaremasu","meaning":"Lelah","category":"Kata Kerja"},
-    {"id":"134","word":"おおきい","reading":"Ookii","meaning":"Besar","category":"Kata Sifat"},
-    {"id":"135","word":"ちいさい","reading":"Chiisai","meaning":"Kecil","category":"Kata Sifat"},
-    {"id":"136","word":"あたらしい","reading":"Atarashii","meaning":"Baru","category":"Kata Sifat"},
-    {"id":"137","word":"ふるい","reading":"Furui","meaning":"Lama","category":"Kata Sifat"},
-    {"id":"138","word":"いい","reading":"Ii","meaning":"Bagus","category":"Kata Sifat"},
-    {"id":"139","word":"わるい","reading":"Warui","meaning":"Buruk","category":"Kata Sifat"},
-    {"id":"140","word":"あつい","reading":"Atsui","meaning":"Panas","category":"Kata Sifat"},
-    {"id":"141","word":"さむい","reading":"Samui","meaning":"Dingin (cuaca)","category":"Kata Sifat"},
-    {"id":"142","word":"つめたい","reading":"Tsumetai","meaning":"Dingin (benda)","category":"Kata Sifat"},
-    {"id":"143","word":"たかい","reading":"Takai","meaning":"Tinggi/Mahal","category":"Kata Sifat"},
-    {"id":"144","word":"やすい","reading":"Yasui","meaning":"Murah","category":"Kata Sifat"},
-    {"id":"145","word":"ひくい","reading":"Hikui","meaning":"Rendah","category":"Kata Sifat"},
-    {"id":"146","word":"ひろい","reading":"Hiroi","meaning":"Luas","category":"Kata Sifat"},
-    {"id":"147","word":"せまい","reading":"Semai","meaning":"Sempit","category":"Kata Sifat"},
-    {"id":"148","word":"ちかい","reading":"Chikai","meaning":"Dekat","category":"Kata Sifat"},
-    {"id":"149","word":"とおい","reading":"Tooi","meaning":"Jauh","category":"Kata Sifat"},
-    {"id":"150","word":"おもしろい","reading":"Omoshiroi","meaning":"Menarik","category":"Kata Sifat"},
-    {"id":"151","word":"つまらない","reading":"Tsumaranai","meaning":"Membosankan","category":"Kata Sifat"},
-    {"id":"152","word":"おいしい","reading":"Oishii","meaning":"Enak","category":"Kata Sifat"},
-    {"id":"153","word":"まずい","reading":"Mazui","meaning":"Tidak enak","category":"Kata Sifat"},
-    {"id":"154","word":"あまい","reading":"Amai","meaning":"Manis","category":"Kata Sifat"},
-    {"id":"155","word":"からい","reading":"Karai","meaning":"Pedas","category":"Kata Sifat"},
-    {"id":"156","word":"いそがしい","reading":"Isogashii","meaning":"Sibuk","category":"Kata Sifat"},
-    {"id":"157","word":"たのしい","reading":"Tanoshii","meaning":"Menyenangkan","category":"Kata Sifat"},
-    {"id":"158","word":"かなしい","reading":"Kanashii","meaning":"Sedih","category":"Kata Sifat"},
-    {"id":"159","word":"さびしい","reading":"Sabishii","meaning":"Kesepian","category":"Kata Sifat"},
-    {"id":"160","word":"うれしい","reading":"Ureshii","meaning":"Senang","category":"Kata Sifat"},
-    {"id":"161","word":"はずかしい","reading":"Hazukashii","meaning":"Malu","category":"Kata Sifat"},
-    {"id":"162","word":"いたい","reading":"Itai","meaning":"Sakit","category":"Kata Sifat"},
-    {"id":"163","word":"ねむい","reading":"Nemui","meaning":"Mengantuk","category":"Kata Sifat"},
-    {"id":"164","word":"わかい","reading":"Wakai","meaning":"Muda","category":"Kata Sifat"},
-    {"id":"165","word":"やさしい","reading":"Yasashii","meaning":"Baik hati","category":"Kata Sifat"},
-    {"id":"166","word":"むずかしい","reading":"Muzukashii","meaning":"Sulit","category":"Kata Sifat"},
-    {"id":"167","word":"あかるい","reading":"Akarui","meaning":"Terang","category":"Kata Sifat"},
-    {"id":"168","word":"くらい","reading":"Kurai","meaning":"Gelap","category":"Kata Sifat"},
-    {"id":"169","word":"すごい","reading":"Sugoi","meaning":"Hebat","category":"Kata Sifat"},
-    {"id":"170","word":"やわらかい","reading":"Yawarakai","meaning":"Lembut","category":"Kata Sifat"},
-    {"id":"171","word":"きれい","reading":"Kirei","meaning":"Cantik/Bersih","category":"Kata Sifat"},
-    {"id":"172","word":"しずか","reading":"Shizuka","meaning":"Tenang","category":"Kata Sifat"},
-    {"id":"173","word":"にぎやか","reading":"Nigiyaka","meaning":"Ramai","category":"Kata Sifat"},
-    {"id":"174","word":"ゆうめい","reading":"Yuumei","meaning":"Terkenal","category":"Kata Sifat"},
-    {"id":"175","word":"しんせつ","reading":"Shinsetsu","meaning":"Ramah","category":"Kata Sifat"},
-    {"id":"176","word":"げんき","reading":"Genki","meaning":"Sehat","category":"Kata Sifat"},
-    {"id":"177","word":"ひま","reading":"Hima","meaning":"Senggang","category":"Kata Sifat"},
-    {"id":"178","word":"べんり","reading":"Benri","meaning":"Praktis","category":"Kata Sifat"},
-    {"id":"179","word":"すき","reading":"Suki","meaning":"Suka","category":"Kata Sifat"},
-    {"id":"180","word":"きらい","reading":"Kirai","meaning":"Benci","category":"Kata Sifat"},
-    {"id":"181","word":"じょうず","reading":"Jouzu","meaning":"Pandai","category":"Kata Sifat"},
-    {"id":"182","word":"へた","reading":"Heta","meaning":"Tidak pandai","category":"Kata Sifat"},
-    {"id":"183","word":"かんたん","reading":"Kantan","meaning":"Mudah","category":"Kata Sifat"},
-    {"id":"184","word":"たいせつ","reading":"Taisetsu","meaning":"Penting","category":"Kata Sifat"},
-    {"id":"185","word":"だいじょうぶ","reading":"Daijoubu","meaning":"Tidak apa-apa","category":"Kata Sifat"},
-    {"id":"186","word":"らく","reading":"Raku","meaning":"Nyaman","category":"Kata Sifat"},
-    {"id":"187","word":"まじめ","reading":"Majime","meaning":"Rajin","category":"Kata Sifat"},
-    {"id":"188","word":"しょうじき","reading":"Shoujiki","meaning":"Jujur","category":"Kata Sifat"},
-    {"id":"189","word":"きけん","reading":"Kiken","meaning":"Bahaya","category":"Kata Sifat"},
-    {"id":"190","word":"あんぜん","reading":"Anzen","meaning":"Aman","category":"Kata Sifat"},
-    {"id":"191","word":"じゆう","reading":"Jiyuu","meaning":"Bebas","category":"Kata Sifat"},
-    {"id":"192","word":"ざんねん","reading":"Zannen","meaning":"Sayang sekali","category":"Kata Sifat"},
-    {"id":"193","word":"きょう","reading":"Kyou","meaning":"Hari ini","category":"Waktu"},
-    {"id":"194","word":"あした","reading":"Ashita","meaning":"Besok","category":"Waktu"},
-    {"id":"195","word":"きのう","reading":"Kinou","meaning":"Kemarin","category":"Waktu"},
-    {"id":"196","word":"あさって","reading":"Asatte","meaning":"Lusa","category":"Waktu"},
-    {"id":"197","word":"おととい","reading":"Ototoi","meaning":"Kemarin lusa","category":"Waktu"},
-    {"id":"198","word":"まいにち","reading":"Mainichi","meaning":"Setiap hari","category":"Waktu"},
-    {"id":"199","word":"まいしゅう","reading":"Maishuu","meaning":"Setiap minggu","category":"Waktu"},
-    {"id":"200","word":"まいつき","reading":"Maitsuki","meaning":"Setiap bulan","category":"Waktu"},
-    {"id":"201","word":"あさ","reading":"Asa","meaning":"Pagi","category":"Waktu"},
-    {"id":"202","word":"ひる","reading":"Hiru","meaning":"Siang","category":"Waktu"},
-    {"id":"203","word":"よる","reading":"Yoru","meaning":"Malam","category":"Waktu"},
-    {"id":"204","word":"ゆうがた","reading":"Yuugata","meaning":"Sore","category":"Waktu"},
-    {"id":"205","word":"けさ","reading":"Kesa","meaning":"Tadi pagi","category":"Waktu"},
-    {"id":"206","word":"こんばん","reading":"Konban","meaning":"Malam ini","category":"Waktu"},
-    {"id":"207","word":"こんしゅう","reading":"Konshuu","meaning":"Minggu ini","category":"Waktu"},
-    {"id":"208","word":"らいしゅう","reading":"Raishuu","meaning":"Minggu depan","category":"Waktu"},
-    {"id":"209","word":"せんしゅう","reading":"Senshuu","meaning":"Minggu lalu","category":"Waktu"},
-    {"id":"210","word":"こんげつ","reading":"Kongetsu","meaning":"Bulan ini","category":"Waktu"},
-    {"id":"211","word":"らいげつ","reading":"Raigetsu","meaning":"Bulan depan","category":"Waktu"},
-    {"id":"212","word":"せんげつ","reading":"Sengetsu","meaning":"Bulan lalu","category":"Waktu"},
-    {"id":"213","word":"ことし","reading":"Kotoshi","meaning":"Tahun ini","category":"Waktu"},
-    {"id":"214","word":"らいねん","reading":"Rainen","meaning":"Tahun depan","category":"Waktu"},
-    {"id":"215","word":"きょねん","reading":"Kyonen","meaning":"Tahun lalu","category":"Waktu"},
-    {"id":"216","word":"いま","reading":"Ima","meaning":"Sekarang","category":"Waktu"},
-    {"id":"217","word":"あとで","reading":"Ato de","meaning":"Nanti","category":"Waktu"},
-    {"id":"218","word":"いつも","reading":"Itsumo","meaning":"Selalu","category":"Keterangan"},
-    {"id":"219","word":"たいてい","reading":"Taitei","meaning":"Biasanya","category":"Keterangan"},
-    {"id":"220","word":"よく","reading":"Yoku","meaning":"Sering","category":"Keterangan"},
-    {"id":"221","word":"ときどき","reading":"Tokidoki","meaning":"Kadang-kadang","category":"Keterangan"},
-    {"id":"222","word":"たまに","reading":"Tamani","meaning":"Sesekali","category":"Keterangan"},
-    {"id":"223","word":"あまり","reading":"Amari","meaning":"Tidak terlalu","category":"Keterangan"},
-    {"id":"224","word":"ぜんぜん","reading":"Zenzen","meaning":"Sama sekali tidak","category":"Keterangan"},
-    {"id":"225","word":"もう","reading":"Mou","meaning":"Sudah","category":"Keterangan"},
-    {"id":"226","word":"まだ","reading":"Mada","meaning":"Belum","category":"Keterangan"},
-    {"id":"227","word":"もっと","reading":"Motto","meaning":"Lebih lagi","category":"Keterangan"},
-    {"id":"228","word":"とても","reading":"Totemo","meaning":"Sangat","category":"Keterangan"},
-    {"id":"229","word":"たくさん","reading":"Takusan","meaning":"Banyak","category":"Keterangan"},
-    {"id":"230","word":"すこし","reading":"Sukoshi","meaning":"Sedikit","category":"Keterangan"},
-    {"id":"231","word":"ちょっと","reading":"Chotto","meaning":"Sedikit","category":"Keterangan"},
-    {"id":"232","word":"ほんとうに","reading":"Hontou ni","meaning":"Benar-benar","category":"Keterangan"},
-    {"id":"233","word":"たぶん","reading":"Tabun","meaning":"Mungkin","category":"Keterangan"},
-    {"id":"234","word":"そして","reading":"Soshite","meaning":"Dan","category":"Kata Sambung"},
-    {"id":"235","word":"それから","reading":"Sorekara","meaning":"Setelah itu","category":"Kata Sambung"},
-    {"id":"236","word":"だから","reading":"Dakara","meaning":"Oleh karena itu","category":"Kata Sambung"},
-    {"id":"237","word":"でも","reading":"Demo","meaning":"Tapi","category":"Kata Sambung"},
-    {"id":"238","word":"しかし","reading":"Shikashi","meaning":"Namun","category":"Kata Sambung"},
-    {"id":"239","word":"また","reading":"Mata","meaning":"Lagi","category":"Kata Sambung"},
-    {"id":"240","word":"たとえば","reading":"Tatoeba","meaning":"Contohnya","category":"Kata Sambung"},
-    {"id":"241","word":"つまり","reading":"Tsumari","meaning":"Artinya","category":"Kata Sambung"},
-    {"id":"242","word":"ところで","reading":"Tokorode","meaning":"Ngomong-ngomong","category":"Kata Sambung"},
-    {"id":"243","word":"あか","reading":"Aka","meaning":"Merah","category":"Warna"},
-    {"id":"244","word":"あお","reading":"Ao","meaning":"Biru","category":"Warna"},
-    {"id":"245","word":"しろ","reading":"Shiro","meaning":"Putih","category":"Warna"},
-    {"id":"246","word":"くろ","reading":"Kuro","meaning":"Hitam","category":"Warna"},
-    {"id":"247","word":"きいろ","reading":"Kiiro","meaning":"Kuning","category":"Warna"},
-    {"id":"248","word":"みどり","reading":"Midori","meaning":"Hijau","category":"Warna"},
-    {"id":"249","word":"ちゃいろ","reading":"Chairo","meaning":"Cokelat","category":"Warna"},
-    {"id":"250","word":"ピンク","reading":"Pinku","meaning":"Pink","category":"Warna"},
-    {"id":"251","word":"あたま","reading":"Atama","meaning":"Kepala","category":"Tubuh"},
-    {"id":"252","word":"かみ","reading":"Kami","meaning":"Rambut","category":"Tubuh"},
-    {"id":"253","word":"かお","reading":"Kao","meaning":"Wajah","category":"Tubuh"},
-    {"id":"254","word":"め","reading":"Me","meaning":"Mata","category":"Tubuh"},
-    {"id":"255","word":"みみ","reading":"Mimi","meaning":"Telinga","category":"Tubuh"},
-    {"id":"256","word":"はな","reading":"Hana","meaning":"Hidung","category":"Tubuh"},
-    {"id":"257","word":"くち","reading":"Kuchi","meaning":"Mulut","category":"Tubuh"},
-    {"id":"258","word":"は","reading":"Ha","meaning":"Gigi","category":"Tubuh"},
-    {"id":"259","word":"くび","reading":"Kubi","meaning":"Leher","category":"Tubuh"},
-    {"id":"260","word":"て","reading":"Te","meaning":"Tangan","category":"Tubuh"},
-    {"id":"261","word":"あし","reading":"Ashi","meaning":"Kaki","category":"Tubuh"},
-    {"id":"262","word":"からだ","reading":"Karada","meaning":"Tubuh","category":"Tubuh"},
-    {"id":"263","word":"やま","reading":"Yama","meaning":"Gunung","category":"Alam"},
-    {"id":"264","word":"かわ","reading":"Kawa","meaning":"Sungai","category":"Alam"},
-    {"id":"265","word":"うみ","reading":"Umi","meaning":"Laut","category":"Alam"},
-    {"id":"266","word":"そら","reading":"Sora","meaning":"Langit","category":"Alam"},
-    {"id":"267","word":"くも","reading":"Kumo","meaning":"Awan","category":"Alam"},
-    {"id":"268","word":"ほし","reading":"Hoshi","meaning":"Bintang","category":"Alam"},
-    {"id":"269","word":"つき","reading":"Tsuki","meaning":"Bulan","category":"Alam"},
-    {"id":"270","word":"たいよう","reading":"Taiyou","meaning":"Matahari","category":"Alam"},
-    {"id":"271","word":"き","reading":"Ki","meaning":"Pohon","category":"Alam"},
-    {"id":"272","word":"はな","reading":"Hana","meaning":"Bunga","category":"Alam"},
-    {"id":"273","word":"いぬ","reading":"Inu","meaning":"Anjing","category":"Alam"},
-    {"id":"274","word":"ねこ","reading":"Neko","meaning":"Kucing","category":"Alam"},
-    {"id":"275","word":"とり","reading":"Tori","meaning":"Burung","category":"Alam"},
-    {"id":"276","word":"うえ","reading":"Ue","meaning":"Atas","category":"Posisi"},
-    {"id":"277","word":"した","reading":"Shita","meaning":"Bawah","category":"Posisi"},
-    {"id":"278","word":"まえ","reading":"Mae","meaning":"Depan","category":"Posisi"},
-    {"id":"279","word":"うしろ","reading":"Ushiro","meaning":"Belakang","category":"Posisi"},
-    {"id":"280","word":"みぎ","reading":"Migi","meaning":"Kanan","category":"Posisi"},
-    {"id":"281","word":"ひだり","reading":"Hidari","meaning":"Kiri","category":"Posisi"},
-    {"id":"282","word":"なか","reading":"Naka","meaning":"Dalam","category":"Posisi"},
-    {"id":"283","word":"そと","reading":"Soto","meaning":"Luar","category":"Posisi"},
-    {"id":"284","word":"となり","reading":"Tonari","meaning":"Samping","category":"Posisi"},
-    {"id":"285","word":"ちかく","reading":"Chikaku","meaning":"Dekat","category":"Posisi"},
-    {"id":"286","word":"あいだ","reading":"Aida","meaning":"Antara","category":"Posisi"},
-    {"id":"287","word":"きた","reading":"Kita","meaning":"Utara","category":"Posisi"},
-    {"id":"288","word":"みなみ","reading":"Minami","meaning":"Selatan","category":"Posisi"},
-    {"id":"289","word":"ひがし","reading":"Higashi","meaning":"Timur","category":"Posisi"},
-    {"id":"290","word":"にし","reading":"Nishi","meaning":"Barat","category":"Posisi"},
-    {"id":"291","word":"ありがとう","reading":"Arigatou","meaning":"Terima kasih","category":"Ungkapan"},
-    {"id":"292","word":"すみません","reading":"Sumimasen","meaning":"Maaf","category":"Ungkapan"},
-    {"id":"293","word":"おはよう","reading":"Ohayou","meaning":"Selamat pagi","category":"Ungkapan"},
-    {"id":"294","word":"こんにちは","reading":"Konnichiwa","meaning":"Selamat siang","category":"Ungkapan"},
-    {"id":"295","word":"こんばんは","reading":"Konbanwa","meaning":"Selamat malam","category":"Ungkapan"},
-    {"id":"296","word":"さようなら","reading":"Sayounara","meaning":"Selamat tinggal","category":"Ungkapan"},
-    {"id":"297","word":"いただきます","reading":"Itadakimasu","meaning":"Selamat makan","category":"Ungkapan"},
-    {"id":"298","word":"ごちそうさま","reading":"Gochisousama","meaning":"Terima kasih (setelah makan)","category":"Ungkapan"}
+    {
+      "id": "1",
+      "word": "わたし",
+      "reading": "Watashi",
+      "meaning": "Saya",
+      "category": "Orang"
+    },
+    {
+      "id": "2",
+      "word": "あなた",
+      "reading": "Anata",
+      "meaning": "Kamu",
+      "category": "Orang"
+    },
+    {
+      "id": "3",
+      "word": "ぼく",
+      "reading": "Boku",
+      "meaning": "Aku (cowok)",
+      "category": "Orang"
+    },
+    {
+      "id": "4",
+      "word": "かれ",
+      "reading": "Kare",
+      "meaning": "Dia laki-laki",
+      "category": "Orang"
+    },
+    {
+      "id": "5",
+      "word": "かのじょ",
+      "reading": "Kanojo",
+      "meaning": "Dia perempuan",
+      "category": "Orang"
+    },
+    {
+      "id": "6",
+      "word": "みんな",
+      "reading": "Minna",
+      "meaning": "Semua orang",
+      "category": "Orang"
+    },
+    {
+      "id": "7",
+      "word": "かぞく",
+      "reading": "Kazoku",
+      "meaning": "Keluarga",
+      "category": "Orang"
+    },
+    {
+      "id": "8",
+      "word": "ちち",
+      "reading": "Chichi",
+      "meaning": "Ayah (sendiri)",
+      "category": "Orang"
+    },
+    {
+      "id": "9",
+      "word": "はは",
+      "reading": "Haha",
+      "meaning": "Ibu (sendiri)",
+      "category": "Orang"
+    },
+    {
+      "id": "10",
+      "word": "あに",
+      "reading": "Ani",
+      "meaning": "Kakak laki (sendiri)",
+      "category": "Orang"
+    },
+    {
+      "id": "11",
+      "word": "あね",
+      "reading": "Ane",
+      "meaning": "Kakak perempuan (sendiri)",
+      "category": "Orang"
+    },
+    {
+      "id": "12",
+      "word": "おとうと",
+      "reading": "Otouto",
+      "meaning": "Adik laki (sendiri)",
+      "category": "Orang"
+    },
+    {
+      "id": "13",
+      "word": "いもうと",
+      "reading": "Imouto",
+      "meaning": "Adik perempuan (sendiri)",
+      "category": "Orang"
+    },
+    {
+      "id": "14",
+      "word": "こども",
+      "reading": "Kodomo",
+      "meaning": "Anak",
+      "category": "Orang"
+    },
+    {
+      "id": "15",
+      "word": "ともだち",
+      "reading": "Tomodachi",
+      "meaning": "Teman",
+      "category": "Orang"
+    },
+    {
+      "id": "16",
+      "word": "せんせい",
+      "reading": "Sensei",
+      "meaning": "Guru",
+      "category": "Orang"
+    },
+    {
+      "id": "17",
+      "word": "がくせい",
+      "reading": "Gakusei",
+      "meaning": "Murid",
+      "category": "Orang"
+    },
+    {
+      "id": "18",
+      "word": "いしゃ",
+      "reading": "Isha",
+      "meaning": "Dokter",
+      "category": "Orang"
+    },
+    {
+      "id": "19",
+      "word": "かいしゃいん",
+      "reading": "Kaishain",
+      "meaning": "Karyawan",
+      "category": "Orang"
+    },
+    {
+      "id": "20",
+      "word": "いえ",
+      "reading": "Ie",
+      "meaning": "Rumah",
+      "category": "Tempat"
+    },
+    {
+      "id": "21",
+      "word": "へや",
+      "reading": "Heya",
+      "meaning": "Kamar",
+      "category": "Tempat"
+    },
+    {
+      "id": "22",
+      "word": "だいどころ",
+      "reading": "Daidokoro",
+      "meaning": "Dapur",
+      "category": "Tempat"
+    },
+    {
+      "id": "23",
+      "word": "トイレ",
+      "reading": "Toire",
+      "meaning": "Toilet",
+      "category": "Tempat"
+    },
+    {
+      "id": "24",
+      "word": "にわ",
+      "reading": "Niwa",
+      "meaning": "Halaman",
+      "category": "Tempat"
+    },
+    {
+      "id": "25",
+      "word": "がっこう",
+      "reading": "Gakkou",
+      "meaning": "Sekolah",
+      "category": "Tempat"
+    },
+    {
+      "id": "26",
+      "word": "かいしゃ",
+      "reading": "Kaisha",
+      "meaning": "Perusahaan",
+      "category": "Tempat"
+    },
+    {
+      "id": "27",
+      "word": "びょういん",
+      "reading": "Byouin",
+      "meaning": "Rumah sakit",
+      "category": "Tempat"
+    },
+    {
+      "id": "28",
+      "word": "ぎんこう",
+      "reading": "Ginkou",
+      "meaning": "Bank",
+      "category": "Tempat"
+    },
+    {
+      "id": "29",
+      "word": "えき",
+      "reading": "Eki",
+      "meaning": "Stasiun",
+      "category": "Tempat"
+    },
+    {
+      "id": "30",
+      "word": "くうこう",
+      "reading": "Kuukou",
+      "meaning": "Bandara",
+      "category": "Tempat"
+    },
+    {
+      "id": "31",
+      "word": "こうえん",
+      "reading": "Kouen",
+      "meaning": "Taman",
+      "category": "Tempat"
+    },
+    {
+      "id": "32",
+      "word": "レストラン",
+      "reading": "Resutoran",
+      "meaning": "Restoran",
+      "category": "Tempat"
+    },
+    {
+      "id": "33",
+      "word": "ホテル",
+      "reading": "Hoteru",
+      "meaning": "Hotel",
+      "category": "Tempat"
+    },
+    {
+      "id": "34",
+      "word": "つくえ",
+      "reading": "Tsukue",
+      "meaning": "Meja",
+      "category": "Benda"
+    },
+    {
+      "id": "35",
+      "word": "いす",
+      "reading": "Isu",
+      "meaning": "Kursi",
+      "category": "Benda"
+    },
+    {
+      "id": "36",
+      "word": "かぎ",
+      "reading": "Kagi",
+      "meaning": "Kunci",
+      "category": "Benda"
+    },
+    {
+      "id": "37",
+      "word": "かばん",
+      "reading": "Kaban",
+      "meaning": "Tas",
+      "category": "Benda"
+    },
+    {
+      "id": "38",
+      "word": "さいふ",
+      "reading": "Saifu",
+      "meaning": "Dompet",
+      "category": "Benda"
+    },
+    {
+      "id": "39",
+      "word": "かさ",
+      "reading": "Kasa",
+      "meaning": "Payung",
+      "category": "Benda"
+    },
+    {
+      "id": "40",
+      "word": "くつ",
+      "reading": "Kutsu",
+      "meaning": "Sepatu",
+      "category": "Benda"
+    },
+    {
+      "id": "41",
+      "word": "ぼうし",
+      "reading": "Boushi",
+      "meaning": "Topi",
+      "category": "Benda"
+    },
+    {
+      "id": "42",
+      "word": "めがね",
+      "reading": "Megane",
+      "meaning": "Kacamata",
+      "category": "Benda"
+    },
+    {
+      "id": "43",
+      "word": "ふく",
+      "reading": "Fuku",
+      "meaning": "Baju",
+      "category": "Benda"
+    },
+    {
+      "id": "44",
+      "word": "ケータイ",
+      "reading": "Keetai",
+      "meaning": "HP",
+      "category": "Benda"
+    },
+    {
+      "id": "45",
+      "word": "パソコン",
+      "reading": "Pasokon",
+      "meaning": "Laptop",
+      "category": "Benda"
+    },
+    {
+      "id": "46",
+      "word": "テレビ",
+      "reading": "Terebi",
+      "meaning": "TV",
+      "category": "Benda"
+    },
+    {
+      "id": "47",
+      "word": "れいぞうこ",
+      "reading": "Reizouko",
+      "meaning": "Kulkas",
+      "category": "Benda"
+    },
+    {
+      "id": "48",
+      "word": "くるま",
+      "reading": "Kuruma",
+      "meaning": "Mobil",
+      "category": "Benda"
+    },
+    {
+      "id": "49",
+      "word": "じてんしゃ",
+      "reading": "Jitensha",
+      "meaning": "Sepeda",
+      "category": "Benda"
+    },
+    {
+      "id": "50",
+      "word": "でんしゃ",
+      "reading": "Densha",
+      "meaning": "Kereta",
+      "category": "Benda"
+    },
+    {
+      "id": "51",
+      "word": "バス",
+      "reading": "Basu",
+      "meaning": "Bus",
+      "category": "Benda"
+    },
+    {
+      "id": "52",
+      "word": "ひこうき",
+      "reading": "Hikouki",
+      "meaning": "Pesawat",
+      "category": "Benda"
+    },
+    {
+      "id": "53",
+      "word": "ほん",
+      "reading": "Hon",
+      "meaning": "Buku",
+      "category": "Benda"
+    },
+    {
+      "id": "54",
+      "word": "しゃしん",
+      "reading": "Shashin",
+      "meaning": "Foto",
+      "category": "Benda"
+    },
+    {
+      "id": "55",
+      "word": "てがみ",
+      "reading": "Tegami",
+      "meaning": "Surat",
+      "category": "Benda"
+    },
+    {
+      "id": "56",
+      "word": "おかね",
+      "reading": "Okane",
+      "meaning": "Uang",
+      "category": "Benda"
+    },
+    {
+      "id": "57",
+      "word": "ごはん",
+      "reading": "Gohan",
+      "meaning": "Nasi",
+      "category": "Makanan"
+    },
+    {
+      "id": "58",
+      "word": "パン",
+      "reading": "Pan",
+      "meaning": "Roti",
+      "category": "Makanan"
+    },
+    {
+      "id": "59",
+      "word": "にく",
+      "reading": "Niku",
+      "meaning": "Daging",
+      "category": "Makanan"
+    },
+    {
+      "id": "60",
+      "word": "さかな",
+      "reading": "Sakana",
+      "meaning": "Ikan",
+      "category": "Makanan"
+    },
+    {
+      "id": "61",
+      "word": "たまご",
+      "reading": "Tamago",
+      "meaning": "Telur",
+      "category": "Makanan"
+    },
+    {
+      "id": "62",
+      "word": "やさい",
+      "reading": "Yasai",
+      "meaning": "Sayuran",
+      "category": "Makanan"
+    },
+    {
+      "id": "63",
+      "word": "くだもの",
+      "reading": "Kudamono",
+      "meaning": "Buah-buahan",
+      "category": "Makanan"
+    },
+    {
+      "id": "64",
+      "word": "みず",
+      "reading": "Mizu",
+      "meaning": "Air",
+      "category": "Makanan"
+    },
+    {
+      "id": "65",
+      "word": "おちゃ",
+      "reading": "Ocha",
+      "meaning": "Teh",
+      "category": "Makanan"
+    },
+    {
+      "id": "66",
+      "word": "コーヒー",
+      "reading": "Koohii",
+      "meaning": "Kopi",
+      "category": "Makanan"
+    },
+    {
+      "id": "67",
+      "word": "ぎゅうにゅう",
+      "reading": "Gyuunyuu",
+      "meaning": "Susu",
+      "category": "Makanan"
+    },
+    {
+      "id": "68",
+      "word": "さとう",
+      "reading": "Satou",
+      "meaning": "Gula",
+      "category": "Makanan"
+    },
+    {
+      "id": "69",
+      "word": "しお",
+      "reading": "Shio",
+      "meaning": "Garam",
+      "category": "Makanan"
+    },
+    {
+      "id": "70",
+      "word": "しょうゆ",
+      "reading": "Shouyu",
+      "meaning": "Kecap asin",
+      "category": "Makanan"
+    },
+    {
+      "id": "71",
+      "word": "いきます",
+      "reading": "Ikimasu",
+      "meaning": "Pergi",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "72",
+      "word": "きます",
+      "reading": "Kimasu",
+      "meaning": "Datang",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "73",
+      "word": "かえります",
+      "reading": "Kaerimasu",
+      "meaning": "Pulang",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "74",
+      "word": "たべます",
+      "reading": "Tabemasu",
+      "meaning": "Makan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "75",
+      "word": "のみます",
+      "reading": "Nomimasu",
+      "meaning": "Minum",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "76",
+      "word": "みます",
+      "reading": "Mimasu",
+      "meaning": "Melihat",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "77",
+      "word": "ききます",
+      "reading": "Kikimasu",
+      "meaning": "Mendengar",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "78",
+      "word": "はなします",
+      "reading": "Hanashimasu",
+      "meaning": "Berbicara",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "79",
+      "word": "よみます",
+      "reading": "Yomimasu",
+      "meaning": "Membaca",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "80",
+      "word": "かきます",
+      "reading": "Kakimasu",
+      "meaning": "Menulis",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "81",
+      "word": "かいます",
+      "reading": "Kaimasu",
+      "meaning": "Membeli",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "82",
+      "word": "うります",
+      "reading": "Urimasu",
+      "meaning": "Menjual",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "83",
+      "word": "まちます",
+      "reading": "Machimasu",
+      "meaning": "Menunggu",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "84",
+      "word": "あいます",
+      "reading": "Aimasu",
+      "meaning": "Bertemu",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "85",
+      "word": "おきます",
+      "reading": "Okimasu",
+      "meaning": "Bangun",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "86",
+      "word": "ねます",
+      "reading": "Nemasu",
+      "meaning": "Tidur",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "87",
+      "word": "あそびます",
+      "reading": "Asobimasu",
+      "meaning": "Bermain",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "88",
+      "word": "およぎます",
+      "reading": "Oyogimasu",
+      "meaning": "Berenang",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "89",
+      "word": "はたらきます",
+      "reading": "Hatarakimasu",
+      "meaning": "Bekerja",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "90",
+      "word": "やすみます",
+      "reading": "Yasumimasu",
+      "meaning": "Istirahat",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "91",
+      "word": "わかります",
+      "reading": "Wakarimasu",
+      "meaning": "Mengerti",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "92",
+      "word": "しります",
+      "reading": "Shirimasu",
+      "meaning": "Tahu",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "93",
+      "word": "できます",
+      "reading": "Dekimasu",
+      "meaning": "Bisa",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "94",
+      "word": "あります",
+      "reading": "Arimasu",
+      "meaning": "Ada (benda)",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "95",
+      "word": "います",
+      "reading": "Imasu",
+      "meaning": "Ada (makhluk hidup)",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "96",
+      "word": "あげます",
+      "reading": "Agemasu",
+      "meaning": "Memberi",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "97",
+      "word": "もらいます",
+      "reading": "Moraimasu",
+      "meaning": "Menerima",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "98",
+      "word": "つかいます",
+      "reading": "Tsukaimasu",
+      "meaning": "Menggunakan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "99",
+      "word": "つくります",
+      "reading": "Tsukurimasu",
+      "meaning": "Membuat",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "100",
+      "word": "おしえます",
+      "reading": "Oshiemasu",
+      "meaning": "Mengajar",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "101",
+      "word": "なります",
+      "reading": "Narimasu",
+      "meaning": "Menjadi",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "102",
+      "word": "とります",
+      "reading": "Torimasu",
+      "meaning": "Mengambil",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "103",
+      "word": "のります",
+      "reading": "Norimasu",
+      "meaning": "Naik (kendaraan)",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "104",
+      "word": "おります",
+      "reading": "Orimasu",
+      "meaning": "Turun",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "105",
+      "word": "はいります",
+      "reading": "Hairimasu",
+      "meaning": "Masuk",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "106",
+      "word": "でます",
+      "reading": "Demasu",
+      "meaning": "Keluar",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "107",
+      "word": "あけます",
+      "reading": "Akemasu",
+      "meaning": "Membuka",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "108",
+      "word": "しめます",
+      "reading": "Shimemasu",
+      "meaning": "Menutup",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "109",
+      "word": "つけます",
+      "reading": "Tsukemasu",
+      "meaning": "Menyalakan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "110",
+      "word": "けします",
+      "reading": "Keshimasu",
+      "meaning": "Mematikan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "111",
+      "word": "あらいます",
+      "reading": "Araimasu",
+      "meaning": "Mencuci",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "112",
+      "word": "かんがえます",
+      "reading": "Kangaemasu",
+      "meaning": "Berpikir",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "113",
+      "word": "おぼえます",
+      "reading": "Oboemasu",
+      "meaning": "Mengingat",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "114",
+      "word": "わすれます",
+      "reading": "Wasuremasu",
+      "meaning": "Lupa",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "115",
+      "word": "いそぎます",
+      "reading": "Isogimasu",
+      "meaning": "Bergegas",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "116",
+      "word": "よびます",
+      "reading": "Yobimasu",
+      "meaning": "Memanggil",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "117",
+      "word": "しらべます",
+      "reading": "Shirabemasu",
+      "meaning": "Memeriksa",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "118",
+      "word": "あつめます",
+      "reading": "Atsumemasu",
+      "meaning": "Mengumpulkan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "119",
+      "word": "すてます",
+      "reading": "Sutemasu",
+      "meaning": "Membuang",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "120",
+      "word": "きめます",
+      "reading": "Kimemasu",
+      "meaning": "Memutuskan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "121",
+      "word": "かります",
+      "reading": "Karimasu",
+      "meaning": "Meminjam",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "122",
+      "word": "かします",
+      "reading": "Kashimasu",
+      "meaning": "Meminjamkan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "123",
+      "word": "かえします",
+      "reading": "Kaeshimasu",
+      "meaning": "Mengembalikan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "124",
+      "word": "おくります",
+      "reading": "Okurimasu",
+      "meaning": "Mengirim",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "125",
+      "word": "おこります",
+      "reading": "Okorimasu",
+      "meaning": "Marah",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "126",
+      "word": "こわします",
+      "reading": "Kowashimasu",
+      "meaning": "Merusak",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "127",
+      "word": "なおします",
+      "reading": "Naoshimasu",
+      "meaning": "Memperbaiki",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "128",
+      "word": "おちます",
+      "reading": "Ochimasu",
+      "meaning": "Jatuh",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "129",
+      "word": "とまります",
+      "reading": "Tomarimasu",
+      "meaning": "Berhenti",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "130",
+      "word": "かちます",
+      "reading": "Kachimasu",
+      "meaning": "Menang",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "131",
+      "word": "まけます",
+      "reading": "Makemasu",
+      "meaning": "Kalah",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "132",
+      "word": "つづきます",
+      "reading": "Tsuzukimasu",
+      "meaning": "Berlanjut",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "133",
+      "word": "つかれます",
+      "reading": "Tsukaremasu",
+      "meaning": "Lelah",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "134",
+      "word": "おおきい",
+      "reading": "Ookii",
+      "meaning": "Besar",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "135",
+      "word": "ちいさい",
+      "reading": "Chiisai",
+      "meaning": "Kecil",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "136",
+      "word": "あたらしい",
+      "reading": "Atarashii",
+      "meaning": "Baru",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "137",
+      "word": "ふるい",
+      "reading": "Furui",
+      "meaning": "Lama",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "138",
+      "word": "いい",
+      "reading": "Ii",
+      "meaning": "Bagus",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "139",
+      "word": "わるい",
+      "reading": "Warui",
+      "meaning": "Buruk",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "140",
+      "word": "あつい",
+      "reading": "Atsui",
+      "meaning": "Panas",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "141",
+      "word": "さむい",
+      "reading": "Samui",
+      "meaning": "Dingin (cuaca)",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "142",
+      "word": "つめたい",
+      "reading": "Tsumetai",
+      "meaning": "Dingin (benda)",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "143",
+      "word": "たかい",
+      "reading": "Takai",
+      "meaning": "Tinggi/Mahal",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "144",
+      "word": "やすい",
+      "reading": "Yasui",
+      "meaning": "Murah",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "145",
+      "word": "ひくい",
+      "reading": "Hikui",
+      "meaning": "Rendah",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "146",
+      "word": "ひろい",
+      "reading": "Hiroi",
+      "meaning": "Luas",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "147",
+      "word": "せまい",
+      "reading": "Semai",
+      "meaning": "Sempit",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "148",
+      "word": "ちかい",
+      "reading": "Chikai",
+      "meaning": "Dekat",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "149",
+      "word": "とおい",
+      "reading": "Tooi",
+      "meaning": "Jauh",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "150",
+      "word": "おもしろい",
+      "reading": "Omoshiroi",
+      "meaning": "Menarik",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "151",
+      "word": "つまらない",
+      "reading": "Tsumaranai",
+      "meaning": "Membosankan",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "152",
+      "word": "おいしい",
+      "reading": "Oishii",
+      "meaning": "Enak",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "153",
+      "word": "まずい",
+      "reading": "Mazui",
+      "meaning": "Tidak enak",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "154",
+      "word": "あまい",
+      "reading": "Amai",
+      "meaning": "Manis",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "155",
+      "word": "からい",
+      "reading": "Karai",
+      "meaning": "Pedas",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "156",
+      "word": "いそがしい",
+      "reading": "Isogashii",
+      "meaning": "Sibuk",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "157",
+      "word": "たのしい",
+      "reading": "Tanoshii",
+      "meaning": "Menyenangkan",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "158",
+      "word": "かなしい",
+      "reading": "Kanashii",
+      "meaning": "Sedih",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "159",
+      "word": "さびしい",
+      "reading": "Sabishii",
+      "meaning": "Kesepian",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "160",
+      "word": "うれしい",
+      "reading": "Ureshii",
+      "meaning": "Senang",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "161",
+      "word": "はずかしい",
+      "reading": "Hazukashii",
+      "meaning": "Malu",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "162",
+      "word": "いたい",
+      "reading": "Itai",
+      "meaning": "Sakit",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "163",
+      "word": "ねむい",
+      "reading": "Nemui",
+      "meaning": "Mengantuk",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "164",
+      "word": "わかい",
+      "reading": "Wakai",
+      "meaning": "Muda",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "165",
+      "word": "やさしい",
+      "reading": "Yasashii",
+      "meaning": "Baik hati",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "166",
+      "word": "むずかしい",
+      "reading": "Muzukashii",
+      "meaning": "Sulit",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "167",
+      "word": "あかるい",
+      "reading": "Akarui",
+      "meaning": "Terang",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "168",
+      "word": "くらい",
+      "reading": "Kurai",
+      "meaning": "Gelap",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "169",
+      "word": "すごい",
+      "reading": "Sugoi",
+      "meaning": "Hebat",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "170",
+      "word": "やわらかい",
+      "reading": "Yawarakai",
+      "meaning": "Lembut",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "171",
+      "word": "きれい",
+      "reading": "Kirei",
+      "meaning": "Cantik/Bersih",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "172",
+      "word": "しずか",
+      "reading": "Shizuka",
+      "meaning": "Tenang",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "173",
+      "word": "にぎやか",
+      "reading": "Nigiyaka",
+      "meaning": "Ramai",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "174",
+      "word": "ゆうめい",
+      "reading": "Yuumei",
+      "meaning": "Terkenal",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "175",
+      "word": "しんせつ",
+      "reading": "Shinsetsu",
+      "meaning": "Ramah",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "176",
+      "word": "げんき",
+      "reading": "Genki",
+      "meaning": "Sehat",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "177",
+      "word": "ひま",
+      "reading": "Hima",
+      "meaning": "Senggang",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "178",
+      "word": "べんり",
+      "reading": "Benri",
+      "meaning": "Praktis",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "179",
+      "word": "すき",
+      "reading": "Suki",
+      "meaning": "Suka",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "180",
+      "word": "きらい",
+      "reading": "Kirai",
+      "meaning": "Benci",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "181",
+      "word": "じょうず",
+      "reading": "Jouzu",
+      "meaning": "Pandai",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "182",
+      "word": "へた",
+      "reading": "Heta",
+      "meaning": "Tidak pandai",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "183",
+      "word": "かんたん",
+      "reading": "Kantan",
+      "meaning": "Mudah",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "184",
+      "word": "たいせつ",
+      "reading": "Taisetsu",
+      "meaning": "Penting",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "185",
+      "word": "だいじょうぶ",
+      "reading": "Daijoubu",
+      "meaning": "Tidak apa-apa",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "186",
+      "word": "らく",
+      "reading": "Raku",
+      "meaning": "Nyaman",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "187",
+      "word": "まじめ",
+      "reading": "Majime",
+      "meaning": "Rajin",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "188",
+      "word": "しょうじき",
+      "reading": "Shoujiki",
+      "meaning": "Jujur",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "189",
+      "word": "きけん",
+      "reading": "Kiken",
+      "meaning": "Bahaya",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "190",
+      "word": "あんぜん",
+      "reading": "Anzen",
+      "meaning": "Aman",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "191",
+      "word": "じゆう",
+      "reading": "Jiyuu",
+      "meaning": "Bebas",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "192",
+      "word": "ざんねん",
+      "reading": "Zannen",
+      "meaning": "Sayang sekali",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "193",
+      "word": "きょう",
+      "reading": "Kyou",
+      "meaning": "Hari ini",
+      "category": "Waktu"
+    },
+    {
+      "id": "194",
+      "word": "あした",
+      "reading": "Ashita",
+      "meaning": "Besok",
+      "category": "Waktu"
+    },
+    {
+      "id": "195",
+      "word": "きのう",
+      "reading": "Kinou",
+      "meaning": "Kemarin",
+      "category": "Waktu"
+    },
+    {
+      "id": "196",
+      "word": "あさって",
+      "reading": "Asatte",
+      "meaning": "Lusa",
+      "category": "Waktu"
+    },
+    {
+      "id": "197",
+      "word": "おととい",
+      "reading": "Ototoi",
+      "meaning": "Kemarin lusa",
+      "category": "Waktu"
+    },
+    {
+      "id": "198",
+      "word": "まいにち",
+      "reading": "Mainichi",
+      "meaning": "Setiap hari",
+      "category": "Waktu"
+    },
+    {
+      "id": "199",
+      "word": "まいしゅう",
+      "reading": "Maishuu",
+      "meaning": "Setiap minggu",
+      "category": "Waktu"
+    },
+    {
+      "id": "200",
+      "word": "まいつき",
+      "reading": "Maitsuki",
+      "meaning": "Setiap bulan",
+      "category": "Waktu"
+    },
+    {
+      "id": "201",
+      "word": "あさ",
+      "reading": "Asa",
+      "meaning": "Pagi",
+      "category": "Waktu"
+    },
+    {
+      "id": "202",
+      "word": "ひる",
+      "reading": "Hiru",
+      "meaning": "Siang",
+      "category": "Waktu"
+    },
+    {
+      "id": "203",
+      "word": "よる",
+      "reading": "Yoru",
+      "meaning": "Malam",
+      "category": "Waktu"
+    },
+    {
+      "id": "204",
+      "word": "ゆうがた",
+      "reading": "Yuugata",
+      "meaning": "Sore",
+      "category": "Waktu"
+    },
+    {
+      "id": "205",
+      "word": "けさ",
+      "reading": "Kesa",
+      "meaning": "Tadi pagi",
+      "category": "Waktu"
+    },
+    {
+      "id": "206",
+      "word": "こんばん",
+      "reading": "Konban",
+      "meaning": "Malam ini",
+      "category": "Waktu"
+    },
+    {
+      "id": "207",
+      "word": "こんしゅう",
+      "reading": "Konshuu",
+      "meaning": "Minggu ini",
+      "category": "Waktu"
+    },
+    {
+      "id": "208",
+      "word": "らいしゅう",
+      "reading": "Raishuu",
+      "meaning": "Minggu depan",
+      "category": "Waktu"
+    },
+    {
+      "id": "209",
+      "word": "せんしゅう",
+      "reading": "Senshuu",
+      "meaning": "Minggu lalu",
+      "category": "Waktu"
+    },
+    {
+      "id": "210",
+      "word": "こんげつ",
+      "reading": "Kongetsu",
+      "meaning": "Bulan ini",
+      "category": "Waktu"
+    },
+    {
+      "id": "211",
+      "word": "らいげつ",
+      "reading": "Raigetsu",
+      "meaning": "Bulan depan",
+      "category": "Waktu"
+    },
+    {
+      "id": "212",
+      "word": "せんげつ",
+      "reading": "Sengetsu",
+      "meaning": "Bulan lalu",
+      "category": "Waktu"
+    },
+    {
+      "id": "213",
+      "word": "ことし",
+      "reading": "Kotoshi",
+      "meaning": "Tahun ini",
+      "category": "Waktu"
+    },
+    {
+      "id": "214",
+      "word": "らいねん",
+      "reading": "Rainen",
+      "meaning": "Tahun depan",
+      "category": "Waktu"
+    },
+    {
+      "id": "215",
+      "word": "きょねん",
+      "reading": "Kyonen",
+      "meaning": "Tahun lalu",
+      "category": "Waktu"
+    },
+    {
+      "id": "216",
+      "word": "いま",
+      "reading": "Ima",
+      "meaning": "Sekarang",
+      "category": "Waktu"
+    },
+    {
+      "id": "217",
+      "word": "あとで",
+      "reading": "Ato de",
+      "meaning": "Nanti",
+      "category": "Waktu"
+    },
+    {
+      "id": "218",
+      "word": "いつも",
+      "reading": "Itsumo",
+      "meaning": "Selalu",
+      "category": "Keterangan"
+    },
+    {
+      "id": "219",
+      "word": "たいてい",
+      "reading": "Taitei",
+      "meaning": "Biasanya",
+      "category": "Keterangan"
+    },
+    {
+      "id": "220",
+      "word": "よく",
+      "reading": "Yoku",
+      "meaning": "Sering",
+      "category": "Keterangan"
+    },
+    {
+      "id": "221",
+      "word": "ときどき",
+      "reading": "Tokidoki",
+      "meaning": "Kadang-kadang",
+      "category": "Keterangan"
+    },
+    {
+      "id": "222",
+      "word": "たまに",
+      "reading": "Tamani",
+      "meaning": "Sesekali",
+      "category": "Keterangan"
+    },
+    {
+      "id": "223",
+      "word": "あまり",
+      "reading": "Amari",
+      "meaning": "Tidak terlalu",
+      "category": "Keterangan"
+    },
+    {
+      "id": "224",
+      "word": "ぜんぜん",
+      "reading": "Zenzen",
+      "meaning": "Sama sekali tidak",
+      "category": "Keterangan"
+    },
+    {
+      "id": "225",
+      "word": "もう",
+      "reading": "Mou",
+      "meaning": "Sudah",
+      "category": "Keterangan"
+    },
+    {
+      "id": "226",
+      "word": "まだ",
+      "reading": "Mada",
+      "meaning": "Belum",
+      "category": "Keterangan"
+    },
+    {
+      "id": "227",
+      "word": "もっと",
+      "reading": "Motto",
+      "meaning": "Lebih lagi",
+      "category": "Keterangan"
+    },
+    {
+      "id": "228",
+      "word": "とても",
+      "reading": "Totemo",
+      "meaning": "Sangat",
+      "category": "Keterangan"
+    },
+    {
+      "id": "229",
+      "word": "たくさん",
+      "reading": "Takusan",
+      "meaning": "Banyak",
+      "category": "Keterangan"
+    },
+    {
+      "id": "230",
+      "word": "すこし",
+      "reading": "Sukoshi",
+      "meaning": "Sedikit",
+      "category": "Keterangan"
+    },
+    {
+      "id": "231",
+      "word": "ちょっと",
+      "reading": "Chotto",
+      "meaning": "Sedikit",
+      "category": "Keterangan"
+    },
+    {
+      "id": "232",
+      "word": "ほんとうに",
+      "reading": "Hontou ni",
+      "meaning": "Benar-benar",
+      "category": "Keterangan"
+    },
+    {
+      "id": "233",
+      "word": "たぶん",
+      "reading": "Tabun",
+      "meaning": "Mungkin",
+      "category": "Keterangan"
+    },
+    {
+      "id": "234",
+      "word": "そして",
+      "reading": "Soshite",
+      "meaning": "Dan",
+      "category": "Kata Sambung"
+    },
+    {
+      "id": "235",
+      "word": "それから",
+      "reading": "Sorekara",
+      "meaning": "Setelah itu",
+      "category": "Kata Sambung"
+    },
+    {
+      "id": "236",
+      "word": "だから",
+      "reading": "Dakara",
+      "meaning": "Oleh karena itu",
+      "category": "Kata Sambung"
+    },
+    {
+      "id": "237",
+      "word": "でも",
+      "reading": "Demo",
+      "meaning": "Tapi",
+      "category": "Kata Sambung"
+    },
+    {
+      "id": "238",
+      "word": "しかし",
+      "reading": "Shikashi",
+      "meaning": "Namun",
+      "category": "Kata Sambung"
+    },
+    {
+      "id": "239",
+      "word": "また",
+      "reading": "Mata",
+      "meaning": "Lagi",
+      "category": "Kata Sambung"
+    },
+    {
+      "id": "240",
+      "word": "たとえば",
+      "reading": "Tatoeba",
+      "meaning": "Contohnya",
+      "category": "Kata Sambung"
+    },
+    {
+      "id": "241",
+      "word": "つまり",
+      "reading": "Tsumari",
+      "meaning": "Artinya",
+      "category": "Kata Sambung"
+    },
+    {
+      "id": "242",
+      "word": "ところで",
+      "reading": "Tokorode",
+      "meaning": "Ngomong-ngomong",
+      "category": "Kata Sambung"
+    },
+    {
+      "id": "243",
+      "word": "あか",
+      "reading": "Aka",
+      "meaning": "Merah",
+      "category": "Warna"
+    },
+    {
+      "id": "244",
+      "word": "あお",
+      "reading": "Ao",
+      "meaning": "Biru",
+      "category": "Warna"
+    },
+    {
+      "id": "245",
+      "word": "しろ",
+      "reading": "Shiro",
+      "meaning": "Putih",
+      "category": "Warna"
+    },
+    {
+      "id": "246",
+      "word": "くろ",
+      "reading": "Kuro",
+      "meaning": "Hitam",
+      "category": "Warna"
+    },
+    {
+      "id": "247",
+      "word": "きいろ",
+      "reading": "Kiiro",
+      "meaning": "Kuning",
+      "category": "Warna"
+    },
+    {
+      "id": "248",
+      "word": "みどり",
+      "reading": "Midori",
+      "meaning": "Hijau",
+      "category": "Warna"
+    },
+    {
+      "id": "249",
+      "word": "ちゃいろ",
+      "reading": "Chairo",
+      "meaning": "Cokelat",
+      "category": "Warna"
+    },
+    {
+      "id": "250",
+      "word": "ピンク",
+      "reading": "Pinku",
+      "meaning": "Pink",
+      "category": "Warna"
+    },
+    {
+      "id": "251",
+      "word": "あたま",
+      "reading": "Atama",
+      "meaning": "Kepala",
+      "category": "Tubuh"
+    },
+    {
+      "id": "252",
+      "word": "かみ",
+      "reading": "Kami",
+      "meaning": "Rambut",
+      "category": "Tubuh"
+    },
+    {
+      "id": "253",
+      "word": "かお",
+      "reading": "Kao",
+      "meaning": "Wajah",
+      "category": "Tubuh"
+    },
+    {
+      "id": "254",
+      "word": "め",
+      "reading": "Me",
+      "meaning": "Mata",
+      "category": "Tubuh"
+    },
+    {
+      "id": "255",
+      "word": "みみ",
+      "reading": "Mimi",
+      "meaning": "Telinga",
+      "category": "Tubuh"
+    },
+    {
+      "id": "256",
+      "word": "はな",
+      "reading": "Hana",
+      "meaning": "Hidung",
+      "category": "Tubuh"
+    },
+    {
+      "id": "257",
+      "word": "くち",
+      "reading": "Kuchi",
+      "meaning": "Mulut",
+      "category": "Tubuh"
+    },
+    {
+      "id": "258",
+      "word": "は",
+      "reading": "Ha",
+      "meaning": "Gigi",
+      "category": "Tubuh"
+    },
+    {
+      "id": "259",
+      "word": "くび",
+      "reading": "Kubi",
+      "meaning": "Leher",
+      "category": "Tubuh"
+    },
+    {
+      "id": "260",
+      "word": "て",
+      "reading": "Te",
+      "meaning": "Tangan",
+      "category": "Tubuh"
+    },
+    {
+      "id": "261",
+      "word": "あし",
+      "reading": "Ashi",
+      "meaning": "Kaki",
+      "category": "Tubuh"
+    },
+    {
+      "id": "262",
+      "word": "からだ",
+      "reading": "Karada",
+      "meaning": "Tubuh",
+      "category": "Tubuh"
+    },
+    {
+      "id": "263",
+      "word": "やま",
+      "reading": "Yama",
+      "meaning": "Gunung",
+      "category": "Alam"
+    },
+    {
+      "id": "264",
+      "word": "かわ",
+      "reading": "Kawa",
+      "meaning": "Sungai",
+      "category": "Alam"
+    },
+    {
+      "id": "265",
+      "word": "うみ",
+      "reading": "Umi",
+      "meaning": "Laut",
+      "category": "Alam"
+    },
+    {
+      "id": "266",
+      "word": "そら",
+      "reading": "Sora",
+      "meaning": "Langit",
+      "category": "Alam"
+    },
+    {
+      "id": "267",
+      "word": "くも",
+      "reading": "Kumo",
+      "meaning": "Awan",
+      "category": "Alam"
+    },
+    {
+      "id": "268",
+      "word": "ほし",
+      "reading": "Hoshi",
+      "meaning": "Bintang",
+      "category": "Alam"
+    },
+    {
+      "id": "269",
+      "word": "つき",
+      "reading": "Tsuki",
+      "meaning": "Bulan",
+      "category": "Alam"
+    },
+    {
+      "id": "270",
+      "word": "たいよう",
+      "reading": "Taiyou",
+      "meaning": "Matahari",
+      "category": "Alam"
+    },
+    {
+      "id": "271",
+      "word": "き",
+      "reading": "Ki",
+      "meaning": "Pohon",
+      "category": "Alam"
+    },
+    {
+      "id": "272",
+      "word": "はな",
+      "reading": "Hana",
+      "meaning": "Bunga",
+      "category": "Alam"
+    },
+    {
+      "id": "273",
+      "word": "いぬ",
+      "reading": "Inu",
+      "meaning": "Anjing",
+      "category": "Alam"
+    },
+    {
+      "id": "274",
+      "word": "ねこ",
+      "reading": "Neko",
+      "meaning": "Kucing",
+      "category": "Alam"
+    },
+    {
+      "id": "275",
+      "word": "とり",
+      "reading": "Tori",
+      "meaning": "Burung",
+      "category": "Alam"
+    },
+    {
+      "id": "276",
+      "word": "うえ",
+      "reading": "Ue",
+      "meaning": "Atas",
+      "category": "Posisi"
+    },
+    {
+      "id": "277",
+      "word": "した",
+      "reading": "Shita",
+      "meaning": "Bawah",
+      "category": "Posisi"
+    },
+    {
+      "id": "278",
+      "word": "まえ",
+      "reading": "Mae",
+      "meaning": "Depan",
+      "category": "Posisi"
+    },
+    {
+      "id": "279",
+      "word": "うしろ",
+      "reading": "Ushiro",
+      "meaning": "Belakang",
+      "category": "Posisi"
+    },
+    {
+      "id": "280",
+      "word": "みぎ",
+      "reading": "Migi",
+      "meaning": "Kanan",
+      "category": "Posisi"
+    },
+    {
+      "id": "281",
+      "word": "ひだり",
+      "reading": "Hidari",
+      "meaning": "Kiri",
+      "category": "Posisi"
+    },
+    {
+      "id": "282",
+      "word": "なか",
+      "reading": "Naka",
+      "meaning": "Dalam",
+      "category": "Posisi"
+    },
+    {
+      "id": "283",
+      "word": "そと",
+      "reading": "Soto",
+      "meaning": "Luar",
+      "category": "Posisi"
+    },
+    {
+      "id": "284",
+      "word": "となり",
+      "reading": "Tonari",
+      "meaning": "Samping",
+      "category": "Posisi"
+    },
+    {
+      "id": "285",
+      "word": "ちかく",
+      "reading": "Chikaku",
+      "meaning": "Dekat",
+      "category": "Posisi"
+    },
+    {
+      "id": "286",
+      "word": "あいだ",
+      "reading": "Aida",
+      "meaning": "Antara",
+      "category": "Posisi"
+    },
+    {
+      "id": "287",
+      "word": "きた",
+      "reading": "Kita",
+      "meaning": "Utara",
+      "category": "Posisi"
+    },
+    {
+      "id": "288",
+      "word": "みなみ",
+      "reading": "Minami",
+      "meaning": "Selatan",
+      "category": "Posisi"
+    },
+    {
+      "id": "289",
+      "word": "ひがし",
+      "reading": "Higashi",
+      "meaning": "Timur",
+      "category": "Posisi"
+    },
+    {
+      "id": "290",
+      "word": "にし",
+      "reading": "Nishi",
+      "meaning": "Barat",
+      "category": "Posisi"
+    },
+    {
+      "id": "291",
+      "word": "ありがとう",
+      "reading": "Arigatou",
+      "meaning": "Terima kasih",
+      "category": "Ungkapan"
+    },
+    {
+      "id": "292",
+      "word": "すみません",
+      "reading": "Sumimasen",
+      "meaning": "Maaf",
+      "category": "Ungkapan"
+    },
+    {
+      "id": "293",
+      "word": "おはよう",
+      "reading": "Ohayou",
+      "meaning": "Selamat pagi",
+      "category": "Ungkapan"
+    },
+    {
+      "id": "294",
+      "word": "こんにちは",
+      "reading": "Konnichiwa",
+      "meaning": "Selamat siang",
+      "category": "Ungkapan"
+    },
+    {
+      "id": "295",
+      "word": "こんばんは",
+      "reading": "Konbanwa",
+      "meaning": "Selamat malam",
+      "category": "Ungkapan"
+    },
+    {
+      "id": "296",
+      "word": "さようなら",
+      "reading": "Sayounara",
+      "meaning": "Selamat tinggal",
+      "category": "Ungkapan"
+    },
+    {
+      "id": "297",
+      "word": "いただきます",
+      "reading": "Itadakimasu",
+      "meaning": "Selamat makan",
+      "category": "Ungkapan"
+    },
+    {
+      "id": "298",
+      "word": "ごちそうさま",
+      "reading": "Gochisousama",
+      "meaning": "Terima kasih (setelah makan)",
+      "category": "Ungkapan"
+    },
+    {
+      "id": "299",
+      "word": "げつようび",
+      "reading": "Getsuyoubi",
+      "meaning": "Senin",
+      "category": "Waktu"
+    },
+    {
+      "id": "300",
+      "word": "かようび",
+      "reading": "Kayoubi",
+      "meaning": "Selasa",
+      "category": "Waktu"
+    },
+    {
+      "id": "301",
+      "word": "すいようび",
+      "reading": "Suiyoubi",
+      "meaning": "Rabu",
+      "category": "Waktu"
+    },
+    {
+      "id": "302",
+      "word": "もくようび",
+      "reading": "Mokuyoubi",
+      "meaning": "Kamis",
+      "category": "Waktu"
+    },
+    {
+      "id": "303",
+      "word": "きんようび",
+      "reading": "Kinyoubi",
+      "meaning": "Jumat",
+      "category": "Waktu"
+    },
+    {
+      "id": "304",
+      "word": "どようび",
+      "reading": "Doyoubi",
+      "meaning": "Sabtu",
+      "category": "Waktu"
+    },
+    {
+      "id": "305",
+      "word": "にちようび",
+      "reading": "Nichiyoubi",
+      "meaning": "Minggu",
+      "category": "Waktu"
+    },
+    {
+      "id": "306",
+      "word": "いいます",
+      "reading": "Iimasu",
+      "meaning": "Berkata",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "307",
+      "word": "いち",
+      "reading": "Ichi",
+      "meaning": "Satu",
+      "category": "Angka"
+    },
+    {
+      "id": "308",
+      "word": "に",
+      "reading": "Ni",
+      "meaning": "Dua",
+      "category": "Angka"
+    },
+    {
+      "id": "309",
+      "word": "さん",
+      "reading": "San",
+      "meaning": "Tiga",
+      "category": "Angka"
+    },
+    {
+      "id": "310",
+      "word": "よん",
+      "reading": "Yon",
+      "meaning": "Empat",
+      "category": "Angka"
+    },
+    {
+      "id": "311",
+      "word": "ご",
+      "reading": "Go",
+      "meaning": "Lima",
+      "category": "Angka"
+    },
+    {
+      "id": "312",
+      "word": "ろく",
+      "reading": "Roku",
+      "meaning": "Enam",
+      "category": "Angka"
+    },
+    {
+      "id": "313",
+      "word": "なな",
+      "reading": "Nana",
+      "meaning": "Tujuh",
+      "category": "Angka"
+    },
+    {
+      "id": "314",
+      "word": "はち",
+      "reading": "Hachi",
+      "meaning": "Delapan",
+      "category": "Angka"
+    },
+    {
+      "id": "315",
+      "word": "きゅう",
+      "reading": "Kyuu",
+      "meaning": "Sembilan",
+      "category": "Angka"
+    },
+    {
+      "id": "316",
+      "word": "じゅう",
+      "reading": "Juu",
+      "meaning": "Sepuluh",
+      "category": "Angka"
+    },
+    {
+      "id": "317",
+      "word": "かいもの",
+      "reading": "Kaimono",
+      "meaning": "Belanja",
+      "category": "Lainnya"
+    },
+    {
+      "id": "318",
+      "word": "ひゃく",
+      "reading": "Hyaku",
+      "meaning": "100",
+      "category": "Angka"
+    },
+    {
+      "id": "319",
+      "word": "せん",
+      "reading": "Sen",
+      "meaning": "1000",
+      "category": "Angka"
+    },
+    {
+      "id": "320",
+      "word": "まん",
+      "reading": "Man",
+      "meaning": "10000",
+      "category": "Angka"
+    },
+    {
+      "id": "321",
+      "word": "にほん",
+      "reading": "Nihon",
+      "meaning": "Jepang",
+      "category": "Lainnya"
+    },
+    {
+      "id": "322",
+      "word": "とうきょう",
+      "reading": "Toukyou",
+      "meaning": "Tokyo",
+      "category": "Lainnya"
+    },
+    {
+      "id": "323",
+      "word": "おとこ",
+      "reading": "Otoko",
+      "meaning": "Laki-laki",
+      "category": "Lainnya"
+    },
+    {
+      "id": "324",
+      "word": "おんな",
+      "reading": "Onna",
+      "meaning": "Perempuan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "325",
+      "word": "ひと",
+      "reading": "Hito",
+      "meaning": "Orang",
+      "category": "Orang"
+    },
+    {
+      "id": "326",
+      "word": "おとうさん",
+      "reading": "Otousan",
+      "meaning": "Ayah (orang lain)",
+      "category": "Orang"
+    },
+    {
+      "id": "327",
+      "word": "おかあさん",
+      "reading": "Okaasan",
+      "meaning": "Ibu (orang lain)",
+      "category": "Orang"
+    },
+    {
+      "id": "328",
+      "word": "なんにん",
+      "reading": "Nannin",
+      "meaning": "Berapa orang",
+      "category": "Orang"
+    },
+    {
+      "id": "329",
+      "word": "くに",
+      "reading": "Kuni",
+      "meaning": "Negara",
+      "category": "Lainnya"
+    },
+    {
+      "id": "330",
+      "word": "がいこく",
+      "reading": "Gaikoku",
+      "meaning": "Luar negeri",
+      "category": "Lainnya"
+    },
+    {
+      "id": "331",
+      "word": "にほんご",
+      "reading": "Nihongo",
+      "meaning": "Bahasa Jepang",
+      "category": "Lainnya"
+    },
+    {
+      "id": "332",
+      "word": "えいご",
+      "reading": "Eigo",
+      "meaning": "Bahasa Inggris",
+      "category": "Lainnya"
+    },
+    {
+      "id": "333",
+      "word": "ちゅうごくご",
+      "reading": "Chuugokugo",
+      "meaning": "Bahasa China",
+      "category": "Lainnya"
+    },
+    {
+      "id": "334",
+      "word": "にほんじん",
+      "reading": "Nihonjin",
+      "meaning": "Orang Jepang",
+      "category": "Orang"
+    },
+    {
+      "id": "335",
+      "word": "どくしょ",
+      "reading": "Dokusho",
+      "meaning": "Bacaan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "336",
+      "word": "なに",
+      "reading": "Nani",
+      "meaning": "Apa",
+      "category": "Lainnya"
+    },
+    {
+      "id": "337",
+      "word": "はる",
+      "reading": "Haru",
+      "meaning": "Musim semi",
+      "category": "Lainnya"
+    },
+    {
+      "id": "338",
+      "word": "なつ",
+      "reading": "Natsu",
+      "meaning": "Musim panas",
+      "category": "Lainnya"
+    },
+    {
+      "id": "339",
+      "word": "あき",
+      "reading": "Aki",
+      "meaning": "Musim gugur",
+      "category": "Lainnya"
+    },
+    {
+      "id": "340",
+      "word": "ふゆ",
+      "reading": "Fuyu",
+      "meaning": "Musim dingin",
+      "category": "Lainnya"
+    },
+    {
+      "id": "341",
+      "word": "てんき",
+      "reading": "Tenki",
+      "meaning": "Cuaca",
+      "category": "Lainnya"
+    },
+    {
+      "id": "342",
+      "word": "はれ",
+      "reading": "Hare",
+      "meaning": "Cerah",
+      "category": "Lainnya"
+    },
+    {
+      "id": "343",
+      "word": "あめ",
+      "reading": "Ame",
+      "meaning": "Hujan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "344",
+      "word": "ゆき",
+      "reading": "Yuki",
+      "meaning": "Salju",
+      "category": "Lainnya"
+    },
+    {
+      "id": "345",
+      "word": "かぜ",
+      "reading": "Kaze",
+      "meaning": "Angin",
+      "category": "Lainnya"
+    },
+    {
+      "id": "346",
+      "word": "まち",
+      "reading": "Machi",
+      "meaning": "Kota",
+      "category": "Lainnya"
+    },
+    {
+      "id": "347",
+      "word": "みせ",
+      "reading": "Mise",
+      "meaning": "Toko",
+      "category": "Tempat"
+    },
+    {
+      "id": "348",
+      "word": "にんき",
+      "reading": "Ninki",
+      "meaning": "Popularitas",
+      "category": "Benda"
+    },
+    {
+      "id": "349",
+      "word": "おおい",
+      "reading": "Ooi",
+      "meaning": "Banyak",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "350",
+      "word": "すくない",
+      "reading": "Sukunai",
+      "meaning": "Sedikit",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "351",
+      "word": "みち",
+      "reading": "Michi",
+      "meaning": "Jalan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "352",
+      "word": "とおり",
+      "reading": "Toori",
+      "meaning": "Jalan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "353",
+      "word": "ひとつ",
+      "reading": "Hitotsu",
+      "meaning": "Satu buah",
+      "category": "Angka"
+    },
+    {
+      "id": "354",
+      "word": "ふたつ",
+      "reading": "Futatsu",
+      "meaning": "Dua buah",
+      "category": "Angka"
+    },
+    {
+      "id": "355",
+      "word": "あかい",
+      "reading": "Akai",
+      "meaning": "Merah",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "356",
+      "word": "あおい",
+      "reading": "Aoi",
+      "meaning": "Biru",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "357",
+      "word": "くろい",
+      "reading": "Kuroi",
+      "meaning": "Hitam",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "358",
+      "word": "しろい",
+      "reading": "Shiroi",
+      "meaning": "Putih",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "359",
+      "word": "じかん",
+      "reading": "Jikan",
+      "meaning": "Waktu",
+      "category": "Lainnya"
+    },
+    {
+      "id": "360",
+      "word": "ばしょ",
+      "reading": "Basho",
+      "meaning": "Tempat",
+      "category": "Angka"
+    },
+    {
+      "id": "361",
+      "word": "ひ",
+      "reading": "Hi",
+      "meaning": "Matahari",
+      "category": "Waktu"
+    },
+    {
+      "id": "362",
+      "word": "でかけます",
+      "reading": "Dekakemasu",
+      "meaning": "Pergi keluar",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "363",
+      "word": "しょくじ",
+      "reading": "Shokuji",
+      "meaning": "Makan bersama",
+      "category": "Makanan"
+    },
+    {
+      "id": "364",
+      "word": "しごと",
+      "reading": "Shigoto",
+      "meaning": "Pekerjaan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "365",
+      "word": "あと",
+      "reading": "Ato",
+      "meaning": "Setelah",
+      "category": "Lainnya"
+    },
+    {
+      "id": "366",
+      "word": "しょうがっこう",
+      "reading": "Shougakkou",
+      "meaning": "SD",
+      "category": "Lainnya"
+    },
+    {
+      "id": "367",
+      "word": "ちゅうがっこう",
+      "reading": "Chuugakkou",
+      "meaning": "SMP",
+      "category": "Lainnya"
+    },
+    {
+      "id": "368",
+      "word": "こうこう",
+      "reading": "Koukou",
+      "meaning": "SMA",
+      "category": "Lainnya"
+    },
+    {
+      "id": "369",
+      "word": "だいがく",
+      "reading": "Daigaku",
+      "meaning": "Universitas",
+      "category": "Benda"
+    },
+    {
+      "id": "370",
+      "word": "べんきょう",
+      "reading": "Benkyou",
+      "meaning": "Pelajaran",
+      "category": "Lainnya"
+    },
+    {
+      "id": "371",
+      "word": "ぶんか",
+      "reading": "Bunka",
+      "meaning": "Kebudayaan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "372",
+      "word": "おんがく",
+      "reading": "Ongaku",
+      "meaning": "Musik",
+      "category": "Lainnya"
+    },
+    {
+      "id": "373",
+      "word": "りょこう",
+      "reading": "Ryokou",
+      "meaning": "Wisata",
+      "category": "Lainnya"
+    },
+    {
+      "id": "374",
+      "word": "りゅうがく",
+      "reading": "Ryuugaku",
+      "meaning": "Belajar di luar negeri",
+      "category": "Lainnya"
+    },
+    {
+      "id": "375",
+      "word": "しゅう",
+      "reading": "Shuu",
+      "meaning": "Minggu",
+      "category": "Waktu"
+    },
+    {
+      "id": "376",
+      "word": "たべもの",
+      "reading": "Tabemono",
+      "meaning": "Makanan",
+      "category": "Posisi"
+    },
+    {
+      "id": "377",
+      "word": "のみもの",
+      "reading": "Nomimono",
+      "meaning": "Minuman",
+      "category": "Lainnya"
+    },
+    {
+      "id": "378",
+      "word": "おさけ",
+      "reading": "Osake",
+      "meaning": "Sake",
+      "category": "Lainnya"
+    },
+    {
+      "id": "379",
+      "word": "もっていきます",
+      "reading": "Motte ikimasu",
+      "meaning": "Membawa pergi",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "380",
+      "word": "おねがいします",
+      "reading": "Onegaishimasu",
+      "meaning": "Tolong",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "381",
+      "word": "りょうり",
+      "reading": "Ryouri",
+      "meaning": "Masakan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "382",
+      "word": "あじ",
+      "reading": "Aji",
+      "meaning": "Rasa",
+      "category": "Lainnya"
+    },
+    {
+      "id": "383",
+      "word": "いろ",
+      "reading": "Iro",
+      "meaning": "Warna",
+      "category": "Lainnya"
+    },
+    {
+      "id": "384",
+      "word": "はいっています",
+      "reading": "Haitte imasu",
+      "meaning": "Masuk",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "385",
+      "word": "ほんしゃ",
+      "reading": "Honsha",
+      "meaning": "Kantor pusat",
+      "category": "Tempat"
+    },
+    {
+      "id": "386",
+      "word": "ししゃ",
+      "reading": "Shisha",
+      "meaning": "Kantor cabang",
+      "category": "Tempat"
+    },
+    {
+      "id": "387",
+      "word": "しゅっちょう",
+      "reading": "Shucchou",
+      "meaning": "Dinas luar kota",
+      "category": "Lainnya"
+    },
+    {
+      "id": "388",
+      "word": "しゅっぱつ",
+      "reading": "Shuppatsu",
+      "meaning": "Keberangkatan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "389",
+      "word": "とうちゃく",
+      "reading": "Touchaku",
+      "meaning": "Kedatangan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "390",
+      "word": "ごぜん",
+      "reading": "Gozen",
+      "meaning": "AM",
+      "category": "Lainnya"
+    },
+    {
+      "id": "391",
+      "word": "ごご",
+      "reading": "Gogo",
+      "meaning": "PM",
+      "category": "Lainnya"
+    },
+    {
+      "id": "392",
+      "word": "じぶん",
+      "reading": "Jibun",
+      "meaning": "Sendiri",
+      "category": "Lainnya"
+    },
+    {
+      "id": "393",
+      "word": "でんわ",
+      "reading": "Denwa",
+      "meaning": "Telepon",
+      "category": "Lainnya"
+    },
+    {
+      "id": "394",
+      "word": "でんき",
+      "reading": "Denki",
+      "meaning": "Listrik",
+      "category": "Lainnya"
+    },
+    {
+      "id": "395",
+      "word": "まいあさ",
+      "reading": "Maiasa",
+      "meaning": "Setiap pagi",
+      "category": "Waktu"
+    },
+    {
+      "id": "396",
+      "word": "しゅうまつ",
+      "reading": "Shuumatsu",
+      "meaning": "Akhir pekan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "397",
+      "word": "あるきます",
+      "reading": "Arukimasu",
+      "meaning": "Berjalan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "398",
+      "word": "はしります",
+      "reading": "Hashirimasu",
+      "meaning": "Berlari",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "399",
+      "word": "おいわい",
+      "reading": "Oiwai",
+      "meaning": "Perayaan",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "400",
+      "word": "たんじょうび",
+      "reading": "Tanjoubi",
+      "meaning": "Ulang tahun",
+      "category": "Waktu"
+    },
+    {
+      "id": "401",
+      "word": "けっこん",
+      "reading": "Kekkon",
+      "meaning": "Pernikahan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "402",
+      "word": "え",
+      "reading": "E",
+      "meaning": "Gambar",
+      "category": "Lainnya"
+    },
+    {
+      "id": "403",
+      "word": "とけい",
+      "reading": "Tokei",
+      "meaning": "Jam",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "404",
+      "word": "おもいます",
+      "reading": "Omoimasu",
+      "meaning": "Mengira",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "405",
+      "word": "じこしょうかい",
+      "reading": "Jikoshoukai",
+      "meaning": "Perkenalan",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "406",
+      "word": "なまえ",
+      "reading": "Namae",
+      "meaning": "Nama",
+      "category": "Lainnya"
+    },
+    {
+      "id": "407",
+      "word": "いみ",
+      "reading": "Imi",
+      "meaning": "Arti",
+      "category": "Lainnya"
+    },
+    {
+      "id": "408",
+      "word": "ほんや",
+      "reading": "Hon-ya",
+      "meaning": "Toko buku",
+      "category": "Tempat"
+    },
+    {
+      "id": "409",
+      "word": "すみます",
+      "reading": "Sumimasu",
+      "meaning": "Tinggal",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "410",
+      "word": "おにいさん",
+      "reading": "Oniisan",
+      "meaning": "Kakak laki-laki (orang lain)",
+      "category": "Orang"
+    },
+    {
+      "id": "411",
+      "word": "おねえさん",
+      "reading": "Oneesan",
+      "meaning": "Kakak perempuan (orang lain)",
+      "category": "Orang"
+    },
+    {
+      "id": "412",
+      "word": "ながい",
+      "reading": "Nagai",
+      "meaning": "Panjang",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "413",
+      "word": "みじかい",
+      "reading": "Mijikai",
+      "meaning": "Pendek",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "414",
+      "word": "うた",
+      "reading": "Uta",
+      "meaning": "Lagu",
+      "category": "Lainnya"
+    },
+    {
+      "id": "415",
+      "word": "うたいます",
+      "reading": "Utaimasu",
+      "meaning": "Menyanyi",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "416",
+      "word": "きゃく",
+      "reading": "Kyaku",
+      "meaning": "Tamu",
+      "category": "Lainnya"
+    },
+    {
+      "id": "417",
+      "word": "ちゅうもん",
+      "reading": "Chuumon",
+      "meaning": "Pesanan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "418",
+      "word": "ようしょく",
+      "reading": "Youshoku",
+      "meaning": "Makanan barat",
+      "category": "Posisi"
+    },
+    {
+      "id": "419",
+      "word": "わしょく",
+      "reading": "Washoku",
+      "meaning": "Makanan jepang",
+      "category": "Posisi"
+    },
+    {
+      "id": "420",
+      "word": "ぎゅうにく",
+      "reading": "Gyuuniku",
+      "meaning": "Daging sapi",
+      "category": "Makanan"
+    },
+    {
+      "id": "421",
+      "word": "ちほう",
+      "reading": "Chihou",
+      "meaning": "Daerah",
+      "category": "Lainnya"
+    },
+    {
+      "id": "422",
+      "word": "なま",
+      "reading": "Nama",
+      "meaning": "Mentah",
+      "category": "Lainnya"
+    },
+    {
+      "id": "423",
+      "word": "ぜんぶ",
+      "reading": "Zenbu",
+      "meaning": "Semua",
+      "category": "Lainnya"
+    },
+    {
+      "id": "424",
+      "word": "たべかた",
+      "reading": "Tabekata",
+      "meaning": "Cara makan",
+      "category": "Makanan"
+    },
+    {
+      "id": "425",
+      "word": "にがて",
+      "reading": "Nigate",
+      "meaning": "Tidak begitu suka",
+      "category": "Lainnya"
+    },
+    {
+      "id": "426",
+      "word": "いれます",
+      "reading": "Iremasu",
+      "meaning": "Memasukkan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "427",
+      "word": "もり",
+      "reading": "Mori",
+      "meaning": "Hutan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "428",
+      "word": "しま",
+      "reading": "Shima",
+      "meaning": "Pulau",
+      "category": "Lainnya"
+    },
+    {
+      "id": "429",
+      "word": "しぜん",
+      "reading": "Shizen",
+      "meaning": "Alam",
+      "category": "Lainnya"
+    },
+    {
+      "id": "430",
+      "word": "ふね",
+      "reading": "Fune",
+      "meaning": "Kapal",
+      "category": "Lainnya"
+    },
+    {
+      "id": "431",
+      "word": "よやくします",
+      "reading": "Yoyaku shimasu",
+      "meaning": "Memesan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "432",
+      "word": "うんてんします",
+      "reading": "Unten shimasu",
+      "meaning": "Menyetir",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "433",
+      "word": "かんこうち",
+      "reading": "Kankouchi",
+      "meaning": "Tempat wisata",
+      "category": "Angka"
+    },
+    {
+      "id": "434",
+      "word": "じょせい",
+      "reading": "Josei",
+      "meaning": "Wanita",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "435",
+      "word": "だんせい",
+      "reading": "Dansei",
+      "meaning": "Pria",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "436",
+      "word": "どうぶつ",
+      "reading": "Doubutsu",
+      "meaning": "Hewan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "437",
+      "word": "くうき",
+      "reading": "Kuuki",
+      "meaning": "Udara",
+      "category": "Lainnya"
+    },
+    {
+      "id": "438",
+      "word": "りょうきん",
+      "reading": "Ryoukin",
+      "meaning": "Biaya",
+      "category": "Lainnya"
+    },
+    {
+      "id": "439",
+      "word": "むりょう",
+      "reading": "Muryou",
+      "meaning": "Gratis",
+      "category": "Lainnya"
+    },
+    {
+      "id": "440",
+      "word": "いちねんじゅう",
+      "reading": "Ichinenjuu",
+      "meaning": "Sepanjang tahun",
+      "category": "Waktu"
+    },
+    {
+      "id": "441",
+      "word": "うけつけ",
+      "reading": "Uketsuke",
+      "meaning": "Penerima tamu",
+      "category": "Lainnya"
+    },
+    {
+      "id": "442",
+      "word": "ひろば",
+      "reading": "Hiroba",
+      "meaning": "Lapangan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "443",
+      "word": "もんだい",
+      "reading": "Mondai",
+      "meaning": "Soal",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "444",
+      "word": "おなじ",
+      "reading": "Onaji",
+      "meaning": "Sama",
+      "category": "Lainnya"
+    },
+    {
+      "id": "445",
+      "word": "あつまります",
+      "reading": "Atsumarimasu",
+      "meaning": "Berkumpul",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "446",
+      "word": "はじまります",
+      "reading": "Hajimarimasu",
+      "meaning": "Mulai",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "447",
+      "word": "おわります",
+      "reading": "Owarimasu",
+      "meaning": "Selesai",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "448",
+      "word": "ちゅうしします",
+      "reading": "Chuushi shimasu",
+      "meaning": "Membatalkan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "449",
+      "word": "まつり",
+      "reading": "Matsuri",
+      "meaning": "Festival",
+      "category": "Lainnya"
+    },
+    {
+      "id": "450",
+      "word": "にほんまつり",
+      "reading": "Nihon matsuri",
+      "meaning": "Festival jepang",
+      "category": "Lainnya"
+    },
+    {
+      "id": "451",
+      "word": "かいじょう",
+      "reading": "Kaijou",
+      "meaning": "Ruang pertemuan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "452",
+      "word": "にゅうじょうりょう",
+      "reading": "Nyuujouryou",
+      "meaning": "Tarif masuk",
+      "category": "Lainnya"
+    },
+    {
+      "id": "453",
+      "word": "さんかしゃ",
+      "reading": "Sankasha",
+      "meaning": "Peserta",
+      "category": "Lainnya"
+    },
+    {
+      "id": "454",
+      "word": "しょうがつ",
+      "reading": "Shougatsu",
+      "meaning": "Tahun baru",
+      "category": "Waktu"
+    },
+    {
+      "id": "455",
+      "word": "ねんまつ",
+      "reading": "Nenmatsu",
+      "meaning": "Akhir tahun",
+      "category": "Waktu"
+    },
+    {
+      "id": "456",
+      "word": "ねんし",
+      "reading": "Nenshi",
+      "meaning": "Awal tahun",
+      "category": "Waktu"
+    },
+    {
+      "id": "457",
+      "word": "おや",
+      "reading": "Oya",
+      "meaning": "Orang tua",
+      "category": "Orang"
+    },
+    {
+      "id": "458",
+      "word": "とくべつ",
+      "reading": "Tokubetsu",
+      "meaning": "Istimewa",
+      "category": "Lainnya"
+    },
+    {
+      "id": "459",
+      "word": "きこく",
+      "reading": "Kikoku",
+      "meaning": "Pulang ke negara",
+      "category": "Lainnya"
+    },
+    {
+      "id": "460",
+      "word": "よろこびます",
+      "reading": "Yorokobimasu",
+      "meaning": "Gembira",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "461",
+      "word": "しあわせ",
+      "reading": "Shiawase",
+      "meaning": "Bahagia",
+      "category": "Lainnya"
+    },
+    {
+      "id": "462",
+      "word": "せいちょう",
+      "reading": "Seichou",
+      "meaning": "Pertumbuhan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "463",
+      "word": "ながいき",
+      "reading": "Nagaiki",
+      "meaning": "Umur panjang",
+      "category": "Lainnya"
+    },
+    {
+      "id": "464",
+      "word": "ねがいこと",
+      "reading": "Negaigoto",
+      "meaning": "Keinginan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "465",
+      "word": "ごうかく",
+      "reading": "Goukaku",
+      "meaning": "Lulus",
+      "category": "Lainnya"
+    },
+    {
+      "id": "466",
+      "word": "しけん",
+      "reading": "Shiken",
+      "meaning": "Ujian",
+      "category": "Lainnya"
+    },
+    {
+      "id": "467",
+      "word": "おとな",
+      "reading": "Otona",
+      "meaning": "Orang Dewasa",
+      "category": "Orang"
+    },
+    {
+      "id": "468",
+      "word": "しょうひん",
+      "reading": "Shouhin",
+      "meaning": "Barang dagangan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "469",
+      "word": "でんきせいひん",
+      "reading": "Denki seihin",
+      "meaning": "Peralatan listrik",
+      "category": "Lainnya"
+    },
+    {
+      "id": "470",
+      "word": "でんしれんじ",
+      "reading": "Denshi renji",
+      "meaning": "Oven",
+      "category": "Lainnya"
+    },
+    {
+      "id": "471",
+      "word": "てんいん",
+      "reading": "Ten-in",
+      "meaning": "Penjaga toko",
+      "category": "Tempat"
+    },
+    {
+      "id": "472",
+      "word": "ちょうし",
+      "reading": "Choushi",
+      "meaning": "Keadaan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "473",
+      "word": "うごきます",
+      "reading": "Ugokimasu",
+      "meaning": "Bergerak",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "474",
+      "word": "おと",
+      "reading": "Oto",
+      "meaning": "Suara",
+      "category": "Lainnya"
+    },
+    {
+      "id": "475",
+      "word": "しょうえね",
+      "reading": "Shou-ene",
+      "meaning": "Hemat energi",
+      "category": "Lainnya"
+    },
+    {
+      "id": "476",
+      "word": "にほんせい",
+      "reading": "Nihonsei",
+      "meaning": "Buatan jepang",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "477",
+      "word": "おもい",
+      "reading": "Omoi",
+      "meaning": "Berat",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "478",
+      "word": "かるい",
+      "reading": "Karui",
+      "meaning": "Ringan",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "479",
+      "word": "はやく",
+      "reading": "Hayaku",
+      "meaning": "Cepat",
+      "category": "Lainnya"
+    },
+    {
+      "id": "480",
+      "word": "ほう",
+      "reading": "Hou",
+      "meaning": "Arah",
+      "category": "Lainnya"
+    },
+    {
+      "id": "481",
+      "word": "まんぞくします",
+      "reading": "Manzoku shimasu",
+      "meaning": "Puas",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "482",
+      "word": "きょうと",
+      "reading": "Kyouto",
+      "meaning": "Kyoto",
+      "category": "Lainnya"
+    },
+    {
+      "id": "483",
+      "word": "じんじゃ",
+      "reading": "Jinja",
+      "meaning": "Kuil sinto",
+      "category": "Lainnya"
+    },
+    {
+      "id": "484",
+      "word": "おてら",
+      "reading": "Otera",
+      "meaning": "Kuil budha",
+      "category": "Lainnya"
+    },
+    {
+      "id": "485",
+      "word": "ぶっきょう",
+      "reading": "Bukkyou",
+      "meaning": "Agama budha",
+      "category": "Lainnya"
+    },
+    {
+      "id": "486",
+      "word": "れきし",
+      "reading": "Rekishi",
+      "meaning": "Sejarah",
+      "category": "Lainnya"
+    },
+    {
+      "id": "487",
+      "word": "せかい",
+      "reading": "Sekai",
+      "meaning": "Dunia",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "488",
+      "word": "ちゅうしん",
+      "reading": "Chuushin",
+      "meaning": "Pusat",
+      "category": "Lainnya"
+    },
+    {
+      "id": "489",
+      "word": "にほんてき",
+      "reading": "Nihonteki",
+      "meaning": "Gaya jepang",
+      "category": "Lainnya"
+    },
+    {
+      "id": "490",
+      "word": "れきしてき",
+      "reading": "Rekishiteki",
+      "meaning": "Bersejarah",
+      "category": "Lainnya"
+    },
+    {
+      "id": "491",
+      "word": "いんしょく",
+      "reading": "Inshoku",
+      "meaning": "Makan minum",
+      "category": "Makanan"
+    },
+    {
+      "id": "492",
+      "word": "きんし",
+      "reading": "Kinshi",
+      "meaning": "Larangan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "493",
+      "word": "せつめい",
+      "reading": "Setsumei",
+      "meaning": "Penjelasan",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "494",
+      "word": "どうぐ",
+      "reading": "Dougu",
+      "meaning": "Peralatan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "495",
+      "word": "はくぶつかん",
+      "reading": "Hakubutsukan",
+      "meaning": "Museum",
+      "category": "Lainnya"
+    },
+    {
+      "id": "496",
+      "word": "ひつよう",
+      "reading": "Hitsuyou",
+      "meaning": "Keperluan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "497",
+      "word": "あぶら",
+      "reading": "Abura",
+      "meaning": "Minyak",
+      "category": "Lainnya"
+    },
+    {
+      "id": "498",
+      "word": "おんど",
+      "reading": "Ondo",
+      "meaning": "Suhu",
+      "category": "Lainnya"
+    },
+    {
+      "id": "499",
+      "word": "かつどう",
+      "reading": "Katsudou",
+      "meaning": "Kegiatan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "500",
+      "word": "かいぎしつ",
+      "reading": "Kaigishitsu",
+      "meaning": "Ruang rapat",
+      "category": "Lainnya"
+    },
+    {
+      "id": "501",
+      "word": "だします",
+      "reading": "Dashimasu",
+      "meaning": "Mengeluarkan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "502",
+      "word": "じどうしゃ",
+      "reading": "Jidousha",
+      "meaning": "Mobil",
+      "category": "Benda"
+    },
+    {
+      "id": "503",
+      "word": "かわります",
+      "reading": "Kawarimasu",
+      "meaning": "Mengganti",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "504",
+      "word": "こどもよう",
+      "reading": "Kodomoyou",
+      "meaning": "Keperluan anak",
+      "category": "Orang"
+    },
+    {
+      "id": "505",
+      "word": "じんせい",
+      "reading": "Jinsei",
+      "meaning": "Kehidupan",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "506",
+      "word": "かしゅ",
+      "reading": "Kashu",
+      "meaning": "Penyanyi",
+      "category": "Lainnya"
+    },
+    {
+      "id": "507",
+      "word": "せんしゅ",
+      "reading": "Senshu",
+      "meaning": "Atlet",
+      "category": "Lainnya"
+    },
+    {
+      "id": "508",
+      "word": "がか",
+      "reading": "Gaka",
+      "meaning": "Pelukis",
+      "category": "Lainnya"
+    },
+    {
+      "id": "509",
+      "word": "さっか",
+      "reading": "Sakka",
+      "meaning": "Pengarang",
+      "category": "Lainnya"
+    },
+    {
+      "id": "510",
+      "word": "にゅうがく",
+      "reading": "Nyuugaku",
+      "meaning": "Masuk sekolah",
+      "category": "Tempat"
+    },
+    {
+      "id": "511",
+      "word": "そつぎょう",
+      "reading": "Sotsugyou",
+      "meaning": "Lulus sekolah",
+      "category": "Tempat"
+    },
+    {
+      "id": "512",
+      "word": "びょうき",
+      "reading": "Byouki",
+      "meaning": "Sakit",
+      "category": "Lainnya"
+    },
+    {
+      "id": "513",
+      "word": "うまれます",
+      "reading": "Umaremasu",
+      "meaning": "Lahir",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "514",
+      "word": "おもいで",
+      "reading": "Omoide",
+      "meaning": "Kenangan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "515",
+      "word": "せいかつ",
+      "reading": "Seikatsu",
+      "meaning": "Kehidupan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "516",
+      "word": "えいが",
+      "reading": "Eiga",
+      "meaning": "Film",
+      "category": "Lainnya"
+    },
+    {
+      "id": "517",
+      "word": "おっと",
+      "reading": "Otto",
+      "meaning": "Suami",
+      "category": "Lainnya"
+    },
+    {
+      "id": "518",
+      "word": "つま",
+      "reading": "Tsuma",
+      "meaning": "Istri",
+      "category": "Lainnya"
+    },
+    {
+      "id": "519",
+      "word": "りょうしん",
+      "reading": "Ryoushin",
+      "meaning": "Orang tua",
+      "category": "Orang"
+    },
+    {
+      "id": "520",
+      "word": "ふべん",
+      "reading": "Fuben",
+      "meaning": "Tidak praktis",
+      "category": "Lainnya"
+    },
+    {
+      "id": "521",
+      "word": "えらびます",
+      "reading": "Erabimasu",
+      "meaning": "Memilih",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "522",
+      "word": "さっかーじょう",
+      "reading": "Sakkaajou",
+      "meaning": "Lapangan bola",
+      "category": "Lainnya"
+    },
+    {
+      "id": "523",
+      "word": "しあい",
+      "reading": "Shiai",
+      "meaning": "Pertandingan",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "524",
+      "word": "にちようび",
+      "reading": "Nichiyoubi",
+      "meaning": "Minggu",
+      "category": "Waktu"
+    },
+    {
+      "id": "525",
+      "word": "つよい",
+      "reading": "Tsuyoi",
+      "meaning": "Kuat",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "526",
+      "word": "よわい",
+      "reading": "Yowai",
+      "meaning": "Lemah",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "527",
+      "word": "こうつう",
+      "reading": "Koutsuu",
+      "meaning": "Lalu lintas",
+      "category": "Benda"
+    },
+    {
+      "id": "528",
+      "word": "つうきん",
+      "reading": "Tsuukin",
+      "meaning": "Jalan ke kantor",
+      "category": "Tempat"
+    },
+    {
+      "id": "529",
+      "word": "あぶない",
+      "reading": "Abunai",
+      "meaning": "Bahaya",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "530",
+      "word": "つとめます",
+      "reading": "Tsutomemasu",
+      "meaning": "Bekerja",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "531",
+      "word": "かいがい",
+      "reading": "Kaigai",
+      "meaning": "Luar negeri",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "532",
+      "word": "しょくせいかつ",
+      "reading": "Shokuseikatsu",
+      "meaning": "Pola makan",
+      "category": "Makanan"
+    },
+    {
+      "id": "533",
+      "word": "けんこう",
+      "reading": "Kenkou",
+      "meaning": "Kesehatan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "534",
+      "word": "かていりょうり",
+      "reading": "Katei ryouri",
+      "meaning": "Masakan rumah",
+      "category": "Tempat"
+    },
+    {
+      "id": "535",
+      "word": "ざいりょう",
+      "reading": "Zairyou",
+      "meaning": "Bahan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "536",
+      "word": "りょう",
+      "reading": "Ryou",
+      "meaning": "Jumlah",
+      "category": "Lainnya"
+    },
+    {
+      "id": "537",
+      "word": "こめ",
+      "reading": "Kome",
+      "meaning": "Beras",
+      "category": "Lainnya"
+    },
+    {
+      "id": "538",
+      "word": "ちょうしょく",
+      "reading": "Choushoku",
+      "meaning": "Makan pagi",
+      "category": "Waktu"
+    },
+    {
+      "id": "539",
+      "word": "ちゅうしょく",
+      "reading": "Chuushoku",
+      "meaning": "Makan siang",
+      "category": "Waktu"
+    },
+    {
+      "id": "540",
+      "word": "ゆうしょく",
+      "reading": "Yuushoku",
+      "meaning": "Makan malam",
+      "category": "Waktu"
+    },
+    {
+      "id": "541",
+      "word": "がいしょく",
+      "reading": "Gaishoku",
+      "meaning": "Makan di luar",
+      "category": "Makanan"
+    },
+    {
+      "id": "542",
+      "word": "ていしょく",
+      "reading": "Teishoku",
+      "meaning": "Menu tetap",
+      "category": "Lainnya"
+    },
+    {
+      "id": "543",
+      "word": "じゅうしょ",
+      "reading": "Juusho",
+      "meaning": "Alamat",
+      "category": "Lainnya"
+    },
+    {
+      "id": "544",
+      "word": "ほうもん",
+      "reading": "Houmon",
+      "meaning": "Kunjungan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "545",
+      "word": "けいけん",
+      "reading": "Keiken",
+      "meaning": "Pengalaman",
+      "category": "Lainnya"
+    },
+    {
+      "id": "546",
+      "word": "すわります",
+      "reading": "Suwarimasu",
+      "meaning": "Duduk",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "547",
+      "word": "たちます",
+      "reading": "Tachimasu",
+      "meaning": "Berdiri",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "548",
+      "word": "けいかく",
+      "reading": "Keikaku",
+      "meaning": "Rencana",
+      "category": "Lainnya"
+    },
+    {
+      "id": "549",
+      "word": "じしん",
+      "reading": "Jishin",
+      "meaning": "Percaya diri",
+      "category": "Lainnya"
+    },
+    {
+      "id": "550",
+      "word": "ほうほう",
+      "reading": "Houhou",
+      "meaning": "Cara",
+      "category": "Lainnya"
+    },
+    {
+      "id": "551",
+      "word": "もくてき",
+      "reading": "Mokuteki",
+      "meaning": "Tujuan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "552",
+      "word": "つうじます",
+      "reading": "Tsuujimasu",
+      "meaning": "Menguasai",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "553",
+      "word": "ならいます",
+      "reading": "Naraimasu",
+      "meaning": "Belajar",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "554",
+      "word": "まなびます",
+      "reading": "Manabimasu",
+      "meaning": "Belajar",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "555",
+      "word": "しょきゅう",
+      "reading": "Shokyuu",
+      "meaning": "Dasar",
+      "category": "Lainnya"
+    },
+    {
+      "id": "556",
+      "word": "ちゅうきゅう",
+      "reading": "Chuukyuu",
+      "meaning": "Menengah",
+      "category": "Lainnya"
+    },
+    {
+      "id": "557",
+      "word": "じょうきゅう",
+      "reading": "Joukyuu",
+      "meaning": "Atas",
+      "category": "Posisi"
+    },
+    {
+      "id": "558",
+      "word": "あいて",
+      "reading": "Aite",
+      "meaning": "Pasangan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "559",
+      "word": "きもち",
+      "reading": "Kimochi",
+      "meaning": "Perasaan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "560",
+      "word": "こいびと",
+      "reading": "Koibito",
+      "meaning": "Pacar",
+      "category": "Lainnya"
+    },
+    {
+      "id": "561",
+      "word": "であい",
+      "reading": "Deai",
+      "meaning": "Pertemuan",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "562",
+      "word": "さいきん",
+      "reading": "Saikin",
+      "meaning": "Akhir-akhir ini",
+      "category": "Lainnya"
+    },
+    {
+      "id": "563",
+      "word": "さいこう",
+      "reading": "Saikou",
+      "meaning": "Tertinggi",
+      "category": "Lainnya"
+    },
+    {
+      "id": "564",
+      "word": "しゅっせき",
+      "reading": "Shusseki",
+      "meaning": "Kehadiran",
+      "category": "Lainnya"
+    },
+    {
+      "id": "565",
+      "word": "しょうたい",
+      "reading": "Shoutai",
+      "meaning": "Undangan",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "566",
+      "word": "しゃかいじん",
+      "reading": "Shakaijin",
+      "meaning": "Anggota masyarakat",
+      "category": "Lainnya"
+    },
+    {
+      "id": "567",
+      "word": "しょくば",
+      "reading": "Shokuba",
+      "meaning": "Tempat kerja",
+      "category": "Angka"
+    },
+    {
+      "id": "568",
+      "word": "きゅうりょう",
+      "reading": "Kyuuryou",
+      "meaning": "Gaji",
+      "category": "Lainnya"
+    },
+    {
+      "id": "569",
+      "word": "にんげんかんけい",
+      "reading": "Ningen kankei",
+      "meaning": "Hubungan manusia",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "570",
+      "word": "しんゆう",
+      "reading": "Shinyuu",
+      "meaning": "Teman karib",
+      "category": "Orang"
+    },
+    {
+      "id": "571",
+      "word": "れんあい",
+      "reading": "Ren-ai",
+      "meaning": "Percintaan",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "572",
+      "word": "そうだん",
+      "reading": "Soudan",
+      "meaning": "Musyawarah",
+      "category": "Lainnya"
+    },
+    {
+      "id": "573",
+      "word": "こころ",
+      "reading": "Kokoro",
+      "meaning": "Hati",
+      "category": "Lainnya"
+    },
+    {
+      "id": "574",
+      "word": "しんぱい",
+      "reading": "Shinpai",
+      "meaning": "Khawatir",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "575",
+      "word": "ふあん",
+      "reading": "Fuan",
+      "meaning": "Gelisah",
+      "category": "Lainnya"
+    },
+    {
+      "id": "576",
+      "word": "おきゃくさま",
+      "reading": "Okyakusama",
+      "meaning": "Tamu",
+      "category": "Lainnya"
+    },
+    {
+      "id": "577",
+      "word": "てつづき",
+      "reading": "Tetsuzuki",
+      "meaning": "Prosedur",
+      "category": "Lainnya"
+    },
+    {
+      "id": "578",
+      "word": "へんこう",
+      "reading": "Henkou",
+      "meaning": "Perubahan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "579",
+      "word": "よてい",
+      "reading": "Yotei",
+      "meaning": "Rencana",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "580",
+      "word": "りよう",
+      "reading": "Riyou",
+      "meaning": "Penggunaan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "581",
+      "word": "わすれもの",
+      "reading": "Wasuremono",
+      "meaning": "Benda tertinggal",
+      "category": "Lainnya"
+    },
+    {
+      "id": "582",
+      "word": "たすけます",
+      "reading": "Tasukemasu",
+      "meaning": "Menolong",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "583",
+      "word": "たいりょく",
+      "reading": "Tairyoku",
+      "meaning": "Kekuatan fisik",
+      "category": "Lainnya"
+    },
+    {
+      "id": "584",
+      "word": "きょうりょく",
+      "reading": "Kyouryoku",
+      "meaning": "Kerja sama",
+      "category": "Lainnya"
+    },
+    {
+      "id": "585",
+      "word": "たんとう",
+      "reading": "Tantou",
+      "meaning": "Petugas",
+      "category": "Lainnya"
+    },
+    {
+      "id": "586",
+      "word": "ほうこく",
+      "reading": "Houkoku",
+      "meaning": "Lapor",
+      "category": "Lainnya"
+    },
+    {
+      "id": "587",
+      "word": "れんらく",
+      "reading": "Renraku",
+      "meaning": "Menghubungi",
+      "category": "Lainnya"
+    },
+    {
+      "id": "588",
+      "word": "ぼしゅう",
+      "reading": "Boshuu",
+      "meaning": "Rekrutmen",
+      "category": "Lainnya"
+    },
+    {
+      "id": "589",
+      "word": "ゆしゅつ",
+      "reading": "Yushutsu",
+      "meaning": "Ekspor",
+      "category": "Lainnya"
+    },
+    {
+      "id": "590",
+      "word": "ゆにゅう",
+      "reading": "Yunyuu",
+      "meaning": "Impor",
+      "category": "Lainnya"
+    },
+    {
+      "id": "591",
+      "word": "かいわ",
+      "reading": "Kaiwa",
+      "meaning": "Percakapan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "592",
+      "word": "かたち",
+      "reading": "Katachi",
+      "meaning": "Bentuk",
+      "category": "Lainnya"
+    },
+    {
+      "id": "593",
+      "word": "かんじ",
+      "reading": "Kanji",
+      "meaning": "Kanji",
+      "category": "Lainnya"
+    },
+    {
+      "id": "594",
+      "word": "こたえ",
+      "reading": "Kotae",
+      "meaning": "Jawaban",
+      "category": "Lainnya"
+    },
+    {
+      "id": "595",
+      "word": "しつもん",
+      "reading": "Shitsumon",
+      "meaning": "Pertanyaan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "596",
+      "word": "ただしい",
+      "reading": "Tadashii",
+      "meaning": "Benar",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "597",
+      "word": "どっかい",
+      "reading": "Dokkai",
+      "meaning": "Bacaan",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "598",
+      "word": "ひょうげん",
+      "reading": "Hyougen",
+      "meaning": "Pengucapan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "599",
+      "word": "ぶん",
+      "reading": "Bun",
+      "meaning": "Kalimat",
+      "category": "Angka"
+    },
+    {
+      "id": "600",
+      "word": "ぶんけい",
+      "reading": "Bunkei",
+      "meaning": "Pola kalimat",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "601",
+      "word": "ぶんぽう",
+      "reading": "Bunpou",
+      "meaning": "Tata bahasa",
+      "category": "Lainnya"
+    },
+    {
+      "id": "602",
+      "word": "もういちど",
+      "reading": "Mou ichido",
+      "meaning": "Sekali lagi",
+      "category": "Lainnya"
+    },
+    {
+      "id": "603",
+      "word": "れい",
+      "reading": "Rei",
+      "meaning": "Contoh",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "604",
+      "word": "れんしゅう",
+      "reading": "Renshuu",
+      "meaning": "Latihan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "605",
+      "word": "こんど",
+      "reading": "Kondo",
+      "meaning": "Lain kali",
+      "category": "Lainnya"
+    },
+    {
+      "id": "606",
+      "word": "よこ",
+      "reading": "Yoko",
+      "meaning": "Sebelah",
+      "category": "Lainnya"
+    },
+    {
+      "id": "607",
+      "word": "おします",
+      "reading": "Oshimasu",
+      "meaning": "Menekan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "608",
+      "word": "ひきます",
+      "reading": "Hikimasu",
+      "meaning": "Menarik",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "609",
+      "word": "おんせん",
+      "reading": "Onsen",
+      "meaning": "Air panas",
+      "category": "Lainnya"
+    },
+    {
+      "id": "610",
+      "word": "きせつ",
+      "reading": "Kisetsu",
+      "meaning": "Musim",
+      "category": "Lainnya"
+    },
+    {
+      "id": "611",
+      "word": "しょくどう",
+      "reading": "Shokudou",
+      "meaning": "Kantin",
+      "category": "Lainnya"
+    },
+    {
+      "id": "612",
+      "word": "うけつけ",
+      "reading": "Uketsuke",
+      "meaning": "Resepsionis",
+      "category": "Lainnya"
+    },
+    {
+      "id": "613",
+      "word": "もん",
+      "reading": "Mon",
+      "meaning": "Pintu gerbang",
+      "category": "Lainnya"
+    },
+    {
+      "id": "614",
+      "word": "のぼります",
+      "reading": "Noborimasu",
+      "meaning": "Mendaki",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "615",
+      "word": "きょうかしょ",
+      "reading": "Kyoukasho",
+      "meaning": "Buku panduan",
+      "category": "Angka"
+    },
+    {
+      "id": "616",
+      "word": "きょうしつ",
+      "reading": "Kyoushitsu",
+      "meaning": "Ruang kelas",
+      "category": "Lainnya"
+    },
+    {
+      "id": "617",
+      "word": "さんかします",
+      "reading": "Sankashimasu",
+      "meaning": "Partisipasi",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "618",
+      "word": "よういします",
+      "reading": "Youishimasu",
+      "meaning": "Menyiapkan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "619",
+      "word": "ぎゅうにく",
+      "reading": "Gyuuniku",
+      "meaning": "Daging sapi",
+      "category": "Makanan"
+    },
+    {
+      "id": "620",
+      "word": "ぶたにく",
+      "reading": "Butaniku",
+      "meaning": "Daging babi",
+      "category": "Makanan"
+    },
+    {
+      "id": "621",
+      "word": "さら",
+      "reading": "Sara",
+      "meaning": "Piring",
+      "category": "Lainnya"
+    },
+    {
+      "id": "622",
+      "word": "おゆ",
+      "reading": "Oyu",
+      "meaning": "Air panas",
+      "category": "Lainnya"
+    },
+    {
+      "id": "623",
+      "word": "ちょうりほうほう",
+      "reading": "Chouri houhou",
+      "meaning": "Cara memasak",
+      "category": "Lainnya"
+    },
+    {
+      "id": "624",
+      "word": "すうじ",
+      "reading": "Suuji",
+      "meaning": "Angka",
+      "category": "Lainnya"
+    },
+    {
+      "id": "625",
+      "word": "つごう",
+      "reading": "Tsugou",
+      "meaning": "Keadaan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "626",
+      "word": "ようじ",
+      "reading": "Youji",
+      "meaning": "Keperluan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "627",
+      "word": "しめい",
+      "reading": "Shimei",
+      "meaning": "Nama lengkap",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "628",
+      "word": "りゆう",
+      "reading": "Riyuu",
+      "meaning": "Alasan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "629",
+      "word": "べつに",
+      "reading": "Betsuni",
+      "meaning": "Beda-beda",
+      "category": "Lainnya"
+    },
+    {
+      "id": "630",
+      "word": "れんらくさき",
+      "reading": "Renrakusaki",
+      "meaning": "Alamat kontak",
+      "category": "Lainnya"
+    },
+    {
+      "id": "631",
+      "word": "すいます",
+      "reading": "Suimasu",
+      "meaning": "Menghisap",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "632",
+      "word": "つたえます",
+      "reading": "Tsutaemasu",
+      "meaning": "Menyampaikan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "633",
+      "word": "ねつ",
+      "reading": "Netsu",
+      "meaning": "Demam",
+      "category": "Lainnya"
+    },
+    {
+      "id": "634",
+      "word": "くすり",
+      "reading": "Kusuri",
+      "meaning": "Obat",
+      "category": "Lainnya"
+    },
+    {
+      "id": "635",
+      "word": "きにゅうします",
+      "reading": "Kinyuu shimasu",
+      "meaning": "Mengisi kertas",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "636",
+      "word": "なきます",
+      "reading": "Nakimasu",
+      "meaning": "Menangis",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "637",
+      "word": "かいけい",
+      "reading": "Kaikei",
+      "meaning": "Pembayaran",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "638",
+      "word": "でんわばんごう",
+      "reading": "Denwa bangou",
+      "meaning": "Nomor telepon",
+      "category": "Lainnya"
+    },
+    {
+      "id": "639",
+      "word": "きんえん",
+      "reading": "Kin-en",
+      "meaning": "Dilarang merokok",
+      "category": "Lainnya"
+    },
+    {
+      "id": "640",
+      "word": "きります",
+      "reading": "Kirimasu",
+      "meaning": "Memotong",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "641",
+      "word": "やきます",
+      "reading": "Yakimasu",
+      "meaning": "Memanggang",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "642",
+      "word": "りょかん",
+      "reading": "Ryokan",
+      "meaning": "Penginapan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "643",
+      "word": "じこ",
+      "reading": "Jiko",
+      "meaning": "Kecelakaan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "644",
+      "word": "こしょう",
+      "reading": "Koshou",
+      "meaning": "Rusak",
+      "category": "Lainnya"
+    },
+    {
+      "id": "645",
+      "word": "していせき",
+      "reading": "Shiteiseki",
+      "meaning": "Kursi pesanan",
+      "category": "Benda"
+    },
+    {
+      "id": "646",
+      "word": "ひかります",
+      "reading": "Hikarimasu",
+      "meaning": "Bersinar",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "647",
+      "word": "おしらせ",
+      "reading": "Oshirase",
+      "meaning": "Pengumuman",
+      "category": "Lainnya"
+    },
+    {
+      "id": "648",
+      "word": "すいどう",
+      "reading": "Suidou",
+      "meaning": "Ledeng",
+      "category": "Lainnya"
+    },
+    {
+      "id": "649",
+      "word": "こうじ",
+      "reading": "Kouji",
+      "meaning": "Konstruksi",
+      "category": "Lainnya"
+    },
+    {
+      "id": "650",
+      "word": "ばあい",
+      "reading": "Baai",
+      "meaning": "Kasus",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "651",
+      "word": "じょうけん",
+      "reading": "Jouken",
+      "meaning": "Syarat",
+      "category": "Lainnya"
+    },
+    {
+      "id": "652",
+      "word": "ひらきます",
+      "reading": "Hirakimasu",
+      "meaning": "Membuka",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "653",
+      "word": "せいさんします",
+      "reading": "Seisan shimasu",
+      "meaning": "Produksi",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "654",
+      "word": "たいけん",
+      "reading": "Taiken",
+      "meaning": "Percobaan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "655",
+      "word": "こくさいこうりゅう",
+      "reading": "Kokusai kouryuu",
+      "meaning": "Pertukaran internasional",
+      "category": "Makanan"
+    },
+    {
+      "id": "656",
+      "word": "もうしこみます",
+      "reading": "Moushikomimasu",
+      "meaning": "Melamar",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "657",
+      "word": "さくねん",
+      "reading": "Sakunen",
+      "meaning": "Tahun lalu",
+      "category": "Waktu"
+    },
+    {
+      "id": "658",
+      "word": "まいとし",
+      "reading": "Maitoshi",
+      "meaning": "Setiap tahun",
+      "category": "Waktu"
+    },
+    {
+      "id": "659",
+      "word": "ふくろ",
+      "reading": "Fukuro",
+      "meaning": "Kantong",
+      "category": "Lainnya"
+    },
+    {
+      "id": "660",
+      "word": "てんちょう",
+      "reading": "Tenchou",
+      "meaning": "Manajer toko",
+      "category": "Tempat"
+    },
+    {
+      "id": "661",
+      "word": "ぜんいん",
+      "reading": "Zen-in",
+      "meaning": "Semuanya",
+      "category": "Lainnya"
+    },
+    {
+      "id": "662",
+      "word": "しゅうかん",
+      "reading": "Shuukan",
+      "meaning": "Kebiasaan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "663",
+      "word": "ふつう",
+      "reading": "Futsuu",
+      "meaning": "Biasa",
+      "category": "Lainnya"
+    },
+    {
+      "id": "664",
+      "word": "にゅういんします",
+      "reading": "Nyuuin shimasu",
+      "meaning": "Masuk RS",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "665",
+      "word": "たいいんします",
+      "reading": "Tai-in shimasu",
+      "meaning": "Keluar RS",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "666",
+      "word": "きゅうに",
+      "reading": "Kyuu ni",
+      "meaning": "Tiba-tiba",
+      "category": "Lainnya"
+    },
+    {
+      "id": "667",
+      "word": "えいぎょうします",
+      "reading": "Eigyou shimasu",
+      "meaning": "Beroperasi",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "668",
+      "word": "あんないします",
+      "reading": "Annai shimasu",
+      "meaning": "Memandu",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "669",
+      "word": "ねだん",
+      "reading": "Nedan",
+      "meaning": "Harga",
+      "category": "Lainnya"
+    },
+    {
+      "id": "670",
+      "word": "かかく",
+      "reading": "Kakaku",
+      "meaning": "Harga",
+      "category": "Lainnya"
+    },
+    {
+      "id": "671",
+      "word": "しょうひぜい",
+      "reading": "Shouhizei",
+      "meaning": "Pajak konsumen",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "672",
+      "word": "ぜいべつ",
+      "reading": "Zeibetsu",
+      "meaning": "Belum pajak",
+      "category": "Lainnya"
+    },
+    {
+      "id": "673",
+      "word": "としょかん",
+      "reading": "Toshokan",
+      "meaning": "Perpustakaan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "674",
+      "word": "あきます",
+      "reading": "Akimasu",
+      "meaning": "Terbuka",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "675",
+      "word": "しまります",
+      "reading": "Shimarimasu",
+      "meaning": "Tertutup",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "676",
+      "word": "りようします",
+      "reading": "Riyoushimasu",
+      "meaning": "Menggunakan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "677",
+      "word": "まどぐち",
+      "reading": "Madoguchi",
+      "meaning": "Jendela loket",
+      "category": "Lainnya"
+    },
+    {
+      "id": "678",
+      "word": "ゆうびんきょく",
+      "reading": "Yuubinkyoku",
+      "meaning": "Kantor pos",
+      "category": "Tempat"
+    },
+    {
+      "id": "679",
+      "word": "きんじょ",
+      "reading": "Kinjo",
+      "meaning": "Tetangga",
+      "category": "Lainnya"
+    },
+    {
+      "id": "680",
+      "word": "じどう",
+      "reading": "Jidou",
+      "meaning": "Otomatis",
+      "category": "Lainnya"
+    },
+    {
+      "id": "681",
+      "word": "わけます",
+      "reading": "Wakemasu",
+      "meaning": "Membagi",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "682",
+      "word": "もえます",
+      "reading": "Moemasu",
+      "meaning": "Terbakar",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "683",
+      "word": "せっていします",
+      "reading": "Settei shimasu",
+      "meaning": "Mengeset",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "684",
+      "word": "じしん",
+      "reading": "Jishin",
+      "meaning": "Gempa",
+      "category": "Lainnya"
+    },
+    {
+      "id": "685",
+      "word": "たいふゅう",
+      "reading": "Taifyuu",
+      "meaning": "Topan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "686",
+      "word": "こえ",
+      "reading": "Koe",
+      "meaning": "Suara",
+      "category": "Lainnya"
+    },
+    {
+      "id": "687",
+      "word": "たいせつな",
+      "reading": "Taisetsu na",
+      "meaning": "Penting",
+      "category": "Lainnya"
+    },
+    {
+      "id": "688",
+      "word": "すすみます",
+      "reading": "Susumimasu",
+      "meaning": "Berlanjut",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "689",
+      "word": "じゅぎょう",
+      "reading": "Jugyou",
+      "meaning": "Pelajaran",
+      "category": "Lainnya"
+    },
+    {
+      "id": "690",
+      "word": "たいへんな",
+      "reading": "Taihen na",
+      "meaning": "Berat",
+      "category": "Lainnya"
+    },
+    {
+      "id": "691",
+      "word": "こまります",
+      "reading": "Komarimasu",
+      "meaning": "Susah",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "692",
+      "word": "ちがいます",
+      "reading": "Chigaimasu",
+      "meaning": "Salah",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "693",
+      "word": "なれます",
+      "reading": "Naremasu",
+      "meaning": "Terbiasa",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "694",
+      "word": "ふえます",
+      "reading": "Fuemasu",
+      "meaning": "Bertambah",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "695",
+      "word": "わらいます",
+      "reading": "Waraimasu",
+      "meaning": "Tertawa",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "696",
+      "word": "くろうします",
+      "reading": "Kurou shimasu",
+      "meaning": "Bersusah payah",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "697",
+      "word": "きぼう",
+      "reading": "Kibou",
+      "meaning": "Harapan",
+      "category": "Lainnya"
+    },
+    {
+      "id": "698",
+      "word": "とくに",
+      "reading": "Toku ni",
+      "meaning": "Terutama",
+      "category": "Lainnya"
+    },
+    {
+      "id": "699",
+      "word": "たてます",
+      "reading": "Tatemasu",
+      "meaning": "Mendirikan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "700",
+      "word": "つづけます",
+      "reading": "Tsuzukemasu",
+      "meaning": "Melanjutkan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "701",
+      "word": "やくにたちます",
+      "reading": "Yaku ni tachimasu",
+      "meaning": "Bermanfaat",
+      "category": "Kata Kerja"
+    }
   ]
 }
