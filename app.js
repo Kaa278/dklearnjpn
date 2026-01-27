@@ -686,45 +686,69 @@ function playPronunciation() {
         return;
     }
 
+    // Check if Web Speech API is supported
+    if (!('speechSynthesis' in window)) {
+        console.error('Speech synthesis not supported in this browser');
+        alert('Audio pronunciation tidak didukung di browser ini.');
+        return;
+    }
+
     // Visual feedback
     if (elements.speakerBtn) {
         elements.speakerBtn.classList.add('animate-pulse');
     }
 
-    // Use Google Translate TTS API (more reliable than Web Speech API)
-    const text = encodeURIComponent(currentPronunciation);
-    const audioUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=ja&client=tw-ob&q=${text}`;
+    // WORKAROUND for Chromium synthesis-failed bug:
+    // Call resume() before speak() to reset the speech synthesis state
+    window.speechSynthesis.resume();
 
-    console.log('Playing audio from URL:', audioUrl);
+    const utterance = new SpeechSynthesisUtterance(currentPronunciation);
+    utterance.lang = 'ja-JP'; // Japanese language
+    utterance.rate = 0.9;
+    utterance.pitch = 1.0;
+    utterance.volume = 1.0;
 
-    const audio = new Audio(audioUrl);
+    console.log('Creating utterance for:', currentPronunciation);
 
-    audio.onplay = () => {
-        console.log('Audio started playing');
+    utterance.onstart = () => {
+        console.log('Speech started');
     };
 
-    audio.onended = () => {
-        console.log('Audio ended');
+    utterance.onend = () => {
+        console.log('Speech ended');
         if (elements.speakerBtn) {
             elements.speakerBtn.classList.remove('animate-pulse');
         }
     };
 
-    audio.onerror = (event) => {
-        console.error('Audio error:', event);
+    utterance.onerror = (event) => {
+        console.error('Speech synthesis error:', event.error);
         if (elements.speakerBtn) {
             elements.speakerBtn.classList.remove('animate-pulse');
         }
-        alert('Error saat memutar audio. Pastikan koneksi internet aktif.');
+
+        // More helpful error messages
+        if (event.error === 'synthesis-failed') {
+            alert('Gagal memutar audio. Coba refresh halaman dan klik lagi.');
+        } else if (event.error === 'network') {
+            alert('Error jaringan. Pastikan koneksi internet aktif.');
+        } else {
+            alert('Error: ' + event.error);
+        }
     };
 
-    audio.play().catch(error => {
-        console.error('Play error:', error);
-        if (elements.speakerBtn) {
-            elements.speakerBtn.classList.remove('animate-pulse');
-        }
-        alert('Error saat memutar audio: ' + error.message);
-    });
+    // Try to get Japanese voice
+    const voices = window.speechSynthesis.getVoices();
+    const japaneseVoice = voices.find(voice => voice.lang.startsWith('ja'));
+    if (japaneseVoice) {
+        utterance.voice = japaneseVoice;
+        console.log('Using Japanese voice:', japaneseVoice.name);
+    } else {
+        console.warn('No Japanese voice found, using default');
+    }
+
+    // Speak
+    window.speechSynthesis.speak(utterance);
 }
 
 // --- Helper: Check if char is Kana (Hiragana/Katakana) ---
