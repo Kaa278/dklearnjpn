@@ -5312,6 +5312,118 @@
       "reading": "Hoshigaru",
       "meaning": "Menginginkan",
       "category": "Kata Kerja"
+    },
+    {
+      "id": "760",
+      "word": "えんぴつ",
+      "reading": "Enpitsu",
+      "meaning": "Pensil",
+      "category": "Bunbougu"
+    },
+    {
+      "id": "761",
+      "word": "けしごむ",
+      "reading": "Keshigomu",
+      "meaning": "Penghapus",
+      "category": "Bunbougu"
+    },
+    {
+      "id": "762",
+      "word": "シャープペンシル",
+      "reading": "Shaapu penshiru",
+      "meaning": "Pensil mekanik",
+      "category": "Bunbougu"
+    },
+    {
+      "id": "763",
+      "word": "ボールペン",
+      "reading": "Boorupen",
+      "meaning": "Pulpen",
+      "category": "Bunbougu"
+    },
+    {
+      "id": "764",
+      "word": "まんねんひつ",
+      "reading": "Mannenhitsu",
+      "meaning": "Pulpen tinta",
+      "category": "Bunbougu"
+    },
+    {
+      "id": "765",
+      "word": "じょうぎ",
+      "reading": "Jougi",
+      "meaning": "Penggaris",
+      "category": "Bunbougu"
+    },
+    {
+      "id": "766",
+      "word": "ふでばこ",
+      "reading": "Fudebako",
+      "meaning": "Kotak pensil",
+      "category": "Bunbougu"
+    },
+    {
+      "id": "767",
+      "word": "ノート",
+      "reading": "Nooto",
+      "meaning": "Buku tulis",
+      "category": "Bunbougu"
+    },
+    {
+      "id": "768",
+      "word": "はさみ",
+      "reading": "Hasami",
+      "meaning": "Gunting",
+      "category": "Bunbougu"
+    },
+    {
+      "id": "769",
+      "word": "カッター",
+      "reading": "Kattaa",
+      "meaning": "Cutter",
+      "category": "Bunbougu"
+    },
+    {
+      "id": "770",
+      "word": "のり",
+      "reading": "Nori",
+      "meaning": "Lem",
+      "category": "Bunbougu"
+    },
+    {
+      "id": "771",
+      "word": "ホッチキス",
+      "reading": "Hotchikisu",
+      "meaning": "Staples",
+      "category": "Bunbougu"
+    },
+    {
+      "id": "772",
+      "word": "しゅうせいテープ",
+      "reading": "Shuusei teepu",
+      "meaning": "Tip-ex kertas",
+      "category": "Bunbougu"
+    },
+    {
+      "id": "773",
+      "word": "ふせん",
+      "reading": "Fusen",
+      "meaning": "Sticky notes",
+      "category": "Bunbougu"
+    },
+    {
+      "id": "774",
+      "word": "クリップ",
+      "reading": "Kurippu",
+      "meaning": "Klip kertas",
+      "category": "Bunbougu"
+    },
+    {
+      "id": "775",
+      "word": "あなあけパンチ",
+      "reading": "Anaake panchi",
+      "meaning": "Pembolong kertas",
+      "category": "Bunbougu"
     }
   ]
 }
