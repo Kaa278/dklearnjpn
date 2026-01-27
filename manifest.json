@@ -1,6 +1,6 @@
 {
-    "name": "Kotoba - Belajar Bahasa Jepang",
-    "short_name": "Kotoba",
+    "name": "DKotoba - Belajar Bahasa Jepang",
+    "short_name": "DKotoba",
     "description": "Aplikasi belajar kosakata dan huruf Jepang interaktif.",
     "start_url": "./index.html",
     "display": "standalone",

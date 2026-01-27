@@ -104,6 +104,37 @@ select.bento-input {
     padding-right: 36px;
 }
 
+/* Custom keyframes */
+@keyframes title-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes bounce-slight {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+.animate-bounce-slight {
+    animation: bounce-slight 2s infinite;
+}
+
 /* Horizontal Navigation Tabs (Restored) */
 .nav-tab-horizontal {
     padding: 10px 20px;
