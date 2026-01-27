@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Kosakata | Kotoba</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Noto+Sans+JP:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f1f5;
+        }
+
+        .font-jp {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        .bento-card {
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+
+        /* Custom Checkbox Style */
+        .checkbox-wrapper input:checked+div {
+            background-color: #ecfdf5;
+            /* green-50 */
+            border-color: #10b981;
+            /* green-500 */
+            color: #047857;
+            /* green-700 */
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <div class="max-w-xl w-full">
+        <!-- Header / Back -->
+        <div class="flex justify-between items-center mb-6">
+            <a href="../../index.html"
+                class="flex items-center gap-2 text-gray-500 hover:text-gray-800 font-bold transition-colors">
+                <i class="fa-solid fa-arrow-left"></i> Kembali
+            </a>
+            <div id="scoreBadge" class="hidden bg-white px-4 py-1.5 rounded-full shadow-sm">
+                <span id="scoreDisplay" class="text-lg font-black flex items-center gap-3">
+                    <span class="text-green-500 flex items-center"><i class="fa-solid fa-check mr-1.5"></i>0</span>
+                    <span class="w-px h-4 bg-gray-200"></span>
+                    <span class="text-red-500 flex items-center"><i class="fa-solid fa-xmark mr-1.5"></i>0</span>
+                </span>
+            </div>
+        </div>
+
+        <!-- Setup Screen -->
+        <div id="setupScreen" class="bento-card p-6 md:p-8">
+            <div class="text-center mb-8">
+                <h1 class="text-3xl font-black text-gray-800 mb-2">Kuis Kosakata</h1>
+                <p class="text-gray-500 font-medium">Tes seberapa banyak kata yang kamu hafal!</p>
+            </div>
+
+            <!-- Loading Indicator -->
+            <div id="loadingState" class="text-center py-8">
+                <i class="fa-solid fa-circle-notch fa-spin text-4xl text-green-500 mb-4"></i>
+                <p class="text-gray-500">Memuat data...</p>
+            </div>
+
+            <div id="setupForm" class="hidden">
+                <!-- Mode Filter -->
+                <div class="mb-6">
+                    <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Mode Kuis</label>
+                    <div class="flex gap-2">
+                        <label class="flex-1 cursor-pointer checkbox-wrapper">
+                            <input type="radio" name="quizMode" value="jp-id" class="hidden" checked>
+                            <div
+                                class="border-2 border-gray-100 rounded-xl py-3 text-center font-bold text-gray-500 transition-all hover:bg-gray-50 flex flex-col items-center gap-1">
+                                <span class="text-lg">🇯🇵 ➔ 🇮🇩</span>
+                                <span class="text-xs">Jepang ke Indo</span>
+                            </div>
+                        </label>
+                        <label class="flex-1 cursor-pointer checkbox-wrapper">
+                            <input type="radio" name="quizMode" value="id-jp" class="hidden">
+                            <div
+                                class="border-2 border-gray-100 rounded-xl py-3 text-center font-bold text-gray-500 transition-all hover:bg-gray-50 flex flex-col items-center gap-1">
+                                <span class="text-lg">🇮🇩 ➔ 🇯🇵</span>
+                                <span class="text-xs">Indo ke Jepang</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Category Filter -->
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-3">
+                        <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider">Kategori</label>
+                        <button onclick="toggleAllCategories()"
+                            class="text-xs font-bold text-green-500 hover:text-green-600 transition-colors bg-green-50 px-3 py-1 rounded-lg">
+                            Pilih Semua
+                        </button>
+                    </div>
+                    <div id="categoryGrid"
+                        class="grid grid-cols-2 gap-2 max-h-48 overflow-y-auto pr-1 custom-scrollbar">
+                        <!-- Checkboxes generated by JS -->
+                    </div>
+                </div>
+
+                <!-- Answer Mode -->
+                <div class="mb-6">
+                    <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Tipe
+                        Jawaban</label>
+                    <div class="flex gap-2">
+                        <label class="flex-1 cursor-pointer checkbox-wrapper">
+                            <input type="radio" name="answerMode" value="choice" class="hidden" checked>
+                            <div
+                                class="border-2 border-gray-100 rounded-xl py-3 text-center font-bold text-gray-500 transition-all hover:bg-gray-50 flex flex-col items-center gap-1">
+                                <span class="text-xl">👆</span>
+                                <span class="text-xs">Pilihan Ganda</span>
+                            </div>
+                        </label>
+                        <label class="flex-1 cursor-pointer checkbox-wrapper">
+                            <input type="radio" name="answerMode" value="input" class="hidden">
+                            <div
+                                class="border-2 border-gray-100 rounded-xl py-3 text-center font-bold text-gray-500 transition-all hover:bg-gray-50 flex flex-col items-center gap-1">
+                                <span class="text-xl">⌨️</span>
+                                <span class="text-xs">Ketik Jawaban</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question Count -->
+                <div class="mb-8">
+                    <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Jumlah
+                        Soal</label>
+                    <div class="flex gap-2">
+                        <label class="flex-1 cursor-pointer checkbox-wrapper">
+                            <input type="radio" name="questionCount" value="10" class="hidden" checked>
+                            <div
+                                class="border-2 border-gray-100 rounded-xl py-2 text-center font-bold text-gray-500 transition-all hover:bg-gray-50">
+                                10</div>
+                        </label>
+                        <label class="flex-1 cursor-pointer checkbox-wrapper">
+                            <input type="radio" name="questionCount" value="20" class="hidden">
+                            <div
+                                class="border-2 border-gray-100 rounded-xl py-2 text-center font-bold text-gray-500 transition-all hover:bg-gray-50">
+                                20</div>
+                        </label>
+                        <label class="flex-1 cursor-pointer checkbox-wrapper">
+                            <input type="radio" name="questionCount" value="9999" class="hidden">
+                            <div
+                                class="border-2 border-gray-100 rounded-xl py-2 text-center font-bold text-gray-500 transition-all hover:bg-gray-50">
+                                <i class="fa-solid fa-infinity"></i>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <button onclick="startGame()"
+                    class="w-full bg-green-500 text-white font-bold py-4 rounded-xl hover:bg-green-600 transition-colors shadow-lg shadow-green-200">
+                    Mulai Main 🚀
+                </button>
+            </div>
+        </div>
+
+        <!-- Quiz Container (Hidden initially) -->
+        <div id="quizContainer" class="hidden bento-card p-6 md:p-8 text-center relative overflow-hidden">
+            <!-- Progress -->
+            <div class="absolute top-0 left-0 w-full h-1.5 bg-gray-100">
+                <div id="progressBar" class="h-full bg-green-500 transition-all duration-300" style="width: 0%"></div>
+            </div>
+
+            <div class="mt-4 mb-8">
+                <p id="questionLabel" class="text-gray-400 text-xs font-bold uppercase tracking-widest mb-2">Arti Kata
+                </p>
+                <div class="min-h-[120px] flex flex-col justify-center items-center">
+                    <h1 id="questionText"
+                        class="text-4xl md:text-5xl font-black text-gray-800 font-jp mb-2 leading-tight transition-transform cursor-default">
+                    </h1>
+                    <p id="questionSub" class="text-gray-500 font-medium text-lg hidden"></p>
+                </div>
+            </div>
+
+            <!-- Options Grid -->
+            <div id="optionsGrid" class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <!-- Options injected by JS -->
+            </div>
+
+            <!-- Input Container -->
+            <div id="inputContainer" class="hidden w-full max-w-sm mx-auto">
+                <input type="text" id="answerInput" placeholder="Ketik jawaban..."
+                    class="w-full text-center text-xl font-bold p-4 border-2 border-gray-200 rounded-xl focus:border-green-500 focus:outline-none mb-4"
+                    autocomplete="off">
+                <button onclick="handleInputSubmit()"
+                    class="w-full bg-green-500 text-white font-bold py-3 rounded-xl hover:bg-green-600 transition-colors shadow-md">
+                    Jawab
+                </button>
+                <p id="inputHint" class="text-xs text-gray-400 font-bold uppercase mt-2 tracking-wide"></p>
+            </div>
+
+            <!-- Feedback Overlay -->
+            <div id="feedbackOverlay"
+                class="hidden absolute inset-0 bg-white/95 backdrop-blur-sm flex flex-col items-center justify-center z-10 p-6 text-center">
+                <div id="feedbackIcon" class="text-6xl mb-4"></div>
+                <h3 id="feedbackText" class="text-2xl font-black mb-2"></h3>
+                <div class="bg-gray-50 p-4 rounded-xl mb-6 w-full max-w-xs">
+                    <p class="text-xs text-gray-400 font-bold uppercase mb-1">Jawaban Benar</p>
+                    <p id="feedbackAnswer" class="text-xl font-bold text-gray-800"></p>
+                    <p id="feedbackDetail" class="text-sm text-gray-500 mt-1"></p>
+                </div>
+                <button onclick="nextQuestion()"
+                    class="px-8 py-3 bg-gray-900 text-white rounded-xl font-bold hover:bg-gray-800 transition-colors">
+                    Lanjut <i class="fa-solid fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+
+            <!-- Result Overlay (End Game) -->
+            <div id="resultOverlay"
+                class="hidden absolute inset-0 bg-white z-20 flex flex-col items-center justify-center p-8 text-center">
+                <div class="text-6xl mb-4">🏆</div>
+                <h2 class="text-3xl font-black text-gray-800 mb-2">Selesai!</h2>
+                <p class="text-gray-500 font-medium mb-8">Kamu telah menyelesaikan sesi kuis ini.</p>
+
+                <div class="grid grid-cols-2 gap-4 w-full max-w-xs mb-8">
+                    <div class="bg-green-50 p-4 rounded-2xl border border-green-100">
+                        <div class="text-3xl font-black text-green-500" id="finalCorrect">0</div>
+                        <div class="text-xs font-bold text-green-700 uppercase">Benar</div>
+                    </div>
+                    <div class="bg-red-50 p-4 rounded-2xl border border-red-100">
+                        <div class="text-3xl font-black text-red-500" id="finalIncorrect">0</div>
+                        <div class="text-xs font-bold text-red-700 uppercase">Salah</div>
+                    </div>
+                </div>
+
+                <button onclick="location.reload()"
+                    class="w-full max-w-xs bg-gray-900 text-white font-bold py-3 rounded-xl hover:bg-gray-800 transition-colors shadow-lg">
+                    Main Lagi 🔄
+                </button>
+                <a href="../../index.html" class="mt-4 text-sm font-bold text-gray-400 hover:text-gray-600">
+                    Kembali ke Menu Utama
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        let allData = [];
+        let activeData = [];
+
+        // Game State
+        let settings = {
+            mode: 'jp-id', // 'jp-id' or 'id-jp'
+            answerType: 'choice', // 'choice' or 'input'
+            categories: [],
+            count: 10
+        };
+        let currentQuestionIndex = 0;
+        let score = { correct: 0, incorrect: 0 };
+        let currentQuestion = null;
+        let isAnswered = false;
+
+        // Fetch Data
+        async function loadData() {
+            try {
+                const response = await fetch('../../data/vocabulary.json');
+                const json = await response.json();
+                allData = json.kotoba; // format: {id, word, reading, meaning, category}
+                initSetup();
+            } catch (error) {
+                alert("Gagal memuat data kuis. Pastikan server berjalan.");
+                console.error(error);
+            }
+        }
+
+        // Init Setup Screen
+        function initSetup() {
+            document.getElementById('loadingState').classList.add('hidden');
+            document.getElementById('setupForm').classList.remove('hidden');
+
+            // Extract Unique Categories
+            const categories = [...new Set(allData.map(item => item.category))].sort();
+
+            const container = document.getElementById('categoryGrid');
+            container.innerHTML = categories.map(cat => `
+                <label class="cursor-pointer checkbox-wrapper">
+                    <input type="checkbox" name="catFilter" value="${cat}" class="hidden" checked>
+                    <div class="border-2 border-gray-100 rounded-lg py-2 px-2 text-center font-bold text-xs text-gray-500 transition-all hover:bg-gray-50 select-none truncate">
+                        ${cat}
+                    </div>
+                </label>
+            `).join('');
+
+            // Input Enter Key Support
+            document.getElementById('answerInput').addEventListener('keypress', function (e) {
+                if (e.key === 'Enter') handleInputSubmit();
+            });
+        }
+
+        function toggleAllCategories() {
+            const checkboxes = document.querySelectorAll('input[name="catFilter"]');
+            const allChecked = Array.from(checkboxes).every(cb => cb.checked);
+            checkboxes.forEach(cb => cb.checked = !allChecked);
+        }
+
+        function startGame() {
+            // Get Settings
+            const catCheckboxes = document.querySelectorAll('input[name="catFilter"]:checked');
+            settings.categories = Array.from(catCheckboxes).map(cb => cb.value);
+
+            const modeRadio = document.querySelector('input[name="quizMode"]:checked');
+            settings.mode = modeRadio.value;
+
+            const answerTypeRadio = document.querySelector('input[name="answerMode"]:checked'); // New
+            settings.answerType = answerTypeRadio ? answerTypeRadio.value : 'choice';
+
+            const countRadio = document.querySelector('input[name="questionCount"]:checked');
+            settings.count = parseInt(countRadio.value);
+
+            if (settings.categories.length === 0) {
+                alert("Pilih minimal satu kategori!");
+                return;
+            }
+
+            // Filter & Shuffle Data
+            let filtered = allData.filter(item => settings.categories.includes(item.category));
+            // Fisher-Yates Shuffle
+            for (let i = filtered.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [filtered[i], filtered[j]] = [filtered[j], filtered[i]];
+            }
+
+            activeData = filtered.slice(0, settings.count);
+
+            if (activeData.length === 0) {
+                alert("Tidak ada kata di kategori ini.");
+                return;
+            }
+
+            // UI Switch
+            document.getElementById('setupScreen').classList.add('hidden');
+            document.getElementById('quizContainer').classList.remove('hidden');
+            document.getElementById('scoreBadge').classList.remove('hidden');
+
+            currentQuestionIndex = 0;
+            score = { correct: 0, incorrect: 0 };
+            updateScoreUI();
+
+            nextQuestion();
+        }
+
+        function nextQuestion() {
+            if (currentQuestionIndex >= activeData.length) {
+                showResults();
+                return;
+            }
+
+            isAnswered = false;
+            document.getElementById('feedbackOverlay').classList.add('hidden');
+
+            // Progress Bar
+            const progress = ((currentQuestionIndex) / activeData.length) * 100;
+            document.getElementById('progressBar').style.width = `${progress}%`;
+
+            currentQuestion = activeData[currentQuestionIndex];
+
+            // Prepare Question UI
+            const qText = document.getElementById('questionText');
+            const qSub = document.getElementById('questionSub');
+            const qLabel = document.getElementById('questionLabel');
+
+            // Adjust font size for long text
+            if (currentQuestion.word.length > 5 || (settings.mode === 'id-jp' && currentQuestion.meaning.length > 15)) {
+                qText.classList.remove('text-6xl', 'md:text-8xl');
+                qText.classList.add('text-3xl', 'md:text-5xl');
+            } else {
+                qText.classList.remove('text-3xl', 'md:text-5xl');
+                qText.classList.add('text-4xl', 'md:text-5xl');
+            }
+
+            if (settings.mode === 'jp-id') {
+                qLabel.textContent = "Apa arti kata ini? (Indonesia)";
+                qText.textContent = currentQuestion.word;
+                qSub.textContent = currentQuestion.reading; // Romaji hint (maybe hidden or smaller?)
+                qSub.classList.remove('hidden');
+            } else {
+                qLabel.textContent = settings.answerType === 'input' ? "Ketik Bahasa Jepangnya (Romaji)" : "Bahasa Jepang dari...";
+                qText.textContent = currentQuestion.meaning;
+                qSub.classList.add('hidden');
+            }
+
+            // Render Input Interface based on Mode
+            const optionsGrid = document.getElementById('optionsGrid');
+            const inputContainer = document.getElementById('inputContainer');
+            const answerInput = document.getElementById('answerInput');
+            const inputHint = document.getElementById('inputHint');
+
+            if (settings.answerType === 'choice') {
+                optionsGrid.classList.remove('hidden');
+                inputContainer.classList.add('hidden');
+
+                // Generate Options
+                let options = generateOptions(currentQuestion);
+                renderOptions(options);
+
+            } else {
+                // Input Mode
+                optionsGrid.classList.add('hidden');
+                inputContainer.classList.remove('hidden');
+                answerInput.value = '';
+                answerInput.focus();
+
+                if (settings.mode === 'jp-id') {
+                    inputHint.textContent = "Ketik arti dalam Bahasa Indonesia";
+                } else {
+                    inputHint.textContent = "Ketik bacaan dalam Romaji (huruf latin)";
+                }
+            }
+
+            currentQuestionIndex++;
+        }
+
+        function handleInputSubmit() {
+            if (isAnswered) return;
+            const inputVal = document.getElementById('answerInput').value.trim().toLowerCase();
+            if (!inputVal) return;
+
+            handleAnswer(inputVal);
+        }
+
+        function generateOptions(correct) {
+            let options = [correct];
+            let pool = allData.filter(i => i.id !== correct.id); // Distractors from ALL data to minimize "running out"
+
+            // Try to get distractors from same category first for difficulty
+            let sameCatPool = pool.filter(i => i.category === correct.category);
+
+            // If we have enough same-category distractors, use them. Else fallback to global pool.
+            let distractorSource = sameCatPool.length >= 3 ? sameCatPool : pool;
+
+            while (options.length < 4) {
+                const random = distractorSource[Math.floor(Math.random() * distractorSource.length)];
+                if (!options.find(o => o.id === random.id)) {
+                    options.push(random);
+                }
+            }
+            return options.sort(() => Math.random() - 0.5);
+        }
+
+        function renderOptions(options) {
+            const container = document.getElementById('optionsGrid');
+            container.innerHTML = options.map(opt => {
+                let text = '';
+                let sub = '';
+
+                if (settings.mode === 'jp-id') {
+                    // Options are meanings (Indonesian)
+                    text = opt.meaning;
+                } else {
+                    // Options are Japanese words
+                    text = opt.word;
+                    sub = opt.reading; // Romaji
+                }
+
+                return `
+                    <button onclick="handleAnswer('${opt.id}')" 
+                        class="bg-gray-50 hover:bg-green-500 hover:text-white text-gray-700 font-bold py-4 px-4 rounded-xl transition-all duration-200 text-lg border-2 border-transparent hover:border-green-600 active:scale-95 shadow-sm break-words leading-tight flex flex-col items-center justify-center">
+                        <span>${text}</span>
+                        ${sub ? `<span class="text-xs font-normal opacity-70 mt-1">${sub}</span>` : ''}
+                    </button>
+                `;
+            }).join('');
+        }
+
+        // Sound Effects (Web Audio API)
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        function playSound(type) {
+            if (audioCtx.state === 'suspended') audioCtx.resume();
+            const osc = audioCtx.createOscillator();
+            const gainNode = audioCtx.createGain();
+            osc.connect(gainNode);
+            gainNode.connect(audioCtx.destination);
+
+            if (type === 'correct') {
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(523.25, audioCtx.currentTime);
+                osc.frequency.exponentialRampToValueAtTime(880, audioCtx.currentTime + 0.1);
+                gainNode.gain.setValueAtTime(0.3, audioCtx.currentTime);
+                gainNode.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.5);
+                osc.start();
+                osc.stop(audioCtx.currentTime + 0.5);
+            } else {
+                osc.type = 'sawtooth';
+                osc.frequency.setValueAtTime(150, audioCtx.currentTime);
+                osc.frequency.linearRampToValueAtTime(100, audioCtx.currentTime + 0.2);
+                gainNode.gain.setValueAtTime(0.2, audioCtx.currentTime);
+                gainNode.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.3);
+                osc.start();
+                osc.stop(audioCtx.currentTime + 0.3);
+            }
+        }
+
+        window.handleAnswer = function (info) {
+            if (isAnswered) return;
+            isAnswered = true;
+
+            let isCorrect = false;
+
+            if (settings.answerType === 'choice') {
+                isCorrect = info === currentQuestion.id;
+            } else {
+                // Input Validation
+                const input = info.trim().toLowerCase();
+
+                if (settings.mode === 'id-jp') {
+                    // Target: Japanese Reading (Romaji) or Word (Kana)
+                    // Let's validate against reading first (easier for users to type)
+                    const reading = currentQuestion.reading.toLowerCase();
+                    const word = currentQuestion.word;
+                    // Also handle cases where reading might be "watashi" but user typed "watashi"
+                    isCorrect = input === reading || input === word;
+                } else {
+                    // Target: Indonesian Meaning
+                    // Loose Check: Contains? Or Exact?
+                    const meaning = currentQuestion.meaning.toLowerCase();
+                    // Simple check: is contained in meaning (e.g. "saya" in "saya / aku")
+                    isCorrect = meaning.includes(input);
+                }
+            }
+
+            if (isCorrect) {
+                score.correct++;
+                playSound('correct');
+                showFeedback(true);
+            } else {
+                score.incorrect++;
+                playSound('incorrect');
+                showFeedback(false);
+            }
+            updateScoreUI();
+        };
+
+        function showFeedback(isCorrect) {
+            const overlay = document.getElementById('feedbackOverlay');
+            const icon = document.getElementById('feedbackIcon');
+            const text = document.getElementById('feedbackText');
+            const answer = document.getElementById('feedbackAnswer');
+            const detail = document.getElementById('feedbackDetail');
+
+            overlay.classList.remove('hidden');
+
+            if (isCorrect) {
+                icon.innerHTML = '🎉';
+                text.textContent = 'Benar!';
+                text.className = 'text-3xl font-black mb-2 text-green-500';
+            } else {
+                icon.innerHTML = '🫠';
+                text.textContent = 'Salah...';
+                text.className = 'text-3xl font-black mb-2 text-red-500';
+            }
+
+            // Show details
+            if (settings.mode === 'jp-id') {
+                answer.textContent = currentQuestion.meaning;
+                detail.textContent = `${currentQuestion.word} (${currentQuestion.reading})`;
+            } else {
+                answer.textContent = `${currentQuestion.word}`;
+                detail.textContent = `${currentQuestion.reading} - ${currentQuestion.meaning}`;
+            }
+        }
+
+        function updateScoreUI() {
+            document.getElementById('scoreDisplay').innerHTML = `
+                <span class="text-green-500 flex items-center"><i class="fa-solid fa-check mr-1.5"></i>${score.correct}</span>
+                <span class="w-px h-4 bg-gray-200"></span>
+                <span class="text-red-500 flex items-center"><i class="fa-solid fa-xmark mr-1.5"></i>${score.incorrect}</span>
+            `;
+        }
+
+        function showResults() {
+            // FIX: Do NOT hide quizContainer. Just show resultOverlay.
+            // But wait, if we don't hide quizContainer contents, they might be visible behind?
+            // resultOverlay has absolute inset-0 bg-white z-20. It COVERS everything in relative parent.
+            // Parent is quizContainer. So it should be fine.
+
+            document.getElementById('feedbackOverlay').classList.add('hidden');
+            document.getElementById('resultOverlay').classList.remove('hidden');
+            document.getElementById('scoreBadge').classList.add('hidden'); // Hide top badge
+
+            document.getElementById('finalCorrect').textContent = score.correct;
+            document.getElementById('finalIncorrect').textContent = score.incorrect;
+
+            // 100% Progress
+            document.getElementById('progressBar').style.width = '100%';
+        }
+
+        // Start Load
+        loadData();
+
+    </script>
+</body>
+
+</html>

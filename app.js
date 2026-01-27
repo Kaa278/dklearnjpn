@@ -198,147 +198,16 @@ const katakanaData = [
 ];
 
 // Kanji data (N5-N4 level)
-const kanjiData = [
-    // Numbers
-    { char: '一', meaning: 'Satu', readings: 'いち (ichi), ひと (hito)' },
-    { char: '二', meaning: 'Dua', readings: 'に (ni), ふた (futa)' },
-    { char: '三', meaning: 'Tiga', readings: 'さん (san), み (mi)' },
-    { char: '四', meaning: 'Empat', readings: 'し (shi), よん (yon)' },
-    { char: '五', meaning: 'Lima', readings: 'ご (go), いつ (itsu)' },
-    { char: '六', meaning: 'Enam', readings: 'ろく (roku), む (mu)' },
-    { char: '七', meaning: 'Tujuh', readings: 'しち (shichi), なな (nana)' },
-    { char: '八', meaning: 'Delapan', readings: 'はち (hachi), や (ya)' },
-    { char: '九', meaning: 'Sembilan', readings: 'きゅう (kyuu), く (ku)' },
-    { char: '十', meaning: 'Sepuluh', readings: 'じゅう (juu), とお (too)' },
-    { char: '百', meaning: 'Seratus', readings: 'ひゃく (hyaku)' },
-    { char: '千', meaning: 'Seribu', readings: 'せん (sen)' },
-    { char: '万', meaning: 'Sepuluh ribu', readings: 'まん (man)' },
+let kanjiData = [];
 
-    // Time
-    { char: '日', meaning: 'Matahari / Hari', readings: 'にち (nichi), ひ (hi), か (ka)' },
-    { char: '月', meaning: 'Bulan', readings: 'げつ (getsu), つき (tsuki), がつ (gatsu)' },
-    { char: '火', meaning: 'Api / Selasa', readings: 'か (ka), ひ (hi)' },
-    { char: '水', meaning: 'Air / Rabu', readings: 'すい (sui), みず (mizu)' },
-    { char: '木', meaning: 'Pohon / Kamis', readings: 'もく (moku), き (ki)' },
-    { char: '金', meaning: 'Emas / Jumat', readings: 'きん (kin), かね (kane)' },
-    { char: '土', meaning: 'Tanah / Sabtu', readings: 'ど (do), つち (tsuchi)' },
-    { char: '年', meaning: 'Tahun', readings: 'ねん (nen), とし (toshi)' },
-    { char: '時', meaning: 'Waktu / Jam', readings: 'じ (ji), とき (toki)' },
-    { char: '分', meaning: 'Menit / Membagi', readings: 'ふん (fun), ぶん (bun), わ (wa)' },
-    { char: '半', meaning: 'Setengah', readings: 'はん (han)' },
-    { char: '今', meaning: 'Sekarang', readings: 'こん (kon), いま (ima)' },
-    { char: '毎', meaning: 'Setiap', readings: 'まい (mai)' },
-
-    // People & Family
-    { char: '人', meaning: 'Orang', readings: 'じん (jin), にん (nin), ひと (hito)' },
-    { char: '父', meaning: 'Ayah', readings: 'ふ (fu), ちち (chichi)' },
-    { char: '母', meaning: 'Ibu', readings: 'ぼ (bo), はは (haha)' },
-    { char: '子', meaning: 'Anak', readings: 'し (shi), こ (ko)' },
-    { char: '男', meaning: 'Laki-laki', readings: 'だん (dan), おとこ (otoko)' },
-    { char: '女', meaning: 'Perempuan', readings: 'じょ (jo), おんな (onna)' },
-    { char: '友', meaning: 'Teman', readings: 'ゆう (yuu), とも (tomo)' },
-    { char: '先', meaning: 'Sebelum / Depan', readings: 'せん (sen), さき (saki)' },
-    { char: '生', meaning: 'Hidup / Lahir', readings: 'せい (sei), い (i), う (u), なま (nama)' },
-    { char: '学', meaning: 'Belajar', readings: 'がく (gaku), まな (mana)' },
-    { char: '校', meaning: 'Sekolah', readings: 'こう (kou)' },
-
-    // Places
-    { char: '国', meaning: 'Negara', readings: 'こく (koku), くに (kuni)' },
-    { char: '外', meaning: 'Luar', readings: 'がい (gai), そと (soto)' },
-    { char: '中', meaning: 'Dalam / Tengah', readings: 'ちゅう (chuu), なか (naka)' },
-    { char: '上', meaning: 'Atas', readings: 'じょう (jou), うえ (ue), あ (a)' },
-    { char: '下', meaning: 'Bawah', readings: 'か (ka), げ (ge), した (shita)' },
-    { char: '前', meaning: 'Depan / Sebelum', readings: 'ぜん (zen), まえ (mae)' },
-    { char: '後', meaning: 'Belakang / Setelah', readings: 'ご (go), あと (ato), うし (ushi)' },
-    { char: '左', meaning: 'Kiri', readings: 'さ (sa), ひだり (hidari)' },
-    { char: '右', meaning: 'Kanan', readings: 'う (u), ゆう (yuu), みぎ (migi)' },
-    { char: '東', meaning: 'Timur', readings: 'とう (tou), ひがし (higashi)' },
-    { char: '西', meaning: 'Barat', readings: 'せい (sei), にし (nishi)' },
-    { char: '南', meaning: 'Selatan', readings: 'なん (nan), みなみ (minami)' },
-    { char: '北', meaning: 'Utara', readings: 'ほく (hoku), きた (kita)' },
-    { char: '山', meaning: 'Gunung', readings: 'さん (san), やま (yama)' },
-    { char: '川', meaning: 'Sungai', readings: 'せん (sen), かわ (kawa)' },
-    { char: '海', meaning: 'Laut', readings: 'かい (kai), うみ (umi)' },
-    { char: '駅', meaning: 'Stasiun', readings: 'えき (eki)' },
-    { char: '店', meaning: 'Toko', readings: 'てん (ten), みせ (mise)' },
-    { char: '家', meaning: 'Rumah / Keluarga', readings: 'か (ka), け (ke), いえ (ie), や (ya)' },
-    { char: '室', meaning: 'Kamar', readings: 'しつ (shitsu)' },
-
-    // Actions
-    { char: '行', meaning: 'Pergi', readings: 'こう (kou), ぎょう (gyou), い (i), ゆ (yu)' },
-    { char: '来', meaning: 'Datang', readings: 'らい (rai), く (ku), き (ki)' },
-    { char: '見', meaning: 'Melihat', readings: 'けん (ken), み (mi)' },
-    { char: '聞', meaning: 'Mendengar', readings: 'ぶん (bun), き (ki)' },
-    { char: '食', meaning: 'Makan', readings: 'しょく (shoku), た (ta)' },
-    { char: '飲', meaning: 'Minum', readings: 'いん (in), の (no)' },
-    { char: '読', meaning: 'Membaca', readings: 'どく (doku), よ (yo)' },
-    { char: '書', meaning: 'Menulis', readings: 'しょ (sho), か (ka)' },
-    { char: '話', meaning: 'Berbicara', readings: 'わ (wa), はなし (hanashi), はな (hana)' },
-    { char: '言', meaning: 'Berkata', readings: 'げん (gen), ごん (gon), い (i), こと (koto)' },
-    { char: '買', meaning: 'Membeli', readings: 'ばい (bai), か (ka)' },
-    { char: '売', meaning: 'Menjual', readings: 'ばい (bai), う (u)' },
-    { char: '作', meaning: 'Membuat', readings: 'さく (saku), つく (tsuku)' },
-    { char: '出', meaning: 'Keluar', readings: 'しゅつ (shutsu), で (de), だ (da)' },
-    { char: '入', meaning: 'Masuk', readings: 'にゅう (nyuu), い (i), はい (hai)' },
-    { char: '立', meaning: 'Berdiri', readings: 'りつ (ritsu), た (ta)' },
-    { char: '休', meaning: 'Istirahat', readings: 'きゅう (kyuu), やす (yasu)' },
-    { char: '会', meaning: 'Bertemu', readings: 'かい (kai), え (e), あ (a)' },
-    { char: '待', meaning: 'Menunggu', readings: 'たい (tai), ま (ma)' },
-    { char: '思', meaning: 'Berpikir', readings: 'し (shi), おも (omo)' },
-    { char: '知', meaning: 'Tahu', readings: 'ち (chi), し (shi)' },
-    { char: '住', meaning: 'Tinggal', readings: 'じゅう (juu), す (su)' },
-    { char: '働', meaning: 'Bekerja', readings: 'どう (dou), はたら (hatara)' },
-
-    // Things
-    { char: '本', meaning: 'Buku / Asal', readings: 'ほん (hon), もと (moto)' },
-    { char: '車', meaning: 'Mobil', readings: 'しゃ (sha), くるま (kuruma)' },
-    { char: '電', meaning: 'Listrik', readings: 'でん (den)' },
-    { char: '話', meaning: 'Cerita / Telepon', readings: 'わ (wa), はなし (hanashi)' },
-    { char: '語', meaning: 'Bahasa', readings: 'ご (go), かた (kata)' },
-    { char: '文', meaning: 'Kalimat / Tulisan', readings: 'ぶん (bun), もん (mon)' },
-    { char: '字', meaning: 'Huruf', readings: 'じ (ji), あざ (aza)' },
-    { char: '名', meaning: 'Nama', readings: 'めい (mei), みょう (myou), な (na)' },
-    { char: '手', meaning: 'Tangan', readings: 'しゅ (shu), て (te)' },
-    { char: '足', meaning: 'Kaki', readings: 'そく (soku), あし (ashi)' },
-    { char: '目', meaning: 'Mata', readings: 'もく (moku), め (me)' },
-    { char: '耳', meaning: 'Telinga', readings: 'じ (ji), みみ (mimi)' },
-    { char: '口', meaning: 'Mulut', readings: 'こう (kou), くち (kuchi)' },
-    { char: '頭', meaning: 'Kepala', readings: 'とう (tou), あたま (atama)' },
-    { char: '体', meaning: 'Tubuh', readings: 'たい (tai), からだ (karada)' },
-
-    // Adjectives & States
-    { char: '大', meaning: 'Besar', readings: 'だい (dai), たい (tai), おお (oo)' },
-    { char: '小', meaning: 'Kecil', readings: 'しょう (shou), ちい (chii), こ (ko)' },
-    { char: '高', meaning: 'Tinggi / Mahal', readings: 'こう (kou), たか (taka)' },
-    { char: '安', meaning: 'Murah / Aman', readings: 'あん (an), やす (yasu)' },
-    { char: '新', meaning: 'Baru', readings: 'しん (shin), あたら (atara)' },
-    { char: '古', meaning: 'Lama', readings: 'こ (ko), ふる (furu)' },
-    { char: '長', meaning: 'Panjang', readings: 'ちょう (chou), なが (naga)' },
-    { char: '短', meaning: 'Pendek', readings: 'たん (tan), みじか (mijika)' },
-    { char: '多', meaning: 'Banyak', readings: 'た (ta), おお (oo)' },
-    { char: '少', meaning: 'Sedikit', readings: 'しょう (shou), すく (suku), すこ (suko)' },
-    { char: '早', meaning: 'Cepat / Pagi', readings: 'そう (sou), はや (haya)' },
-    { char: '白', meaning: 'Putih', readings: 'はく (haku), しろ (shiro)' },
-    { char: '黒', meaning: 'Hitam', readings: 'こく (koku), くろ (kuro)' },
-    { char: '赤', meaning: 'Merah', readings: 'せき (seki), あか (aka)' },
-    { char: '青', meaning: 'Biru', readings: 'せい (sei), あお (ao)' },
-
-    // Misc Common
-    { char: '何', meaning: 'Apa', readings: 'か (ka), なに (nani), なん (nan)' },
-    { char: '天', meaning: 'Langit', readings: 'てん (ten), あま (ama)' },
-    { char: '気', meaning: 'Udara / Perasaan', readings: 'き (ki), け (ke)' },
-    { char: '雨', meaning: 'Hujan', readings: 'う (u), あめ (ame)' },
-    { char: '雪', meaning: 'Salju', readings: 'せつ (setsu), ゆき (yuki)' },
-    { char: '花', meaning: 'Bunga', readings: 'か (ka), はな (hana)' },
-    { char: '犬', meaning: 'Anjing', readings: 'けん (ken), いぬ (inu)' },
-    { char: '猫', meaning: 'Kucing', readings: 'びょう (byou), ねこ (neko)' },
-    { char: '魚', meaning: 'Ikan', readings: 'ぎょ (gyo), さかな (sakana)' },
-    { char: '肉', meaning: 'Daging', readings: 'にく (niku)' },
-    { char: '物', meaning: 'Benda', readings: 'ぶつ (butsu), もつ (motsu), もの (mono)' },
-    { char: '者', meaning: 'Orang', readings: 'しゃ (sha), もの (mono)' },
-    { char: '方', meaning: 'Arah / Cara', readings: 'ほう (hou), かた (kata)' },
-    { char: '円', meaning: 'Yen / Lingkaran', readings: 'えん (en), まる (maru)' }
-];
+async function loadKanji() {
+    try {
+        const response = await fetch('data/kanji.json');
+        kanjiData = await response.json();
+    } catch (error) {
+        console.error('Error loading kanji data:', error);
+    }
+}
 
 const STATE = {
     kotoba: JSON.parse(localStorage.getItem('kotoba_words')) || defaultKotoba,
@@ -360,6 +229,9 @@ const elements = {
 
     // Banner Elements
     hiraganaQuizBanner: document.getElementById('hiraganaQuizBanner'),
+    katakanaQuizBanner: document.getElementById('katakanaQuizBanner'),
+    vocabularyQuizBanner: document.getElementById('vocabularyQuizBanner'),
+    kanjiQuizBanner: document.getElementById('kanjiQuizBanner'),
 
     totalWordsBadge: document.getElementById('totalWordsBadge'),
     pageTitle: document.getElementById('pageTitle'),
@@ -389,6 +261,8 @@ let currentPronunciation = ''; // Store current text for pronunciation
 async function init() {
     // Load vocabulary data from JSON
     await loadVocabulary();
+    // Load Kanji data
+    await loadKanji();
 
     // Initialize STATE with loaded data if not already present in localStorage
     if (!localStorage.getItem('kotoba_words')) {
@@ -421,6 +295,33 @@ function renderApp() {
             elements.hiraganaQuizBanner.classList.remove('hidden');
         } else {
             elements.hiraganaQuizBanner.classList.add('hidden');
+        }
+    }
+
+    // Toggle Katakana Quiz Banner visibility
+    if (elements.katakanaQuizBanner) {
+        if (STATE.currentSection === 'katakana') {
+            elements.katakanaQuizBanner.classList.remove('hidden');
+        } else {
+            elements.katakanaQuizBanner.classList.add('hidden');
+        }
+    }
+
+    // Toggle Vocabulary Quiz Banner visibility (Kotoba Section)
+    if (elements.vocabularyQuizBanner) {
+        if (STATE.currentSection === 'kotoba') {
+            elements.vocabularyQuizBanner.classList.remove('hidden');
+        } else {
+            elements.vocabularyQuizBanner.classList.add('hidden');
+        }
+    }
+
+    // Toggle Kanji Quiz Banner visibility (Kanji Section)
+    if (elements.kanjiQuizBanner) {
+        if (STATE.currentSection === 'kanji') {
+            elements.kanjiQuizBanner.classList.remove('hidden');
+        } else {
+            elements.kanjiQuizBanner.classList.add('hidden');
         }
     }
 }

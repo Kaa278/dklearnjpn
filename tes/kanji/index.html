@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Kanji | Kotoba</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Noto+Sans+JP:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f1f5;
+        }
+
+        .font-jp {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        .bento-card {
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+
+        /* Custom Checkbox Style */
+        .checkbox-wrapper input:checked+div {
+            background-color: #fff1f2;
+            /* red-50 */
+            border-color: #f43f5e;
+            /* red-500 */
+            color: #be123c;
+            /* red-700 */
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <div class="max-w-xl w-full">
+        <!-- Header / Back -->
+        <div class="flex justify-between items-center mb-6">
+            <a href="../../index.html"
+                class="flex items-center gap-2 text-gray-500 hover:text-gray-800 font-bold transition-colors">
+                <i class="fa-solid fa-arrow-left"></i> Kembali
+            </a>
+            <div id="scoreBadge" class="hidden bg-white px-4 py-1.5 rounded-full shadow-sm">
+                <span id="scoreDisplay" class="text-lg font-black flex items-center gap-3">
+                    <span class="text-green-500 flex items-center"><i class="fa-solid fa-check mr-1.5"></i>0</span>
+                    <span class="w-px h-4 bg-gray-200"></span>
+                    <span class="text-red-500 flex items-center"><i class="fa-solid fa-xmark mr-1.5"></i>0</span>
+                </span>
+            </div>
+        </div>
+
+        <!-- Setup Screen -->
+        <div id="setupScreen" class="bento-card p-6 md:p-8">
+            <div class="text-center mb-8">
+                <h1 class="text-3xl font-black text-gray-800 mb-2">Kuis Kanji</h1>
+                <p class="text-gray-500 font-medium">Uji kemampuan baca dan arti Kaknji!</p>
+            </div>
+
+            <!-- Loading Indicator -->
+            <div id="loadingState" class="text-center py-8">
+                <i class="fa-solid fa-circle-notch fa-spin text-4xl text-rose-500 mb-4"></i>
+                <p class="text-gray-500">Memuat data...</p>
+            </div>
+
+            <div id="setupForm" class="hidden">
+                <!-- Mode Filter -->
+                <div class="mb-6">
+                    <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Mode Kuis</label>
+                    <div class="flex gap-2">
+                        <label class="flex-1 cursor-pointer checkbox-wrapper">
+                            <input type="radio" name="quizMode" value="meaning" class="hidden" checked>
+                            <div
+                                class="border-2 border-gray-100 rounded-xl py-3 text-center font-bold text-gray-500 transition-all hover:bg-gray-50 flex flex-col items-center gap-1">
+                                <span class="text-lg">🧠</span>
+                                <span class="text-xs">Tebak Arti</span>
+                            </div>
+                        </label>
+                        <label class="flex-1 cursor-pointer checkbox-wrapper">
+                            <input type="radio" name="quizMode" value="reading" class="hidden">
+                            <div
+                                class="border-2 border-gray-100 rounded-xl py-3 text-center font-bold text-gray-500 transition-all hover:bg-gray-50 flex flex-col items-center gap-1">
+                                <span class="text-lg">🗣️</span>
+                                <span class="text-xs">Tebak Cara Baca</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question Count -->
+                <div class="mb-8">
+                    <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Jumlah
+                        Soal</label>
+                    <div class="flex gap-2">
+                        <label class="flex-1 cursor-pointer checkbox-wrapper">
+                            <input type="radio" name="questionCount" value="10" class="hidden" checked>
+                            <div
+                                class="border-2 border-gray-100 rounded-xl py-2 text-center font-bold text-gray-500 transition-all hover:bg-gray-50">
+                                10</div>
+                        </label>
+                        <label class="flex-1 cursor-pointer checkbox-wrapper">
+                            <input type="radio" name="questionCount" value="20" class="hidden">
+                            <div
+                                class="border-2 border-gray-100 rounded-xl py-2 text-center font-bold text-gray-500 transition-all hover:bg-gray-50">
+                                20</div>
+                        </label>
+                        <label class="flex-1 cursor-pointer checkbox-wrapper">
+                            <input type="radio" name="questionCount" value="9999" class="hidden">
+                            <div
+                                class="border-2 border-gray-100 rounded-xl py-2 text-center font-bold text-gray-500 transition-all hover:bg-gray-50">
+                                <i class="fa-solid fa-infinity"></i></div>
+                        </label>
+                    </div>
+                </div>
+
+                <button onclick="startGame()"
+                    class="w-full bg-rose-500 text-white font-bold py-4 rounded-xl hover:bg-rose-600 transition-colors shadow-lg shadow-rose-200">
+                    Mulai Main 🚀
+                </button>
+            </div>
+        </div>
+
+        <!-- Quiz Container (Hidden initially) -->
+        <div id="quizContainer" class="hidden bento-card p-6 md:p-8 text-center relative overflow-hidden">
+            <!-- Progress -->
+            <div class="absolute top-0 left-0 w-full h-1.5 bg-gray-100">
+                <div id="progressBar" class="h-full bg-rose-500 transition-all duration-300" style="width: 0%"></div>
+            </div>
+
+            <div class="mt-4 mb-8">
+                <p id="questionLabel" class="text-gray-400 text-xs font-bold uppercase tracking-widest mb-2">Arti Kata
+                </p>
+                <div class="min-h-[120px] flex flex-col justify-center items-center">
+                    <h1 id="questionText"
+                        class="text-6xl md:text-8xl font-black text-gray-800 font-jp mb-2 leading-tight transition-transform cursor-default scale-100 hover:scale-105">
+                    </h1>
+                </div>
+            </div>
+
+            <!-- Options Grid -->
+            <div id="optionsGrid" class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <!-- Options injected by JS -->
+            </div>
+
+            <!-- Feedback Overlay -->
+            <div id="feedbackOverlay"
+                class="hidden absolute inset-0 bg-white/95 backdrop-blur-sm flex flex-col items-center justify-center z-10 p-6 text-center">
+                <div id="feedbackIcon" class="text-6xl mb-4"></div>
+                <h3 id="feedbackText" class="text-2xl font-black mb-2"></h3>
+                <div class="bg-gray-50 p-4 rounded-xl mb-6 w-full max-w-xs">
+                    <p class="text-xs text-gray-400 font-bold uppercase mb-1">Jawaban Benar</p>
+                    <p id="feedbackAnswer" class="text-xl font-bold text-gray-800"></p>
+                    <p id="feedbackDetail" class="text-sm text-gray-500 mt-1"></p>
+                </div>
+                <button onclick="nextQuestion()"
+                    class="px-8 py-3 bg-gray-900 text-white rounded-xl font-bold hover:bg-gray-800 transition-colors">
+                    Lanjut <i class="fa-solid fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+
+            <!-- Result Overlay -->
+            <div id="resultOverlay"
+                class="hidden absolute inset-0 bg-white z-20 flex flex-col items-center justify-center p-8 text-center">
+                <div class="text-6xl mb-4">🏆</div>
+                <h2 class="text-3xl font-black text-gray-800 mb-2">Selesai!</h2>
+                <p class="text-gray-500 font-medium mb-8">Kamu jago juga ya!</p>
+
+                <div class="grid grid-cols-2 gap-4 w-full max-w-xs mb-8">
+                    <div class="bg-green-50 p-4 rounded-2xl border border-green-100">
+                        <div class="text-3xl font-black text-green-500" id="finalCorrect">0</div>
+                        <div class="text-xs font-bold text-green-700 uppercase">Benar</div>
+                    </div>
+                    <div class="bg-red-50 p-4 rounded-2xl border border-red-100">
+                        <div class="text-3xl font-black text-red-500" id="finalIncorrect">0</div>
+                        <div class="text-xs font-bold text-red-700 uppercase">Salah</div>
+                    </div>
+                </div>
+
+                <button onclick="location.reload()"
+                    class="w-full max-w-xs bg-gray-900 text-white font-bold py-3 rounded-xl hover:bg-gray-800 transition-colors shadow-lg">
+                    Main Lagi 🔄
+                </button>
+                <a href="../../index.html" class="mt-4 text-sm font-bold text-gray-400 hover:text-gray-600">
+                    Kembali ke Menu Utama
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        let allData = [];
+        let activeData = [];
+
+        let settings = {
+            mode: 'meaning', // 'meaning' or 'reading'
+            count: 10
+        };
+        let currentQuestionIndex = 0;
+        let score = { correct: 0, incorrect: 0 };
+        let currentQuestion = null;
+        let isAnswered = false;
+
+        async function loadData() {
+            try {
+                const response = await fetch('../../data/kanji.json');
+                allData = await response.json();
+                initSetup();
+            } catch (error) {
+                alert("Gagal memuat data kuis. Pastikan server berjalan.");
+                console.error(error);
+            }
+        }
+
+        function initSetup() {
+            document.getElementById('loadingState').classList.add('hidden');
+            document.getElementById('setupForm').classList.remove('hidden');
+        }
+
+        function startGame() {
+            const modeRadio = document.querySelector('input[name="quizMode"]:checked');
+            settings.mode = modeRadio.value;
+
+            const countRadio = document.querySelector('input[name="questionCount"]:checked');
+            settings.count = parseInt(countRadio.value);
+
+            // Shuffle Data
+            let filtered = [...allData];
+            for (let i = filtered.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [filtered[i], filtered[j]] = [filtered[j], filtered[i]];
+            }
+
+            activeData = filtered.slice(0, settings.count);
+
+            document.getElementById('setupScreen').classList.add('hidden');
+            document.getElementById('quizContainer').classList.remove('hidden');
+            document.getElementById('scoreBadge').classList.remove('hidden');
+
+            currentQuestionIndex = 0;
+            score = { correct: 0, incorrect: 0 };
+            updateScoreUI();
+
+            nextQuestion();
+        }
+
+        function nextQuestion() {
+            if (currentQuestionIndex >= activeData.length) {
+                showResults();
+                return;
+            }
+
+            isAnswered = false;
+            document.getElementById('feedbackOverlay').classList.add('hidden');
+
+            const progress = ((currentQuestionIndex) / activeData.length) * 100;
+            document.getElementById('progressBar').style.width = `${progress}%`;
+
+            currentQuestion = activeData[currentQuestionIndex];
+
+            const qText = document.getElementById('questionText');
+            const qLabel = document.getElementById('questionLabel');
+
+            qText.textContent = currentQuestion.char;
+
+            if (settings.mode === 'meaning') {
+                qLabel.textContent = "Apa arti Kanji ini?";
+            } else {
+                qLabel.textContent = "Bagaimana cara bacanya?";
+            }
+
+            let options = generateOptions(currentQuestion);
+            renderOptions(options);
+
+            currentQuestionIndex++;
+        }
+
+        function generateOptions(correct) {
+            let options = [correct];
+            let pool = allData.filter(i => i.char !== correct.char);
+
+            while (options.length < 4) {
+                const random = pool[Math.floor(Math.random() * pool.length)];
+                if (!options.find(o => o.char === random.char)) {
+                    options.push(random);
+                }
+            }
+            return options.sort(() => Math.random() - 0.5);
+        }
+
+        function renderOptions(options) {
+            const container = document.getElementById('optionsGrid');
+            container.innerHTML = options.map(opt => {
+                let text = '';
+                if (settings.mode === 'meaning') {
+                    text = opt.meaning;
+                } else {
+                    text = opt.readings; // This might be long strings like "ichi (1), hito", maybe we should truncate or specific format?
+                    // Let's take just the first reading part before comma if too long?
+                    // Actually, let's just show it. If it's too long, css logic needs to handle.
+                    // Or let's just use the first few readings.
+                }
+
+                return `
+                    <button onclick="handleAnswer('${opt.char}')" 
+                        class="bg-gray-50 hover:bg-rose-500 hover:text-white text-gray-700 font-bold py-4 px-4 rounded-xl transition-all duration-200 text-lg border-2 border-transparent hover:border-rose-600 active:scale-95 shadow-sm break-words leading-tight flex flex-col items-center justify-center">
+                        <span class="text-sm md:text-base">${text}</span>
+                    </button>
+                `;
+            }).join('');
+        }
+
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        function playSound(type) {
+            if (audioCtx.state === 'suspended') audioCtx.resume();
+            const osc = audioCtx.createOscillator();
+            const gainNode = audioCtx.createGain();
+            osc.connect(gainNode);
+            gainNode.connect(audioCtx.destination);
+
+            if (type === 'correct') {
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(523.25, audioCtx.currentTime);
+                osc.frequency.exponentialRampToValueAtTime(880, audioCtx.currentTime + 0.1);
+                gainNode.gain.setValueAtTime(0.3, audioCtx.currentTime);
+                gainNode.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.5);
+                osc.start();
+                osc.stop(audioCtx.currentTime + 0.5);
+            } else {
+                osc.type = 'sawtooth';
+                osc.frequency.setValueAtTime(150, audioCtx.currentTime);
+                osc.frequency.linearRampToValueAtTime(100, audioCtx.currentTime + 0.2);
+                gainNode.gain.setValueAtTime(0.2, audioCtx.currentTime);
+                gainNode.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.3);
+                osc.start();
+                osc.stop(audioCtx.currentTime + 0.3);
+            }
+        }
+
+        window.handleAnswer = function (info) {
+            if (isAnswered) return;
+            isAnswered = true;
+
+            const isCorrect = info === currentQuestion.char;
+
+            if (isCorrect) {
+                score.correct++;
+                playSound('correct');
+                showFeedback(true);
+            } else {
+                score.incorrect++;
+                playSound('incorrect');
+                showFeedback(false);
+            }
+            updateScoreUI();
+        };
+
+        function showFeedback(isCorrect) {
+            const overlay = document.getElementById('feedbackOverlay');
+            const icon = document.getElementById('feedbackIcon');
+            const text = document.getElementById('feedbackText');
+            const answer = document.getElementById('feedbackAnswer');
+            const detail = document.getElementById('feedbackDetail');
+
+            overlay.classList.remove('hidden');
+
+            if (isCorrect) {
+                icon.innerHTML = '🎉';
+                text.textContent = 'Benar!';
+                text.className = 'text-3xl font-black mb-2 text-green-500';
+            } else {
+                icon.innerHTML = '🫠';
+                text.textContent = 'Salah...';
+                text.className = 'text-3xl font-black mb-2 text-red-500';
+            }
+
+            answer.textContent = currentQuestion.char;
+            detail.textContent = `${currentQuestion.readings}\n${currentQuestion.meaning}`;
+        }
+
+        function updateScoreUI() {
+            document.getElementById('scoreDisplay').innerHTML = `
+                <span class="text-green-500 flex items-center"><i class="fa-solid fa-check mr-1.5"></i>${score.correct}</span>
+                <span class="w-px h-4 bg-gray-200"></span>
+                <span class="text-red-500 flex items-center"><i class="fa-solid fa-xmark mr-1.5"></i>${score.incorrect}</span>
+            `;
+        }
+
+        function showResults() {
+            document.getElementById('feedbackOverlay').classList.add('hidden');
+            document.getElementById('resultOverlay').classList.remove('hidden');
+            document.getElementById('scoreBadge').classList.add('hidden');
+            document.getElementById('finalCorrect').textContent = score.correct;
+            document.getElementById('finalIncorrect').textContent = score.incorrect;
+            document.getElementById('progressBar').style.width = '100%';
+        }
+
+        loadData();
+    </script>
+</body>
+
+</html>
