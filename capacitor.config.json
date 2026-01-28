@@ -1,0 +1,6 @@
+{
+  "appId": "com.dkotoba.app",
+  "appName": "DKotoba",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}
