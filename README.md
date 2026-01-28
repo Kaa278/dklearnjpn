@@ -19,7 +19,7 @@
 ## ✨ Features
 
 ### 📖 Comprehensive Learning Content
-- **776 Vocabulary Words** - N5-N3 level Japanese vocabulary
+- **1200+ Vocabulary Words** - N5-N3 level Japanese vocabulary
 - **1000+ Kanji Characters** - Essential kanji with multiple readings
 - **Hiragana** - Complete 46-character syllabary with stroke animations
 - **Katakana** - Complete 46-character syllabary with stroke animations
@@ -107,7 +107,7 @@ kotoba/
 
 ## 📊 Content Statistics
 
-### Vocabulary (776 words)
+### Vocabulary (1200+ words)
 | Category | Count | Examples |
 |----------|-------|----------|
 | 🏃 Kata Kerja | 150+ | たべます, のみます, いきます |

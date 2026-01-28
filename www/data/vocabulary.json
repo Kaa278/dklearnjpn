@@ -5431,6 +5431,3114 @@
       "reading": "Jisho",
       "meaning": "Kamus",
       "category": "Bunbougu"
+    },
+    {
+      "id": "777",
+      "word": "あう",
+      "reading": "Au",
+      "meaning": "bertemu",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "778",
+      "word": "あさごはん",
+      "reading": "Asagohan",
+      "meaning": "sarapan",
+      "category": "Umum"
+    },
+    {
+      "id": "779",
+      "word": "あそぶ",
+      "reading": "Asobu",
+      "meaning": "bermain",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "780",
+      "word": "あたたかい",
+      "reading": "Atatakai",
+      "meaning": "hangat",
+      "category": "Umum"
+    },
+    {
+      "id": "781",
+      "word": "あらう",
+      "reading": "Arau",
+      "meaning": "mencuci",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "782",
+      "word": "ある",
+      "reading": "Aru",
+      "meaning": "ada",
+      "category": "Umum"
+    },
+    {
+      "id": "783",
+      "word": "あるく",
+      "reading": "Aruku",
+      "meaning": "berjalan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "784",
+      "word": "いう",
+      "reading": "Iu",
+      "meaning": "mengatakan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "785",
+      "word": "いく",
+      "reading": "Iku",
+      "meaning": "pergi",
+      "category": "Umum"
+    },
+    {
+      "id": "786",
+      "word": "いけ",
+      "reading": "Ike",
+      "meaning": "kolam",
+      "category": "Umum"
+    },
+    {
+      "id": "787",
+      "word": "いちにち",
+      "reading": "Ichinichi",
+      "meaning": "satu hari",
+      "category": "Waktu"
+    },
+    {
+      "id": "788",
+      "word": "いっしょ",
+      "reading": "Isshyo",
+      "meaning": "bersama",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "789",
+      "word": "いや",
+      "reading": "Iya",
+      "meaning": "tidak suka",
+      "category": "Umum"
+    },
+    {
+      "id": "790",
+      "word": "いりぐち",
+      "reading": "Iriguchi",
+      "meaning": "pintu masuk",
+      "category": "Umum"
+    },
+    {
+      "id": "791",
+      "word": "いる",
+      "reading": "Iru",
+      "meaning": "ada (makhluk hidup)",
+      "category": "Umum"
+    },
+    {
+      "id": "792",
+      "word": "いれる",
+      "reading": "Ireru",
+      "meaning": "memasukkan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "793",
+      "word": "いろいろ",
+      "reading": "Iroiro",
+      "meaning": "bermacam-macam",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "794",
+      "word": "うすい",
+      "reading": "Usui",
+      "meaning": "tipis",
+      "category": "Umum"
+    },
+    {
+      "id": "795",
+      "word": "うたう",
+      "reading": "Utau",
+      "meaning": "menyanyi",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "796",
+      "word": "うまれる",
+      "reading": "Umareru",
+      "meaning": "lahir",
+      "category": "Umum"
+    },
+    {
+      "id": "797",
+      "word": "うる",
+      "reading": "Uru",
+      "meaning": "menjual",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "798",
+      "word": "うるさい",
+      "reading": "Urusai",
+      "meaning": "berisik",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "799",
+      "word": "えん",
+      "reading": "En",
+      "meaning": "yen",
+      "category": "Umum"
+    },
+    {
+      "id": "800",
+      "word": "おべんとう",
+      "reading": "Obentou",
+      "meaning": "bekal",
+      "category": "Umum"
+    },
+    {
+      "id": "801",
+      "word": "おぼえる",
+      "reading": "Oboeru",
+      "meaning": "menghafal",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "802",
+      "word": "およぐ",
+      "reading": "Oyogu",
+      "meaning": "berenang",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "803",
+      "word": "おりる",
+      "reading": "Oriru",
+      "meaning": "turun",
+      "category": "Umum"
+    },
+    {
+      "id": "804",
+      "word": "おわる",
+      "reading": "Owaru",
+      "meaning": "selesai",
+      "category": "Umum"
+    },
+    {
+      "id": "805",
+      "word": "がいこくじん",
+      "reading": "Gaikokujin",
+      "meaning": "orang asing",
+      "category": "Orang"
+    },
+    {
+      "id": "806",
+      "word": "かいだん",
+      "reading": "Kaidan",
+      "meaning": "tangga",
+      "category": "Umum"
+    },
+    {
+      "id": "807",
+      "word": "かてい",
+      "reading": "Katei",
+      "meaning": "keluarga",
+      "category": "Orang"
+    },
+    {
+      "id": "808",
+      "word": "かど",
+      "reading": "Kado",
+      "meaning": "sudut",
+      "category": "Umum"
+    },
+    {
+      "id": "809",
+      "word": "かりる",
+      "reading": "Kariru",
+      "meaning": "meminjam",
+      "category": "Waktu"
+    },
+    {
+      "id": "810",
+      "word": "かわいい",
+      "reading": "Kawaii",
+      "meaning": "imut",
+      "category": "Umum"
+    },
+    {
+      "id": "811",
+      "word": "きる",
+      "reading": "Kiru",
+      "meaning": "memotong",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "812",
+      "word": "くる",
+      "reading": "Kuru",
+      "meaning": "datang",
+      "category": "Umum"
+    },
+    {
+      "id": "813",
+      "word": "くもり",
+      "reading": "Kumori",
+      "meaning": "mendung",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "814",
+      "word": "けす",
+      "reading": "Kesu",
+      "meaning": "mematikan",
+      "category": "Makanan"
+    },
+    {
+      "id": "815",
+      "word": "こたえる",
+      "reading": "Kotaeru",
+      "meaning": "menjawab",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "816",
+      "word": "こまる",
+      "reading": "Komaru",
+      "meaning": "kesulitan",
+      "category": "Umum"
+    },
+    {
+      "id": "817",
+      "word": "しめる",
+      "reading": "Shimeru",
+      "meaning": "menutup",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "818",
+      "word": "しゅくだい",
+      "reading": "Shyukudai",
+      "meaning": "pr",
+      "category": "Umum"
+    },
+    {
+      "id": "819",
+      "word": "すむ",
+      "reading": "Sumu",
+      "meaning": "tinggal",
+      "category": "Umum"
+    },
+    {
+      "id": "820",
+      "word": "ズボン",
+      "reading": "Zubon",
+      "meaning": "celana",
+      "category": "Umum"
+    },
+    {
+      "id": "821",
+      "word": "する",
+      "reading": "Suru",
+      "meaning": "melakukan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "822",
+      "word": "すわる",
+      "reading": "Suwaru",
+      "meaning": "duduk",
+      "category": "Umum"
+    },
+    {
+      "id": "823",
+      "word": "せんたく",
+      "reading": "Sentaku",
+      "meaning": "mencuci pakaian",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "824",
+      "word": "たべる",
+      "reading": "Taberu",
+      "meaning": "makan",
+      "category": "Makanan"
+    },
+    {
+      "id": "825",
+      "word": "たのむ",
+      "reading": "Tanomu",
+      "meaning": "meminta",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "826",
+      "word": "つかれる",
+      "reading": "Tsukareru",
+      "meaning": "lelah",
+      "category": "Umum"
+    },
+    {
+      "id": "827",
+      "word": "つぎ",
+      "reading": "Tsugi",
+      "meaning": "berikutnya",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "828",
+      "word": "つかう",
+      "reading": "Tsukau",
+      "meaning": "menggunakan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "829",
+      "word": "つく",
+      "reading": "Tsuku",
+      "meaning": "tiba",
+      "category": "Umum"
+    },
+    {
+      "id": "830",
+      "word": "つくる",
+      "reading": "Tsukuru",
+      "meaning": "membuat",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "831",
+      "word": "テーブル",
+      "reading": "Te-buru",
+      "meaning": "meja",
+      "category": "Benda"
+    },
+    {
+      "id": "832",
+      "word": "でかける",
+      "reading": "Dekakeru",
+      "meaning": "pergi keluar",
+      "category": "Umum"
+    },
+    {
+      "id": "833",
+      "word": "でる",
+      "reading": "Deru",
+      "meaning": "keluar",
+      "category": "Umum"
+    },
+    {
+      "id": "834",
+      "word": "とおか",
+      "reading": "Tooka",
+      "meaning": "sepuluh hari",
+      "category": "Waktu"
+    },
+    {
+      "id": "835",
+      "word": "とき",
+      "reading": "Toki",
+      "meaning": "waktu",
+      "category": "Waktu"
+    },
+    {
+      "id": "836",
+      "word": "ところ",
+      "reading": "Tokoro",
+      "meaning": "tempat",
+      "category": "Tempat"
+    },
+    {
+      "id": "837",
+      "word": "とし",
+      "reading": "Toshi",
+      "meaning": "tahun",
+      "category": "Waktu"
+    },
+    {
+      "id": "838",
+      "word": "とぶ",
+      "reading": "Tobu",
+      "meaning": "terbang",
+      "category": "Umum"
+    },
+    {
+      "id": "839",
+      "word": "とまる",
+      "reading": "Tomaru",
+      "meaning": "berhenti",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "840",
+      "word": "なおす",
+      "reading": "Naosu",
+      "meaning": "memperbaiki",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "841",
+      "word": "なく",
+      "reading": "Naku",
+      "meaning": "menangis",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "842",
+      "word": "なのか",
+      "reading": "Nanoka",
+      "meaning": "tujuh hari",
+      "category": "Waktu"
+    },
+    {
+      "id": "843",
+      "word": "ならぶ",
+      "reading": "Narabu",
+      "meaning": "berbaris",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "844",
+      "word": "ならう",
+      "reading": "Narau",
+      "meaning": "belajar",
+      "category": "Umum"
+    },
+    {
+      "id": "845",
+      "word": "なる",
+      "reading": "Naru",
+      "meaning": "menjadi",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "846",
+      "word": "なん",
+      "reading": "Nan",
+      "meaning": "apa",
+      "category": "Umum"
+    },
+    {
+      "id": "847",
+      "word": "にもつ",
+      "reading": "Nimotsu",
+      "meaning": "barang bawaan",
+      "category": "Umum"
+    },
+    {
+      "id": "848",
+      "word": "ぬぐ",
+      "reading": "Nugu",
+      "meaning": "melepas (pakaian)",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "849",
+      "word": "ぬるい",
+      "reading": "Nurui",
+      "meaning": "hangat (air)",
+      "category": "Umum"
+    },
+    {
+      "id": "850",
+      "word": "ねる",
+      "reading": "Neru",
+      "meaning": "tidur",
+      "category": "Umum"
+    },
+    {
+      "id": "851",
+      "word": "のぼる",
+      "reading": "Noboru",
+      "meaning": "naik",
+      "category": "Umum"
+    },
+    {
+      "id": "852",
+      "word": "のむ",
+      "reading": "Nomu",
+      "meaning": "minum",
+      "category": "Makanan"
+    },
+    {
+      "id": "853",
+      "word": "はいる",
+      "reading": "Hairu",
+      "meaning": "masuk",
+      "category": "Umum"
+    },
+    {
+      "id": "854",
+      "word": "はく",
+      "reading": "Haku",
+      "meaning": "memakai (bawah)",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "855",
+      "word": "はこ",
+      "reading": "Hako",
+      "meaning": "kotak",
+      "category": "Tempat"
+    },
+    {
+      "id": "856",
+      "word": "はし",
+      "reading": "Hashi",
+      "meaning": "jembatan",
+      "category": "Umum"
+    },
+    {
+      "id": "857",
+      "word": "はじまる",
+      "reading": "Hajimaru",
+      "meaning": "mulai",
+      "category": "Umum"
+    },
+    {
+      "id": "858",
+      "word": "はたらく",
+      "reading": "Hataraku",
+      "meaning": "bekerja",
+      "category": "Umum"
+    },
+    {
+      "id": "859",
+      "word": "はなす",
+      "reading": "Hanasu",
+      "meaning": "berbicara",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "860",
+      "word": "はやい",
+      "reading": "Hayai",
+      "meaning": "cepat / awal",
+      "category": "Umum"
+    },
+    {
+      "id": "861",
+      "word": "はんぶん",
+      "reading": "Hanbun",
+      "meaning": "setengah",
+      "category": "Umum"
+    },
+    {
+      "id": "862",
+      "word": "ひく",
+      "reading": "Hiku",
+      "meaning": "menarik",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "863",
+      "word": "ふとい",
+      "reading": "Futoi",
+      "meaning": "gemuk / tebal",
+      "category": "Umum"
+    },
+    {
+      "id": "864",
+      "word": "ふる",
+      "reading": "Furu",
+      "meaning": "turun (hujan/salju)",
+      "category": "Umum"
+    },
+    {
+      "id": "865",
+      "word": "ほか",
+      "reading": "Hoka",
+      "meaning": "lain",
+      "category": "Umum"
+    },
+    {
+      "id": "866",
+      "word": "ほそい",
+      "reading": "Hosoi",
+      "meaning": "kurus",
+      "category": "Umum"
+    },
+    {
+      "id": "867",
+      "word": "ほんとう",
+      "reading": "Hontou",
+      "meaning": "sungguh",
+      "category": "Umum"
+    },
+    {
+      "id": "868",
+      "word": "まがる",
+      "reading": "Magaru",
+      "meaning": "belok",
+      "category": "Umum"
+    },
+    {
+      "id": "869",
+      "word": "まつ",
+      "reading": "Matsu",
+      "meaning": "menunggu",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "870",
+      "word": "まど",
+      "reading": "Mado",
+      "meaning": "jendela",
+      "category": "Umum"
+    },
+    {
+      "id": "871",
+      "word": "まるい",
+      "reading": "Marui",
+      "meaning": "bulat",
+      "category": "Umum"
+    },
+    {
+      "id": "872",
+      "word": "みっつ",
+      "reading": "Mittsu",
+      "meaning": "tiga (benda)",
+      "category": "Benda"
+    },
+    {
+      "id": "873",
+      "word": "みる",
+      "reading": "Miru",
+      "meaning": "melihat",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "874",
+      "word": "むいか",
+      "reading": "Muika",
+      "meaning": "enam hari",
+      "category": "Waktu"
+    },
+    {
+      "id": "875",
+      "word": "むら",
+      "reading": "Mura",
+      "meaning": "desa",
+      "category": "Tempat"
+    },
+    {
+      "id": "876",
+      "word": "もちろん",
+      "reading": "Mochiron",
+      "meaning": "tentu saja",
+      "category": "Umum"
+    },
+    {
+      "id": "877",
+      "word": "もつ",
+      "reading": "Motsu",
+      "meaning": "memegang",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "878",
+      "word": "もの",
+      "reading": "Mono",
+      "meaning": "benda",
+      "category": "Benda"
+    },
+    {
+      "id": "879",
+      "word": "やおや",
+      "reading": "Yaoya",
+      "meaning": "tukang sayur",
+      "category": "Makanan"
+    },
+    {
+      "id": "880",
+      "word": "やすむ",
+      "reading": "Yasumu",
+      "meaning": "istirahat",
+      "category": "Umum"
+    },
+    {
+      "id": "881",
+      "word": "やっつ",
+      "reading": "Yattsu",
+      "meaning": "delapan (benda)",
+      "category": "Benda"
+    },
+    {
+      "id": "882",
+      "word": "ゆっくり",
+      "reading": "Yukkuri",
+      "meaning": "perlahan",
+      "category": "Umum"
+    },
+    {
+      "id": "883",
+      "word": "ようび",
+      "reading": "Youbi",
+      "meaning": "hari",
+      "category": "Waktu"
+    },
+    {
+      "id": "884",
+      "word": "よぶ",
+      "reading": "Yobu",
+      "meaning": "memanggil",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "885",
+      "word": "よむ",
+      "reading": "Yomu",
+      "meaning": "membaca",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "886",
+      "word": "るす",
+      "reading": "Rusu",
+      "meaning": "tidak di rumah",
+      "category": "Tempat"
+    },
+    {
+      "id": "887",
+      "word": "ろうか",
+      "reading": "Rouka",
+      "meaning": "lorong",
+      "category": "Umum"
+    },
+    {
+      "id": "888",
+      "word": "わかる",
+      "reading": "Wakaru",
+      "meaning": "mengerti",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "889",
+      "word": "わすれる",
+      "reading": "Wasureru",
+      "meaning": "lupa",
+      "category": "Umum"
+    },
+    {
+      "id": "890",
+      "word": "わたる",
+      "reading": "Wataru",
+      "meaning": "menyeberang",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "891",
+      "word": "わらう",
+      "reading": "Warau",
+      "meaning": "tertawa",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "892",
+      "word": "われる",
+      "reading": "Wareru",
+      "meaning": "pecah",
+      "category": "Umum"
+    },
+    {
+      "id": "893",
+      "word": "アイスクリーム",
+      "reading": "Aisukuriimu",
+      "meaning": "es krim",
+      "category": "Makanan"
+    },
+    {
+      "id": "894",
+      "word": "アルバイト",
+      "reading": "Arubaito",
+      "meaning": "kerja paruh waktu",
+      "category": "Waktu"
+    },
+    {
+      "id": "895",
+      "word": "エアコン",
+      "reading": "Eakon",
+      "meaning": "ac",
+      "category": "Benda"
+    },
+    {
+      "id": "896",
+      "word": "エレベーター",
+      "reading": "Erebeetaa",
+      "meaning": "lift",
+      "category": "Benda"
+    },
+    {
+      "id": "897",
+      "word": "オートバイ",
+      "reading": "Ootobai",
+      "meaning": "motor",
+      "category": "Benda"
+    },
+    {
+      "id": "898",
+      "word": "オレンジ",
+      "reading": "Orenji",
+      "meaning": "jeruk",
+      "category": "Makanan"
+    },
+    {
+      "id": "899",
+      "word": "カーテン",
+      "reading": "Kaaten",
+      "meaning": "gorden",
+      "category": "Benda"
+    },
+    {
+      "id": "900",
+      "word": "カード",
+      "reading": "Kaado",
+      "meaning": "kartu",
+      "category": "Benda"
+    },
+    {
+      "id": "901",
+      "word": "カップ",
+      "reading": "Kappu",
+      "meaning": "cangkir",
+      "category": "Benda"
+    },
+    {
+      "id": "902",
+      "word": "カメラ",
+      "reading": "Kamera",
+      "meaning": "kamera",
+      "category": "Benda"
+    },
+    {
+      "id": "903",
+      "word": "カラオケ",
+      "reading": "Karaoke",
+      "meaning": "karaoke",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "904",
+      "word": "ガラス",
+      "reading": "Garasu",
+      "meaning": "kaca",
+      "category": "Benda"
+    },
+    {
+      "id": "905",
+      "word": "キロ",
+      "reading": "Kiro",
+      "meaning": "kg / kilometer",
+      "category": "Umum"
+    },
+    {
+      "id": "906",
+      "word": "クラス",
+      "reading": "Kurasu",
+      "meaning": "kelas",
+      "category": "Umum"
+    },
+    {
+      "id": "907",
+      "word": "クリスマス",
+      "reading": "Kurisumasu",
+      "meaning": "natal",
+      "category": "Waktu"
+    },
+    {
+      "id": "908",
+      "word": "グラム",
+      "reading": "Guramu",
+      "meaning": "gram",
+      "category": "Umum"
+    },
+    {
+      "id": "909",
+      "word": "ケーキ",
+      "reading": "Keeki",
+      "meaning": "kue",
+      "category": "Makanan"
+    },
+    {
+      "id": "910",
+      "word": "ゲーム",
+      "reading": "Geemu",
+      "meaning": "permainan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "911",
+      "word": "コート",
+      "reading": "Kootu",
+      "meaning": "mantel",
+      "category": "Benda"
+    },
+    {
+      "id": "912",
+      "word": "コピー",
+      "reading": "Kopii",
+      "meaning": "salinan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "913",
+      "word": "ゴミ",
+      "reading": "Gomi",
+      "meaning": "sampah",
+      "category": "Umum"
+    },
+    {
+      "id": "914",
+      "word": "サッカー",
+      "reading": "Sakkaa",
+      "meaning": "sepak bola",
+      "category": "Benda"
+    },
+    {
+      "id": "915",
+      "word": "シャツ",
+      "reading": "Shatsu",
+      "meaning": "kemeja",
+      "category": "Benda"
+    },
+    {
+      "id": "916",
+      "word": "シャワー",
+      "reading": "Shawaa",
+      "meaning": "shower",
+      "category": "Umum"
+    },
+    {
+      "id": "917",
+      "word": "シンプル",
+      "reading": "Shinpuru",
+      "meaning": "sederhana",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "918",
+      "word": "スーパー",
+      "reading": "Suupaa",
+      "meaning": "supermarket",
+      "category": "Tempat"
+    },
+    {
+      "id": "919",
+      "word": "スカート",
+      "reading": "Sukaato",
+      "meaning": "rok",
+      "category": "Benda"
+    },
+    {
+      "id": "920",
+      "word": "スキー",
+      "reading": "Sukii",
+      "meaning": "ski",
+      "category": "Benda"
+    },
+    {
+      "id": "921",
+      "word": "ストーブ",
+      "reading": "Sutoobu",
+      "meaning": "pemanas",
+      "category": "Benda"
+    },
+    {
+      "id": "922",
+      "word": "スプーン",
+      "reading": "Supuun",
+      "meaning": "sendok",
+      "category": "Benda"
+    },
+    {
+      "id": "923",
+      "word": "スポーツ",
+      "reading": "Supootsu",
+      "meaning": "olahraga",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "924",
+      "word": "セーター",
+      "reading": "Seetaa",
+      "meaning": "sweater",
+      "category": "Benda"
+    },
+    {
+      "id": "925",
+      "word": "セロテープ",
+      "reading": "Seroteepu",
+      "meaning": "selotip",
+      "category": "Benda"
+    },
+    {
+      "id": "926",
+      "word": "タクシー",
+      "reading": "Takushii",
+      "meaning": "taksi",
+      "category": "Benda"
+    },
+    {
+      "id": "927",
+      "word": "テスト",
+      "reading": "Tesuto",
+      "meaning": "ujian",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "928",
+      "word": "テープ",
+      "reading": "Teepu",
+      "meaning": "pita",
+      "category": "Umum"
+    },
+    {
+      "id": "929",
+      "word": "デパート",
+      "reading": "Depaato",
+      "meaning": "toserba",
+      "category": "Umum"
+    },
+    {
+      "id": "930",
+      "word": "ドア",
+      "reading": "Doa",
+      "meaning": "pintu",
+      "category": "Umum"
+    },
+    {
+      "id": "931",
+      "word": "ドレス",
+      "reading": "Doresu",
+      "meaning": "gaun",
+      "category": "Umum"
+    },
+    {
+      "id": "932",
+      "word": "ナイフ",
+      "reading": "Naifu",
+      "meaning": "pisau",
+      "category": "Umum"
+    },
+    {
+      "id": "933",
+      "word": "ニュース",
+      "reading": "Nyuusu",
+      "meaning": "berita",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "934",
+      "word": "バイク",
+      "reading": "Baiku",
+      "meaning": "motor",
+      "category": "Benda"
+    },
+    {
+      "id": "935",
+      "word": "バター",
+      "reading": "Bataa",
+      "meaning": "mentega",
+      "category": "Makanan"
+    },
+    {
+      "id": "936",
+      "word": "バッグ",
+      "reading": "Baggu",
+      "meaning": "tas",
+      "category": "Benda"
+    },
+    {
+      "id": "937",
+      "word": "パーティー",
+      "reading": "Paatii",
+      "meaning": "pesta",
+      "category": "Umum"
+    },
+    {
+      "id": "938",
+      "word": "ビール",
+      "reading": "Biiru",
+      "meaning": "bir",
+      "category": "Makanan"
+    },
+    {
+      "id": "939",
+      "word": "ビデオ",
+      "reading": "Bideo",
+      "meaning": "video",
+      "category": "Umum"
+    },
+    {
+      "id": "940",
+      "word": "ピアノ",
+      "reading": "Piano",
+      "meaning": "piano",
+      "category": "Benda"
+    },
+    {
+      "id": "941",
+      "word": "プール",
+      "reading": "Puuru",
+      "meaning": "kolam renang",
+      "category": "Tempat"
+    },
+    {
+      "id": "942",
+      "word": "プレゼント",
+      "reading": "Purezento",
+      "meaning": "hadiah",
+      "category": "Benda"
+    },
+    {
+      "id": "943",
+      "word": "ページ",
+      "reading": "Peeji",
+      "meaning": "halaman",
+      "category": "Benda"
+    },
+    {
+      "id": "944",
+      "word": "ペット",
+      "reading": "Petto",
+      "meaning": "hewan peliharaan",
+      "category": "Benda"
+    },
+    {
+      "id": "945",
+      "word": "ペン",
+      "reading": "Pen",
+      "meaning": "pena",
+      "category": "Benda"
+    },
+    {
+      "id": "946",
+      "word": "ボール",
+      "reading": "Booru",
+      "meaning": "bola",
+      "category": "Benda"
+    },
+    {
+      "id": "947",
+      "word": "ポスト",
+      "reading": "Posuto",
+      "meaning": "kotak surat",
+      "category": "Tempat"
+    },
+    {
+      "id": "948",
+      "word": "マッチ",
+      "reading": "Macchi",
+      "meaning": "korek api",
+      "category": "Benda"
+    },
+    {
+      "id": "949",
+      "word": "マンション",
+      "reading": "Manshon",
+      "meaning": "apartemen",
+      "category": "Tempat"
+    },
+    {
+      "id": "950",
+      "word": "ミルク",
+      "reading": "Miruku",
+      "meaning": "susu",
+      "category": "Makanan"
+    },
+    {
+      "id": "951",
+      "word": "メートル",
+      "reading": "Meetoru",
+      "meaning": "meter",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "952",
+      "word": "メニュー",
+      "reading": "Menyuu",
+      "meaning": "menu",
+      "category": "Benda"
+    },
+    {
+      "id": "953",
+      "word": "ラジオ",
+      "reading": "Rajio",
+      "meaning": "radio",
+      "category": "Benda"
+    },
+    {
+      "id": "954",
+      "word": "レンタカー",
+      "reading": "Rentakaa",
+      "meaning": "mobil sewaan",
+      "category": "Benda"
+    },
+    {
+      "id": "955",
+      "word": "ワイン",
+      "reading": "Wain",
+      "meaning": "anggur",
+      "category": "Makanan"
+    },
+    {
+      "id": "956",
+      "word": "あげる",
+      "reading": "Ageru",
+      "meaning": "memberi",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "957",
+      "word": "あつまる",
+      "reading": "Atsumaru",
+      "meaning": "berkumpul",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "958",
+      "word": "あつめる",
+      "reading": "Atsumeru",
+      "meaning": "mengumpulkan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "959",
+      "word": "あぶる",
+      "reading": "Aburu",
+      "meaning": "memanggang",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "960",
+      "word": "あやまる",
+      "reading": "Ayamaru",
+      "meaning": "meminta maaf",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "961",
+      "word": "いきる",
+      "reading": "Ikiru",
+      "meaning": "hidup",
+      "category": "Umum"
+    },
+    {
+      "id": "962",
+      "word": "いそぐ",
+      "reading": "Isogu",
+      "meaning": "bergegas",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "963",
+      "word": "いのる",
+      "reading": "Inoru",
+      "meaning": "berdoa",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "964",
+      "word": "いらっしゃる",
+      "reading": "Irasshyaru",
+      "meaning": "datang (sopan)",
+      "category": "Umum"
+    },
+    {
+      "id": "965",
+      "word": "うえる",
+      "reading": "Ueru",
+      "meaning": "menanam",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "966",
+      "word": "うかぶ",
+      "reading": "Ukabu",
+      "meaning": "mengapung",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "967",
+      "word": "うける",
+      "reading": "Ukeru",
+      "meaning": "menerima",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "968",
+      "word": "うごく",
+      "reading": "Ugoku",
+      "meaning": "bergerak",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "969",
+      "word": "うれる",
+      "reading": "Ureru",
+      "meaning": "terjual",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "970",
+      "word": "えらぶ",
+      "reading": "Erabu",
+      "meaning": "memilih",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "971",
+      "word": "おこす",
+      "reading": "Okosu",
+      "meaning": "membangunkan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "972",
+      "word": "おこる",
+      "reading": "Okoru",
+      "meaning": "marah",
+      "category": "Umum"
+    },
+    {
+      "id": "973",
+      "word": "おちる",
+      "reading": "Ochiru",
+      "meaning": "jatuh",
+      "category": "Umum"
+    },
+    {
+      "id": "974",
+      "word": "おどる",
+      "reading": "Odoru",
+      "meaning": "menari",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "975",
+      "word": "おもう",
+      "reading": "Omou",
+      "meaning": "berpikir",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "976",
+      "word": "おくる",
+      "reading": "Okuru",
+      "meaning": "mengirim",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "977",
+      "word": "おこなう",
+      "reading": "Okonau",
+      "meaning": "melakukan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "978",
+      "word": "おわらせる",
+      "reading": "Owaraseru",
+      "meaning": "menyelesaikan",
+      "category": "Makanan"
+    },
+    {
+      "id": "979",
+      "word": "かえる",
+      "reading": "Kaeru",
+      "meaning": "kembali",
+      "category": "Umum"
+    },
+    {
+      "id": "980",
+      "word": "かく",
+      "reading": "Kaku",
+      "meaning": "menulis",
+      "category": "Benda"
+    },
+    {
+      "id": "981",
+      "word": "かける",
+      "reading": "Kakeru",
+      "meaning": "menggantung",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "982",
+      "word": "かたづける",
+      "reading": "Katazukeru",
+      "meaning": "merapikan",
+      "category": "Makanan"
+    },
+    {
+      "id": "983",
+      "word": "かぶる",
+      "reading": "Kaburu",
+      "meaning": "memakai (kepala)",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "984",
+      "word": "きえる",
+      "reading": "Kieru",
+      "meaning": "padam",
+      "category": "Umum"
+    },
+    {
+      "id": "985",
+      "word": "きこえる",
+      "reading": "Kikoeru",
+      "meaning": "terdengar",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "986",
+      "word": "きめる",
+      "reading": "Kimeru",
+      "meaning": "memutuskan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "987",
+      "word": "くれる",
+      "reading": "Kureru",
+      "meaning": "memberi (kepadaku)",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "988",
+      "word": "こわれる",
+      "reading": "Kowareru",
+      "meaning": "rusak",
+      "category": "Umum"
+    },
+    {
+      "id": "989",
+      "word": "さがす",
+      "reading": "Sagasu",
+      "meaning": "mencari",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "990",
+      "word": "さそう",
+      "reading": "Sasou",
+      "meaning": "mengajak",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "991",
+      "word": "さわる",
+      "reading": "Sawaru",
+      "meaning": "menyentuh",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "992",
+      "word": "しぬ",
+      "reading": "Shinu",
+      "meaning": "meninggal",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "993",
+      "word": "しまる",
+      "reading": "Shimaru",
+      "meaning": "tertutup",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "994",
+      "word": "しめす",
+      "reading": "Shimesu",
+      "meaning": "menunjukkan",
+      "category": "Benda"
+    },
+    {
+      "id": "995",
+      "word": "しらべる",
+      "reading": "Shiraberu",
+      "meaning": "meneliti",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "996",
+      "word": "すぎる",
+      "reading": "Sugiru",
+      "meaning": "terlalu",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "997",
+      "word": "すく",
+      "reading": "Suku",
+      "meaning": "menjadi kosong",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "998",
+      "word": "すてる",
+      "reading": "Suteru",
+      "meaning": "membuang",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "999",
+      "word": "すべる",
+      "reading": "Suberu",
+      "meaning": "terpeleset",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1000",
+      "word": "そだてる",
+      "reading": "Sodateru",
+      "meaning": "membesarkan",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1001",
+      "word": "たすける",
+      "reading": "Tasukeru",
+      "meaning": "menolong",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1002",
+      "word": "たずねる",
+      "reading": "Tazuneru",
+      "meaning": "bertanya",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1003",
+      "word": "たのしむ",
+      "reading": "Tanoshimu",
+      "meaning": "menikmati",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1004",
+      "word": "たおれる",
+      "reading": "Taoreru",
+      "meaning": "roboh",
+      "category": "Umum"
+    },
+    {
+      "id": "1005",
+      "word": "つづく",
+      "reading": "Tsuzuku",
+      "meaning": "berlanjut",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1006",
+      "word": "つづける",
+      "reading": "Tsuzukeru",
+      "meaning": "melanjutkan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1007",
+      "word": "つたえる",
+      "reading": "Tsutaeru",
+      "meaning": "menyampaikan",
+      "category": "Makanan"
+    },
+    {
+      "id": "1008",
+      "word": "とどく",
+      "reading": "Todoku",
+      "meaning": "sampai",
+      "category": "Umum"
+    },
+    {
+      "id": "1009",
+      "word": "とめる",
+      "reading": "Tomeru",
+      "meaning": "menghentikan",
+      "category": "Makanan"
+    },
+    {
+      "id": "1010",
+      "word": "なおる",
+      "reading": "Naoru",
+      "meaning": "sembuh",
+      "category": "Umum"
+    },
+    {
+      "id": "1011",
+      "word": "なくす",
+      "reading": "Nakusu",
+      "meaning": "kehilangan",
+      "category": "Umum"
+    },
+    {
+      "id": "1012",
+      "word": "ならす",
+      "reading": "Narasu",
+      "meaning": "membiasakan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1013",
+      "word": "にげる",
+      "reading": "Nigeru",
+      "meaning": "melarikan diri",
+      "category": "Makanan"
+    },
+    {
+      "id": "1014",
+      "word": "ぬすむ",
+      "reading": "Nusumu",
+      "meaning": "mencuri",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1015",
+      "word": "のこる",
+      "reading": "Nokoru",
+      "meaning": "tersisa",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1016",
+      "word": "はこぶ",
+      "reading": "Hakobu",
+      "meaning": "membawa",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1017",
+      "word": "はじめる",
+      "reading": "Hajimeru",
+      "meaning": "memulai",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1018",
+      "word": "はれる",
+      "reading": "Hareru",
+      "meaning": "sembuh / cerah",
+      "category": "Umum"
+    },
+    {
+      "id": "1019",
+      "word": "ひらく",
+      "reading": "Hiraku",
+      "meaning": "membuka",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1020",
+      "word": "ふえる",
+      "reading": "Fueru",
+      "meaning": "bertambah",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1021",
+      "word": "ふやす",
+      "reading": "Fuyasu",
+      "meaning": "menambah",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1022",
+      "word": "へる",
+      "reading": "Heru",
+      "meaning": "berkurang",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1023",
+      "word": "ほめる",
+      "reading": "Homeru",
+      "meaning": "memuji",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1024",
+      "word": "まにあう",
+      "reading": "Maniau",
+      "meaning": "sempat",
+      "category": "Umum"
+    },
+    {
+      "id": "1025",
+      "word": "まもる",
+      "reading": "Mamoru",
+      "meaning": "melindungi",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1026",
+      "word": "みえる",
+      "reading": "Mieru",
+      "meaning": "terlihat",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1027",
+      "word": "みつかる",
+      "reading": "Mitsukaru",
+      "meaning": "ditemukan",
+      "category": "Umum"
+    },
+    {
+      "id": "1028",
+      "word": "みつける",
+      "reading": "Mitsukeru",
+      "meaning": "menemukan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1029",
+      "word": "むかえる",
+      "reading": "Mukaeru",
+      "meaning": "menjemput",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1030",
+      "word": "もどる",
+      "reading": "Modoru",
+      "meaning": "kembali",
+      "category": "Umum"
+    },
+    {
+      "id": "1031",
+      "word": "もらう",
+      "reading": "Morau",
+      "meaning": "menerima",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1032",
+      "word": "やく",
+      "reading": "Yaku",
+      "meaning": "membakar",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1033",
+      "word": "やめる",
+      "reading": "Yameru",
+      "meaning": "berhenti",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1034",
+      "word": "よごれる",
+      "reading": "Yogoreru",
+      "meaning": "menjadi kotor",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1035",
+      "word": "よろこぶ",
+      "reading": "Yorokobu",
+      "meaning": "gembira",
+      "category": "Makanan"
+    },
+    {
+      "id": "1036",
+      "word": "わかれる",
+      "reading": "Wakareru",
+      "meaning": "berpisah",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1037",
+      "word": "あさい",
+      "reading": "Asai",
+      "meaning": "dangkal",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1038",
+      "word": "あやしい",
+      "reading": "Ayashii",
+      "meaning": "mencurigakan",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1039",
+      "word": "うつくしい",
+      "reading": "Utsukushii",
+      "meaning": "indah",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1040",
+      "word": "うまい",
+      "reading": "Umai",
+      "meaning": "enak / pintar",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1041",
+      "word": "えらい",
+      "reading": "Erai",
+      "meaning": "hebat",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1042",
+      "word": "おそい",
+      "reading": "Osoi",
+      "meaning": "lambat / terlambat",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1043",
+      "word": "おそろしい",
+      "reading": "Osoroshii",
+      "meaning": "menakutkan",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1044",
+      "word": "おとなしい",
+      "reading": "Otonashii",
+      "meaning": "tenang",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1045",
+      "word": "かたい",
+      "reading": "Katai",
+      "meaning": "keras",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1046",
+      "word": "きたない",
+      "reading": "Kitanai",
+      "meaning": "kotor",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1047",
+      "word": "きびしい",
+      "reading": "Kibishii",
+      "meaning": "ketat",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1048",
+      "word": "こわい",
+      "reading": "Kowai",
+      "meaning": "takut",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1049",
+      "word": "すずしい",
+      "reading": "Suzushii",
+      "meaning": "sejuk",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1050",
+      "word": "たいへん",
+      "reading": "Taihen",
+      "meaning": "berat / sulit",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1051",
+      "word": "にがい",
+      "reading": "Nigai",
+      "meaning": "pahit",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1052",
+      "word": "よい",
+      "reading": "Yoi",
+      "meaning": "baik",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1053",
+      "word": "あいさつ",
+      "reading": "Aisatsu",
+      "meaning": "salam",
+      "category": "Umum"
+    },
+    {
+      "id": "1054",
+      "word": "あきる",
+      "reading": "Akiru",
+      "meaning": "bosan",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1055",
+      "word": "あける",
+      "reading": "Akeru",
+      "meaning": "membuka",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1056",
+      "word": "あずかる",
+      "reading": "Azukaru",
+      "meaning": "menitip",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1057",
+      "word": "あたる",
+      "reading": "Ataru",
+      "meaning": "kena",
+      "category": "Umum"
+    },
+    {
+      "id": "1058",
+      "word": "あまる",
+      "reading": "Amaru",
+      "meaning": "tersisa",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1059",
+      "word": "あらわれる",
+      "reading": "Arawareru",
+      "meaning": "muncul",
+      "category": "Umum"
+    },
+    {
+      "id": "1060",
+      "word": "いがい",
+      "reading": "Igai",
+      "meaning": "selain",
+      "category": "Umum"
+    },
+    {
+      "id": "1061",
+      "word": "いけない",
+      "reading": "Ikenai",
+      "meaning": "tidak boleh",
+      "category": "Umum"
+    },
+    {
+      "id": "1062",
+      "word": "いらいら",
+      "reading": "Iraira",
+      "meaning": "kesal",
+      "category": "Umum"
+    },
+    {
+      "id": "1063",
+      "word": "うけとる",
+      "reading": "Uketoru",
+      "meaning": "menerima",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1064",
+      "word": "うごかす",
+      "reading": "Ugokasu",
+      "meaning": "menggerakkan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1065",
+      "word": "うそ",
+      "reading": "Uso",
+      "meaning": "bohong",
+      "category": "Umum"
+    },
+    {
+      "id": "1066",
+      "word": "うたがう",
+      "reading": "Utagau",
+      "meaning": "meragukan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1067",
+      "word": "うつす",
+      "reading": "Utsusu",
+      "meaning": "memindahkan",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1068",
+      "word": "うつる",
+      "reading": "Utsuru",
+      "meaning": "menular",
+      "category": "Benda"
+    },
+    {
+      "id": "1069",
+      "word": "うめる",
+      "reading": "Umeru",
+      "meaning": "mengisi",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1070",
+      "word": "おいこす",
+      "reading": "Oikosu",
+      "meaning": "menyalip",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1071",
+      "word": "おうえん",
+      "reading": "Ouen",
+      "meaning": "dukungan",
+      "category": "Umum"
+    },
+    {
+      "id": "1072",
+      "word": "おくれる",
+      "reading": "Okureru",
+      "meaning": "terlambat",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1073",
+      "word": "おさえる",
+      "reading": "Osaeru",
+      "meaning": "menekan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1074",
+      "word": "おちつく",
+      "reading": "Ochitsuku",
+      "meaning": "tenang",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1075",
+      "word": "おとす",
+      "reading": "Otosu",
+      "meaning": "menjatuhkan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1076",
+      "word": "おどろく",
+      "reading": "Odoroku",
+      "meaning": "terkejut",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1077",
+      "word": "おもいだす",
+      "reading": "Omoidasu",
+      "meaning": "mengingat",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1078",
+      "word": "おもて",
+      "reading": "Omote",
+      "meaning": "depan",
+      "category": "Umum"
+    },
+    {
+      "id": "1079",
+      "word": "おれる",
+      "reading": "Oreru",
+      "meaning": "patah",
+      "category": "Umum"
+    },
+    {
+      "id": "1080",
+      "word": "かかる",
+      "reading": "Kakaru",
+      "meaning": "memerlukan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1081",
+      "word": "かくす",
+      "reading": "Kakusu",
+      "meaning": "menyembunyikan",
+      "category": "Makanan"
+    },
+    {
+      "id": "1082",
+      "word": "かさなる",
+      "reading": "Kasanaru",
+      "meaning": "bertumpuk",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1083",
+      "word": "かぞえる",
+      "reading": "Kazoeru",
+      "meaning": "menghitung",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1084",
+      "word": "かたまる",
+      "reading": "Katamaru",
+      "meaning": "mengeras",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1085",
+      "word": "かたる",
+      "reading": "Kataru",
+      "meaning": "bercerita",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1086",
+      "word": "かならず",
+      "reading": "Kanarazu",
+      "meaning": "pasti",
+      "category": "Umum"
+    },
+    {
+      "id": "1087",
+      "word": "かまう",
+      "reading": "Kamau",
+      "meaning": "peduli",
+      "category": "Umum"
+    },
+    {
+      "id": "1088",
+      "word": "きず",
+      "reading": "Kizu",
+      "meaning": "cedera",
+      "category": "Umum"
+    },
+    {
+      "id": "1089",
+      "word": "きづく",
+      "reading": "Kizuku",
+      "meaning": "menyadari",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1090",
+      "word": "きまる",
+      "reading": "Kimaru",
+      "meaning": "ditentukan",
+      "category": "Umum"
+    },
+    {
+      "id": "1091",
+      "word": "きらきら",
+      "reading": "Kirakira",
+      "meaning": "berkilau",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1092",
+      "word": "くう",
+      "reading": "Kuu",
+      "meaning": "menyedot / makan",
+      "category": "Makanan"
+    },
+    {
+      "id": "1093",
+      "word": "くずれる",
+      "reading": "Kuzureru",
+      "meaning": "runtuh",
+      "category": "Umum"
+    },
+    {
+      "id": "1094",
+      "word": "くたびれる",
+      "reading": "Kutabireru",
+      "meaning": "lelah",
+      "category": "Umum"
+    },
+    {
+      "id": "1095",
+      "word": "くりかえす",
+      "reading": "Kurikaesu",
+      "meaning": "mengulang",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1096",
+      "word": "けが",
+      "reading": "Kega",
+      "meaning": "cidera",
+      "category": "Umum"
+    },
+    {
+      "id": "1097",
+      "word": "けっか",
+      "reading": "Kekka",
+      "meaning": "hasil",
+      "category": "Umum"
+    },
+    {
+      "id": "1098",
+      "word": "けっして",
+      "reading": "Kesshite",
+      "meaning": "tidak pernah",
+      "category": "Umum"
+    },
+    {
+      "id": "1099",
+      "word": "けんか",
+      "reading": "Kenka",
+      "meaning": "bertengkar",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1100",
+      "word": "こえる",
+      "reading": "Koeru",
+      "meaning": "melewati",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1101",
+      "word": "こぼす",
+      "reading": "Kobosu",
+      "meaning": "menumpahkan",
+      "category": "Benda"
+    },
+    {
+      "id": "1102",
+      "word": "こまかい",
+      "reading": "Komakai",
+      "meaning": "halus",
+      "category": "Umum"
+    },
+    {
+      "id": "1103",
+      "word": "さがる",
+      "reading": "Sagaru",
+      "meaning": "turun",
+      "category": "Umum"
+    },
+    {
+      "id": "1104",
+      "word": "ささえる",
+      "reading": "Sasaeru",
+      "meaning": "menopang",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1105",
+      "word": "さびる",
+      "reading": "Sabiru",
+      "meaning": "berkarat",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1106",
+      "word": "さます",
+      "reading": "Samasu",
+      "meaning": "membangunkan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1107",
+      "word": "さめる",
+      "reading": "Sameru",
+      "meaning": "bangun / dingin",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1108",
+      "word": "しかた",
+      "reading": "Shikata",
+      "meaning": "cara",
+      "category": "Umum"
+    },
+    {
+      "id": "1109",
+      "word": "しっぱい",
+      "reading": "Shippai",
+      "meaning": "gagal",
+      "category": "Umum"
+    },
+    {
+      "id": "1110",
+      "word": "しばらく",
+      "reading": "Shibaraku",
+      "meaning": "sebentar",
+      "category": "Waktu"
+    },
+    {
+      "id": "1111",
+      "word": "しまう",
+      "reading": "Shimau",
+      "meaning": "menyimpan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1112",
+      "word": "しらせる",
+      "reading": "Shiraseru",
+      "meaning": "memberi tahu",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1113",
+      "word": "しんじる",
+      "reading": "Shinjiru",
+      "meaning": "percaya",
+      "category": "Umum"
+    },
+    {
+      "id": "1114",
+      "word": "すいえい",
+      "reading": "Suiei",
+      "meaning": "renang",
+      "category": "Umum"
+    },
+    {
+      "id": "1115",
+      "word": "すくう",
+      "reading": "Sukuu",
+      "meaning": "menyendok",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1116",
+      "word": "すごす",
+      "reading": "Sugosu",
+      "meaning": "menghabiskan waktu",
+      "category": "Waktu"
+    },
+    {
+      "id": "1117",
+      "word": "すすめる",
+      "reading": "Susumeru",
+      "meaning": "mengusulkan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1118",
+      "word": "すべて",
+      "reading": "Subete",
+      "meaning": "semua",
+      "category": "Umum"
+    },
+    {
+      "id": "1119",
+      "word": "せいかく",
+      "reading": "Seikaku",
+      "meaning": "kepribadian",
+      "category": "Umum"
+    },
+    {
+      "id": "1120",
+      "word": "せいこう",
+      "reading": "Seikou",
+      "meaning": "berhasil",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1121",
+      "word": "せき",
+      "reading": "Seki",
+      "meaning": "batuk",
+      "category": "Umum"
+    },
+    {
+      "id": "1122",
+      "word": "せっとく",
+      "reading": "Settoku",
+      "meaning": "meyakinkan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1123",
+      "word": "せなか",
+      "reading": "Senaka",
+      "meaning": "punggung",
+      "category": "Umum"
+    },
+    {
+      "id": "1124",
+      "word": "そだつ",
+      "reading": "Sodatsu",
+      "meaning": "tumbuh",
+      "category": "Umum"
+    },
+    {
+      "id": "1125",
+      "word": "そなえる",
+      "reading": "Sonaeru",
+      "meaning": "mempersiapkan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1126",
+      "word": "そんけい",
+      "reading": "Sonkei",
+      "meaning": "menghormati",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1127",
+      "word": "たえる",
+      "reading": "Taeru",
+      "meaning": "bertahan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1128",
+      "word": "たしか",
+      "reading": "Tashika",
+      "meaning": "pasti",
+      "category": "Umum"
+    },
+    {
+      "id": "1129",
+      "word": "たす",
+      "reading": "Tasu",
+      "meaning": "menambah",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1130",
+      "word": "たたく",
+      "reading": "Tataku",
+      "meaning": "memukul",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1131",
+      "word": "たちあがる",
+      "reading": "Tachiagaru",
+      "meaning": "berdiri",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1132",
+      "word": "たりる",
+      "reading": "Tariru",
+      "meaning": "cukup",
+      "category": "Umum"
+    },
+    {
+      "id": "1133",
+      "word": "だまる",
+      "reading": "Damaru",
+      "meaning": "diam",
+      "category": "Umum"
+    },
+    {
+      "id": "1134",
+      "word": "ちがい",
+      "reading": "Chigai",
+      "meaning": "perbedaan",
+      "category": "Umum"
+    },
+    {
+      "id": "1135",
+      "word": "ちかづく",
+      "reading": "Chikazuku",
+      "meaning": "mendekat",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1136",
+      "word": "ちこく",
+      "reading": "Chikoku",
+      "meaning": "terlambat",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1137",
+      "word": "つかまえる",
+      "reading": "Tsukamaeru",
+      "meaning": "menangkap",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1138",
+      "word": "つくす",
+      "reading": "Tsukusu",
+      "meaning": "menghabiskan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1139",
+      "word": "つづき",
+      "reading": "Tsuzuki",
+      "meaning": "lanjutan",
+      "category": "Umum"
+    },
+    {
+      "id": "1140",
+      "word": "つつむ",
+      "reading": "Tsutsumu",
+      "meaning": "membungkus",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1141",
+      "word": "つぶす",
+      "reading": "Tsubusu",
+      "meaning": "menghancurkan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1142",
+      "word": "ていねい",
+      "reading": "Teinei",
+      "meaning": "sopan",
+      "category": "Umum"
+    },
+    {
+      "id": "1143",
+      "word": "てきとう",
+      "reading": "Tekitou",
+      "meaning": "asal-asalan",
+      "category": "Umum"
+    },
+    {
+      "id": "1144",
+      "word": "てつだう",
+      "reading": "Tetsudau",
+      "meaning": "membantu",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1145",
+      "word": "てらす",
+      "reading": "Terasu",
+      "meaning": "menerangi",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1146",
+      "word": "とおす",
+      "reading": "Toosu",
+      "meaning": "membiarkan lewat",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1147",
+      "word": "とくい",
+      "reading": "Tokui",
+      "meaning": "pandai",
+      "category": "Umum"
+    },
+    {
+      "id": "1148",
+      "word": "とじる",
+      "reading": "Tojiru",
+      "meaning": "menutup",
+      "category": "Benda"
+    },
+    {
+      "id": "1149",
+      "word": "ととのえる",
+      "reading": "Totonoeru",
+      "meaning": "merapikan",
+      "category": "Makanan"
+    },
+    {
+      "id": "1150",
+      "word": "とりかえる",
+      "reading": "Torikaeru",
+      "meaning": "mengganti",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1151",
+      "word": "とる",
+      "reading": "Toru",
+      "meaning": "mengambil",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1152",
+      "word": "ながれる",
+      "reading": "Nagareru",
+      "meaning": "mengalir",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1153",
+      "word": "なぐる",
+      "reading": "Naguru",
+      "meaning": "memukul",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1154",
+      "word": "なげる",
+      "reading": "Nageru",
+      "meaning": "melempar",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1155",
+      "word": "なやむ",
+      "reading": "Nayamu",
+      "meaning": "bingung",
+      "category": "Umum"
+    },
+    {
+      "id": "1156",
+      "word": "なれる",
+      "reading": "Nareru",
+      "meaning": "terbiasa",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1157",
+      "word": "におい",
+      "reading": "Nioi",
+      "meaning": "bau",
+      "category": "Umum"
+    },
+    {
+      "id": "1158",
+      "word": "ぬらす",
+      "reading": "Nurasu",
+      "meaning": "membasahi",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1159",
+      "word": "ねぼう",
+      "reading": "Nebou",
+      "meaning": "terlambat bangun",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1160",
+      "word": "のこす",
+      "reading": "Nokosu",
+      "meaning": "menyisakan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1161",
+      "word": "のぞく",
+      "reading": "Nozoku",
+      "meaning": "mengintip",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1162",
+      "word": "はかる",
+      "reading": "Hakaru",
+      "meaning": "mengukur",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1163",
+      "word": "はげしい",
+      "reading": "Hageshii",
+      "meaning": "keras",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1164",
+      "word": "はずす",
+      "reading": "Hazusu",
+      "meaning": "melepaskan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1165",
+      "word": "はっきり",
+      "reading": "Hakkiri",
+      "meaning": "jelas",
+      "category": "Umum"
+    },
+    {
+      "id": "1166",
+      "word": "はなれる",
+      "reading": "Hanareru",
+      "meaning": "menjauh",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1167",
+      "word": "はぶく",
+      "reading": "Habuku",
+      "meaning": "menghilangkan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1168",
+      "word": "はやす",
+      "reading": "Hayasu",
+      "meaning": "menumbuhkan",
+      "category": "Benda"
+    },
+    {
+      "id": "1169",
+      "word": "ひえる",
+      "reading": "Hieru",
+      "meaning": "mendingin",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1170",
+      "word": "ひっこす",
+      "reading": "Hikkosu",
+      "meaning": "pindah rumah",
+      "category": "Tempat"
+    },
+    {
+      "id": "1171",
+      "word": "ひどい",
+      "reading": "Hidoi",
+      "meaning": "parah",
+      "category": "Umum"
+    },
+    {
+      "id": "1172",
+      "word": "ふかい",
+      "reading": "Fukai",
+      "meaning": "dalam",
+      "category": "Umum"
+    },
+    {
+      "id": "1173",
+      "word": "ふくむ",
+      "reading": "Fukumu",
+      "meaning": "mengandung",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1174",
+      "word": "ふせぐ",
+      "reading": "Fusegu",
+      "meaning": "mencegah",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1175",
+      "word": "ふとる",
+      "reading": "Futoru",
+      "meaning": "gemuk",
+      "category": "Kata Sifat"
+    },
+    {
+      "id": "1176",
+      "word": "ぶつかる",
+      "reading": "Butsukaru",
+      "meaning": "bertabrakan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1177",
+      "word": "へいき",
+      "reading": "Heiki",
+      "meaning": "tidak apa-apa",
+      "category": "Umum"
+    },
+    {
+      "id": "1178",
+      "word": "へらす",
+      "reading": "Herasu",
+      "meaning": "mengurangi",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1179",
+      "word": "ほこり",
+      "reading": "Hokori",
+      "meaning": "debu",
+      "category": "Umum"
+    },
+    {
+      "id": "1180",
+      "word": "ほっと",
+      "reading": "Hotto",
+      "meaning": "lega",
+      "category": "Umum"
+    },
+    {
+      "id": "1181",
+      "word": "まかせる",
+      "reading": "Makaseru",
+      "meaning": "menyerahkan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1182",
+      "word": "まちがい",
+      "reading": "Machigai",
+      "meaning": "kesalahan",
+      "category": "Umum"
+    },
+    {
+      "id": "1183",
+      "word": "まちがえる",
+      "reading": "Machigaeru",
+      "meaning": "salah",
+      "category": "Umum"
+    },
+    {
+      "id": "1184",
+      "word": "みだす",
+      "reading": "Midasu",
+      "meaning": "mengacaukan",
+      "category": "Benda"
+    },
+    {
+      "id": "1185",
+      "word": "みとめる",
+      "reading": "Mitomeru",
+      "meaning": "mengakui",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1186",
+      "word": "みなおす",
+      "reading": "Minaosu",
+      "meaning": "meninjau ulang",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1187",
+      "word": "みらい",
+      "reading": "Mirai",
+      "meaning": "masa depan",
+      "category": "Waktu"
+    },
+    {
+      "id": "1188",
+      "word": "むかう",
+      "reading": "Mukau",
+      "meaning": "menuju",
+      "category": "Benda"
+    },
+    {
+      "id": "1189",
+      "word": "むすぶ",
+      "reading": "Musubu",
+      "meaning": "mengikat",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1190",
+      "word": "むだ",
+      "reading": "Muda",
+      "meaning": "sia-sia",
+      "category": "Umum"
+    },
+    {
+      "id": "1191",
+      "word": "めいわく",
+      "reading": "Meiwaku",
+      "meaning": "mengganggu",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1192",
+      "word": "めざす",
+      "reading": "Mezasu",
+      "meaning": "menargetkan",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1193",
+      "word": "もと",
+      "reading": "Moto",
+      "meaning": "asli",
+      "category": "Umum"
+    },
+    {
+      "id": "1194",
+      "word": "もどす",
+      "reading": "Modosu",
+      "meaning": "mengembalikan",
+      "category": "Makanan"
+    },
+    {
+      "id": "1195",
+      "word": "もれる",
+      "reading": "Moreru",
+      "meaning": "bocor",
+      "category": "Umum"
+    },
+    {
+      "id": "1196",
+      "word": "やくそく",
+      "reading": "Yakusoku",
+      "meaning": "janji",
+      "category": "Umum"
+    },
+    {
+      "id": "1197",
+      "word": "やくにたつ",
+      "reading": "Yakunitatsu",
+      "meaning": "berguna",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1198",
+      "word": "やける",
+      "reading": "Yakeru",
+      "meaning": "terbakar",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1199",
+      "word": "やぶる",
+      "reading": "Yaburu",
+      "meaning": "merobek",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1200",
+      "word": "やりなおす",
+      "reading": "Yarinaosu",
+      "meaning": "mengulang",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1201",
+      "word": "ゆれる",
+      "reading": "Yureru",
+      "meaning": "bergoyang",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1202",
+      "word": "よける",
+      "reading": "Yokeru",
+      "meaning": "menghindar",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1203",
+      "word": "よそう",
+      "reading": "Yosou",
+      "meaning": "perkiraan",
+      "category": "Umum"
+    },
+    {
+      "id": "1204",
+      "word": "るいじ",
+      "reading": "Ruiji",
+      "meaning": "serupa",
+      "category": "Umum"
+    },
+    {
+      "id": "1205",
+      "word": "れいぎ",
+      "reading": "Reigi",
+      "meaning": "sopan santun",
+      "category": "Umum"
+    },
+    {
+      "id": "1206",
+      "word": "ろうどう",
+      "reading": "Roudou",
+      "meaning": "kerja",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1207",
+      "word": "わけ",
+      "reading": "Wake",
+      "meaning": "alasan",
+      "category": "Umum"
+    },
+    {
+      "id": "1208",
+      "word": "わざと",
+      "reading": "Wazato",
+      "meaning": "sengaja",
+      "category": "Umum"
+    },
+    {
+      "id": "1209",
+      "word": "きく",
+      "reading": "Kiku",
+      "meaning": "mendengar",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1210",
+      "word": "かう",
+      "reading": "Kau",
+      "meaning": "membeli",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1211",
+      "word": "おきる",
+      "reading": "Okiru",
+      "meaning": "bangun",
+      "category": "Umum"
+    },
+    {
+      "id": "1212",
+      "word": "はしる",
+      "reading": "Hashiru",
+      "meaning": "berlari",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1213",
+      "word": "たつ",
+      "reading": "Tatsu",
+      "meaning": "berdiri",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1214",
+      "word": "おしえる",
+      "reading": "Oshieru",
+      "meaning": "mengajar",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1215",
+      "word": "しる",
+      "reading": "Shiru",
+      "meaning": "mengetahui",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1216",
+      "word": "はい",
+      "reading": "Hai",
+      "meaning": "ya",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1217",
+      "word": "いいえ",
+      "reading": "Iie",
+      "meaning": "tidak",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1218",
+      "word": "ずっと",
+      "reading": "Zutto",
+      "meaning": "selalu",
+      "category": "Waktu"
+    },
+    {
+      "id": "1219",
+      "word": "すぐ",
+      "reading": "Sugu",
+      "meaning": "segera",
+      "category": "Kata Kerja"
+    },
+    {
+      "id": "1220",
+      "word": "だめ",
+      "reading": "Dame",
+      "meaning": "tidak boleh",
+      "category": "Kata Kerja"
     }
   ]
 }
