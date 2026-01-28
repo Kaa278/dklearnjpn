@@ -618,5 +618,4390 @@
         "char": "円",
         "meaning": "Yen / Lingkaran",
         "readings": "えん (en), まる (maru)"
+    },
+    {
+        "char": "間",
+        "meaning": "antara / ruang",
+        "readings": "-"
+    },
+    {
+        "char": "午",
+        "meaning": "siang (waktu)",
+        "readings": "-"
+    },
+    {
+        "char": "自",
+        "meaning": "diri",
+        "readings": "-"
+    },
+    {
+        "char": "事",
+        "meaning": "hal / perkara",
+        "readings": "-"
+    },
+    {
+        "char": "的",
+        "meaning": "sasaran / “-ik”",
+        "readings": "-"
+    },
+    {
+        "char": "地",
+        "meaning": "tanah / bumi",
+        "readings": "-"
+    },
+    {
+        "char": "場",
+        "meaning": "tempat",
+        "readings": "-"
+    },
+    {
+        "char": "代",
+        "meaning": "ganti / generasi",
+        "readings": "-"
+    },
+    {
+        "char": "私",
+        "meaning": "pribadi / saya",
+        "readings": "-"
+    },
+    {
+        "char": "田",
+        "meaning": "sawah",
+        "readings": "-"
+    },
+    {
+        "char": "動",
+        "meaning": "bergerak",
+        "readings": "-"
+    },
+    {
+        "char": "社",
+        "meaning": "perusahaan / kuil",
+        "readings": "-"
+    },
+    {
+        "char": "理",
+        "meaning": "akal / logika",
+        "readings": "-"
+    },
+    {
+        "char": "同",
+        "meaning": "sama",
+        "readings": "-"
+    },
+    {
+        "char": "心",
+        "meaning": "hati / pikiran",
+        "readings": "-"
+    },
+    {
+        "char": "発",
+        "meaning": "berangkat / memancar",
+        "readings": "-"
+    },
+    {
+        "char": "世",
+        "meaning": "dunia / generasi",
+        "readings": "-"
+    },
+    {
+        "char": "度",
+        "meaning": "derajat / kali",
+        "readings": "-"
+    },
+    {
+        "char": "明",
+        "meaning": "terang / jelas",
+        "readings": "-"
+    },
+    {
+        "char": "力",
+        "meaning": "kekuatan",
+        "readings": "-"
+    },
+    {
+        "char": "意",
+        "meaning": "niat / makna",
+        "readings": "-"
+    },
+    {
+        "char": "用",
+        "meaning": "menggunakan",
+        "readings": "-"
+    },
+    {
+        "char": "主",
+        "meaning": "utama / tuan",
+        "readings": "-"
+    },
+    {
+        "char": "通",
+        "meaning": "lewat / komunikasi",
+        "readings": "-"
+    },
+    {
+        "char": "屋",
+        "meaning": "atap / toko",
+        "readings": "-"
+    },
+    {
+        "char": "業",
+        "meaning": "pekerjaan / usaha",
+        "readings": "-"
+    },
+    {
+        "char": "持",
+        "meaning": "memegang",
+        "readings": "-"
+    },
+    {
+        "char": "道",
+        "meaning": "jalan / cara",
+        "readings": "-"
+    },
+    {
+        "char": "身",
+        "meaning": "tubuh / diri",
+        "readings": "-"
+    },
+    {
+        "char": "不",
+        "meaning": "tidak- (negasi)",
+        "readings": "-"
+    },
+    {
+        "char": "野",
+        "meaning": "ladang / liar",
+        "readings": "-"
+    },
+    {
+        "char": "考",
+        "meaning": "berpikir / mempertimbangkan",
+        "readings": "-"
+    },
+    {
+        "char": "開",
+        "meaning": "membuka",
+        "readings": "-"
+    },
+    {
+        "char": "教",
+        "meaning": "mengajar / ajaran",
+        "readings": "-"
+    },
+    {
+        "char": "近",
+        "meaning": "dekat",
+        "readings": "-"
+    },
+    {
+        "char": "以",
+        "meaning": "sejak / dengan",
+        "readings": "-"
+    },
+    {
+        "char": "問",
+        "meaning": "bertanya / masalah",
+        "readings": "-"
+    },
+    {
+        "char": "正",
+        "meaning": "benar",
+        "readings": "-"
+    },
+    {
+        "char": "真",
+        "meaning": "sejati",
+        "readings": "-"
+    },
+    {
+        "char": "味",
+        "meaning": "rasa",
+        "readings": "-"
+    },
+    {
+        "char": "界",
+        "meaning": "dunia / batas",
+        "readings": "-"
+    },
+    {
+        "char": "無",
+        "meaning": "tidak ada",
+        "readings": "-"
+    },
+    {
+        "char": "切",
+        "meaning": "memotong",
+        "readings": "-"
+    },
+    {
+        "char": "重",
+        "meaning": "berat",
+        "readings": "-"
+    },
+    {
+        "char": "集",
+        "meaning": "berkumpul",
+        "readings": "-"
+    },
+    {
+        "char": "員",
+        "meaning": "anggota",
+        "readings": "-"
+    },
+    {
+        "char": "公",
+        "meaning": "publik",
+        "readings": "-"
+    },
+    {
+        "char": "画",
+        "meaning": "gambar",
+        "readings": "-"
+    },
+    {
+        "char": "死",
+        "meaning": "mati",
+        "readings": "-"
+    },
+    {
+        "char": "親",
+        "meaning": "orang tua / akrab",
+        "readings": "-"
+    },
+    {
+        "char": "強",
+        "meaning": "kuat",
+        "readings": "-"
+    },
+    {
+        "char": "使",
+        "meaning": "menggunakan / utusan",
+        "readings": "-"
+    },
+    {
+        "char": "朝",
+        "meaning": "pagi / dinasti",
+        "readings": "-"
+    },
+    {
+        "char": "題",
+        "meaning": "topik / judul",
+        "readings": "-"
+    },
+    {
+        "char": "仕",
+        "meaning": "melayani",
+        "readings": "-"
+    },
+    {
+        "char": "京",
+        "meaning": "ibu kota",
+        "readings": "-"
+    },
+    {
+        "char": "品",
+        "meaning": "barang / kualitas",
+        "readings": "-"
+    },
+    {
+        "char": "着",
+        "meaning": "memakai / tiba",
+        "readings": "-"
+    },
+    {
+        "char": "別",
+        "meaning": "berbeda / berpisah",
+        "readings": "-"
+    },
+    {
+        "char": "音",
+        "meaning": "suara",
+        "readings": "-"
+    },
+    {
+        "char": "元",
+        "meaning": "asal",
+        "readings": "-"
+    },
+    {
+        "char": "特",
+        "meaning": "khusus",
+        "readings": "-"
+    },
+    {
+        "char": "風",
+        "meaning": "angin / gaya",
+        "readings": "-"
+    },
+    {
+        "char": "夜",
+        "meaning": "malam",
+        "readings": "-"
+    },
+    {
+        "char": "空",
+        "meaning": "langit / kosong",
+        "readings": "-"
+    },
+    {
+        "char": "有",
+        "meaning": "ada / memiliki",
+        "readings": "-"
+    },
+    {
+        "char": "起",
+        "meaning": "bangun / terjadi",
+        "readings": "-"
+    },
+    {
+        "char": "運",
+        "meaning": "beruntung / mengangkut",
+        "readings": "-"
+    },
+    {
+        "char": "料",
+        "meaning": "bahan / biaya",
+        "readings": "-"
+    },
+    {
+        "char": "楽",
+        "meaning": "senang / mudah / musik",
+        "readings": "-"
+    },
+    {
+        "char": "色",
+        "meaning": "warna",
+        "readings": "-"
+    },
+    {
+        "char": "帰",
+        "meaning": "pulang",
+        "readings": "-"
+    },
+    {
+        "char": "歩",
+        "meaning": "berjalan",
+        "readings": "-"
+    },
+    {
+        "char": "悪",
+        "meaning": "buruk",
+        "readings": "-"
+    },
+    {
+        "char": "広",
+        "meaning": "luas",
+        "readings": "-"
+    },
+    {
+        "char": "町",
+        "meaning": "kota kecil",
+        "readings": "-"
+    },
+    {
+        "char": "始",
+        "meaning": "memulai",
+        "readings": "-"
+    },
+    {
+        "char": "終",
+        "meaning": "akhir",
+        "readings": "-"
+    },
+    {
+        "char": "計",
+        "meaning": "menghitung / rencana",
+        "readings": "-"
+    },
+    {
+        "char": "院",
+        "meaning": "institusi",
+        "readings": "-"
+    },
+    {
+        "char": "送",
+        "meaning": "mengirim",
+        "readings": "-"
+    },
+    {
+        "char": "族",
+        "meaning": "keluarga / suku",
+        "readings": "-"
+    },
+    {
+        "char": "映",
+        "meaning": "memantulkan / film",
+        "readings": "-"
+    },
+    {
+        "char": "病",
+        "meaning": "sakit",
+        "readings": "-"
+    },
+    {
+        "char": "質",
+        "meaning": "kualitas",
+        "readings": "-"
+    },
+    {
+        "char": "台",
+        "meaning": "alas / mesin",
+        "readings": "-"
+    },
+    {
+        "char": "可",
+        "meaning": "boleh",
+        "readings": "-"
+    },
+    {
+        "char": "建",
+        "meaning": "membangun",
+        "readings": "-"
+    },
+    {
+        "char": "転",
+        "meaning": "berputar / pindah",
+        "readings": "-"
+    },
+    {
+        "char": "医",
+        "meaning": "dokter / obat",
+        "readings": "-"
+    },
+    {
+        "char": "止",
+        "meaning": "berhenti",
+        "readings": "-"
+    },
+    {
+        "char": "工",
+        "meaning": "kerja / teknik",
+        "readings": "-"
+    },
+    {
+        "char": "急",
+        "meaning": "cepat / darurat",
+        "readings": "-"
+    },
+    {
+        "char": "図",
+        "meaning": "gambar / rencana",
+        "readings": "-"
+    },
+    {
+        "char": "英",
+        "meaning": "Inggris / unggul",
+        "readings": "-"
+    },
+    {
+        "char": "走",
+        "meaning": "berlari",
+        "readings": "-"
+    },
+    {
+        "char": "答",
+        "meaning": "menjawab",
+        "readings": "-"
+    },
+    {
+        "char": "紙",
+        "meaning": "kertas",
+        "readings": "-"
+    },
+    {
+        "char": "歌",
+        "meaning": "lagu",
+        "readings": "-"
+    },
+    {
+        "char": "注",
+        "meaning": "menuang / perhatian",
+        "readings": "-"
+    },
+    {
+        "char": "春",
+        "meaning": "musim semi",
+        "readings": "-"
+    },
+    {
+        "char": "館",
+        "meaning": "gedung",
+        "readings": "-"
+    },
+    {
+        "char": "旅",
+        "meaning": "perjalanan",
+        "readings": "-"
+    },
+    {
+        "char": "験",
+        "meaning": "uji / pengalaman",
+        "readings": "-"
+    },
+    {
+        "char": "写",
+        "meaning": "menyalin / foto",
+        "readings": "-"
+    },
+    {
+        "char": "去",
+        "meaning": "pergi / masa lalu",
+        "readings": "-"
+    },
+    {
+        "char": "研",
+        "meaning": "meneliti",
+        "readings": "-"
+    },
+    {
+        "char": "服",
+        "meaning": "pakaian",
+        "readings": "-"
+    },
+    {
+        "char": "銀",
+        "meaning": "perak",
+        "readings": "-"
+    },
+    {
+        "char": "茶",
+        "meaning": "teh",
+        "readings": "-"
+    },
+    {
+        "char": "究",
+        "meaning": "meneliti",
+        "readings": "-"
+    },
+    {
+        "char": "洋",
+        "meaning": "barat / samudra",
+        "readings": "-"
+    },
+    {
+        "char": "兄",
+        "meaning": "kakak laki-laki",
+        "readings": "-"
+    },
+    {
+        "char": "秋",
+        "meaning": "musim gugur",
+        "readings": "-"
+    },
+    {
+        "char": "堂",
+        "meaning": "aula / balai",
+        "readings": "-"
+    },
+    {
+        "char": "週",
+        "meaning": "minggu",
+        "readings": "-"
+    },
+    {
+        "char": "習",
+        "meaning": "belajar / latihan",
+        "readings": "-"
+    },
+    {
+        "char": "試",
+        "meaning": "mencoba / tes",
+        "readings": "-"
+    },
+    {
+        "char": "夏",
+        "meaning": "musim panas",
+        "readings": "-"
+    },
+    {
+        "char": "弟",
+        "meaning": "adik laki-laki",
+        "readings": "-"
+    },
+    {
+        "char": "鳥",
+        "meaning": "burung",
+        "readings": "-"
+    },
+    {
+        "char": "夕",
+        "meaning": "sore",
+        "readings": "-"
+    },
+    {
+        "char": "借",
+        "meaning": "meminjam",
+        "readings": "-"
+    },
+    {
+        "char": "飯",
+        "meaning": "nasi / makan",
+        "readings": "-"
+    },
+    {
+        "char": "昼",
+        "meaning": "siang",
+        "readings": "-"
+    },
+    {
+        "char": "冬",
+        "meaning": "musim dingin",
+        "readings": "-"
+    },
+    {
+        "char": "姉",
+        "meaning": "kakak perempuan",
+        "readings": "-"
+    },
+    {
+        "char": "曜",
+        "meaning": "hari (mingguan)",
+        "readings": "-"
+    },
+    {
+        "char": "漢",
+        "meaning": "Cina / kanji",
+        "readings": "-"
+    },
+    {
+        "char": "牛",
+        "meaning": "sapi",
+        "readings": "-"
+    },
+    {
+        "char": "妹",
+        "meaning": "adik perempuan",
+        "readings": "-"
+    },
+    {
+        "char": "貸",
+        "meaning": "meminjamkan",
+        "readings": "-"
+    },
+    {
+        "char": "勉",
+        "meaning": "usaha / rajin",
+        "readings": "-"
+    },
+    {
+        "char": "合",
+        "meaning": "gabung / cocok",
+        "readings": "-"
+    },
+    {
+        "char": "部",
+        "meaning": "bagian / departemen",
+        "readings": "-"
+    },
+    {
+        "char": "彼",
+        "meaning": "dia (laki-laki)",
+        "readings": "-"
+    },
+    {
+        "char": "内",
+        "meaning": "dalam",
+        "readings": "-"
+    },
+    {
+        "char": "実",
+        "meaning": "nyata / buah",
+        "readings": "-"
+    },
+    {
+        "char": "当",
+        "meaning": "tepat / kena",
+        "readings": "-"
+    },
+    {
+        "char": "戦",
+        "meaning": "perang",
+        "readings": "-"
+    },
+    {
+        "char": "性",
+        "meaning": "sifat / jenis kelamin",
+        "readings": "-"
+    },
+    {
+        "char": "対",
+        "meaning": "lawan / terhadap",
+        "readings": "-"
+    },
+    {
+        "char": "関",
+        "meaning": "hubungan",
+        "readings": "-"
+    },
+    {
+        "char": "感",
+        "meaning": "perasaan",
+        "readings": "-"
+    },
+    {
+        "char": "定",
+        "meaning": "menetapkan",
+        "readings": "-"
+    },
+    {
+        "char": "政",
+        "meaning": "pemerintahan",
+        "readings": "-"
+    },
+    {
+        "char": "取",
+        "meaning": "mengambil",
+        "readings": "-"
+    },
+    {
+        "char": "所",
+        "meaning": "tempat",
+        "readings": "-"
+    },
+    {
+        "char": "現",
+        "meaning": "sekarang / muncul",
+        "readings": "-"
+    },
+    {
+        "char": "最",
+        "meaning": "paling",
+        "readings": "-"
+    },
+    {
+        "char": "化",
+        "meaning": "perubahan / menjadikan",
+        "readings": "-"
+    },
+    {
+        "char": "民",
+        "meaning": "rakyat",
+        "readings": "-"
+    },
+    {
+        "char": "相",
+        "meaning": "saling / menteri",
+        "readings": "-"
+    },
+    {
+        "char": "法",
+        "meaning": "hukum / cara",
+        "readings": "-"
+    },
+    {
+        "char": "全",
+        "meaning": "seluruh",
+        "readings": "-"
+    },
+    {
+        "char": "情",
+        "meaning": "perasaan / kondisi",
+        "readings": "-"
+    },
+    {
+        "char": "向",
+        "meaning": "menghadap / menuju",
+        "readings": "-"
+    },
+    {
+        "char": "平",
+        "meaning": "rata / damai",
+        "readings": "-"
+    },
+    {
+        "char": "成",
+        "meaning": "menjadi",
+        "readings": "-"
+    },
+    {
+        "char": "経",
+        "meaning": "melewati / mengelola",
+        "readings": "-"
+    },
+    {
+        "char": "信",
+        "meaning": "percaya",
+        "readings": "-"
+    },
+    {
+        "char": "面",
+        "meaning": "wajah / permukaan",
+        "readings": "-"
+    },
+    {
+        "char": "連",
+        "meaning": "sambung / serikat",
+        "readings": "-"
+    },
+    {
+        "char": "原",
+        "meaning": "asal / dataran",
+        "readings": "-"
+    },
+    {
+        "char": "顔",
+        "meaning": "wajah",
+        "readings": "-"
+    },
+    {
+        "char": "機",
+        "meaning": "mesin / kesempatan",
+        "readings": "-"
+    },
+    {
+        "char": "次",
+        "meaning": "berikutnya",
+        "readings": "-"
+    },
+    {
+        "char": "数",
+        "meaning": "jumlah / angka",
+        "readings": "-"
+    },
+    {
+        "char": "美",
+        "meaning": "indah",
+        "readings": "-"
+    },
+    {
+        "char": "回",
+        "meaning": "kali / putaran",
+        "readings": "-"
+    },
+    {
+        "char": "表",
+        "meaning": "permukaan / tabel",
+        "readings": "-"
+    },
+    {
+        "char": "声",
+        "meaning": "suara",
+        "readings": "-"
+    },
+    {
+        "char": "報",
+        "meaning": "lapor / kabar",
+        "readings": "-"
+    },
+    {
+        "char": "要",
+        "meaning": "penting / perlu",
+        "readings": "-"
+    },
+    {
+        "char": "変",
+        "meaning": "berubah / aneh",
+        "readings": "-"
+    },
+    {
+        "char": "神",
+        "meaning": "dewa",
+        "readings": "-"
+    },
+    {
+        "char": "記",
+        "meaning": "mencatat",
+        "readings": "-"
+    },
+    {
+        "char": "和",
+        "meaning": "harmoni / Jepang",
+        "readings": "-"
+    },
+    {
+        "char": "引",
+        "meaning": "menarik",
+        "readings": "-"
+    },
+    {
+        "char": "治",
+        "meaning": "memerintah / menyembuhkan",
+        "readings": "-"
+    },
+    {
+        "char": "決",
+        "meaning": "memutuskan",
+        "readings": "-"
+    },
+    {
+        "char": "太",
+        "meaning": "besar / gemuk",
+        "readings": "-"
+    },
+    {
+        "char": "込",
+        "meaning": "masuk (komu) / padat",
+        "readings": "-"
+    },
+    {
+        "char": "受",
+        "meaning": "menerima",
+        "readings": "-"
+    },
+    {
+        "char": "解",
+        "meaning": "menjelaskan / memecahkan",
+        "readings": "-"
+    },
+    {
+        "char": "市",
+        "meaning": "kota / pasar",
+        "readings": "-"
+    },
+    {
+        "char": "期",
+        "meaning": "periode",
+        "readings": "-"
+    },
+    {
+        "char": "様",
+        "meaning": "bentuk / (sopan) -sama",
+        "readings": "-"
+    },
+    {
+        "char": "活",
+        "meaning": "aktif / hidup",
+        "readings": "-"
+    },
+    {
+        "char": "組",
+        "meaning": "kelompok / merakit",
+        "readings": "-"
+    },
+    {
+        "char": "指",
+        "meaning": "jari / menunjuk",
+        "readings": "-"
+    },
+    {
+        "char": "説",
+        "meaning": "teori / penjelasan",
+        "readings": "-"
+    },
+    {
+        "char": "能",
+        "meaning": "kemampuan",
+        "readings": "-"
+    },
+    {
+        "char": "葉",
+        "meaning": "daun",
+        "readings": "-"
+    },
+    {
+        "char": "流",
+        "meaning": "aliran / mengalir",
+        "readings": "-"
+    },
+    {
+        "char": "然",
+        "meaning": "demikian / alami",
+        "readings": "-"
+    },
+    {
+        "char": "初",
+        "meaning": "pertama",
+        "readings": "-"
+    },
+    {
+        "char": "在",
+        "meaning": "ada / berada",
+        "readings": "-"
+    },
+    {
+        "char": "調",
+        "meaning": "menyelidiki / mengatur",
+        "readings": "-"
+    },
+    {
+        "char": "笑",
+        "meaning": "tertawa",
+        "readings": "-"
+    },
+    {
+        "char": "議",
+        "meaning": "rapat / debat",
+        "readings": "-"
+    },
+    {
+        "char": "直",
+        "meaning": "langsung / memperbaiki",
+        "readings": "-"
+    },
+    {
+        "char": "夫",
+        "meaning": "suami",
+        "readings": "-"
+    },
+    {
+        "char": "選",
+        "meaning": "memilih",
+        "readings": "-"
+    },
+    {
+        "char": "権",
+        "meaning": "kewenangan",
+        "readings": "-"
+    },
+    {
+        "char": "利",
+        "meaning": "keuntungan / manfaat",
+        "readings": "-"
+    },
+    {
+        "char": "制",
+        "meaning": "sistem / mengendalikan",
+        "readings": "-"
+    },
+    {
+        "char": "続",
+        "meaning": "lanjut",
+        "readings": "-"
+    },
+    {
+        "char": "石",
+        "meaning": "batu",
+        "readings": "-"
+    },
+    {
+        "char": "進",
+        "meaning": "maju",
+        "readings": "-"
+    },
+    {
+        "char": "伝",
+        "meaning": "menyampaikan",
+        "readings": "-"
+    },
+    {
+        "char": "加",
+        "meaning": "menambah",
+        "readings": "-"
+    },
+    {
+        "char": "助",
+        "meaning": "membantu",
+        "readings": "-"
+    },
+    {
+        "char": "点",
+        "meaning": "titik",
+        "readings": "-"
+    },
+    {
+        "char": "産",
+        "meaning": "produksi / kelahiran",
+        "readings": "-"
+    },
+    {
+        "char": "務",
+        "meaning": "tugas",
+        "readings": "-"
+    },
+    {
+        "char": "件",
+        "meaning": "kasus",
+        "readings": "-"
+    },
+    {
+        "char": "命",
+        "meaning": "nyawa / perintah",
+        "readings": "-"
+    },
+    {
+        "char": "番",
+        "meaning": "giliran / nomor",
+        "readings": "-"
+    },
+    {
+        "char": "落",
+        "meaning": "jatuh",
+        "readings": "-"
+    },
+    {
+        "char": "付",
+        "meaning": "menempel / memasang",
+        "readings": "-"
+    },
+    {
+        "char": "得",
+        "meaning": "mendapat / untung",
+        "readings": "-"
+    },
+    {
+        "char": "好",
+        "meaning": "suka",
+        "readings": "-"
+    },
+    {
+        "char": "違",
+        "meaning": "berbeda",
+        "readings": "-"
+    },
+    {
+        "char": "殺",
+        "meaning": "membunuh",
+        "readings": "-"
+    },
+    {
+        "char": "置",
+        "meaning": "meletakkan",
+        "readings": "-"
+    },
+    {
+        "char": "返",
+        "meaning": "mengembalikan",
+        "readings": "-"
+    },
+    {
+        "char": "論",
+        "meaning": "teori / debat",
+        "readings": "-"
+    },
+    {
+        "char": "際",
+        "meaning": "batas / kesempatan",
+        "readings": "-"
+    },
+    {
+        "char": "歳",
+        "meaning": "umur / tahun",
+        "readings": "-"
+    },
+    {
+        "char": "反",
+        "meaning": "melawan / anti-",
+        "readings": "-"
+    },
+    {
+        "char": "形",
+        "meaning": "bentuk",
+        "readings": "-"
+    },
+    {
+        "char": "光",
+        "meaning": "cahaya",
+        "readings": "-"
+    },
+    {
+        "char": "首",
+        "meaning": "leher / kepala (chief)",
+        "readings": "-"
+    },
+    {
+        "char": "勝",
+        "meaning": "menang",
+        "readings": "-"
+    },
+    {
+        "char": "必",
+        "meaning": "pasti",
+        "readings": "-"
+    },
+    {
+        "char": "係",
+        "meaning": "petugas / terkait",
+        "readings": "-"
+    },
+    {
+        "char": "由",
+        "meaning": "alasan / asal",
+        "readings": "-"
+    },
+    {
+        "char": "愛",
+        "meaning": "cinta",
+        "readings": "-"
+    },
+    {
+        "char": "都",
+        "meaning": "ibu kota",
+        "readings": "-"
+    },
+    {
+        "char": "放",
+        "meaning": "melepaskan",
+        "readings": "-"
+    },
+    {
+        "char": "確",
+        "meaning": "pasti / teguh",
+        "readings": "-"
+    },
+    {
+        "char": "過",
+        "meaning": "melewati / berlebihan",
+        "readings": "-"
+    },
+    {
+        "char": "約",
+        "meaning": "janji / kira-kira",
+        "readings": "-"
+    },
+    {
+        "char": "馬",
+        "meaning": "kuda",
+        "readings": "-"
+    },
+    {
+        "char": "状",
+        "meaning": "keadaan / surat",
+        "readings": "-"
+    },
+    {
+        "char": "想",
+        "meaning": "membayangkan / pikir",
+        "readings": "-"
+    },
+    {
+        "char": "官",
+        "meaning": "pejabat",
+        "readings": "-"
+    },
+    {
+        "char": "交",
+        "meaning": "bergaul / silang",
+        "readings": "-"
+    },
+    {
+        "char": "米",
+        "meaning": "beras / Amerika",
+        "readings": "-"
+    },
+    {
+        "char": "配",
+        "meaning": "membagi / distribusi",
+        "readings": "-"
+    },
+    {
+        "char": "若",
+        "meaning": "muda / jika",
+        "readings": "-"
+    },
+    {
+        "char": "資",
+        "meaning": "sumber daya",
+        "readings": "-"
+    },
+    {
+        "char": "常",
+        "meaning": "biasa",
+        "readings": "-"
+    },
+    {
+        "char": "果",
+        "meaning": "hasil / buah",
+        "readings": "-"
+    },
+    {
+        "char": "呼",
+        "meaning": "memanggil",
+        "readings": "-"
+    },
+    {
+        "char": "共",
+        "meaning": "bersama",
+        "readings": "-"
+    },
+    {
+        "char": "残",
+        "meaning": "sisa",
+        "readings": "-"
+    },
+    {
+        "char": "判",
+        "meaning": "menghakimi / stempel",
+        "readings": "-"
+    },
+    {
+        "char": "役",
+        "meaning": "peran / tugas",
+        "readings": "-"
+    },
+    {
+        "char": "他",
+        "meaning": "lain",
+        "readings": "-"
+    },
+    {
+        "char": "術",
+        "meaning": "teknik",
+        "readings": "-"
+    },
+    {
+        "char": "支",
+        "meaning": "menopang / cabang",
+        "readings": "-"
+    },
+    {
+        "char": "両",
+        "meaning": "kedua / dua",
+        "readings": "-"
+    },
+    {
+        "char": "乗",
+        "meaning": "naik",
+        "readings": "-"
+    },
+    {
+        "char": "済",
+        "meaning": "selesai / selamat",
+        "readings": "-"
+    },
+    {
+        "char": "供",
+        "meaning": "menyediakan",
+        "readings": "-"
+    },
+    {
+        "char": "格",
+        "meaning": "status / standar",
+        "readings": "-"
+    },
+    {
+        "char": "打",
+        "meaning": "memukul",
+        "readings": "-"
+    },
+    {
+        "char": "御",
+        "meaning": "hormat / “o-”",
+        "readings": "-"
+    },
+    {
+        "char": "断",
+        "meaning": "memutus / menolak",
+        "readings": "-"
+    },
+    {
+        "char": "式",
+        "meaning": "upacara / model",
+        "readings": "-"
+    },
+    {
+        "char": "師",
+        "meaning": "guru / ahli",
+        "readings": "-"
+    },
+    {
+        "char": "告",
+        "meaning": "memberitahu",
+        "readings": "-"
+    },
+    {
+        "char": "深",
+        "meaning": "dalam",
+        "readings": "-"
+    },
+    {
+        "char": "存",
+        "meaning": "ada / menyimpan",
+        "readings": "-"
+    },
+    {
+        "char": "争",
+        "meaning": "bertikai",
+        "readings": "-"
+    },
+    {
+        "char": "覚",
+        "meaning": "ingat / sadar",
+        "readings": "-"
+    },
+    {
+        "char": "側",
+        "meaning": "sisi",
+        "readings": "-"
+    },
+    {
+        "char": "飛",
+        "meaning": "terbang",
+        "readings": "-"
+    },
+    {
+        "char": "参",
+        "meaning": "ikut / konsultasi",
+        "readings": "-"
+    },
+    {
+        "char": "突",
+        "meaning": "tiba-tiba / menabrak",
+        "readings": "-"
+    },
+    {
+        "char": "容",
+        "meaning": "isi / menerima",
+        "readings": "-"
+    },
+    {
+        "char": "育",
+        "meaning": "membesarkan",
+        "readings": "-"
+    },
+    {
+        "char": "構",
+        "meaning": "menyusun / membangun",
+        "readings": "-"
+    },
+    {
+        "char": "認",
+        "meaning": "mengakui",
+        "readings": "-"
+    },
+    {
+        "char": "位",
+        "meaning": "peringkat",
+        "readings": "-"
+    },
+    {
+        "char": "達",
+        "meaning": "sampai / para",
+        "readings": "-"
+    },
+    {
+        "char": "守",
+        "meaning": "menjaga",
+        "readings": "-"
+    },
+    {
+        "char": "満",
+        "meaning": "penuh",
+        "readings": "-"
+    },
+    {
+        "char": "消",
+        "meaning": "menghilangkan",
+        "readings": "-"
+    },
+    {
+        "char": "任",
+        "meaning": "tanggung jawab",
+        "readings": "-"
+    },
+    {
+        "char": "居",
+        "meaning": "tinggal",
+        "readings": "-"
+    },
+    {
+        "char": "予",
+        "meaning": "sebelum / aku (formal)",
+        "readings": "-"
+    },
+    {
+        "char": "路",
+        "meaning": "jalan",
+        "readings": "-"
+    },
+    {
+        "char": "座",
+        "meaning": "duduk / teater",
+        "readings": "-"
+    },
+    {
+        "char": "客",
+        "meaning": "tamu",
+        "readings": "-"
+    },
+    {
+        "char": "船",
+        "meaning": "kapal",
+        "readings": "-"
+    },
+    {
+        "char": "追",
+        "meaning": "mengejar",
+        "readings": "-"
+    },
+    {
+        "char": "背",
+        "meaning": "punggung / membelakangi",
+        "readings": "-"
+    },
+    {
+        "char": "観",
+        "meaning": "pandangan / melihat",
+        "readings": "-"
+    },
+    {
+        "char": "誰",
+        "meaning": "siapa",
+        "readings": "-"
+    },
+    {
+        "char": "息",
+        "meaning": "napas",
+        "readings": "-"
+    },
+    {
+        "char": "失",
+        "meaning": "kehilangan",
+        "readings": "-"
+    },
+    {
+        "char": "老",
+        "meaning": "tua",
+        "readings": "-"
+    },
+    {
+        "char": "良",
+        "meaning": "baik",
+        "readings": "-"
+    },
+    {
+        "char": "示",
+        "meaning": "menunjukkan",
+        "readings": "-"
+    },
+    {
+        "char": "号",
+        "meaning": "nomor",
+        "readings": "-"
+    },
+    {
+        "char": "職",
+        "meaning": "jabatan",
+        "readings": "-"
+    },
+    {
+        "char": "王",
+        "meaning": "raja",
+        "readings": "-"
+    },
+    {
+        "char": "識",
+        "meaning": "pengetahuan / mengenal",
+        "readings": "-"
+    },
+    {
+        "char": "警",
+        "meaning": "waspada / polisi",
+        "readings": "-"
+    },
+    {
+        "char": "優",
+        "meaning": "unggul / lembut",
+        "readings": "-"
+    },
+    {
+        "char": "投",
+        "meaning": "melempar / investasi",
+        "readings": "-"
+    },
+    {
+        "char": "局",
+        "meaning": "kantor / biro",
+        "readings": "-"
+    },
+    {
+        "char": "難",
+        "meaning": "sulit",
+        "readings": "-"
+    },
+    {
+        "char": "種",
+        "meaning": "jenis / benih",
+        "readings": "-"
+    },
+    {
+        "char": "念",
+        "meaning": "pikiran / tekad",
+        "readings": "-"
+    },
+    {
+        "char": "寄",
+        "meaning": "mendekat / berkumpul",
+        "readings": "-"
+    },
+    {
+        "char": "商",
+        "meaning": "dagang",
+        "readings": "-"
+    },
+    {
+        "char": "害",
+        "meaning": "kerugian / bahaya",
+        "readings": "-"
+    },
+    {
+        "char": "頼",
+        "meaning": "mengandalkan",
+        "readings": "-"
+    },
+    {
+        "char": "横",
+        "meaning": "samping",
+        "readings": "-"
+    },
+    {
+        "char": "増",
+        "meaning": "bertambah",
+        "readings": "-"
+    },
+    {
+        "char": "差",
+        "meaning": "selisih",
+        "readings": "-"
+    },
+    {
+        "char": "苦",
+        "meaning": "pahit / susah",
+        "readings": "-"
+    },
+    {
+        "char": "収",
+        "meaning": "pendapatan / menerima",
+        "readings": "-"
+    },
+    {
+        "char": "段",
+        "meaning": "tahap",
+        "readings": "-"
+    },
+    {
+        "char": "俺",
+        "meaning": "aku (pria, kasual)",
+        "readings": "-"
+    },
+    {
+        "char": "渡",
+        "meaning": "menyeberang",
+        "readings": "-"
+    },
+    {
+        "char": "与",
+        "meaning": "memberi",
+        "readings": "-"
+    },
+    {
+        "char": "演",
+        "meaning": "pertunjukan / latihan",
+        "readings": "-"
+    },
+    {
+        "char": "備",
+        "meaning": "persiapan",
+        "readings": "-"
+    },
+    {
+        "char": "申",
+        "meaning": "mengajukan",
+        "readings": "-"
+    },
+    {
+        "char": "例",
+        "meaning": "contoh",
+        "readings": "-"
+    },
+    {
+        "char": "景",
+        "meaning": "pemandangan",
+        "readings": "-"
+    },
+    {
+        "char": "抜",
+        "meaning": "mencabut / lolos",
+        "readings": "-"
+    },
+    {
+        "char": "遠",
+        "meaning": "jauh",
+        "readings": "-"
+    },
+    {
+        "char": "絶",
+        "meaning": "putus / sangat",
+        "readings": "-"
+    },
+    {
+        "char": "負",
+        "meaning": "kalah / menanggung",
+        "readings": "-"
+    },
+    {
+        "char": "福",
+        "meaning": "keberuntungan",
+        "readings": "-"
+    },
+    {
+        "char": "球",
+        "meaning": "bola",
+        "readings": "-"
+    },
+    {
+        "char": "酒",
+        "meaning": "alkohol / sake",
+        "readings": "-"
+    },
+    {
+        "char": "君",
+        "meaning": "kamu / tuan",
+        "readings": "-"
+    },
+    {
+        "char": "察",
+        "meaning": "memeriksa",
+        "readings": "-"
+    },
+    {
+        "char": "望",
+        "meaning": "harap / melihat",
+        "readings": "-"
+    },
+    {
+        "char": "婚",
+        "meaning": "pernikahan",
+        "readings": "-"
+    },
+    {
+        "char": "単",
+        "meaning": "tunggal",
+        "readings": "-"
+    },
+    {
+        "char": "押",
+        "meaning": "menekan",
+        "readings": "-"
+    },
+    {
+        "char": "割",
+        "meaning": "membagi / pecah",
+        "readings": "-"
+    },
+    {
+        "char": "限",
+        "meaning": "batas",
+        "readings": "-"
+    },
+    {
+        "char": "戻",
+        "meaning": "kembali",
+        "readings": "-"
+    },
+    {
+        "char": "科",
+        "meaning": "bagian / jurusan",
+        "readings": "-"
+    },
+    {
+        "char": "求",
+        "meaning": "mencari / meminta",
+        "readings": "-"
+    },
+    {
+        "char": "談",
+        "meaning": "berbicara",
+        "readings": "-"
+    },
+    {
+        "char": "降",
+        "meaning": "turun",
+        "readings": "-"
+    },
+    {
+        "char": "妻",
+        "meaning": "istri",
+        "readings": "-"
+    },
+    {
+        "char": "岡",
+        "meaning": "bukit",
+        "readings": "-"
+    },
+    {
+        "char": "熱",
+        "meaning": "panas",
+        "readings": "-"
+    },
+    {
+        "char": "浮",
+        "meaning": "mengapung",
+        "readings": "-"
+    },
+    {
+        "char": "等",
+        "meaning": "setara / dll.",
+        "readings": "-"
+    },
+    {
+        "char": "末",
+        "meaning": "akhir",
+        "readings": "-"
+    },
+    {
+        "char": "幸",
+        "meaning": "bahagia",
+        "readings": "-"
+    },
+    {
+        "char": "草",
+        "meaning": "rumput",
+        "readings": "-"
+    },
+    {
+        "char": "越",
+        "meaning": "melampaui",
+        "readings": "-"
+    },
+    {
+        "char": "登",
+        "meaning": "naik / mendaftar",
+        "readings": "-"
+    },
+    {
+        "char": "類",
+        "meaning": "jenis / kelompok",
+        "readings": "-"
+    },
+    {
+        "char": "未",
+        "meaning": "belum",
+        "readings": "-"
+    },
+    {
+        "char": "規",
+        "meaning": "aturan",
+        "readings": "-"
+    },
+    {
+        "char": "精",
+        "meaning": "halus / semangat",
+        "readings": "-"
+    },
+    {
+        "char": "抱",
+        "meaning": "memeluk / memegang",
+        "readings": "-"
+    },
+    {
+        "char": "労",
+        "meaning": "kerja keras",
+        "readings": "-"
+    },
+    {
+        "char": "処",
+        "meaning": "tempat / menangani",
+        "readings": "-"
+    },
+    {
+        "char": "退",
+        "meaning": "mundur",
+        "readings": "-"
+    },
+    {
+        "char": "費",
+        "meaning": "biaya",
+        "readings": "-"
+    },
+    {
+        "char": "非",
+        "meaning": "bukan / salah",
+        "readings": "-"
+    },
+    {
+        "char": "喜",
+        "meaning": "senang",
+        "readings": "-"
+    },
+    {
+        "char": "娘",
+        "meaning": "anak perempuan",
+        "readings": "-"
+    },
+    {
+        "char": "逃",
+        "meaning": "lari",
+        "readings": "-"
+    },
+    {
+        "char": "探",
+        "meaning": "mencari",
+        "readings": "-"
+    },
+    {
+        "char": "犯",
+        "meaning": "melanggar / kriminal",
+        "readings": "-"
+    },
+    {
+        "char": "薬",
+        "meaning": "obat",
+        "readings": "-"
+    },
+    {
+        "char": "園",
+        "meaning": "taman",
+        "readings": "-"
+    },
+    {
+        "char": "疑",
+        "meaning": "ragu",
+        "readings": "-"
+    },
+    {
+        "char": "緒",
+        "meaning": "awal / benang",
+        "readings": "-"
+    },
+    {
+        "char": "静",
+        "meaning": "tenang",
+        "readings": "-"
+    },
+    {
+        "char": "具",
+        "meaning": "peralatan",
+        "readings": "-"
+    },
+    {
+        "char": "席",
+        "meaning": "kursi / tempat",
+        "readings": "-"
+    },
+    {
+        "char": "速",
+        "meaning": "cepat",
+        "readings": "-"
+    },
+    {
+        "char": "舞",
+        "meaning": "menari",
+        "readings": "-"
+    },
+    {
+        "char": "宿",
+        "meaning": "penginapan",
+        "readings": "-"
+    },
+    {
+        "char": "程",
+        "meaning": "kadar / tingkat",
+        "readings": "-"
+    },
+    {
+        "char": "倒",
+        "meaning": "jatuh / menjatuhkan",
+        "readings": "-"
+    },
+    {
+        "char": "寝",
+        "meaning": "tidur",
+        "readings": "-"
+    },
+    {
+        "char": "宅",
+        "meaning": "rumah",
+        "readings": "-"
+    },
+    {
+        "char": "絵",
+        "meaning": "gambar",
+        "readings": "-"
+    },
+    {
+        "char": "破",
+        "meaning": "merusak / robek",
+        "readings": "-"
+    },
+    {
+        "char": "庭",
+        "meaning": "halaman",
+        "readings": "-"
+    },
+    {
+        "char": "婦",
+        "meaning": "wanita / istri",
+        "readings": "-"
+    },
+    {
+        "char": "余",
+        "meaning": "sisa / lebih",
+        "readings": "-"
+    },
+    {
+        "char": "訪",
+        "meaning": "mengunjungi",
+        "readings": "-"
+    },
+    {
+        "char": "冷",
+        "meaning": "dingin",
+        "readings": "-"
+    },
+    {
+        "char": "暮",
+        "meaning": "senja / hidup",
+        "readings": "-"
+    },
+    {
+        "char": "腹",
+        "meaning": "perut",
+        "readings": "-"
+    },
+    {
+        "char": "危",
+        "meaning": "berbahaya",
+        "readings": "-"
+    },
+    {
+        "char": "許",
+        "meaning": "mengizinkan",
+        "readings": "-"
+    },
+    {
+        "char": "似",
+        "meaning": "mirip",
+        "readings": "-"
+    },
+    {
+        "char": "険",
+        "meaning": "berbahaya / curam",
+        "readings": "-"
+    },
+    {
+        "char": "財",
+        "meaning": "harta",
+        "readings": "-"
+    },
+    {
+        "char": "遊",
+        "meaning": "bermain",
+        "readings": "-"
+    },
+    {
+        "char": "雑",
+        "meaning": "beragam / campur",
+        "readings": "-"
+    },
+    {
+        "char": "恐",
+        "meaning": "takut",
+        "readings": "-"
+    },
+    {
+        "char": "値",
+        "meaning": "nilai / harga",
+        "readings": "-"
+    },
+    {
+        "char": "暗",
+        "meaning": "gelap",
+        "readings": "-"
+    },
+    {
+        "char": "積",
+        "meaning": "menumpuk",
+        "readings": "-"
+    },
+    {
+        "char": "夢",
+        "meaning": "mimpi",
+        "readings": "-"
+    },
+    {
+        "char": "痛",
+        "meaning": "sakit",
+        "readings": "-"
+    },
+    {
+        "char": "富",
+        "meaning": "kaya",
+        "readings": "-"
+    },
+    {
+        "char": "刻",
+        "meaning": "ukir / menit",
+        "readings": "-"
+    },
+    {
+        "char": "鳴",
+        "meaning": "berbunyi",
+        "readings": "-"
+    },
+    {
+        "char": "欲",
+        "meaning": "keinginan",
+        "readings": "-"
+    },
+    {
+        "char": "途",
+        "meaning": "jalan / di tengah",
+        "readings": "-"
+    },
+    {
+        "char": "曲",
+        "meaning": "lagu / bengkok",
+        "readings": "-"
+    },
+    {
+        "char": "完",
+        "meaning": "sempurna / selesai",
+        "readings": "-"
+    },
+    {
+        "char": "願",
+        "meaning": "permohonan",
+        "readings": "-"
+    },
+    {
+        "char": "罪",
+        "meaning": "dosa / kejahatan",
+        "readings": "-"
+    },
+    {
+        "char": "陽",
+        "meaning": "matahari / positif",
+        "readings": "-"
+    },
+    {
+        "char": "亡",
+        "meaning": "meninggal / hilang",
+        "readings": "-"
+    },
+    {
+        "char": "散",
+        "meaning": "menyebar",
+        "readings": "-"
+    },
+    {
+        "char": "掛",
+        "meaning": "menggantung / mengalikan",
+        "readings": "-"
+    },
+    {
+        "char": "昨",
+        "meaning": "kemarin",
+        "readings": "-"
+    },
+    {
+        "char": "怒",
+        "meaning": "marah",
+        "readings": "-"
+    },
+    {
+        "char": "留",
+        "meaning": "tinggal / menahan",
+        "readings": "-"
+    },
+    {
+        "char": "礼",
+        "meaning": "sopan / salam",
+        "readings": "-"
+    },
+    {
+        "char": "列",
+        "meaning": "baris",
+        "readings": "-"
+    },
+    {
+        "char": "払",
+        "meaning": "membayar",
+        "readings": "-"
+    },
+    {
+        "char": "給",
+        "meaning": "memberi / gaji",
+        "readings": "-"
+    },
+    {
+        "char": "敗",
+        "meaning": "kalah / gagal",
+        "readings": "-"
+    },
+    {
+        "char": "捕",
+        "meaning": "menangkap",
+        "readings": "-"
+    },
+    {
+        "char": "忘",
+        "meaning": "lupa",
+        "readings": "-"
+    },
+    {
+        "char": "晴",
+        "meaning": "cerah",
+        "readings": "-"
+    },
+    {
+        "char": "因",
+        "meaning": "penyebab",
+        "readings": "-"
+    },
+    {
+        "char": "折",
+        "meaning": "melipat / patah",
+        "readings": "-"
+    },
+    {
+        "char": "迎",
+        "meaning": "menyambut",
+        "readings": "-"
+    },
+    {
+        "char": "悲",
+        "meaning": "sedih",
+        "readings": "-"
+    },
+    {
+        "char": "港",
+        "meaning": "pelabuhan",
+        "readings": "-"
+    },
+    {
+        "char": "責",
+        "meaning": "menyalahkan / tanggung jawab",
+        "readings": "-"
+    },
+    {
+        "char": "除",
+        "meaning": "menghapus / mengecualikan",
+        "readings": "-"
+    },
+    {
+        "char": "困",
+        "meaning": "kesulitan",
+        "readings": "-"
+    },
+    {
+        "char": "閉",
+        "meaning": "menutup",
+        "readings": "-"
+    },
+    {
+        "char": "吸",
+        "meaning": "menghisap",
+        "readings": "-"
+    },
+    {
+        "char": "髪",
+        "meaning": "rambut",
+        "readings": "-"
+    },
+    {
+        "char": "束",
+        "meaning": "ikat / bundel",
+        "readings": "-"
+    },
+    {
+        "char": "眠",
+        "meaning": "tidur",
+        "readings": "-"
+    },
+    {
+        "char": "易",
+        "meaning": "mudah",
+        "readings": "-"
+    },
+    {
+        "char": "窓",
+        "meaning": "jendela",
+        "readings": "-"
+    },
+    {
+        "char": "祖",
+        "meaning": "leluhur",
+        "readings": "-"
+    },
+    {
+        "char": "勤",
+        "meaning": "rajin / bekerja",
+        "readings": "-"
+    },
+    {
+        "char": "昔",
+        "meaning": "dulu",
+        "readings": "-"
+    },
+    {
+        "char": "便",
+        "meaning": "nyaman / surat",
+        "readings": "-"
+    },
+    {
+        "char": "適",
+        "meaning": "cocok",
+        "readings": "-"
+    },
+    {
+        "char": "吹",
+        "meaning": "meniup",
+        "readings": "-"
+    },
+    {
+        "char": "候",
+        "meaning": "cuaca / menunggu",
+        "readings": "-"
+    },
+    {
+        "char": "怖",
+        "meaning": "takut",
+        "readings": "-"
+    },
+    {
+        "char": "辞",
+        "meaning": "berhenti / kata",
+        "readings": "-"
+    },
+    {
+        "char": "否",
+        "meaning": "menolak",
+        "readings": "-"
+    },
+    {
+        "char": "遅",
+        "meaning": "lambat",
+        "readings": "-"
+    },
+    {
+        "char": "煙",
+        "meaning": "asap",
+        "readings": "-"
+    },
+    {
+        "char": "徒",
+        "meaning": "sia-sia / murid",
+        "readings": "-"
+    },
+    {
+        "char": "欠",
+        "meaning": "kekurangan",
+        "readings": "-"
+    },
+    {
+        "char": "迷",
+        "meaning": "tersesat",
+        "readings": "-"
+    },
+    {
+        "char": "洗",
+        "meaning": "mencuci",
+        "readings": "-"
+    },
+    {
+        "char": "互",
+        "meaning": "saling",
+        "readings": "-"
+    },
+    {
+        "char": "才",
+        "meaning": "bakat",
+        "readings": "-"
+    },
+    {
+        "char": "更",
+        "meaning": "lagi / memperbarui",
+        "readings": "-"
+    },
+    {
+        "char": "歯",
+        "meaning": "gigi",
+        "readings": "-"
+    },
+    {
+        "char": "盗",
+        "meaning": "mencuri",
+        "readings": "-"
+    },
+    {
+        "char": "慣",
+        "meaning": "terbiasa",
+        "readings": "-"
+    },
+    {
+        "char": "晩",
+        "meaning": "malam",
+        "readings": "-"
+    },
+    {
+        "char": "箱",
+        "meaning": "kotak",
+        "readings": "-"
+    },
+    {
+        "char": "到",
+        "meaning": "tiba",
+        "readings": "-"
+    },
+    {
+        "char": "頂",
+        "meaning": "puncak / menerima",
+        "readings": "-"
+    },
+    {
+        "char": "杯",
+        "meaning": "cangkir",
+        "readings": "-"
+    },
+    {
+        "char": "皆",
+        "meaning": "semua",
+        "readings": "-"
+    },
+    {
+        "char": "招",
+        "meaning": "mengundang",
+        "readings": "-"
+    },
+    {
+        "char": "寒",
+        "meaning": "dingin",
+        "readings": "-"
+    },
+    {
+        "char": "恥",
+        "meaning": "malu",
+        "readings": "-"
+    },
+    {
+        "char": "疲",
+        "meaning": "lelah",
+        "readings": "-"
+    },
+    {
+        "char": "貧",
+        "meaning": "miskin",
+        "readings": "-"
+    },
+    {
+        "char": "誤",
+        "meaning": "salah",
+        "readings": "-"
+    },
+    {
+        "char": "努",
+        "meaning": "berusaha",
+        "readings": "-"
+    },
+    {
+        "char": "幾",
+        "meaning": "berapa / banyak",
+        "readings": "-"
+    },
+    {
+        "char": "賛",
+        "meaning": "mendukung",
+        "readings": "-"
+    },
+    {
+        "char": "偶",
+        "meaning": "kebetulan",
+        "readings": "-"
+    },
+    {
+        "char": "忙",
+        "meaning": "sibuk",
+        "readings": "-"
+    },
+    {
+        "char": "泳",
+        "meaning": "berenang",
+        "readings": "-"
+    },
+    {
+        "char": "靴",
+        "meaning": "sepatu",
+        "readings": "-"
+    },
+    {
+        "char": "偉",
+        "meaning": "hebat",
+        "readings": "-"
+    },
+    {
+        "char": "軍",
+        "meaning": "militer",
+        "readings": "-"
+    },
+    {
+        "char": "兵",
+        "meaning": "prajurit",
+        "readings": "-"
+    },
+    {
+        "char": "島",
+        "meaning": "pulau",
+        "readings": "-"
+    },
+    {
+        "char": "村",
+        "meaning": "desa",
+        "readings": "-"
+    },
+    {
+        "char": "門",
+        "meaning": "gerbang",
+        "readings": "-"
+    },
+    {
+        "char": "戸",
+        "meaning": "pintu",
+        "readings": "-"
+    },
+    {
+        "char": "武",
+        "meaning": "militer / bela diri",
+        "readings": "-"
+    },
+    {
+        "char": "城",
+        "meaning": "kastil",
+        "readings": "-"
+    },
+    {
+        "char": "総",
+        "meaning": "total / umum",
+        "readings": "-"
+    },
+    {
+        "char": "団",
+        "meaning": "kelompok",
+        "readings": "-"
+    },
+    {
+        "char": "線",
+        "meaning": "garis",
+        "readings": "-"
+    },
+    {
+        "char": "設",
+        "meaning": "mendirikan",
+        "readings": "-"
+    },
+    {
+        "char": "勢",
+        "meaning": "kekuatan",
+        "readings": "-"
+    },
+    {
+        "char": "党",
+        "meaning": "partai",
+        "readings": "-"
+    },
+    {
+        "char": "史",
+        "meaning": "sejarah",
+        "readings": "-"
+    },
+    {
+        "char": "営",
+        "meaning": "mengelola",
+        "readings": "-"
+    },
+    {
+        "char": "府",
+        "meaning": "pemerintah daerah",
+        "readings": "-"
+    },
+    {
+        "char": "巻",
+        "meaning": "gulungan / jilid",
+        "readings": "-"
+    },
+    {
+        "char": "介",
+        "meaning": "perantara",
+        "readings": "-"
+    },
+    {
+        "char": "蔵",
+        "meaning": "gudang / menyimpan",
+        "readings": "-"
+    },
+    {
+        "char": "造",
+        "meaning": "membuat",
+        "readings": "-"
+    },
+    {
+        "char": "根",
+        "meaning": "akar",
+        "readings": "-"
+    },
+    {
+        "char": "寺",
+        "meaning": "kuil",
+        "readings": "-"
+    },
+    {
+        "char": "査",
+        "meaning": "penyelidikan",
+        "readings": "-"
+    },
+    {
+        "char": "将",
+        "meaning": "pemimpin / jenderal",
+        "readings": "-"
+    },
+    {
+        "char": "改",
+        "meaning": "perbaikan",
+        "readings": "-"
+    },
+    {
+        "char": "県",
+        "meaning": "prefektur",
+        "readings": "-"
+    },
+    {
+        "char": "泉",
+        "meaning": "mata air",
+        "readings": "-"
+    },
+    {
+        "char": "像",
+        "meaning": "patung / gambar",
+        "readings": "-"
+    },
+    {
+        "char": "細",
+        "meaning": "rinci / kecil",
+        "readings": "-"
+    },
+    {
+        "char": "谷",
+        "meaning": "lembah",
+        "readings": "-"
+    },
+    {
+        "char": "奥",
+        "meaning": "bagian dalam",
+        "readings": "-"
+    },
+    {
+        "char": "再",
+        "meaning": "lagi",
+        "readings": "-"
+    },
+    {
+        "char": "血",
+        "meaning": "darah",
+        "readings": "-"
+    },
+    {
+        "char": "算",
+        "meaning": "menghitung",
+        "readings": "-"
+    },
+    {
+        "char": "象",
+        "meaning": "gajah / simbol",
+        "readings": "-"
+    },
+    {
+        "char": "清",
+        "meaning": "bersih",
+        "readings": "-"
+    },
+    {
+        "char": "技",
+        "meaning": "teknik",
+        "readings": "-"
+    },
+    {
+        "char": "州",
+        "meaning": "provinsi / negara bagian",
+        "readings": "-"
+    },
+    {
+        "char": "領",
+        "meaning": "wilayah",
+        "readings": "-"
+    },
+    {
+        "char": "橋",
+        "meaning": "jembatan",
+        "readings": "-"
+    },
+    {
+        "char": "芸",
+        "meaning": "seni",
+        "readings": "-"
+    },
+    {
+        "char": "型",
+        "meaning": "tipe / cetakan",
+        "readings": "-"
+    },
+    {
+        "char": "香",
+        "meaning": "aroma",
+        "readings": "-"
+    },
+    {
+        "char": "量",
+        "meaning": "jumlah",
+        "readings": "-"
+    },
+    {
+        "char": "久",
+        "meaning": "lama",
+        "readings": "-"
+    },
+    {
+        "char": "境",
+        "meaning": "batas",
+        "readings": "-"
+    },
+    {
+        "char": "階",
+        "meaning": "lantai / tingkat",
+        "readings": "-"
+    },
+    {
+        "char": "区",
+        "meaning": "distrik",
+        "readings": "-"
+    },
+    {
+        "char": "波",
+        "meaning": "ombak",
+        "readings": "-"
+    },
+    {
+        "char": "移",
+        "meaning": "memindah",
+        "readings": "-"
+    },
+    {
+        "char": "域",
+        "meaning": "area / wilayah",
+        "readings": "-"
+    },
+    {
+        "char": "周",
+        "meaning": "keliling",
+        "readings": "-"
+    },
+    {
+        "char": "接",
+        "meaning": "menyambung / kontak",
+        "readings": "-"
+    },
+    {
+        "char": "鉄",
+        "meaning": "besi",
+        "readings": "-"
+    },
+    {
+        "char": "頃",
+        "meaning": "sekitar (waktu)",
+        "readings": "-"
+    },
+    {
+        "char": "材",
+        "meaning": "bahan",
+        "readings": "-"
+    },
+    {
+        "char": "個",
+        "meaning": "satuan (individu)",
+        "readings": "-"
+    },
+    {
+        "char": "協",
+        "meaning": "kerja sama",
+        "readings": "-"
+    },
+    {
+        "char": "各",
+        "meaning": "masing-masing",
+        "readings": "-"
+    },
+    {
+        "char": "帯",
+        "meaning": "sabuk / zona",
+        "readings": "-"
+    },
+    {
+        "char": "歴",
+        "meaning": "riwayat",
+        "readings": "-"
+    },
+    {
+        "char": "編",
+        "meaning": "menyusun / kompilasi",
+        "readings": "-"
+    },
+    {
+        "char": "裏",
+        "meaning": "bagian belakang",
+        "readings": "-"
+    },
+    {
+        "char": "比",
+        "meaning": "membandingkan",
+        "readings": "-"
+    },
+    {
+        "char": "坂",
+        "meaning": "tanjakan",
+        "readings": "-"
+    },
+    {
+        "char": "装",
+        "meaning": "memasang / pakaian",
+        "readings": "-"
+    },
+    {
+        "char": "省",
+        "meaning": "kementerian / hemat",
+        "readings": "-"
+    },
+    {
+        "char": "税",
+        "meaning": "pajak",
+        "readings": "-"
+    },
+    {
+        "char": "競",
+        "meaning": "berlomba",
+        "readings": "-"
+    },
+    {
+        "char": "囲",
+        "meaning": "mengelilingi",
+        "readings": "-"
+    },
+    {
+        "char": "辺",
+        "meaning": "sekitar",
+        "readings": "-"
+    },
+    {
+        "char": "河",
+        "meaning": "sungai besar",
+        "readings": "-"
+    },
+    {
+        "char": "極",
+        "meaning": "ekstrem / ujung",
+        "readings": "-"
+    },
+    {
+        "char": "防",
+        "meaning": "pertahanan / mencegah",
+        "readings": "-"
+    },
+    {
+        "char": "低",
+        "meaning": "rendah",
+        "readings": "-"
+    },
+    {
+        "char": "林",
+        "meaning": "hutan kecil",
+        "readings": "-"
+    },
+    {
+        "char": "導",
+        "meaning": "memimpin",
+        "readings": "-"
+    },
+    {
+        "char": "森",
+        "meaning": "hutan",
+        "readings": "-"
+    },
+    {
+        "char": "丸",
+        "meaning": "bulat",
+        "readings": "-"
+    },
+    {
+        "char": "胸",
+        "meaning": "dada",
+        "readings": "-"
+    },
+    {
+        "char": "陸",
+        "meaning": "darat",
+        "readings": "-"
+    },
+    {
+        "char": "療",
+        "meaning": "pengobatan",
+        "readings": "-"
+    },
+    {
+        "char": "諸",
+        "meaning": "berbagai",
+        "readings": "-"
+    },
+    {
+        "char": "管",
+        "meaning": "pipa / mengatur",
+        "readings": "-"
+    },
+    {
+        "char": "仲",
+        "meaning": "hubungan / teman",
+        "readings": "-"
+    },
+    {
+        "char": "革",
+        "meaning": "kulit / reformasi",
+        "readings": "-"
+    },
+    {
+        "char": "担",
+        "meaning": "memikul",
+        "readings": "-"
+    },
+    {
+        "char": "効",
+        "meaning": "efek / efektif",
+        "readings": "-"
+    },
+    {
+        "char": "賞",
+        "meaning": "hadiah",
+        "readings": "-"
+    },
+    {
+        "char": "星",
+        "meaning": "bintang",
+        "readings": "-"
+    },
+    {
+        "char": "復",
+        "meaning": "pulih / kembali",
+        "readings": "-"
+    },
+    {
+        "char": "片",
+        "meaning": "sepotong",
+        "readings": "-"
+    },
+    {
+        "char": "並",
+        "meaning": "sejajar / biasa",
+        "readings": "-"
+    },
+    {
+        "char": "底",
+        "meaning": "dasar",
+        "readings": "-"
+    },
+    {
+        "char": "温",
+        "meaning": "hangat",
+        "readings": "-"
+    },
+    {
+        "char": "軽",
+        "meaning": "ringan",
+        "readings": "-"
+    },
+    {
+        "char": "録",
+        "meaning": "catatan / rekam",
+        "readings": "-"
+    },
+    {
+        "char": "腰",
+        "meaning": "pinggang",
+        "readings": "-"
+    },
+    {
+        "char": "著",
+        "meaning": "terkenal / menulis",
+        "readings": "-"
+    },
+    {
+        "char": "乱",
+        "meaning": "kacau",
+        "readings": "-"
+    },
+    {
+        "char": "章",
+        "meaning": "bab / pasal",
+        "readings": "-"
+    },
+    {
+        "char": "殿",
+        "meaning": "tuan / istana",
+        "readings": "-"
+    },
+    {
+        "char": "布",
+        "meaning": "kain / menyebar",
+        "readings": "-"
+    },
+    {
+        "char": "角",
+        "meaning": "sudut / tanduk",
+        "readings": "-"
+    },
+    {
+        "char": "仏",
+        "meaning": "Buddha / Prancis",
+        "readings": "-"
+    },
+    {
+        "char": "永",
+        "meaning": "abadi",
+        "readings": "-"
+    },
+    {
+        "char": "誌",
+        "meaning": "majalah / catatan",
+        "readings": "-"
+    },
+    {
+        "char": "減",
+        "meaning": "berkurang",
+        "readings": "-"
+    },
+    {
+        "char": "略",
+        "meaning": "singkat / strategi",
+        "readings": "-"
+    },
+    {
+        "char": "準",
+        "meaning": "standar / persiapan",
+        "readings": "-"
+    },
+    {
+        "char": "委",
+        "meaning": "menyerahkan / komite",
+        "readings": "-"
+    },
+    {
+        "char": "令",
+        "meaning": "perintah",
+        "readings": "-"
+    },
+    {
+        "char": "刊",
+        "meaning": "menerbitkan",
+        "readings": "-"
+    },
+    {
+        "char": "焼",
+        "meaning": "membakar",
+        "readings": "-"
+    },
+    {
+        "char": "里",
+        "meaning": "desa / ri",
+        "readings": "-"
+    },
+    {
+        "char": "圧",
+        "meaning": "tekanan",
+        "readings": "-"
+    },
+    {
+        "char": "額",
+        "meaning": "dahi / jumlah",
+        "readings": "-"
+    },
+    {
+        "char": "印",
+        "meaning": "cap / tanda",
+        "readings": "-"
+    },
+    {
+        "char": "池",
+        "meaning": "kolam",
+        "readings": "-"
+    },
+    {
+        "char": "臣",
+        "meaning": "bawahan / menteri",
+        "readings": "-"
+    },
+    {
+        "char": "庫",
+        "meaning": "gudang",
+        "readings": "-"
+    },
+    {
+        "char": "農",
+        "meaning": "pertanian",
+        "readings": "-"
+    },
+    {
+        "char": "板",
+        "meaning": "papan",
+        "readings": "-"
+    },
+    {
+        "char": "恋",
+        "meaning": "cinta",
+        "readings": "-"
+    },
+    {
+        "char": "羽",
+        "meaning": "sayap / bulu",
+        "readings": "-"
+    },
+    {
+        "char": "専",
+        "meaning": "khusus",
+        "readings": "-"
+    },
+    {
+        "char": "逆",
+        "meaning": "terbalik",
+        "readings": "-"
+    },
+    {
+        "char": "腕",
+        "meaning": "lengan / kemampuan",
+        "readings": "-"
+    },
+    {
+        "char": "普",
+        "meaning": "umum",
+        "readings": "-"
+    },
+    {
+        "char": "岩",
+        "meaning": "karang",
+        "readings": "-"
+    },
+    {
+        "char": "竹",
+        "meaning": "bambu",
+        "readings": "-"
+    },
+    {
+        "char": "児",
+        "meaning": "anak",
+        "readings": "-"
+    },
+    {
+        "char": "毛",
+        "meaning": "bulu / rambut",
+        "readings": "-"
+    },
+    {
+        "char": "版",
+        "meaning": "edisi / cetakan",
+        "readings": "-"
+    },
+    {
+        "char": "宇",
+        "meaning": "alam semesta",
+        "readings": "-"
+    },
+    {
+        "char": "況",
+        "meaning": "kondisi",
+        "readings": "-"
+    },
+    {
+        "char": "被",
+        "meaning": "terkena / selimut",
+        "readings": "-"
+    },
+    {
+        "char": "岸",
+        "meaning": "tepi",
+        "readings": "-"
+    },
+    {
+        "char": "超",
+        "meaning": "melampaui",
+        "readings": "-"
+    },
+    {
+        "char": "豊",
+        "meaning": "berlimpah",
+        "readings": "-"
+    },
+    {
+        "char": "含",
+        "meaning": "mengandung",
+        "readings": "-"
+    },
+    {
+        "char": "植",
+        "meaning": "menanam",
+        "readings": "-"
+    },
+    {
+        "char": "補",
+        "meaning": "melengkapi",
+        "readings": "-"
+    },
+    {
+        "char": "暴",
+        "meaning": "keras / mendadak",
+        "readings": "-"
+    },
+    {
+        "char": "課",
+        "meaning": "pelajaran / bagian",
+        "readings": "-"
+    },
+    {
+        "char": "跡",
+        "meaning": "jejak",
+        "readings": "-"
+    },
+    {
+        "char": "触",
+        "meaning": "menyentuh",
+        "readings": "-"
+    },
+    {
+        "char": "玉",
+        "meaning": "permata / bola",
+        "readings": "-"
+    },
+    {
+        "char": "震",
+        "meaning": "getar / gempa",
+        "readings": "-"
+    },
+    {
+        "char": "億",
+        "meaning": "seratus juta",
+        "readings": "-"
+    },
+    {
+        "char": "肩",
+        "meaning": "bahu",
+        "readings": "-"
+    },
+    {
+        "char": "劇",
+        "meaning": "drama",
+        "readings": "-"
+    },
+    {
+        "char": "刺",
+        "meaning": "menusuk",
+        "readings": "-"
+    },
+    {
+        "char": "述",
+        "meaning": "menyatakan",
+        "readings": "-"
+    },
+    {
+        "char": "輪",
+        "meaning": "roda / lingkaran",
+        "readings": "-"
+    },
+    {
+        "char": "浅",
+        "meaning": "dangkal",
+        "readings": "-"
+    },
+    {
+        "char": "純",
+        "meaning": "murni",
+        "readings": "-"
+    },
+    {
+        "char": "薄",
+        "meaning": "tipis",
+        "readings": "-"
+    },
+    {
+        "char": "阪",
+        "meaning": "Osaka / lereng",
+        "readings": "-"
+    },
+    {
+        "char": "韓",
+        "meaning": "Korea",
+        "readings": "-"
+    },
+    {
+        "char": "固",
+        "meaning": "keras",
+        "readings": "-"
+    },
+    {
+        "char": "巨",
+        "meaning": "raksasa",
+        "readings": "-"
+    },
+    {
+        "char": "講",
+        "meaning": "kuliah / ceramah",
+        "readings": "-"
+    },
+    {
+        "char": "般",
+        "meaning": "umum / jenis",
+        "readings": "-"
+    },
+    {
+        "char": "湯",
+        "meaning": "air panas",
+        "readings": "-"
+    },
+    {
+        "char": "捨",
+        "meaning": "membuang",
+        "readings": "-"
+    },
+    {
+        "char": "衣",
+        "meaning": "pakaian",
+        "readings": "-"
+    },
+    {
+        "char": "替",
+        "meaning": "mengganti",
+        "readings": "-"
+    },
+    {
+        "char": "央",
+        "meaning": "pusat",
+        "readings": "-"
+    },
+    {
+        "char": "骨",
+        "meaning": "tulang",
+        "readings": "-"
+    },
+    {
+        "char": "齢",
+        "meaning": "umur",
+        "readings": "-"
+    },
+    {
+        "char": "照",
+        "meaning": "menyinari",
+        "readings": "-"
+    },
+    {
+        "char": "層",
+        "meaning": "lapisan",
+        "readings": "-"
+    },
+    {
+        "char": "弱",
+        "meaning": "lemah",
+        "readings": "-"
+    },
+    {
+        "char": "築",
+        "meaning": "membangun",
+        "readings": "-"
+    },
+    {
+        "char": "脳",
+        "meaning": "otak",
+        "readings": "-"
+    },
+    {
+        "char": "航",
+        "meaning": "pelayaran / penerbangan",
+        "readings": "-"
+    },
+    {
+        "char": "快",
+        "meaning": "nyaman / cepat",
+        "readings": "-"
+    },
+    {
+        "char": "翌",
+        "meaning": "esok",
+        "readings": "-"
+    },
+    {
+        "char": "旧",
+        "meaning": "lama",
+        "readings": "-"
+    },
+    {
+        "char": "筆",
+        "meaning": "kuas / pena",
+        "readings": "-"
+    },
+    {
+        "char": "換",
+        "meaning": "menukar",
+        "readings": "-"
+    },
+    {
+        "char": "群",
+        "meaning": "kelompok",
+        "readings": "-"
+    },
+    {
+        "char": "爆",
+        "meaning": "meledak",
+        "readings": "-"
+    },
+    {
+        "char": "捜",
+        "meaning": "mencari",
+        "readings": "-"
+    },
+    {
+        "char": "油",
+        "meaning": "minyak",
+        "readings": "-"
+    },
+    {
+        "char": "叫",
+        "meaning": "berteriak",
+        "readings": "-"
+    },
+    {
+        "char": "伸",
+        "meaning": "memanjang",
+        "readings": "-"
+    },
+    {
+        "char": "承",
+        "meaning": "menerima / menyetujui",
+        "readings": "-"
+    },
+    {
+        "char": "雲",
+        "meaning": "awan",
+        "readings": "-"
+    },
+    {
+        "char": "練",
+        "meaning": "latihan",
+        "readings": "-"
+    },
+    {
+        "char": "紹",
+        "meaning": "memperkenalkan",
+        "readings": "-"
+    },
+    {
+        "char": "包",
+        "meaning": "membungkus",
+        "readings": "-"
+    },
+    {
+        "char": "庁",
+        "meaning": "kantor pemerintah",
+        "readings": "-"
+    },
+    {
+        "char": "測",
+        "meaning": "mengukur",
+        "readings": "-"
+    },
+    {
+        "char": "占",
+        "meaning": "meramal / menduduki",
+        "readings": "-"
+    },
+    {
+        "char": "混",
+        "meaning": "mencampur",
+        "readings": "-"
+    },
+    {
+        "char": "倍",
+        "meaning": "kali lipat",
+        "readings": "-"
+    },
+    {
+        "char": "乳",
+        "meaning": "susu",
+        "readings": "-"
+    },
+    {
+        "char": "荒",
+        "meaning": "kasar / badai",
+        "readings": "-"
+    },
+    {
+        "char": "詰",
+        "meaning": "mengisi rapat / menjejali",
+        "readings": "-"
+    },
+    {
+        "char": "栄",
+        "meaning": "kejayaan",
+        "readings": "-"
+    },
+    {
+        "char": "床",
+        "meaning": "lantai / ranjang",
+        "readings": "-"
+    },
+    {
+        "char": "則",
+        "meaning": "aturan",
+        "readings": "-"
+    },
+    {
+        "char": "禁",
+        "meaning": "larangan",
+        "readings": "-"
+    },
+    {
+        "char": "順",
+        "meaning": "urutan",
+        "readings": "-"
+    },
+    {
+        "char": "枚",
+        "meaning": "lembar (counter)",
+        "readings": "-"
+    },
+    {
+        "char": "厚",
+        "meaning": "tebal",
+        "readings": "-"
+    },
+    {
+        "char": "皮",
+        "meaning": "kulit",
+        "readings": "-"
+    },
+    {
+        "char": "輸",
+        "meaning": "mengangkut / impor",
+        "readings": "-"
+    },
+    {
+        "char": "濃",
+        "meaning": "pekat",
+        "readings": "-"
+    },
+    {
+        "char": "簡",
+        "meaning": "sederhana",
+        "readings": "-"
+    },
+    {
+        "char": "孫",
+        "meaning": "cucu",
+        "readings": "-"
+    },
+    {
+        "char": "丈",
+        "meaning": "panjang (ukuran)",
+        "readings": "-"
+    },
+    {
+        "char": "黄",
+        "meaning": "kuning",
+        "readings": "-"
+    },
+    {
+        "char": "届",
+        "meaning": "sampai / mengirim",
+        "readings": "-"
+    },
+    {
+        "char": "絡",
+        "meaning": "terkait / terjerat",
+        "readings": "-"
+    },
+    {
+        "char": "採",
+        "meaning": "mengambil / memetik",
+        "readings": "-"
+    },
+    {
+        "char": "傾",
+        "meaning": "miring / cenderung",
+        "readings": "-"
+    },
+    {
+        "char": "鼻",
+        "meaning": "hidung",
+        "readings": "-"
+    },
+    {
+        "char": "宝",
+        "meaning": "harta",
+        "readings": "-"
+    },
+    {
+        "char": "患",
+        "meaning": "menderita sakit",
+        "readings": "-"
+    },
+    {
+        "char": "延",
+        "meaning": "memperpanjang",
+        "readings": "-"
+    },
+    {
+        "char": "律",
+        "meaning": "hukum / irama",
+        "readings": "-"
+    },
+    {
+        "char": "希",
+        "meaning": "langka / harap",
+        "readings": "-"
+    },
+    {
+        "char": "甘",
+        "meaning": "manis",
+        "readings": "-"
+    },
+    {
+        "char": "湾",
+        "meaning": "teluk",
+        "readings": "-"
+    },
+    {
+        "char": "沈",
+        "meaning": "tenggelam",
+        "readings": "-"
+    },
+    {
+        "char": "販",
+        "meaning": "menjual (distribusi)",
+        "readings": "-"
+    },
+    {
+        "char": "欧",
+        "meaning": "Eropa",
+        "readings": "-"
+    },
+    {
+        "char": "砂",
+        "meaning": "pasir",
+        "readings": "-"
+    },
+    {
+        "char": "尊",
+        "meaning": "menghormati",
+        "readings": "-"
+    },
+    {
+        "char": "紅",
+        "meaning": "merah tua",
+        "readings": "-"
+    },
+    {
+        "char": "複",
+        "meaning": "ganda / kompleks",
+        "readings": "-"
+    },
+    {
+        "char": "泊",
+        "meaning": "menginap",
+        "readings": "-"
+    },
+    {
+        "char": "荷",
+        "meaning": "beban / barang",
+        "readings": "-"
+    },
+    {
+        "char": "枝",
+        "meaning": "cabang",
+        "readings": "-"
+    },
+    {
+        "char": "依",
+        "meaning": "bergantung",
+        "readings": "-"
+    },
+    {
+        "char": "幼",
+        "meaning": "kecil (anak)",
+        "readings": "-"
+    },
+    {
+        "char": "斬",
+        "meaning": "menebas",
+        "readings": "-"
+    },
+    {
+        "char": "勇",
+        "meaning": "berani",
+        "readings": "-"
+    },
+    {
+        "char": "昇",
+        "meaning": "naik",
+        "readings": "-"
+    },
+    {
+        "char": "寿",
+        "meaning": "umur panjang",
+        "readings": "-"
+    },
+    {
+        "char": "菜",
+        "meaning": "sayur",
+        "readings": "-"
+    },
+    {
+        "char": "季",
+        "meaning": "musim",
+        "readings": "-"
+    },
+    {
+        "char": "液",
+        "meaning": "cairan",
+        "readings": "-"
+    },
+    {
+        "char": "券",
+        "meaning": "kupon / tiket",
+        "readings": "-"
+    },
+    {
+        "char": "祭",
+        "meaning": "festival",
+        "readings": "-"
+    },
+    {
+        "char": "袋",
+        "meaning": "kantong",
+        "readings": "-"
+    },
+    {
+        "char": "燃",
+        "meaning": "membakar",
+        "readings": "-"
+    },
+    {
+        "char": "毒",
+        "meaning": "racun",
+        "readings": "-"
+    },
+    {
+        "char": "札",
+        "meaning": "uang kertas / label",
+        "readings": "-"
+    },
+    {
+        "char": "狙",
+        "meaning": "membidik",
+        "readings": "-"
+    },
+    {
+        "char": "脇",
+        "meaning": "samping / ketiak",
+        "readings": "-"
+    },
+    {
+        "char": "卒",
+        "meaning": "lulus",
+        "readings": "-"
+    },
+    {
+        "char": "副",
+        "meaning": "wakil",
+        "readings": "-"
+    },
+    {
+        "char": "敬",
+        "meaning": "hormat",
+        "readings": "-"
+    },
+    {
+        "char": "針",
+        "meaning": "jarum",
+        "readings": "-"
+    },
+    {
+        "char": "拝",
+        "meaning": "menyembah",
+        "readings": "-"
+    },
+    {
+        "char": "浴",
+        "meaning": "mandi",
+        "readings": "-"
+    },
+    {
+        "char": "悩",
+        "meaning": "khawatir",
+        "readings": "-"
+    },
+    {
+        "char": "汚",
+        "meaning": "kotor",
+        "readings": "-"
+    },
+    {
+        "char": "灯",
+        "meaning": "lampu",
+        "readings": "-"
+    },
+    {
+        "char": "坊",
+        "meaning": "bocah laki-laki",
+        "readings": "-"
+    },
+    {
+        "char": "尻",
+        "meaning": "pantat",
+        "readings": "-"
+    },
+    {
+        "char": "涙",
+        "meaning": "air mata",
+        "readings": "-"
+    },
+    {
+        "char": "停",
+        "meaning": "berhenti",
+        "readings": "-"
+    },
+    {
+        "char": "了",
+        "meaning": "selesai",
+        "readings": "-"
+    },
+    {
+        "char": "汗",
+        "meaning": "keringat",
+        "readings": "-"
+    },
+    {
+        "char": "郵",
+        "meaning": "pos",
+        "readings": "-"
+    },
+    {
+        "char": "幅",
+        "meaning": "lebar",
+        "readings": "-"
+    },
+    {
+        "char": "童",
+        "meaning": "anak",
+        "readings": "-"
+    },
+    {
+        "char": "虫",
+        "meaning": "serangga",
+        "readings": "-"
+    },
+    {
+        "char": "埋",
+        "meaning": "mengubur",
+        "readings": "-"
+    },
+    {
+        "char": "舟",
+        "meaning": "perahu",
+        "readings": "-"
+    },
+    {
+        "char": "闇",
+        "meaning": "gelap",
+        "readings": "-"
+    },
+    {
+        "char": "棒",
+        "meaning": "tongkat",
+        "readings": "-"
+    },
+    {
+        "char": "貨",
+        "meaning": "barang / mata uang",
+        "readings": "-"
+    },
+    {
+        "char": "肌",
+        "meaning": "kulit",
+        "readings": "-"
+    },
+    {
+        "char": "臓",
+        "meaning": "organ",
+        "readings": "-"
+    },
+    {
+        "char": "塩",
+        "meaning": "garam",
+        "readings": "-"
+    },
+    {
+        "char": "均",
+        "meaning": "rata",
+        "readings": "-"
+    },
+    {
+        "char": "湖",
+        "meaning": "danau",
+        "readings": "-"
+    },
+    {
+        "char": "損",
+        "meaning": "rugi",
+        "readings": "-"
+    },
+    {
+        "char": "膝",
+        "meaning": "lutut",
+        "readings": "-"
+    },
+    {
+        "char": "辛",
+        "meaning": "pedas / sulit",
+        "readings": "-"
+    },
+    {
+        "char": "双",
+        "meaning": "sepasang",
+        "readings": "-"
+    },
+    {
+        "char": "軒",
+        "meaning": "rumah (counter)",
+        "readings": "-"
+    },
+    {
+        "char": "績",
+        "meaning": "prestasi / hasil",
+        "readings": "-"
+    },
+    {
+        "char": "干",
+        "meaning": "kering / ikut campur",
+        "readings": "-"
+    },
+    {
+        "char": "姓",
+        "meaning": "nama keluarga",
+        "readings": "-"
+    },
+    {
+        "char": "掘",
+        "meaning": "menggali",
+        "readings": "-"
+    },
+    {
+        "char": "籍",
+        "meaning": "registrasi",
+        "readings": "-"
+    },
+    {
+        "char": "珍",
+        "meaning": "langka / aneh",
+        "readings": "-"
+    },
+    {
+        "char": "訓",
+        "meaning": "latihan / instruksi",
+        "readings": "-"
+    },
+    {
+        "char": "預",
+        "meaning": "menitip / menyimpan",
+        "readings": "-"
+    },
+    {
+        "char": "署",
+        "meaning": "kantor (polisi) / tanda tangan",
+        "readings": "-"
+    },
+    {
+        "char": "漁",
+        "meaning": "perikanan",
+        "readings": "-"
+    },
+    {
+        "char": "緑",
+        "meaning": "hijau",
+        "readings": "-"
+    },
+    {
+        "char": "畳",
+        "meaning": "tatami / melipat",
+        "readings": "-"
+    },
+    {
+        "char": "咲",
+        "meaning": "mekar",
+        "readings": "-"
+    },
+    {
+        "char": "貿",
+        "meaning": "perdagangan",
+        "readings": "-"
+    },
+    {
+        "char": "踊",
+        "meaning": "menari",
+        "readings": "-"
+    },
+    {
+        "char": "封",
+        "meaning": "segel",
+        "readings": "-"
+    },
+    {
+        "char": "兆",
+        "meaning": "pertanda / triliun",
+        "readings": "-"
+    },
+    {
+        "char": "柱",
+        "meaning": "tiang",
+        "readings": "-"
+    },
+    {
+        "char": "駐",
+        "meaning": "menetap / parkir",
+        "readings": "-"
+    },
+    {
+        "char": "祝",
+        "meaning": "merayakan",
+        "readings": "-"
+    },
+    {
+        "char": "炭",
+        "meaning": "arang",
+        "readings": "-"
+    },
+    {
+        "char": "柔",
+        "meaning": "lembut",
+        "readings": "-"
+    },
+    {
+        "char": "雇",
+        "meaning": "mempekerjakan",
+        "readings": "-"
+    },
+    {
+        "char": "乾",
+        "meaning": "kering",
+        "readings": "-"
+    },
+    {
+        "char": "鋭",
+        "meaning": "tajam",
+        "readings": "-"
+    },
+    {
+        "char": "氷",
+        "meaning": "es",
+        "readings": "-"
+    },
+    {
+        "char": "隅",
+        "meaning": "pojok",
+        "readings": "-"
+    },
+    {
+        "char": "冊",
+        "meaning": "jilid",
+        "readings": "-"
+    },
+    {
+        "char": "糸",
+        "meaning": "benang",
+        "readings": "-"
+    },
+    {
+        "char": "募",
+        "meaning": "merekrut",
+        "readings": "-"
+    },
+    {
+        "char": "硬",
+        "meaning": "keras",
+        "readings": "-"
+    },
+    {
+        "char": "塗",
+        "meaning": "melapisi / mengecat",
+        "readings": "-"
+    },
+    {
+        "char": "憎",
+        "meaning": "benci",
+        "readings": "-"
+    },
+    {
+        "char": "泥",
+        "meaning": "lumpur",
+        "readings": "-"
+    },
+    {
+        "char": "脂",
+        "meaning": "lemak",
+        "readings": "-"
+    },
+    {
+        "char": "粉",
+        "meaning": "bubuk",
+        "readings": "-"
+    },
+    {
+        "char": "詞",
+        "meaning": "kata / puisi",
+        "readings": "-"
+    },
+    {
+        "char": "筒",
+        "meaning": "tabung",
+        "readings": "-"
+    },
+    {
+        "char": "掃",
+        "meaning": "menyapu",
+        "readings": "-"
+    },
+    {
+        "char": "塔",
+        "meaning": "menara",
+        "readings": "-"
+    },
+    {
+        "char": "賢",
+        "meaning": "bijak",
+        "readings": "-"
+    },
+    {
+        "char": "拾",
+        "meaning": "memungut",
+        "readings": "-"
+    },
+    {
+        "char": "麦",
+        "meaning": "gandum",
+        "readings": "-"
+    },
+    {
+        "char": "刷",
+        "meaning": "mencetak",
+        "readings": "-"
+    },
+    {
+        "char": "卵",
+        "meaning": "telur",
+        "readings": "-"
+    },
+    {
+        "char": "械",
+        "meaning": "mesin / alat",
+        "readings": "-"
+    },
+    {
+        "char": "皿",
+        "meaning": "piring",
+        "readings": "-"
+    },
+    {
+        "char": "祈",
+        "meaning": "berdoa",
+        "readings": "-"
+    },
+    {
+        "char": "灰",
+        "meaning": "abu",
+        "readings": "-"
+    },
+    {
+        "char": "召",
+        "meaning": "memanggil",
+        "readings": "-"
+    },
+    {
+        "char": "溶",
+        "meaning": "mencair",
+        "readings": "-"
+    },
+    {
+        "char": "磨",
+        "meaning": "menggosok",
+        "readings": "-"
+    },
+    {
+        "char": "粒",
+        "meaning": "butir",
+        "readings": "-"
+    },
+    {
+        "char": "喫",
+        "meaning": "mengisap / minum",
+        "readings": "-"
+    },
+    {
+        "char": "机",
+        "meaning": "meja",
+        "readings": "-"
+    },
+    {
+        "char": "貯",
+        "meaning": "menabung",
+        "readings": "-"
+    },
+    {
+        "char": "匹",
+        "meaning": "ekor (hewan kecil)",
+        "readings": "-"
+    },
+    {
+        "char": "綿",
+        "meaning": "kapas",
+        "readings": "-"
+    },
+    {
+        "char": "贈",
+        "meaning": "memberi hadiah",
+        "readings": "-"
+    },
+    {
+        "char": "凍",
+        "meaning": "membeku",
+        "readings": "-"
+    },
+    {
+        "char": "瓶",
+        "meaning": "botol",
+        "readings": "-"
+    },
+    {
+        "char": "帽",
+        "meaning": "topi",
+        "readings": "-"
+    },
+    {
+        "char": "涼",
+        "meaning": "sejuk",
+        "readings": "-"
+    },
+    {
+        "char": "秒",
+        "meaning": "detik",
+        "readings": "-"
+    },
+    {
+        "char": "湿",
+        "meaning": "lembap",
+        "readings": "-"
+    },
+    {
+        "char": "蒸",
+        "meaning": "mengukus",
+        "readings": "-"
+    },
+    {
+        "char": "菓",
+        "meaning": "manisan",
+        "readings": "-"
+    },
+    {
+        "char": "耕",
+        "meaning": "membajak",
+        "readings": "-"
+    },
+    {
+        "char": "鉱",
+        "meaning": "tambang",
+        "readings": "-"
+    },
+    {
+        "char": "膚",
+        "meaning": "kulit",
+        "readings": "-"
+    },
+    {
+        "char": "胃",
+        "meaning": "perut",
+        "readings": "-"
+    },
+    {
+        "char": "挟",
+        "meaning": "menjepit",
+        "readings": "-"
+    },
+    {
+        "char": "郊",
+        "meaning": "pinggiran kota",
+        "readings": "-"
+    },
+    {
+        "char": "銅",
+        "meaning": "tembaga",
+        "readings": "-"
+    },
+    {
+        "char": "鈍",
+        "meaning": "tumpul",
+        "readings": "-"
+    },
+    {
+        "char": "貝",
+        "meaning": "kerang",
+        "readings": "-"
+    },
+    {
+        "char": "缶",
+        "meaning": "kaleng",
+        "readings": "-"
+    },
+    {
+        "char": "枯",
+        "meaning": "layu / kering",
+        "readings": "-"
+    },
+    {
+        "char": "滴",
+        "meaning": "tetes",
+        "readings": "-"
+    },
+    {
+        "char": "符",
+        "meaning": "tanda",
+        "readings": "-"
+    },
+    {
+        "char": "畜",
+        "meaning": "ternak",
+        "readings": "-"
+    },
+    {
+        "char": "軟",
+        "meaning": "lunak",
+        "readings": "-"
+    },
+    {
+        "char": "濯",
+        "meaning": "mencuci (laundry)",
+        "readings": "-"
+    },
+    {
+        "char": "隻",
+        "meaning": "satuan kapal",
+        "readings": "-"
+    },
+    {
+        "char": "伺",
+        "meaning": "bertanya (hormat) / menjenguk",
+        "readings": "-"
+    },
+    {
+        "char": "沸",
+        "meaning": "mendidih",
+        "readings": "-"
+    },
+    {
+        "char": "曇",
+        "meaning": "mendung",
+        "readings": "-"
+    },
+    {
+        "char": "肯",
+        "meaning": "menyetujui",
+        "readings": "-"
+    },
+    {
+        "char": "燥",
+        "meaning": "kering (dry)",
+        "readings": "-"
+    },
+    {
+        "char": "零",
+        "meaning": "nol",
+        "readings": "-"
     }
 ]

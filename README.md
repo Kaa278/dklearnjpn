@@ -20,7 +20,7 @@
 
 ### 📖 Comprehensive Learning Content
 - **776 Vocabulary Words** - N5-N3 level Japanese vocabulary
-- **130 Kanji Characters** - Essential N5-N4 kanji with multiple readings
+- **1000+ Kanji Characters** - Essential kanji with multiple readings
 - **Hiragana** - Complete 46-character syllabary with stroke animations
 - **Katakana** - Complete 46-character syllabary with stroke animations
 
@@ -123,7 +123,7 @@ kotoba/
 | 🔢 Angka | 13 | いち, に, さん, ひゃく, せん |
 | ⏰ Waktu | 30+ | きょう, あした, げつようび |
 
-### Kanji (130 characters)
+### Kanji (1000+ characters)
 - **Numbers**: 一二三四五六七八九十百千万
 - **Time**: 日月火水木金土年時分半今毎
 - **People**: 人父母子男女友先生学校
