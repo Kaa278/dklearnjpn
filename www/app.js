@@ -213,8 +213,11 @@ const STATE = {
     kotoba: JSON.parse(localStorage.getItem('kotoba_words')) || defaultKotoba,
     currentSection: 'kotoba',
     search: '',
-    filterCategory: 'Semua' // New filter state
+    filterCategory: 'Semua', // New filter state
+    itemsToShow: 20 // Pagination limit
 };
+
+const ITEMS_PER_LOAD = 20;
 
 const elements = {
     vocabGrid: document.getElementById('vocabGrid'),
@@ -378,6 +381,7 @@ function initCategoryDropdown() {
 
 function selectCategory(category) {
     STATE.filterCategory = category;
+    STATE.itemsToShow = ITEMS_PER_LOAD; // Reset pagination
 
     // Update Label
     if (elements.selectedCategoryLabel) {
@@ -471,9 +475,14 @@ function renderKotobaSection(searchLower) {
 
     if (filtered.length === 0) {
         showEmptyState();
+        removeLoadMoreBtn();
     } else {
         hideEmptyState();
-        elements.vocabGrid.innerHTML = filtered.map(item => `
+
+        // Pagination Slice
+        const visibleItems = filtered.slice(0, STATE.itemsToShow);
+
+        elements.vocabGrid.innerHTML = visibleItems.map(item => `
             <div class="bento-card p-5 group h-full justify-between" onclick="openModal('${item.id}', 'kotoba')">
                 <div>
                     <div class="flex justify-between items-start mb-3">
@@ -490,6 +499,32 @@ function renderKotobaSection(searchLower) {
                 </div>
             </div>
         `).join('');
+
+        // Handle Load More Button
+        if (filtered.length > STATE.itemsToShow) {
+            renderLoadMoreBtn();
+        } else {
+            removeLoadMoreBtn();
+        }
+    }
+}
+
+function loadMoreItems() {
+    STATE.itemsToShow += ITEMS_PER_LOAD;
+    renderApp();
+}
+
+function renderLoadMoreBtn() {
+    let btn = document.getElementById('loadMoreBtn');
+    if (!btn) {
+        btn = document.createElement('button');
+        btn.id = 'loadMoreBtn';
+        btn.className = 'col-span-full mx-auto mt-6 px-6 py-3 bg-white text-gray-600 font-bold rounded-xl shadow-sm border border-gray-200 hover:bg-gray-50 transition-all active:scale-95';
+        btn.textContent = 'Muat Lebih Banyak';
+        btn.onclick = loadMoreItems;
+        elements.vocabGrid.parentNode.insertBefore(btn, elements.vocabGrid.nextSibling);
+    } else {
+        btn.classList.remove('hidden');
     }
 }
 
@@ -543,9 +578,14 @@ function renderKanjiSection(searchLower) {
 
     if (filtered.length === 0) {
         showEmptyState();
+        removeLoadMoreBtn();
     } else {
         hideEmptyState();
-        elements.vocabGrid.innerHTML = filtered.map(item => `
+
+        // Pagination Slice
+        const visibleItems = filtered.slice(0, STATE.itemsToShow);
+
+        elements.vocabGrid.innerHTML = visibleItems.map(item => `
             <div class="bento-card p-5 group h-full justify-between" onclick="openModal('${item.char}', 'kanji')">
                 <div class="text-center mb-4">
                     <h2 class="text-7xl font-black text-gray-800 font-jp mb-3">${item.char}</h2>
@@ -563,6 +603,13 @@ function renderKanjiSection(searchLower) {
                 </div>
             </div>
         `).join('');
+
+        // Handle Load More Button
+        if (filtered.length > STATE.itemsToShow) {
+            renderLoadMoreBtn();
+        } else {
+            removeLoadMoreBtn();
+        }
     }
 }
 
@@ -597,6 +644,7 @@ function switchSection(section) {
     STATE.currentSection = section;
     STATE.search = ''; // Reset search when switching
     STATE.filterCategory = 'Semua'; // Reset filter when switching
+    STATE.itemsToShow = ITEMS_PER_LOAD; // Reset pagination
     elements.searchInput.value = '';
 
     // Reset filter dropdown
@@ -955,6 +1003,7 @@ function isKana(char) {
 function setupEventListeners() {
     elements.searchInput.addEventListener('input', (e) => {
         STATE.search = e.target.value;
+        STATE.itemsToShow = ITEMS_PER_LOAD; // Reset pagination on search
         renderApp(); // Rerender app to update stats as well
     });
 
